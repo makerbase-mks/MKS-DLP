@@ -1,0 +1,827 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  11:56:41
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ExposureTest.cpp
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ExposureTest.cpp
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\draw_ExposureTest.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\draw_ExposureTest.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ExposureTest.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "draw_ui.h"
+
+  #define UNUSED(x) (void) (x)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\Third_Party\Marlin\macros.h",101  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 87 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_def.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Inc\mks_cfg.h",351  Warning[Pe083]: 
+          type qualifier specified more than once
+
+  #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",173  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_MODE" (declared at line
+          511 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",185  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
+          line 523 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",197  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
+          526 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",209  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
+          529 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",221  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_NSS" (declared at line
+          532 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",239  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
+          (declared at line 536 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",257  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
+          line 545 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DIRECTION(DIRECTION) (((DIRECTION) == SPI_Direction_Rx) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",400  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DIRECTION" (declared at
+          line 514 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",442  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
+          line 293 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",443  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
+          294 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",462  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
+          at line 554 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_TXE                   SPI_I2S_IT_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",473  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_TXE" (declared at line
+          280 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_RXNE                  SPI_I2S_IT_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",474  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_RXNE" (declared at line
+          281 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_ERR                   SPI_I2S_IT_ERR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",475  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_ERR" (declared at line
+          282 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_RXNE                SPI_I2S_FLAG_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",477  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_RXNE" (declared at line
+          290 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_TXE                 SPI_I2S_FLAG_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",478  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_TXE" (declared at line
+          291 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_OVR                 SPI_I2S_FLAG_OVR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",479  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_OVR" (declared at line
+          295 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_BSY                 SPI_I2S_FLAG_BSY
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",480  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_BSY" (declared at line
+          292 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_en.h",165  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "解除绑定?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_s_cn.h",248  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 243)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"待打印機暫停后,\n請按<進料>或<退料>"
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_t_cn.h",157  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 143)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_ru.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_ru.h",260  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 255)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_fr.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_fr.h",263  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 259)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_sp.h",162  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 143)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_it.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_it.h",259  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 254)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Multi_language.h",688  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 681)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Multi_language.h",896  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 890)
+
+  #define Simple_Dec"����"
+                    ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",387  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "�ٶ�"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",442  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          439)
+
+  #define Complex_Speed "�ٶ�"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",443  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          440)
+      4          #include "draw_ExposureTest.h"
+      5          
+
+   \                                 In section .bss, align 4
+      6          GUI_HWIN hExposureTestWnd;
+   \                     hExposureTestWnd:
+   \   00000000                      DS8 2
+   \   00000002                      DS8 2
+   \   00000004                      DS8 24
+   \   0000001C                      DS8 24
+      7          static BUTTON_STRUCT buttonRet;
+      8          static BUTTON_STRUCT buttonbk,buttonTextbk,buttonTextfront;
+                                      ^
+Warning[Pe177]: variable "buttonbk" was declared but never referenced
+
+  static BUTTON_STRUCT buttonbk,buttonTextbk,buttonTextfront;
+                                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ExposureTest.cpp",8  Warning[Pe177]: 
+          variable "buttonTextbk" was declared but never referenced
+      9          
+
+   \                                 In section .bss, align 1
+     10          char exposure_msg=0;
+   \                     exposure_msg:
+   \   00000000                      DS8 1
+     11          
+
+   \                                 In section .text, align 2, keep-with-next
+     12          static void cbExposureTestWin(WM_MESSAGE * pMsg) {
+   \                     _Z17cbExposureTestWinP10WM_MESSAGE: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     13          
+     14              switch (pMsg->MsgId)
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0x290F             CMP      R1,#+15
+   \   00000006   0xD002             BEQ.N    ??cbExposureTestWin_0
+   \   00000008   0x2926             CMP      R1,#+38
+   \   0000000A   0xD015             BEQ.N    ??cbExposureTestWin_1
+   \   0000000C   0xBD01             POP      {R0,PC}
+     15              {
+     16                  case WM_PAINT:
+     17                      GUI_SetColor(gCfgItems.layer_area_bkcolor);
+   \                     ??cbExposureTestWin_0: (+1)
+   \   0000000E   0x....             LDR.N    R0,??DataTable3
+   \   00000010   0x6CC0             LDR      R0,[R0, #+76]
+   \   00000012   0x.... 0x....      BL       GUI_SetColor
+     18                      GUI_DrawRect(15,15,465,205);
+   \   00000016   0x23CD             MOVS     R3,#+205
+   \   00000018   0xF240 0x12D1      MOVW     R2,#+465
+   \   0000001C   0x210F             MOVS     R1,#+15
+   \   0000001E   0x4608             MOV      R0,R1
+   \   00000020   0x.... 0x....      BL       GUI_DrawRect
+     19                      GUI_DrawRect(15,215,365, 305);
+   \   00000024   0xF240 0x1331      MOVW     R3,#+305
+   \   00000028   0xF240 0x126D      MOVW     R2,#+365
+   \   0000002C   0x21D7             MOVS     R1,#+215
+   \   0000002E   0x200F             MOVS     R0,#+15
+   \   00000030   0xE8BD 0x5000      POP      {R12,LR}
+   \   00000034   0x.... 0x....      B.W      GUI_DrawRect
+     20                      break;
+     21                  case WM_TOUCH:
+     22                      break;
+     23                  case WM_TOUCH_CHILD:
+     24                      break;
+     25                  case WM_NOTIFY_PARENT:
+     26                      if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \                     ??cbExposureTestWin_1: (+1)
+   \   00000038   0x6881             LDR      R1,[R0, #+8]
+   \   0000003A   0x2902             CMP      R1,#+2
+   \   0000003C   0xD10F             BNE.N    ??cbExposureTestWin_2
+     27                      {
+     28                          if(pMsg->hWinSrc == buttonRet.btnHandle)
+   \   0000003E   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   00000042   0x....             LDR.N    R1,??DataTable3_1
+   \   00000044   0xF9B1 0x1004      LDRSH    R1,[R1, #+4]
+   \   00000048   0x4288             CMP      R0,R1
+   \   0000004A   0xD108             BNE.N    ??cbExposureTestWin_2
+     29                          {
+     30                              last_disp_state = EXPOSURE_UI;
+   \   0000004C   0x2023             MOVS     R0,#+35
+   \   0000004E   0x....             LDR.N    R1,??DataTable3_2
+   \   00000050   0x7008             STRB     R0,[R1, #+0]
+     31                              Clear_ExposureTest();
+   \   00000052   0x.... 0x....      BL       Clear_ExposureTest
+     32                              draw_return_ui();  
+   \   00000056   0xE8BD 0x4001      POP      {R0,LR}
+   \   0000005A   0x.... 0x....      B.W      draw_return_ui
+     33                          }
+     34                      }
+     35                      break;
+     36              }
+     37          }
+   \                     ??cbExposureTestWin_2: (+1)
+   \   0000005E   0xBD01             POP      {R0,PC}          ;; return
+     38          
+
+   \                                 In section .text, align 2, keep-with-next
+     39          void draw_ExposureTest()
+     40          {
+   \                     draw_ExposureTest: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB085             SUB      SP,SP,#+20
+     41          	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != EXPOSURE_UI)
+   \   00000004   0x....             LDR.N    R0,??DataTable3_3
+   \   00000006   0xF990 0x1064      LDRSB    R1,[R0, #+100]
+   \   0000000A   0x560A             LDRSB    R2,[R1, R0]
+   \   0000000C   0x2A23             CMP      R2,#+35
+   \   0000000E   0xD005             BEQ.N    ??draw_ExposureTest_0
+     42          	{
+     43          		disp_state_stack._disp_index++;
+   \   00000010   0x1C49             ADDS     R1,R1,#+1
+   \   00000012   0xF880 0x1064      STRB     R1,[R0, #+100]
+     44          		disp_state_stack._disp_state[disp_state_stack._disp_index] = EXPOSURE_UI;
+   \   00000016   0x2223             MOVS     R2,#+35
+   \   00000018   0xB249             SXTB     R1,R1
+   \   0000001A   0x540A             STRB     R2,[R1, R0]
+     45          	}
+     46          	disp_state = EXPOSURE_UI;
+   \                     ??draw_ExposureTest_0: (+1)
+   \   0000001C   0x2023             MOVS     R0,#+35
+   \   0000001E   0x....             LDR.N    R1,??DataTable3_4
+   \   00000020   0x7008             STRB     R0,[R1, #+0]
+     47          	
+     48          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000022   0x....             LDR.N    R4,??DataTable3
+   \   00000024   0x6860             LDR      R0,[R4, #+4]
+   \   00000026   0x.... 0x....      BL       GUI_SetBkColor
+     49          	GUI_SetColor(gCfgItems.title_color);
+   \   0000002A   0x1D25             ADDS     R5,R4,#+4
+   \   0000002C   0x6D68             LDR      R0,[R5, #+84]
+   \   0000002E   0x.... 0x....      BL       GUI_SetColor
+     50          	GUI_Clear(); 
+   \   00000032   0x.... 0x....      BL       GUI_Clear
+     51          
+     52              hExposureTestWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbExposureTestWin, 0);
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x9002             STR      R0,[SP, #+8]
+   \   0000003A   0x....             LDR.N    R0,??DataTable3_5
+   \   0000003C   0x9001             STR      R0,[SP, #+4]
+   \   0000003E   0x2002             MOVS     R0,#+2
+   \   00000040   0x9000             STR      R0,[SP, #+0]
+   \   00000042   0xF44F 0x73A0      MOV      R3,#+320
+   \   00000046   0xF44F 0x72F0      MOV      R2,#+480
+   \   0000004A   0x2100             MOVS     R1,#+0
+   \   0000004C   0x4608             MOV      R0,R1
+   \   0000004E   0x.... 0x....      BL       WM_CreateWindow
+   \   00000052   0x....             LDR.N    R6,??DataTable3_1
+   \   00000054   0x8030             STRH     R0,[R6, #+0]
+     53          
+     54              //buttonbk.btnHandle = BUTTON_CreateEx(15, 15,450, 190,hExposureTestWnd, BUTTON_CF_SHOW, 0, 101);
+     55              
+     56              //buttonTextbk.btnHandle = BUTTON_CreateEx(15,215,350, 90,hExposureTestWnd, BUTTON_CF_SHOW, 0, 101);
+     57              buttonTextfront.btnHandle = BUTTON_CreateEx(17,217,346,86,hExposureTestWnd, BUTTON_CF_SHOW, 0, 101);
+   \   00000056   0x2165             MOVS     R1,#+101
+   \   00000058   0x9103             STR      R1,[SP, #+12]
+   \   0000005A   0x2100             MOVS     R1,#+0
+   \   0000005C   0x9102             STR      R1,[SP, #+8]
+   \   0000005E   0x2102             MOVS     R1,#+2
+   \   00000060   0x9101             STR      R1,[SP, #+4]
+   \   00000062   0x9000             STR      R0,[SP, #+0]
+   \   00000064   0x2356             MOVS     R3,#+86
+   \   00000066   0xF44F 0x72AD      MOV      R2,#+346
+   \   0000006A   0x21D9             MOVS     R1,#+217
+   \   0000006C   0x2011             MOVS     R0,#+17
+   \   0000006E   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000072   0x83B0             STRH     R0,[R6, #+28]
+     58          
+     59              //buttonRet.btnHandle = BUTTON_CreateEx(320, 210,150, 100,hExposureTestWnd, BUTTON_CF_SHOW, 0, 101);
+     60              buttonRet.btnHandle = BUTTON_CreateEx(375,215,90,90,hExposureTestWnd, BUTTON_CF_SHOW, 0, 101);
+   \   00000074   0x2065             MOVS     R0,#+101
+   \   00000076   0x9003             STR      R0,[SP, #+12]
+   \   00000078   0x2000             MOVS     R0,#+0
+   \   0000007A   0x9002             STR      R0,[SP, #+8]
+   \   0000007C   0x2002             MOVS     R0,#+2
+   \   0000007E   0x9001             STR      R0,[SP, #+4]
+   \   00000080   0xF9B6 0x0000      LDRSH    R0,[R6, #+0]
+   \   00000084   0x9000             STR      R0,[SP, #+0]
+   \   00000086   0x235A             MOVS     R3,#+90
+   \   00000088   0x461A             MOV      R2,R3
+   \   0000008A   0x21D7             MOVS     R1,#+215
+   \   0000008C   0xF240 0x1077      MOVW     R0,#+375
+   \   00000090   0x.... 0x....      BL       BUTTON_CreateEx
+   \   00000094   0x80B0             STRH     R0,[R6, #+4]
+     61              
+     62          	//BUTTON_SetBkColor(buttonbk.btnHandle, BUTTON_CI_PRESSED, gCfgItems.layer_area_bkcolor);
+     63          	//BUTTON_SetBkColor(buttonbk.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.layer_area_bkcolor);
+     64          	//BUTTON_SetTextColor(buttonbk.btnHandle, BUTTON_CI_PRESSED, 0x8DB937);
+     65          	//BUTTON_SetTextColor(buttonbk.btnHandle, BUTTON_CI_UNPRESSED, 0x8DB937);  
+     66          	//BUTTON_SetBkColor(buttonTextbk.btnHandle, BUTTON_CI_PRESSED, gCfgItems.msg_area_bkcolor);
+     67          	//BUTTON_SetBkColor(buttonTextbk.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.msg_area_bkcolor);
+     68          	//BUTTON_SetTextColor(buttonTextbk.btnHandle, BUTTON_CI_PRESSED, 0x8DB937);
+     69          	//BUTTON_SetTextColor(buttonTextbk.btnHandle, BUTTON_CI_UNPRESSED, 0x8DB937);  
+     70          	BUTTON_SetBkColor(buttonTextfront.btnHandle, BUTTON_CI_PRESSED, GUI_WHITE);
+   \   00000096   0xF06F 0x477F      MVN      R7,#-16777216
+   \   0000009A   0x463A             MOV      R2,R7
+   \   0000009C   0x2101             MOVS     R1,#+1
+   \   0000009E   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000000A2   0x.... 0x....      BL       BUTTON_SetBkColor
+     71          	BUTTON_SetBkColor(buttonTextfront.btnHandle, BUTTON_CI_UNPRESSED,GUI_WHITE);
+   \   000000A6   0x463A             MOV      R2,R7
+   \   000000A8   0x2100             MOVS     R1,#+0
+   \   000000AA   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000000AE   0x.... 0x....      BL       BUTTON_SetBkColor
+     72          	BUTTON_SetTextColor(buttonTextfront.btnHandle, BUTTON_CI_PRESSED, gCfgItems.state_msg_textcolor);
+   \   000000B2   0x69AA             LDR      R2,[R5, #+24]
+   \   000000B4   0x2101             MOVS     R1,#+1
+   \   000000B6   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000000BA   0x.... 0x....      BL       BUTTON_SetTextColor
+     73          	BUTTON_SetTextColor(buttonTextfront.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.state_msg_textcolor); 
+   \   000000BE   0x69AA             LDR      R2,[R5, #+24]
+   \   000000C0   0x2100             MOVS     R1,#+0
+   \   000000C2   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   000000C6   0x.... 0x....      BL       BUTTON_SetTextColor
+     74          	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000000CA   0x686A             LDR      R2,[R5, #+4]
+   \   000000CC   0x2101             MOVS     R1,#+1
+   \   000000CE   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   000000D2   0x.... 0x....      BL       BUTTON_SetBkColor
+     75          	BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED,gCfgItems.btn_color);
+   \   000000D6   0x686A             LDR      R2,[R5, #+4]
+   \   000000D8   0x2100             MOVS     R1,#+0
+   \   000000DA   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   000000DE   0x.... 0x....      BL       BUTTON_SetBkColor
+     76          	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000000E2   0x68EA             LDR      R2,[R5, #+12]
+   \   000000E4   0x2101             MOVS     R1,#+1
+   \   000000E6   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   000000EA   0x.... 0x....      BL       BUTTON_SetTextColor
+     77          	BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);  
+   \   000000EE   0x68EA             LDR      R2,[R5, #+12]
+   \   000000F0   0x2100             MOVS     R1,#+0
+   \   000000F2   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   000000F6   0x.... 0x....      BL       BUTTON_SetTextColor
+     78          
+     79              //BUTTON_SetBmpFileName(buttonbk.btnHandle, NULL,1);
+     80              //BUTTON_SetBmpFileName(buttonTextbk.btnHandle, NULL,1);
+     81              BUTTON_SetBmpFileName(buttonTextfront.btnHandle, NULL,1);
+   \   000000FA   0x2201             MOVS     R2,#+1
+   \   000000FC   0x2100             MOVS     R1,#+0
+   \   000000FE   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000102   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     82              BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_back90x90.bin",1);
+   \   00000106   0x2201             MOVS     R2,#+1
+   \   00000108   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_back90x90.bin">`
+   \   0000010C   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   00000110   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     83              BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct_90X90,BMP_PIC_X, BMP_PIC_Y); 
+   \   00000114   0x....             LDR.N    R0,??DataTable3_6
+   \   00000116   0xF990 0x0000      LDRSB    R0,[R0, #+0]
+   \   0000011A   0x9000             STR      R0,[SP, #+0]
+   \   0000011C   0x....             LDR.N    R0,??DataTable3_7
+   \   0000011E   0xF990 0x3000      LDRSB    R3,[R0, #+0]
+   \   00000122   0x....             LDR.N    R2,??DataTable3_8
+   \   00000124   0x2100             MOVS     R1,#+0
+   \   00000126   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000012A   0x.... 0x....      BL       BUTTON_SetBitmapEx
+     84          
+     85              BUTTON_SetTextAlign(buttonTextfront.btnHandle, GUI_TA_VCENTER | GUI_TA_HCENTER);
+   \   0000012E   0x210E             MOVS     R1,#+14
+   \   00000130   0xF9B6 0x001C      LDRSH    R0,[R6, #+28]
+   \   00000134   0x.... 0x....      BL       BUTTON_SetTextAlign
+     86              BUTTON_SetTextAlign(buttonRet.btnHandle, GUI_TA_VCENTER | GUI_TA_HCENTER);
+   \   00000138   0x210E             MOVS     R1,#+14
+   \   0000013A   0xF9B6 0x0004      LDRSH    R0,[R6, #+4]
+   \   0000013E   0x.... 0x....      BL       BUTTON_SetTextAlign
+     87          
+     88              if(gCfgItems.multiple_language != 0)
+   \   00000142   0xF894 0x019B      LDRB     R0,[R4, #+411]
+     89              {
+     90                  //BUTTON_SetText(buttonTextfront.btnHandle, detection_menu.exposure_start);
+     91                  //BUTTON_SetText(buttonRet.btnHandle,"RETURN");
+     92              }
+     93              exposure_msg_display(1);
+   \   00000146   0x2001             MOVS     R0,#+1
+   \   00000148   0xB005             ADD      SP,SP,#+20
+   \   0000014A   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   0000014E                      REQUIRE exposure_msg_display
+   \   0000014E                      ;; // Fall through to label exposure_msg_display
+     94              //mksdlp.set_test_exposure_time((uint16_t)key_set_value);
+     95              //mksdlp.ExposureTest();
+     96              
+     97          }
+     98          
+
+   \                                 In section .text, align 2, keep-with-next
+     99          void exposure_msg_display(char exposure_msg)
+    100          {
+    101              if(gCfgItems.multiple_language != 0)
+   \                     exposure_msg_display: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable3
+   \   00000002   0xF891 0x119B      LDRB     R1,[R1, #+411]
+   \   00000006   0x2900             CMP      R1,#+0
+   \   00000008   0xD01B             BEQ.N    ??exposure_msg_display_0
+    102              {
+    103                  switch(exposure_msg)
+   \   0000000A   0x2801             CMP      R0,#+1
+   \   0000000C   0xD004             BEQ.N    ??exposure_msg_display_1
+   \   0000000E   0xD318             BCC.N    ??exposure_msg_display_0
+   \   00000010   0x2803             CMP      R0,#+3
+   \   00000012   0xD00F             BEQ.N    ??exposure_msg_display_2
+   \   00000014   0xD307             BCC.N    ??exposure_msg_display_3
+   \   00000016   0x4770             BX       LR
+    104                  {
+    105                      case 1:  
+    106                         BUTTON_SetText(buttonTextfront.btnHandle, detection_menu.exposure_start); 
+   \                     ??exposure_msg_display_1: (+1)
+   \   00000018   0x....             LDR.N    R0,??DataTable3_9
+   \   0000001A   0x6881             LDR      R1,[R0, #+8]
+   \   0000001C   0x....             LDR.N    R0,??DataTable3_1
+   \   0000001E   0xF9B0 0x001C      LDRSH    R0,[R0, #+28]
+   \   00000022   0x.... 0x....      B.W      BUTTON_SetText
+    107                      break;
+    108                      case 2:
+    109                          BUTTON_SetText(buttonTextfront.btnHandle, detection_menu.exposure_ing);
+   \                     ??exposure_msg_display_3: (+1)
+   \   00000026   0x....             LDR.N    R0,??DataTable3_9
+   \   00000028   0x68C1             LDR      R1,[R0, #+12]
+   \   0000002A   0x....             LDR.N    R0,??DataTable3_1
+   \   0000002C   0xF9B0 0x001C      LDRSH    R0,[R0, #+28]
+   \   00000030   0x.... 0x....      B.W      BUTTON_SetText
+    110                      break;
+    111                      case 3:
+    112                          BUTTON_SetText(buttonTextfront.btnHandle, detection_menu.exposure_end);
+   \                     ??exposure_msg_display_2: (+1)
+   \   00000034   0x....             LDR.N    R0,??DataTable3_9
+   \   00000036   0x6901             LDR      R1,[R0, #+16]
+   \   00000038   0x....             LDR.N    R0,??DataTable3_1
+   \   0000003A   0xF9B0 0x001C      LDRSH    R0,[R0, #+28]
+   \   0000003E   0x.... 0x....      B.W      BUTTON_SetText
+    113                      break;
+    114                  }
+    115              }
+    116          }
+   \                     ??exposure_msg_display_0: (+1)
+   \   00000042   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+    117          void Clear_ExposureTest()
+    118          {
+   \                     Clear_ExposureTest: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    119          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable3
+   \   00000004   0x6840             LDR      R0,[R0, #+4]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    120          	if(WM_IsWindow(hExposureTestWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable3_1
+   \   0000000C   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD005             BEQ.N    ??Clear_ExposureTest_0
+    121          	{
+    122          		WM_DeleteWindow(hExposureTestWnd);
+   \   00000018   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   0000001C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000020   0x.... 0x....      B.W      WM_DeleteWindow
+    123          		//GUI_Exec();
+    124          	}
+    125          	
+    126          	//GUI_Clear();     
+    127          }
+   \                     ??Clear_ExposureTest_0: (+1)
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     hExposureTestWnd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \   00000000   0x........         DC32     _Z17cbExposureTestWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \   00000000   0x........         DC32     BMP_PIC_Y
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_7:
+   \   00000000   0x........         DC32     BMP_PIC_X
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_8:
+   \   00000000   0x........         DC32     bmp_struct_90X90
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_9:
+   \   00000000   0x........         DC32     detection_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_back90x90.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_back90x90.bin"
+   \              0x70 0x5F    
+   \              0x62 0x61    
+   \              0x63 0x6B    
+   \              0x39 0x30    
+   \              0x78 0x39    
+   \              0x30 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_ExposureTest
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+       8   cbExposureTestWin(WM_MESSAGE *)
+         8   -> Clear_ExposureTest
+         0   -> GUI_DrawRect
+         8   -> GUI_DrawRect
+         8   -> GUI_SetColor
+         0   -> draw_return_ui
+      40   draw_ExposureTest
+        40   -> BUTTON_CreateEx
+        40   -> BUTTON_SetBitmapEx
+        40   -> BUTTON_SetBkColor
+        40   -> BUTTON_SetBmpFileName
+        40   -> BUTTON_SetTextAlign
+        40   -> BUTTON_SetTextColor
+        40   -> GUI_Clear
+        40   -> GUI_SetBkColor
+        40   -> GUI_SetColor
+        40   -> WM_CreateWindow
+         0   -> exposure_msg_display
+       0   exposure_msg_display
+         0   -> BUTTON_SetText
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  ?<Constant "bmp_back90x90.bin">
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable3_9
+      38  Clear_ExposureTest
+      96  cbExposureTestWin(WM_MESSAGE *)
+     334  draw_ExposureTest
+       1  exposure_msg
+      68  exposure_msg_display
+      52  hExposureTestWnd
+          buttonRet
+          buttonTextfront
+
+ 
+  53 bytes in section .bss
+ 596 bytes in section .text
+ 
+ 596 bytes of CODE memory
+  53 bytes of DATA memory
+
+Errors: none
+Warnings: 37

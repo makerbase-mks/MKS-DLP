@@ -1,0 +1,304 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:35
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_SetFocusOnPrevChild.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_SetFocusOnPrevChild.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\WM_SetFocusOnPrevChild.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\WM_SetFocusOnPrevChild.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_SetFocusOnPrevChild.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : WM_SetFocusOnPrevChild.c
+     16          Purpose     : Implementation of WM_SetFocusOnPrevChild
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include "WM_Intern.h"
+     21          
+     22          #if GUI_WINSUPPORT    /* If 0, WM will not generate any code */
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *       Static code
+     27          *
+     28          **********************************************************************
+     29          */
+     30          /*********************************************************************
+     31          *
+     32          *       _GetPrevChild
+     33          *
+     34          * Purpose:
+     35          *   Returns a handle to the previous child of a window.
+     36          *
+     37          * Parameters:
+     38          *   hParent:  Handle of parent window.
+     39          *   hChild:   Handle of child to begin our search to its previous sibling.
+     40          *
+     41          * Return value:
+     42          *   Handle to previous child if we found one.
+     43          *   0 if window has no other children.
+     44          */
+
+   \                                 In section .text, align 2, keep-with-next
+     45          static WM_HWIN _GetPrevChild(WM_HWIN hChild) {
+   \                     _GetPrevChild: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     46            WM_HWIN hObj = 0;
+   \   00000004   0x2000             MOVS     R0,#+0
+     47            if (hChild) {
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD002             BEQ.N    ??_GetPrevChild_0
+     48              hObj = WM__GetPrevSibling(hChild);
+   \   0000000A   0x4620             MOV      R0,R4
+   \   0000000C   0x.... 0x....      BL       WM__GetPrevSibling
+     49            }
+     50            if (!hObj) {
+   \                     ??_GetPrevChild_0: (+1)
+   \   00000010   0x2800             CMP      R0,#+0
+   \   00000012   0xD102             BNE.N    ??_GetPrevChild_1
+     51              hObj = WM__GetLastSibling(hChild);
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0x.... 0x....      BL       WM__GetLastSibling
+     52            }
+     53            if (hObj != hChild) {
+   \                     ??_GetPrevChild_1: (+1)
+   \   0000001A   0x42A0             CMP      R0,R4
+   \   0000001C   0xD100             BNE.N    ??_GetPrevChild_2
+     54              return hObj;
+     55            }
+     56            return 0;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \                     ??_GetPrevChild_2: (+1)
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+     57          }
+     58          
+     59          /*********************************************************************
+     60          *
+     61          *       _SetFocusOnPrevChild
+     62          *
+     63          * Purpose:
+     64          *   Sets the focus on previous focussable child of a window.
+     65          *
+     66          * Return value:
+     67          *   Handle of focussed child, if we found an other focussable child
+     68          *   as the current. Otherwise the return value is zero.
+     69          */
+
+   \                                 In section .text, align 2, keep-with-next
+     70          static WM_HWIN _SetFocusOnPrevChild(WM_HWIN hParent) {
+   \                     _SetFocusOnPrevChild: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     71            WM_HWIN hChild, hWin;
+     72            hChild = WM__GetFocussedChild(hParent);
+   \   00000002   0x.... 0x....      BL       WM__GetFocussedChild
+     73            hChild = _GetPrevChild(hChild);
+   \   00000006   0x.... 0x....      BL       _GetPrevChild
+   \   0000000A   0x4604             MOV      R4,R0
+     74            hWin   = hChild;
+   \   0000000C   0x4625             MOV      R5,R4
+     75            while ((WM_IsFocussable(hWin) == 0) && hWin) {
+   \                     ??_SetFocusOnPrevChild_0: (+1)
+   \   0000000E   0x4628             MOV      R0,R5
+   \   00000010   0x.... 0x....      BL       WM_IsFocussable
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD107             BNE.N    ??_SetFocusOnPrevChild_1
+   \   00000018   0x2D00             CMP      R5,#+0
+   \   0000001A   0xD005             BEQ.N    ??_SetFocusOnPrevChild_1
+     76              hWin = _GetPrevChild(hWin);
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       _GetPrevChild
+   \   00000022   0x4605             MOV      R5,R0
+     77              if (hWin == hChild) {
+   \   00000024   0x42A5             CMP      R5,R4
+   \   00000026   0xD1F2             BNE.N    ??_SetFocusOnPrevChild_0
+     78                break;
+     79              }
+     80            }
+     81            if (WM_SetFocus(hWin) == 0) {
+   \                     ??_SetFocusOnPrevChild_1: (+1)
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0x.... 0x....      BL       WM_SetFocus
+   \   0000002E   0x2800             CMP      R0,#+0
+   \   00000030   0xD101             BNE.N    ??_SetFocusOnPrevChild_2
+     82              return hWin;
+   \   00000032   0x4628             MOV      R0,R5
+   \   00000034   0xBD32             POP      {R1,R4,R5,PC}
+     83            }
+     84            return 0;
+   \                     ??_SetFocusOnPrevChild_2: (+1)
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     85          }
+     86          
+     87          /*********************************************************************
+     88          *
+     89          *       Public code
+     90          *
+     91          **********************************************************************
+     92          */
+     93          /*********************************************************************
+     94          *
+     95          *       WM_SetFocusOnPrevChild
+     96          */
+
+   \                                 In section .text, align 2, keep-with-next
+     97          WM_HWIN WM_SetFocusOnPrevChild(WM_HWIN hParent) {
+   \                     WM_SetFocusOnPrevChild: (+1)
+   \   00000000   0x4601             MOV      R1,R0
+     98            WM_HWIN r = 0;
+   \   00000002   0x2000             MOVS     R0,#+0
+     99            if (hParent) {
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD001             BEQ.N    ??WM_SetFocusOnPrevChild_0
+    100              WM_LOCK();
+    101              r = _SetFocusOnPrevChild(hParent);
+   \   00000008   0x4608             MOV      R0,R1
+   \   0000000A   0x....             B.N      _SetFocusOnPrevChild
+    102              WM_UNLOCK();
+    103            }
+    104            return r;
+   \                     ??WM_SetFocusOnPrevChild_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+    105          }
+    106          
+    107          #else
+    108            void WM_SetFocusOnPrevChild_C(void);
+    109            void WM_SetFocusOnPrevChild_C(void) {} /* avoid empty object files */
+    110          #endif
+    111          
+    112          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   WM_SetFocusOnPrevChild
+         0   -> _SetFocusOnPrevChild
+       8   _GetPrevChild
+         8   -> WM__GetLastSibling
+         8   -> WM__GetPrevSibling
+      16   _SetFocusOnPrevChild
+        16   -> WM_IsFocussable
+        16   -> WM_SetFocus
+        16   -> WM__GetFocussedChild
+        16   -> _GetPrevChild
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      14  WM_SetFocusOnPrevChild
+      34  _GetPrevChild
+      58  _SetFocusOnPrevChild
+
+ 
+ 106 bytes in section .text
+ 
+ 106 bytes of CODE memory
+
+Errors: none
+Warnings: none

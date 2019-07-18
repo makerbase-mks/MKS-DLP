@@ -1,0 +1,408 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:25
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\WIDGET_Effect_3D1L.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\WIDGET_Effect_3D1L.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\WIDGET_Effect_3D1L.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\WIDGET_Effect_3D1L.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\WIDGET_Effect_3D1L.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : WIDGET_Effect_3D1L.c
+     16          Purpose     : Effect routines
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include <stdlib.h>
+     21          #include <string.h>
+     22          
+     23          #include "WIDGET.h"
+     24          #include "GUIDebug.h"
+     25          #include "GUI.h"
+     26          #include "GUI_Protected.h"
+     27          #include "WM_Intern.h"
+     28          
+     29          #if GUI_WINSUPPORT
+     30          
+     31          /*********************************************************************
+     32          *
+     33          *       Macros for internal use
+     34          *
+     35          **********************************************************************
+     36          */
+     37          
+     38          #define WIDGET_H2P(hWin)        ((WIDGET*)GUI_ALLOC_h2p(hWin))
+     39          
+     40          /*********************************************************************
+     41          *
+     42          *       Static routines
+     43          *
+     44          **********************************************************************
+     45          */
+     46          /*********************************************************************
+     47          *
+     48          *       _WIDGET_EFFECT_3D1L_DrawUpRect
+     49          *
+     50          * Add. info:
+     51          *   This routine does not preserve the drawing colors for speed
+     52          *   reasons. If this is required, it should be done in the calling
+     53          *   routine.
+     54          */
+
+   \                                 In section .text, align 2, keep-with-next
+     55          static void _WIDGET_EFFECT_3D1L_DrawUpRect(const GUI_RECT* pRect) {
+   \                     _WIDGET_EFFECT_3D1L_DrawUpRect: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+     56            GUI_RECT r;
+     57            r = *pRect;
+   \   00000004   0xF9B0 0x4000      LDRSH    R4,[R0, #+0]
+   \   00000008   0xF9B0 0x5002      LDRSH    R5,[R0, #+2]
+   \   0000000C   0xF9B0 0x6004      LDRSH    R6,[R0, #+4]
+   \   00000010   0xF9B0 0x7006      LDRSH    R7,[R0, #+6]
+     58            /* Draw the upper left sides */
+     59            LCD_SetColor(0xE7E7E7);
+   \   00000014   0x....             LDR.N    R0,??DataTable2  ;; 0xe7e7e7
+   \   00000016   0x.... 0x....      BL       LCD_SetColor
+     60            GUI_DrawHLine(r.y0, r.x0, r.x1 - 1);
+   \   0000001A   0x1E72             SUBS     R2,R6,#+1
+   \   0000001C   0x4621             MOV      R1,R4
+   \   0000001E   0x4628             MOV      R0,R5
+   \   00000020   0x.... 0x....      BL       GUI_DrawHLine
+     61            GUI_DrawVLine(r.x0, r.y0 + 1, r.y1 - 1);
+   \   00000024   0xF1A7 0x0801      SUB      R8,R7,#+1
+   \   00000028   0x4642             MOV      R2,R8
+   \   0000002A   0x1C69             ADDS     R1,R5,#+1
+   \   0000002C   0x4620             MOV      R0,R4
+   \   0000002E   0x.... 0x....      BL       GUI_DrawVLine
+     62            /* Draw the lower right sides */
+     63            LCD_SetColor(0x606060);
+   \   00000032   0x....             LDR.N    R0,??DataTable2_1  ;; 0x606060
+   \   00000034   0x.... 0x....      BL       LCD_SetColor
+     64            GUI_DrawHLine(r.y1, r.x0, r.x1);
+   \   00000038   0x4632             MOV      R2,R6
+   \   0000003A   0x4621             MOV      R1,R4
+   \   0000003C   0x4638             MOV      R0,R7
+   \   0000003E   0x.... 0x....      BL       GUI_DrawHLine
+     65            GUI_DrawVLine(r.x1, r.y0, r.y1 - 1);
+   \   00000042   0x4642             MOV      R2,R8
+   \   00000044   0x4629             MOV      R1,R5
+   \   00000046   0x4630             MOV      R0,R6
+   \   00000048   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   0000004C   0x.... 0x....      B.W      GUI_DrawVLine
+     66          }
+     67          
+     68          /*********************************************************************
+     69          *
+     70          *       _WIDGET_EFFECT_3D1L_DrawUp
+     71          */
+
+   \                                 In section .text, align 2, keep-with-next
+     72          static void _WIDGET_EFFECT_3D1L_DrawUp(void) {
+   \                     _WIDGET_EFFECT_3D1L_DrawUp: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+     73            GUI_RECT r;
+     74            WM_GetClientRect(&r);
+   \   00000004   0xA800             ADD      R0,SP,#+0
+   \   00000006   0x.... 0x....      BL       WM_GetClientRect
+     75            _WIDGET_EFFECT_3D1L_DrawUpRect(&r);
+   \   0000000A   0xA800             ADD      R0,SP,#+0
+   \   0000000C   0x.... 0x....      BL       _WIDGET_EFFECT_3D1L_DrawUpRect
+     76          }
+   \   00000010   0xBD07             POP      {R0-R2,PC}       ;; return
+     77          
+     78          /*********************************************************************
+     79          *
+     80          *       _WIDGET_EFFECT_3D1L_DrawDownRect
+     81          */
+
+   \                                 In section .text, align 2, keep-with-next
+     82          static void _WIDGET_EFFECT_3D1L_DrawDownRect(const GUI_RECT* pRect) {
+   \                     _WIDGET_EFFECT_3D1L_DrawDownRect: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+     83            GUI_RECT r;
+     84            r = *pRect;
+   \   00000004   0xF9B0 0x4000      LDRSH    R4,[R0, #+0]
+   \   00000008   0xF9B0 0x5002      LDRSH    R5,[R0, #+2]
+   \   0000000C   0xF9B0 0x6004      LDRSH    R6,[R0, #+4]
+   \   00000010   0xF9B0 0x7006      LDRSH    R7,[R0, #+6]
+     85            /* Draw the upper left sides */
+     86            LCD_SetColor(0x606060);
+   \   00000014   0x....             LDR.N    R0,??DataTable2_1  ;; 0x606060
+   \   00000016   0x.... 0x....      BL       LCD_SetColor
+     87            GUI_DrawHLine(r.y0, r.x0, r.x1 - 1);
+   \   0000001A   0x1E72             SUBS     R2,R6,#+1
+   \   0000001C   0x4621             MOV      R1,R4
+   \   0000001E   0x4628             MOV      R0,R5
+   \   00000020   0x.... 0x....      BL       GUI_DrawHLine
+     88            GUI_DrawVLine(r.x0, r.y0 + 1, r.y1 - 1);
+   \   00000024   0xF1A7 0x0801      SUB      R8,R7,#+1
+   \   00000028   0x4642             MOV      R2,R8
+   \   0000002A   0x1C69             ADDS     R1,R5,#+1
+   \   0000002C   0x4620             MOV      R0,R4
+   \   0000002E   0x.... 0x....      BL       GUI_DrawVLine
+     89            /* Draw the lower right sides */
+     90            LCD_SetColor(0xE7E7E7);
+   \   00000032   0x....             LDR.N    R0,??DataTable2  ;; 0xe7e7e7
+   \   00000034   0x.... 0x....      BL       LCD_SetColor
+     91            GUI_DrawHLine(r.y1, r.x0, r.x1);
+   \   00000038   0x4632             MOV      R2,R6
+   \   0000003A   0x4621             MOV      R1,R4
+   \   0000003C   0x4638             MOV      R0,R7
+   \   0000003E   0x.... 0x....      BL       GUI_DrawHLine
+     92            GUI_DrawVLine(r.x1, r.y0, r.y1 - 1);
+   \   00000042   0x4642             MOV      R2,R8
+   \   00000044   0x4629             MOV      R1,R5
+   \   00000046   0x4630             MOV      R0,R6
+   \   00000048   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   0000004C   0x.... 0x....      B.W      GUI_DrawVLine
+     93          }
+     94          
+     95          /*********************************************************************
+     96          *
+     97          *       _WIDGET_EFFECT_3D1L_DrawDown
+     98          */
+
+   \                                 In section .text, align 2, keep-with-next
+     99          static void _WIDGET_EFFECT_3D1L_DrawDown(void) {
+   \                     _WIDGET_EFFECT_3D1L_DrawDown: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    100            GUI_RECT r;
+    101            WM_GetClientRect(&r);
+   \   00000004   0xA800             ADD      R0,SP,#+0
+   \   00000006   0x.... 0x....      BL       WM_GetClientRect
+    102            _WIDGET_EFFECT_3D1L_DrawDownRect(&r);
+   \   0000000A   0xA800             ADD      R0,SP,#+0
+   \   0000000C   0x.... 0x....      BL       _WIDGET_EFFECT_3D1L_DrawDownRect
+    103          }
+   \   00000010   0xBD07             POP      {R0-R2,PC}       ;; return
+    104          
+    105          /*********************************************************************
+    106          *
+    107          *       _WIDGET_EFFECT_3D1L_GetRect
+    108          */
+
+   \                                 In section .text, align 2, keep-with-next
+    109          static void _WIDGET_EFFECT_3D1L_GetRect(GUI_RECT* pRect) {
+   \                     _WIDGET_EFFECT_3D1L_GetRect: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    110            WM_GetClientRect(pRect);
+   \   00000004   0x.... 0x....      BL       WM_GetClientRect
+    111            GUI__ReduceRect(pRect, pRect, 1);
+   \   00000008   0x2201             MOVS     R2,#+1
+   \   0000000A   0x4621             MOV      R1,R4
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000012   0x.... 0x....      B.W      GUI__ReduceRect
+    112          }
+    113          
+    114          /*********************************************************************
+    115          *
+    116          *       Public routines
+    117          *
+    118          **********************************************************************
+    119          */
+    120          /*********************************************************************
+    121          *
+    122          *       WIDGET_SetDefaultEffect_3D1L
+    123          */
+
+   \                                 In section .text, align 2, keep-with-next
+    124          void WIDGET_SetDefaultEffect_3D1L(void) {
+    125            WIDGET_SetDefaultEffect(&WIDGET_Effect_3D1L);
+   \                     WIDGET_SetDefaultEffect_3D1L: (+1)
+   \   00000000   0x.... 0x....      ADR.W    R0,WIDGET_Effect_3D1L
+   \   00000004   0x.... 0x....      B.W      WIDGET_SetDefaultEffect
+    126          }
+    127          
+    128          /*********************************************************************
+    129          *
+    130          *       Effect tables --- Mainly function pointers
+    131          *
+    132          **********************************************************************
+    133          */
+    134          
+
+   \                                 In section .text, align 4, keep-with-next
+    135          const WIDGET_EFFECT WIDGET_Effect_3D1L = {
+   \                     WIDGET_Effect_3D1L:
+   \   00000000   0x........         DC32 _WIDGET_EFFECT_3D1L_DrawUp, _WIDGET_EFFECT_3D1L_DrawDown
+   \              0x........   
+   \   00000008   0x........         DC32 _WIDGET_EFFECT_3D1L_DrawUpRect, _WIDGET_EFFECT_3D1L_DrawDownRect
+   \              0x........   
+   \   00000010   0x........         DC32 _WIDGET_EFFECT_3D1L_GetRect, 1
+   \              0x00000001   
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x00E7E7E7         DC32     0xe7e7e7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x00606060         DC32     0x606060
+    136            _WIDGET_EFFECT_3D1L_DrawUp,
+    137            _WIDGET_EFFECT_3D1L_DrawDown,
+    138            _WIDGET_EFFECT_3D1L_DrawUpRect,
+    139            _WIDGET_EFFECT_3D1L_DrawDownRect,
+    140            _WIDGET_EFFECT_3D1L_GetRect,
+    141            1
+    142          };
+    143          
+    144          #else                            /* Avoid problems with empty object modules */
+    145            void WIDGET_Effect_3D1L_C(void) {}
+    146          #endif /* GUI_WINSUPPORT */
+    147          
+    148          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   WIDGET_SetDefaultEffect_3D1L
+         0   -> WIDGET_SetDefaultEffect
+      16   _WIDGET_EFFECT_3D1L_DrawDown
+        16   -> WM_GetClientRect
+        16   -> _WIDGET_EFFECT_3D1L_DrawDownRect
+      24   _WIDGET_EFFECT_3D1L_DrawDownRect
+        24   -> GUI_DrawHLine
+         0   -> GUI_DrawVLine
+        24   -> GUI_DrawVLine
+        24   -> LCD_SetColor
+      16   _WIDGET_EFFECT_3D1L_DrawUp
+        16   -> WM_GetClientRect
+        16   -> _WIDGET_EFFECT_3D1L_DrawUpRect
+      24   _WIDGET_EFFECT_3D1L_DrawUpRect
+        24   -> GUI_DrawHLine
+         0   -> GUI_DrawVLine
+        24   -> GUI_DrawVLine
+        24   -> LCD_SetColor
+       8   _WIDGET_EFFECT_3D1L_GetRect
+         0   -> GUI__ReduceRect
+         8   -> WM_GetClientRect
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      24  WIDGET_Effect_3D1L
+       8  WIDGET_SetDefaultEffect_3D1L
+      18  _WIDGET_EFFECT_3D1L_DrawDown
+      80  _WIDGET_EFFECT_3D1L_DrawDownRect
+      18  _WIDGET_EFFECT_3D1L_DrawUp
+      80  _WIDGET_EFFECT_3D1L_DrawUpRect
+      22  _WIDGET_EFFECT_3D1L_GetRect
+
+ 
+ 258 bytes in section .text
+ 
+ 258 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,187 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:11
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_GetBkColor.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_GetBkColor.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\LISTVIEW_GetBkColor.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\LISTVIEW_GetBkColor.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_GetBkColor.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : LISTVIEW_GetBkColor.c
+     16          Purpose     : Implementation of LISTVIEW_GetBkColor
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "LISTVIEW_Private.h"
+     21          
+     22          #if GUI_WINSUPPORT
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *       Public routines
+     27          *
+     28          **********************************************************************
+     29          */
+     30          /*********************************************************************
+     31          *
+     32          *       LISTVIEW_GetBkColor
+     33          */
+
+   \                                 In section .text, align 2, keep-with-next
+     34          GUI_COLOR LISTVIEW_GetBkColor(LISTVIEW_Handle hObj, unsigned Index) {
+   \                     LISTVIEW_GetBkColor: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x460C             MOV      R4,R1
+     35            GUI_COLOR Color = GUI_INVALID_COLOR;
+   \   00000004   0xF06F 0x4570      MVN      R5,#-268435456
+     36            if (hObj) {
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD006             BEQ.N    ??LISTVIEW_GetBkColor_0
+     37              LISTVIEW_Obj* pObj;
+     38              WM_LOCK();
+     39              pObj = LISTVIEW_H2P(hObj);
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+     40              if (Index <= GUI_COUNTOF(pObj->Props.aBkColor)) {
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD202             BCS.N    ??LISTVIEW_GetBkColor_0
+     41                Color = pObj->Props.aBkColor[Index];
+   \   00000014   0xEB00 0x0084      ADD      R0,R0,R4, LSL #+2
+   \   00000018   0x6B45             LDR      R5,[R0, #+52]
+     42              }
+     43              WM_UNLOCK();
+     44            }
+     45            return Color;
+   \                     ??LISTVIEW_GetBkColor_0: (+1)
+   \   0000001A   0x4628             MOV      R0,R5
+   \   0000001C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     46          }
+     47          
+     48          #else                            /* Avoid problems with empty object modules */
+     49            void LISTVIEW_GetBkColor_C(void);
+     50            void LISTVIEW_GetBkColor_C(void) {}
+     51          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   LISTVIEW_GetBkColor
+        16   -> GUI_ALLOC_h2p
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      30  LISTVIEW_GetBkColor
+
+ 
+ 30 bytes in section .text
+ 
+ 30 bytes of CODE memory
+
+Errors: none
+Warnings: none

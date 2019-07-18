@@ -1,0 +1,1277 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  11:15:05
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\BSP\Components\w25qxx\spi_flash.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\BSP\Components\w25qxx\spi_flash.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\spi_flash.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\spi_flash.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\BSP\Components\w25qxx\spi_flash.c
+      1          /* Includes ------------------------------------------------------------------*/
+      2          #include "spi.h"
+      3          #include "spi_flash.h"
+
+  #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",173  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_MODE" (declared at line
+          511 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",185  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
+          line 523 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",197  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
+          526 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",209  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
+          529 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",221  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_NSS" (declared at line
+          532 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",239  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
+          (declared at line 536 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",257  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
+          line 545 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DIRECTION(DIRECTION) (((DIRECTION) == SPI_Direction_Rx) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",400  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DIRECTION" (declared at
+          line 514 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",442  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
+          line 293 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",443  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
+          294 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",462  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
+          at line 554 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_TXE                   SPI_I2S_IT_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",473  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_TXE" (declared at line
+          280 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_RXNE                  SPI_I2S_IT_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",474  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_RXNE" (declared at line
+          281 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_ERR                   SPI_I2S_IT_ERR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",475  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_ERR" (declared at line
+          282 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_RXNE                SPI_I2S_FLAG_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",477  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_RXNE" (declared at line
+          290 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_TXE                 SPI_I2S_FLAG_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",478  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_TXE" (declared at line
+          291 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_OVR                 SPI_I2S_FLAG_OVR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",479  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_OVR" (declared at line
+          295 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_BSY                 SPI_I2S_FLAG_BSY
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",480  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_BSY" (declared at line
+          292 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+      4          #include <stdio.h>
+      5          /* Private typedef -----------------------------------------------------------*/
+      6          /* Private define ------------------------------------------------------------*/
+      7          #define W25X_WriteEnable		0x06 
+      8          #define W25X_WriteDisable		0x04 
+      9          #define W25X_ReadStatusReg		0x05 
+     10          #define W25X_WriteStatusReg		0x01 
+     11          #define W25X_ReadData			0x03 
+     12          #define W25X_FastReadData		0x0B 
+     13          #define W25X_FastReadDual		0x3B 
+     14          #define W25X_PageProgram		0x02 
+     15          #define W25X_BlockErase			0xD8 
+     16          #define W25X_SectorErase		0x20 
+     17          #define W25X_ChipErase			0xC7 
+     18          #define W25X_PowerDown			0xB9 
+     19          #define W25X_ReleasePowerDown	        0xAB 
+     20          #define W25X_DeviceID			0xAB 
+     21          #define W25X_ManufactDeviceID	        0x90 
+     22          #define W25X_JedecDeviceID		0x9F 
+     23          
+     24          #define WIP_Flag                0x01  /* Write In Progress (WIP) flag */
+     25          
+     26          #define Dummy_Byte              0xA5
+     27          
+
+   \                                 In section .bss, align 1
+     28          uint8_t DMA_ERRO_FLAG = 0;
+   \                     DMA_ERRO_FLAG:
+   \   00000000                      DS8 1
+     29          extern unsigned char bmp_public_buf[32 * 1024];
+     30          static uint32_t dummynum = 100000;
+                                 ^
+Warning[Pe177]: variable "dummynum" was declared but never referenced
+     31          static unsigned char tx_buf= 0xff;
+                                      ^
+Warning[Pe177]: variable "tx_buf" was declared but never referenced
+     32          /* Private macro -------------------------------------------------------------*/
+     33          /* Private variables ---------------------------------------------------------*/
+     34          /* Private function prototypes -----------------------------------------------*/
+     35          /* Private functions ---------------------------------------------------------*/
+     36          #define SPIn_ReadWriteByte      SPI1_ReadWriteByte
+     37          #define SPIn 			SPI1
+     38          #define hspin			hspi1
+     39          #define hdma_spin_rx	hdma_spi1_rx
+     40          
+     41          extern DMA_HandleTypeDef hdma_spin_rx;
+     42          
+     43          
+     44          //读取芯片ID
+     45          //返回值如下:				   
+     46          //0XEF13,表示芯片型号为W25Q80  
+     47          //0XEF14,表示芯片型号为W25Q16    
+     48          //0XEF15,表示芯片型号为W25Q32  
+     49          //0XEF16,表示芯片型号为W25Q64 
+     50          //0XEF17,表示芯片型号为W25Q128 	  
+
+   \                                 In section .text, align 2, keep-with-next
+     51          u16 W25QXX_ReadID(void)
+     52          {
+   \                     W25QXX_ReadID: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     53          	u16 Temp = 0;	  
+     54          	W25QXX_CS=0;				    
+   \   00000002   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+     55          	SPIn_ReadWriteByte(0x90);//发送读取ID命令	    
+   \   00000008   0x2090             MOVS     R0,#+144
+   \   0000000A   0x.... 0x....      BL       SPI1_ReadWriteByte
+     56          	SPIn_ReadWriteByte(0x00); 	    
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x.... 0x....      BL       SPI1_ReadWriteByte
+     57          	SPIn_ReadWriteByte(0x00); 	    
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x.... 0x....      BL       SPI1_ReadWriteByte
+     58          	SPIn_ReadWriteByte(0x00); 	 			   
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x.... 0x....      BL       SPI1_ReadWriteByte
+     59          	Temp|=SPIn_ReadWriteByte(0xFF)<<8;  
+   \   00000020   0x20FF             MOVS     R0,#+255
+   \   00000022   0x.... 0x....      BL       SPI1_ReadWriteByte
+   \   00000026   0x0205             LSLS     R5,R0,#+8
+     60          	Temp|=SPIn_ReadWriteByte(0xFF);	 
+   \   00000028   0x20FF             MOVS     R0,#+255
+   \   0000002A   0x.... 0x....      BL       SPI1_ReadWriteByte
+   \   0000002E   0x4328             ORRS     R0,R0,R5
+     61          	W25QXX_CS=1;				    
+   \   00000030   0x2101             MOVS     R1,#+1
+   \   00000032   0x6021             STR      R1,[R4, #+0]
+     62          	return Temp;
+   \   00000034   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     63          }   		    
+     64          
+     65          /*******************************************************************************
+     66          * Function Name  : SPI_FLASH_SectorErase
+     67          * Description    : Erases the specified FLASH sector.
+     68          * Input          : SectorAddr: address of the sector to erase.
+     69          * Output         : None
+     70          * Return         : None
+     71          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     72          void SPI_FLASH_SectorErase(u32 SectorAddr)
+     73          {
+   \                     SPI_FLASH_SectorErase: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     74            /* Send write enable instruction */
+     75            SPI_FLASH_WriteEnable();
+   \   00000004   0x.... 0x....      BL       SPI_FLASH_WriteEnable
+     76          
+     77            /* Sector Erase */
+     78            /* Select the FLASH: Chip Select low */
+     79          	W25QXX_CS=0;
+   \   00000008   0x....             LDR.N    R5,??DataTable11  ;; 0x424002bc
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x6028             STR      R0,[R5, #+0]
+     80            /* Send Sector Erase instruction */
+     81            SPI_FLASH_SendByte(W25X_SectorErase);
+   \   0000000E   0x2020             MOVS     R0,#+32
+   \   00000010   0x.... 0x....      BL       SPI_FLASH_SendByte
+     82            /* Send SectorAddr high nibble address byte */
+     83            SPI_FLASH_SendByte((SectorAddr & 0xFF0000) >> 16);
+   \   00000014   0x0C20             LSRS     R0,R4,#+16
+   \   00000016   0xB2C0             UXTB     R0,R0
+   \   00000018   0x.... 0x....      BL       SPI_FLASH_SendByte
+     84            /* Send SectorAddr medium nibble address byte */
+     85            SPI_FLASH_SendByte((SectorAddr & 0xFF00) >> 8);
+   \   0000001C   0x0A20             LSRS     R0,R4,#+8
+   \   0000001E   0xB2C0             UXTB     R0,R0
+   \   00000020   0x.... 0x....      BL       SPI_FLASH_SendByte
+     86            /* Send SectorAddr low nibble address byte */
+     87            SPI_FLASH_SendByte(SectorAddr & 0xFF);
+   \   00000024   0x4620             MOV      R0,R4
+   \   00000026   0xB2C0             UXTB     R0,R0
+   \   00000028   0x.... 0x....      BL       SPI_FLASH_SendByte
+     88            /* Deselect the FLASH: Chip Select high */
+     89          
+     90            W25QXX_CS=1;
+   \   0000002C   0x2001             MOVS     R0,#+1
+   \   0000002E   0x6028             STR      R0,[R5, #+0]
+     91            /* Wait the end of Flash writing */
+     92            SPI_FLASH_WaitForWriteEnd();
+   \   00000030   0xE8BD 0x4031      POP      {R0,R4,R5,LR}
+   \   00000034   0x....             B.N      SPI_FLASH_WaitForWriteEnd
+     93          }
+     94          
+     95          /*******************************************************************************
+     96          * Function Name  : SPI_FLASH_BulkErase
+     97          * Description    : Erases the entire FLASH.
+     98          * Input          : None
+     99          * Output         : None
+    100          * Return         : None
+    101          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    102          void SPI_FLASH_BulkErase(void)
+    103          {
+   \                     SPI_FLASH_BulkErase: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    104            /* Send write enable instruction */
+    105            SPI_FLASH_WriteEnable();
+   \   00000002   0x.... 0x....      BL       SPI_FLASH_WriteEnable
+    106          
+    107            /* Bulk Erase */
+    108            /* Select the FLASH: Chip Select low */
+    109          
+    110          	W25QXX_CS=0;//SPI_FLASH_CS_LOW();-1
+   \   00000006   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x6020             STR      R0,[R4, #+0]
+    111            
+    112            /* Send Bulk Erase instruction  */
+    113            SPI_FLASH_SendByte(W25X_ChipErase);
+   \   0000000C   0x20C7             MOVS     R0,#+199
+   \   0000000E   0x.... 0x....      BL       SPI_FLASH_SendByte
+    114            /* Deselect the FLASH: Chip Select high */
+    115          
+    116          	W25QXX_CS=1;//SPI_FLASH_CS_HIGH();
+   \   00000012   0x2001             MOVS     R0,#+1
+   \   00000014   0x6020             STR      R0,[R4, #+0]
+    117          
+    118          
+    119            /* Wait the end of Flash writing */
+    120            SPI_FLASH_WaitForWriteEnd();
+   \   00000016   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001A   0x....             B.N      SPI_FLASH_WaitForWriteEnd
+    121          }
+    122          
+    123          /*******************************************************************************
+    124          * Function Name  : SPI_FLASH_PageWrite
+    125          * Description    : Writes more than one byte to the FLASH with a single WRITE
+    126          *                  cycle(Page WRITE sequence). The number of byte can't exceed
+    127          *                  the FLASH page size.
+    128          * Input          : - pBuffer : pointer to the buffer  containing the data to be
+    129          *                    written to the FLASH.
+    130          *                  - WriteAddr : FLASH's internal address to write to.
+    131          *                  - NumByteToWrite : number of bytes to write to the FLASH,
+    132          *                    must be equal or less than "SPI_FLASH_PageSize" value.
+    133          * Output         : None
+    134          * Return         : None
+    135          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    136          void SPI_FLASH_PageWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite)
+    137          {
+   \                     SPI_FLASH_PageWrite: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    138            /* Enable the write access to the FLASH */
+    139            SPI_FLASH_WriteEnable();
+   \   00000008   0x.... 0x....      BL       SPI_FLASH_WriteEnable
+    140          
+    141            /* Select the FLASH: Chip Select low */
+    142            W25QXX_CS=0;
+   \   0000000C   0x....             LDR.N    R7,??DataTable11  ;; 0x424002bc
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x6038             STR      R0,[R7, #+0]
+    143            /* Send "Write to Memory " instruction */
+    144            SPI_FLASH_SendByte(W25X_PageProgram);
+   \   00000012   0x2002             MOVS     R0,#+2
+   \   00000014   0x.... 0x....      BL       SPI_FLASH_SendByte
+    145            /* Send WriteAddr high nibble address byte to write to */
+    146            SPI_FLASH_SendByte((WriteAddr & 0xFF0000) >> 16);
+   \   00000018   0x0C28             LSRS     R0,R5,#+16
+   \   0000001A   0xB2C0             UXTB     R0,R0
+   \   0000001C   0x.... 0x....      BL       SPI_FLASH_SendByte
+    147            /* Send WriteAddr medium nibble address byte to write to */
+    148            SPI_FLASH_SendByte((WriteAddr & 0xFF00) >> 8);
+   \   00000020   0x0A28             LSRS     R0,R5,#+8
+   \   00000022   0xB2C0             UXTB     R0,R0
+   \   00000024   0x.... 0x....      BL       SPI_FLASH_SendByte
+    149            /* Send WriteAddr low nibble address byte to write to */
+    150            SPI_FLASH_SendByte(WriteAddr & 0xFF);
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0xB2C0             UXTB     R0,R0
+   \   0000002C   0x.... 0x....      BL       SPI_FLASH_SendByte
+    151          
+    152            if(NumByteToWrite > SPI_FLASH_PerWritePageSize)
+   \   00000030   0xF5B6 0x7F80      CMP      R6,#+256
+   \   00000034   0xDD06             BLE.N    ??SPI_FLASH_PageWrite_0
+    153            {
+    154               NumByteToWrite = SPI_FLASH_PerWritePageSize;
+   \   00000036   0xF44F 0x7680      MOV      R6,#+256
+   \   0000003A   0xE003             B.N      ??SPI_FLASH_PageWrite_0
+    155              // printf("\n\r Err: SPI_FLASH_PageWrite too large!");
+    156            }
+    157          
+    158            /* while there is data to be written on the FLASH */
+    159            while (NumByteToWrite--)
+    160            {
+    161              /* Send the current byte */
+    162              SPI_FLASH_SendByte(*pBuffer);
+   \                     ??SPI_FLASH_PageWrite_1: (+1)
+   \   0000003C   0xF814 0x0B01      LDRB     R0,[R4], #+1
+   \   00000040   0x.... 0x....      BL       SPI_FLASH_SendByte
+    163              /* Point on the next byte to be written */
+    164              pBuffer++;
+    165            }
+   \                     ??SPI_FLASH_PageWrite_0: (+1)
+   \   00000044   0x4630             MOV      R0,R6
+   \   00000046   0x1E46             SUBS     R6,R0,#+1
+   \   00000048   0xB280             UXTH     R0,R0
+   \   0000004A   0x2800             CMP      R0,#+0
+   \   0000004C   0xD1F6             BNE.N    ??SPI_FLASH_PageWrite_1
+    166          
+    167            /* Deselect the FLASH: Chip Select high */
+    168            W25QXX_CS=1;
+   \   0000004E   0x2001             MOVS     R0,#+1
+   \   00000050   0x6038             STR      R0,[R7, #+0]
+    169          
+    170            /* Wait the end of Flash writing */
+    171            SPI_FLASH_WaitForWriteEnd();
+   \   00000052   0xE8BD 0x40F1      POP      {R0,R4-R7,LR}
+   \   00000056   0x....             B.N      SPI_FLASH_WaitForWriteEnd
+    172          }
+    173          
+    174          /*******************************************************************************
+    175          * Function Name  : SPI_FLASH_BufferWrite
+    176          * Description    : Writes block of data to the FLASH. In this function, the
+    177          *                  number of WRITE cycles are reduced, using Page WRITE sequence.
+    178          * Input          : - pBuffer : pointer to the buffer  containing the data to be
+    179          *                    written to the FLASH.
+    180          *                  - WriteAddr : FLASH's internal address to write to.
+    181          *                  - NumByteToWrite : number of bytes to write to the FLASH.
+    182          * Output         : None
+    183          * Return         : None
+    184          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void SPI_FLASH_BufferWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite)
+    186          {
+   \                     SPI_FLASH_BufferWrite: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+    187            u8 NumOfPage = 0, NumOfSingle = 0, Addr = 0, count = 0, temp = 0;
+    188          
+    189            Addr = WriteAddr % SPI_FLASH_PageSize;
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0xB2C0             UXTB     R0,R0
+    190            count = SPI_FLASH_PageSize - Addr;
+   \   0000000C   0x4601             MOV      R1,R0
+   \   0000000E   0x424E             RSBS     R6,R1,#+0
+   \   00000010   0xB2F6             UXTB     R6,R6
+    191            NumOfPage =  NumByteToWrite / SPI_FLASH_PageSize;
+   \   00000012   0x0A17             LSRS     R7,R2,#+8
+    192            NumOfSingle = NumByteToWrite % SPI_FLASH_PageSize;
+   \   00000014   0x4690             MOV      R8,R2
+   \   00000016   0xFA5F 0xF888      UXTB     R8,R8
+    193          
+    194            if (Addr == 0) /* WriteAddr is SPI_FLASH_PageSize aligned  */
+   \   0000001A   0x2800             CMP      R0,#+0
+   \   0000001C   0xD111             BNE.N    ??SPI_FLASH_BufferWrite_0
+    195            {
+    196              if (NumOfPage == 0) /* NumByteToWrite < SPI_FLASH_PageSize */
+   \   0000001E   0x2F00             CMP      R7,#+0
+   \   00000020   0xD020             BEQ.N    ??SPI_FLASH_BufferWrite_1
+    197              {
+    198                SPI_FLASH_PageWrite(pBuffer, WriteAddr, NumByteToWrite);
+    199              }
+    200              else /* NumByteToWrite > SPI_FLASH_PageSize */
+    201              {
+    202                while (NumOfPage--)
+   \                     ??SPI_FLASH_BufferWrite_2: (+1)
+   \   00000022   0x4638             MOV      R0,R7
+   \   00000024   0x1E47             SUBS     R7,R0,#+1
+   \   00000026   0xB2C0             UXTB     R0,R0
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD03F             BEQ.N    ??SPI_FLASH_BufferWrite_3
+    203                {
+    204                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, SPI_FLASH_PageSize);
+   \   0000002C   0xF44F 0x7280      MOV      R2,#+256
+   \   00000030   0x4629             MOV      R1,R5
+   \   00000032   0x4620             MOV      R0,R4
+   \   00000034   0x.... 0x....      BL       SPI_FLASH_PageWrite
+    205                  WriteAddr +=  SPI_FLASH_PageSize;
+   \   00000038   0xF505 0x7580      ADD      R5,R5,#+256
+    206                  pBuffer += SPI_FLASH_PageSize;
+   \   0000003C   0xF504 0x7480      ADD      R4,R4,#+256
+   \   00000040   0xE7EF             B.N      ??SPI_FLASH_BufferWrite_2
+    207                }
+    208          
+    209                SPI_FLASH_PageWrite(pBuffer, WriteAddr, NumOfSingle);
+    210              }
+    211            }
+    212            else /* WriteAddr is not SPI_FLASH_PageSize aligned  */
+    213            {
+    214              if (NumOfPage == 0) /* NumByteToWrite < SPI_FLASH_PageSize */
+   \                     ??SPI_FLASH_BufferWrite_0: (+1)
+   \   00000042   0x2F00             CMP      R7,#+0
+   \   00000044   0xD113             BNE.N    ??SPI_FLASH_BufferWrite_4
+    215              {
+    216                if (NumOfSingle > count) /* (NumByteToWrite + WriteAddr) > SPI_FLASH_PageSize */
+   \   00000046   0x4546             CMP      R6,R8
+   \   00000048   0xDA0C             BGE.N    ??SPI_FLASH_BufferWrite_1
+    217                {
+    218                  temp = NumOfSingle - count;
+    219          
+    220                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, count);
+   \   0000004A   0x4632             MOV      R2,R6
+   \   0000004C   0x4629             MOV      R1,R5
+   \   0000004E   0x4620             MOV      R0,R4
+   \   00000050   0x.... 0x....      BL       SPI_FLASH_PageWrite
+    221                  WriteAddr +=  count;
+    222                  pBuffer += count;
+    223          
+    224                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, temp);
+   \   00000054   0xEBA8 0x0206      SUB      R2,R8,R6
+   \   00000058   0xB2D2             UXTB     R2,R2
+   \   0000005A   0x1971             ADDS     R1,R6,R5
+   \   0000005C   0x1930             ADDS     R0,R6,R4
+   \   0000005E   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   00000062   0x....             B.N      SPI_FLASH_PageWrite
+    225                }
+    226                else
+    227                {
+    228                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, NumByteToWrite);
+   \                     ??SPI_FLASH_BufferWrite_1: (+1)
+   \   00000064   0x4629             MOV      R1,R5
+   \   00000066   0x4620             MOV      R0,R4
+   \   00000068   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   0000006C   0x....             B.N      SPI_FLASH_PageWrite
+    229                }
+    230              }
+    231              else /* NumByteToWrite > SPI_FLASH_PageSize */
+    232              {
+    233                NumByteToWrite -= count;
+   \                     ??SPI_FLASH_BufferWrite_4: (+1)
+   \   0000006E   0x1B92             SUBS     R2,R2,R6
+    234                NumOfPage =  NumByteToWrite / SPI_FLASH_PageSize;
+   \   00000070   0xB292             UXTH     R2,R2
+   \   00000072   0x0A17             LSRS     R7,R2,#+8
+    235                NumOfSingle = NumByteToWrite % SPI_FLASH_PageSize;
+   \   00000074   0xB2D2             UXTB     R2,R2
+   \   00000076   0x4690             MOV      R8,R2
+    236          
+    237                SPI_FLASH_PageWrite(pBuffer, WriteAddr, count);
+   \   00000078   0x4632             MOV      R2,R6
+   \   0000007A   0x4629             MOV      R1,R5
+   \   0000007C   0x4620             MOV      R0,R4
+   \   0000007E   0x.... 0x....      BL       SPI_FLASH_PageWrite
+    238                WriteAddr +=  count;
+   \   00000082   0x1975             ADDS     R5,R6,R5
+    239                pBuffer += count;
+   \   00000084   0x1934             ADDS     R4,R6,R4
+   \   00000086   0xE009             B.N      ??SPI_FLASH_BufferWrite_5
+    240          
+    241                while (NumOfPage--)
+    242                {
+    243                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, SPI_FLASH_PageSize);
+   \                     ??SPI_FLASH_BufferWrite_6: (+1)
+   \   00000088   0xF44F 0x7280      MOV      R2,#+256
+   \   0000008C   0x4629             MOV      R1,R5
+   \   0000008E   0x4620             MOV      R0,R4
+   \   00000090   0x.... 0x....      BL       SPI_FLASH_PageWrite
+    244                  WriteAddr +=  SPI_FLASH_PageSize;
+   \   00000094   0xF505 0x7580      ADD      R5,R5,#+256
+    245                  pBuffer += SPI_FLASH_PageSize;
+   \   00000098   0xF504 0x7480      ADD      R4,R4,#+256
+    246                }
+   \                     ??SPI_FLASH_BufferWrite_5: (+1)
+   \   0000009C   0x4638             MOV      R0,R7
+   \   0000009E   0x1E47             SUBS     R7,R0,#+1
+   \   000000A0   0xB2C0             UXTB     R0,R0
+   \   000000A2   0x2800             CMP      R0,#+0
+   \   000000A4   0xD1F0             BNE.N    ??SPI_FLASH_BufferWrite_6
+    247          
+    248                if (NumOfSingle != 0)
+   \   000000A6   0xF1B8 0x0F00      CMP      R8,#+0
+   \   000000AA   0xD005             BEQ.N    ??SPI_FLASH_BufferWrite_7
+    249                {
+    250                  SPI_FLASH_PageWrite(pBuffer, WriteAddr, NumOfSingle);
+   \                     ??SPI_FLASH_BufferWrite_3: (+1)
+   \   000000AC   0x4642             MOV      R2,R8
+   \   000000AE   0x4629             MOV      R1,R5
+   \   000000B0   0x4620             MOV      R0,R4
+   \   000000B2   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   000000B6   0x....             B.N      SPI_FLASH_PageWrite
+    251                }
+    252              }
+    253            }
+    254          }
+   \                     ??SPI_FLASH_BufferWrite_7: (+1)
+   \   000000B8   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    255          
+    256          /*******************************************************************************
+    257          * Function Name  : SPI_FLASH_BufferRead
+    258          * Description    : Reads a block of data from the FLASH.
+    259          * Input          : - pBuffer : pointer to the buffer that receives the data read
+    260          *                    from the FLASH.
+    261          *                  - ReadAddr : FLASH's internal address to read from.
+    262          *                  - NumByteToRead : number of bytes to read from the FLASH.
+    263          * Output         : None
+    264          * Return         : None
+    265          *******************************************************************************/
+    266          
+    267          /*
+    268          STM32F103
+    269          SPI2_RX DMA1_Channel 4
+    270          SPI2_TX DAM1_Channel 5
+    271          STM32F407
+    272          SPI1_RX DMA2_Stream0
+    273          SPI1_TX DMA2_Stream3
+    274          */
+    275          
+
+   \                                 In section .text, align 2, keep-with-next
+    276          void SPI_FLASH_BufferRead(u8* pBuffer, u32 ReadAddr, u16 NumByteToRead)
+    277          {
+   \                     SPI_FLASH_BufferRead: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4605             MOV      R5,R0
+   \   00000004   0x460E             MOV      R6,R1
+   \   00000006   0x4617             MOV      R7,R2
+    278            /* Select the FLASH: Chip Select low */
+    279            W25QXX_CS=0;
+   \   00000008   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x6020             STR      R0,[R4, #+0]
+    280          
+    281            /* Send "Read from Memory " instruction */
+    282            SPI_FLASH_SendByte(W25X_ReadData);
+   \   0000000E   0x2003             MOVS     R0,#+3
+   \   00000010   0x.... 0x....      BL       SPI_FLASH_SendByte
+    283          
+    284            /* Send ReadAddr high nibble address byte to read from */
+    285            SPI_FLASH_SendByte((ReadAddr & 0xFF0000) >> 16);
+   \   00000014   0x0C30             LSRS     R0,R6,#+16
+   \   00000016   0xB2C0             UXTB     R0,R0
+   \   00000018   0x.... 0x....      BL       SPI_FLASH_SendByte
+    286            /* Send ReadAddr medium nibble address byte to read from */
+    287            SPI_FLASH_SendByte((ReadAddr& 0xFF00) >> 8);
+   \   0000001C   0x0A30             LSRS     R0,R6,#+8
+   \   0000001E   0xB2C0             UXTB     R0,R0
+   \   00000020   0x.... 0x....      BL       SPI_FLASH_SendByte
+    288            /* Send ReadAddr low nibble address byte to read from */
+    289            SPI_FLASH_SendByte(ReadAddr & 0xFF);
+   \   00000024   0x4630             MOV      R0,R6
+   \   00000026   0xB2C0             UXTB     R0,R0
+   \   00000028   0x.... 0x....      BL       SPI_FLASH_SendByte
+    290          
+    291            if(NumByteToRead<33)	
+   \   0000002C   0x2F21             CMP      R7,#+33
+   \   0000002E   0xDA0A             BGE.N    ??SPI_FLASH_BufferRead_0
+    292            {
+    293              while (NumByteToRead--) /* while there is data to be read */
+   \                     ??SPI_FLASH_BufferRead_1: (+1)
+   \   00000030   0x4638             MOV      R0,R7
+   \   00000032   0x1E47             SUBS     R7,R0,#+1
+   \   00000034   0xB280             UXTH     R0,R0
+   \   00000036   0x2800             CMP      R0,#+0
+   \   00000038   0xD00F             BEQ.N    ??SPI_FLASH_BufferRead_2
+    294              {
+    295                /* Read a byte from the FLASH */
+    296                *pBuffer = SPI_FLASH_SendByte(Dummy_Byte);
+   \   0000003A   0x20A5             MOVS     R0,#+165
+   \   0000003C   0x.... 0x....      BL       SPI_FLASH_SendByte
+   \   00000040   0xF805 0x0B01      STRB     R0,[R5], #+1
+    297                /* Point to the next location where the byte read will be saved */
+    298                pBuffer++;
+   \   00000044   0xE7F4             B.N      ??SPI_FLASH_BufferRead_1
+    299              }
+    300            }
+    301            else
+    302            {
+    303                HAL_SPI_Receive_DMA(&hspin, pBuffer, NumByteToRead);      //启动DMA接收
+   \                     ??SPI_FLASH_BufferRead_0: (+1)
+   \   00000046   0x463A             MOV      R2,R7
+   \   00000048   0x4629             MOV      R1,R5
+   \   0000004A   0x....             LDR.N    R0,??DataTable11_1
+   \   0000004C   0x.... 0x....      BL       HAL_SPI_Receive_DMA
+    304                while(hdma_spin_rx.State ==HAL_DMA_STATE_BUSY);          //等待DMA接收完成
+   \                     ??SPI_FLASH_BufferRead_3: (+1)
+   \   00000050   0x....             LDR.N    R0,??DataTable11_2
+   \   00000052   0xF990 0x0035      LDRSB    R0,[R0, #+53]
+   \   00000056   0x2802             CMP      R0,#+2
+   \   00000058   0xD0FA             BEQ.N    ??SPI_FLASH_BufferRead_3
+    305                
+    306                //此时会触发中断  void DMA2_Stream2_IRQHandler(void)
+    307             }
+    308            W25QXX_CS=1;
+   \                     ??SPI_FLASH_BufferRead_2: (+1)
+   \   0000005A   0x2001             MOVS     R0,#+1
+   \   0000005C   0x6020             STR      R0,[R4, #+0]
+    309          }
+   \   0000005E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    310          
+    311          /*******************************************************************************
+    312          * Function Name  : SPI_FLASH_ReadID
+    313          * Description    : Reads FLASH identification.
+    314          * Input          : None
+    315          * Output         : None
+    316          * Return         : FLASH identification
+    317          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    318          u32 SPI_FLASH_ReadID(void)
+    319          {
+   \                     SPI_FLASH_ReadID: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    320            u32 Temp = 0, Temp0 = 0, Temp1 = 0, Temp2 = 0;
+    321          
+    322            /* Select the FLASH: Chip Select low */
+    323           
+    324          	W25QXX_CS=0;//SPI_FLASH_CS_LOW();-2
+   \   00000002   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+    325          
+    326          
+    327            /* Send "RDID " instruction */
+    328            SPI_FLASH_SendByte(W25X_JedecDeviceID);
+   \   00000008   0x209F             MOVS     R0,#+159
+   \   0000000A   0x.... 0x....      BL       SPI_FLASH_SendByte
+    329          
+    330            /* Read a byte from the FLASH */
+    331            Temp0 = SPI_FLASH_SendByte(Dummy_Byte);
+   \   0000000E   0x20A5             MOVS     R0,#+165
+   \   00000010   0x.... 0x....      BL       SPI_FLASH_SendByte
+   \   00000014   0x4605             MOV      R5,R0
+    332          
+    333            /* Read a byte from the FLASH */
+    334            Temp1 = SPI_FLASH_SendByte(Dummy_Byte);
+   \   00000016   0x20A5             MOVS     R0,#+165
+   \   00000018   0x.... 0x....      BL       SPI_FLASH_SendByte
+   \   0000001C   0x4606             MOV      R6,R0
+    335          
+    336            /* Read a byte from the FLASH */
+    337            Temp2 = SPI_FLASH_SendByte(Dummy_Byte);
+   \   0000001E   0x20A5             MOVS     R0,#+165
+   \   00000020   0x.... 0x....      BL       SPI_FLASH_SendByte
+    338          
+    339            /* Deselect the FLASH: Chip Select high */
+    340          
+    341          	W25QXX_CS=1;//SPI_FLASH_CS_HIGH();
+   \   00000024   0x2101             MOVS     R1,#+1
+   \   00000026   0x6021             STR      R1,[R4, #+0]
+    342          
+    343          
+    344            Temp = (Temp0 << 16) | (Temp1 << 8) | Temp2;
+    345          
+    346            return Temp;
+   \   00000028   0x0231             LSLS     R1,R6,#+8
+   \   0000002A   0xEA41 0x4105      ORR      R1,R1,R5, LSL #+16
+   \   0000002E   0x4308             ORRS     R0,R0,R1
+   \   00000030   0xBD70             POP      {R4-R6,PC}       ;; return
+    347          }
+    348          /*******************************************************************************
+    349          * Function Name  : SPI_FLASH_ReadID
+    350          * Description    : Reads FLASH identification.
+    351          * Input          : None
+    352          * Output         : None
+    353          * Return         : FLASH identification
+    354          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    355          u32 SPI_FLASH_ReadDeviceID(void)
+    356          {
+   \                     SPI_FLASH_ReadDeviceID: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    357            u32 Temp = 0;
+    358          
+    359            /* Select the FLASH: Chip Select low */
+    360          
+    361          	W25QXX_CS=0;//
+   \   00000002   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+    362          
+    363          
+    364            /* Send "RDID " instruction */
+    365            SPI_FLASH_SendByte(W25X_DeviceID);
+   \   00000008   0x20AB             MOVS     R0,#+171
+   \   0000000A   0x.... 0x....      BL       SPI_FLASH_SendByte
+    366            SPI_FLASH_SendByte(Dummy_Byte);
+   \   0000000E   0x20A5             MOVS     R0,#+165
+   \   00000010   0x.... 0x....      BL       SPI_FLASH_SendByte
+    367            SPI_FLASH_SendByte(Dummy_Byte);
+   \   00000014   0x20A5             MOVS     R0,#+165
+   \   00000016   0x.... 0x....      BL       SPI_FLASH_SendByte
+    368            SPI_FLASH_SendByte(Dummy_Byte);
+   \   0000001A   0x20A5             MOVS     R0,#+165
+   \   0000001C   0x.... 0x....      BL       SPI_FLASH_SendByte
+    369            
+    370            /* Read a byte from the FLASH */
+    371            Temp = SPI_FLASH_SendByte(Dummy_Byte);
+   \   00000020   0x20A5             MOVS     R0,#+165
+   \   00000022   0x.... 0x....      BL       SPI_FLASH_SendByte
+    372          
+    373            /* Deselect the FLASH: Chip Select high */
+    374          
+    375          	W25QXX_CS=1;//
+   \   00000026   0x2101             MOVS     R1,#+1
+   \   00000028   0x6021             STR      R1,[R4, #+0]
+    376          
+    377          
+    378            return Temp;
+   \   0000002A   0xBD10             POP      {R4,PC}          ;; return
+    379          }
+    380          /*******************************************************************************
+    381          * Function Name  : SPI_FLASH_StartReadSequence
+    382          * Description    : Initiates a read data byte (READ) sequence from the Flash.
+    383          *                  This is done by driving the /CS line low to select the device,
+    384          *                  then the READ instruction is transmitted followed by 3 bytes
+    385          *                  address. This function exit and keep the /CS line low, so the
+    386          *                  Flash still being selected. With this technique the whole
+    387          *                  content of the Flash is read with a single READ instruction.
+    388          * Input          : - ReadAddr : FLASH's internal address to read from.
+    389          * Output         : None
+    390          * Return         : None
+    391          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    392          void SPI_FLASH_StartReadSequence(u32 ReadAddr)
+    393          {
+   \                     SPI_FLASH_StartReadSequence: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    394            /* Select the FLASH: Chip Select low */
+    395          	W25QXX_CS=0;//SPI_FLASH_CS_LOW();-4
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x....             LDR.N    R1,??DataTable11  ;; 0x424002bc
+   \   00000008   0x6008             STR      R0,[R1, #+0]
+    396            
+    397          
+    398            /* Send "Read from Memory " instruction */
+    399            SPI_FLASH_SendByte(W25X_ReadData);
+   \   0000000A   0x2003             MOVS     R0,#+3
+   \   0000000C   0x.... 0x....      BL       SPI_FLASH_SendByte
+    400          
+    401            /* Send the 24-bit address of the address to read from -----------------------*/
+    402            /* Send ReadAddr high nibble address byte */
+    403            SPI_FLASH_SendByte((ReadAddr & 0xFF0000) >> 16);
+   \   00000010   0x0C20             LSRS     R0,R4,#+16
+   \   00000012   0xB2C0             UXTB     R0,R0
+   \   00000014   0x.... 0x....      BL       SPI_FLASH_SendByte
+    404            /* Send ReadAddr medium nibble address byte */
+    405            SPI_FLASH_SendByte((ReadAddr& 0xFF00) >> 8);
+   \   00000018   0x0A20             LSRS     R0,R4,#+8
+   \   0000001A   0xB2C0             UXTB     R0,R0
+   \   0000001C   0x.... 0x....      BL       SPI_FLASH_SendByte
+    406            /* Send ReadAddr low nibble address byte */
+    407            SPI_FLASH_SendByte(ReadAddr & 0xFF);
+   \   00000020   0x4620             MOV      R0,R4
+   \   00000022   0xB2C0             UXTB     R0,R0
+   \   00000024   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000028   0x....             B.N      SPI_FLASH_SendByte
+    408          }
+    409          
+    410          /*******************************************************************************
+    411          * Function Name  : SPI_FLASH_ReadByte
+    412          * Description    : Reads a byte from the SPI Flash.
+    413          *                  This function must be used only if the Start_Read_Sequence
+    414          *                  function has been previously called.
+    415          * Input          : None
+    416          * Output         : None
+    417          * Return         : Byte Read from the SPI Flash.
+    418          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    419          u8 SPI_FLASH_ReadByte(void)
+    420          {
+    421            return (SPI_FLASH_SendByte(Dummy_Byte));
+   \                     SPI_FLASH_ReadByte: (+1)
+   \   00000000   0x20A5             MOVS     R0,#+165
+   \   00000002                      REQUIRE SPI_FLASH_SendByte
+   \   00000002                      ;; // Fall through to label SPI_FLASH_SendByte
+    422          }
+    423          
+    424          /*******************************************************************************
+    425          * Function Name  : SPI_FLASH_SendByte
+    426          * Description    : Sends a byte through the SPI interface and return the byte
+    427          *                  received from the SPI bus.
+    428          * Input          : byte : byte to send.
+    429          * Output         : None
+    430          * Return         : The value of the received byte.
+    431          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    432          u8 SPI_FLASH_SendByte(u8 byte)
+    433          {
+   \                     SPI_FLASH_SendByte: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x....             LDR.N    R5,??DataTable11_3  ;; 0x40013000
+    434            /* Loop while DR register in not emplty */
+    435            while (SPI_I2S_GetFlagStatus(SPIn, SPI_I2S_FLAG_TXE) == RESET);
+   \                     ??SPI_FLASH_SendByte_0: (+1)
+   \   00000006   0x2102             MOVS     R1,#+2
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   0000000E   0x2800             CMP      R0,#+0
+   \   00000010   0xD0F9             BEQ.N    ??SPI_FLASH_SendByte_0
+    436          
+    437            /* Send byte through the SPIx peripheral */
+    438            SPI_I2S_SendData(SPIn, byte);
+   \   00000012   0x4621             MOV      R1,R4
+   \   00000014   0x4628             MOV      R0,R5
+   \   00000016   0x.... 0x....      BL       SPI_I2S_SendData
+    439          
+    440            /* Wait to receive a byte */
+    441            while (SPI_I2S_GetFlagStatus(SPIn, SPI_I2S_FLAG_RXNE) == RESET);
+   \                     ??SPI_FLASH_SendByte_1: (+1)
+   \   0000001A   0x2101             MOVS     R1,#+1
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD0F9             BEQ.N    ??SPI_FLASH_SendByte_1
+    442          
+    443            /* Return the byte read from the SPI bus */
+    444            return SPI_I2S_ReceiveData(SPIn);
+   \   00000026   0x4628             MOV      R0,R5
+   \   00000028   0x.... 0x....      BL       SPI_I2S_ReceiveData
+   \   0000002C   0xB2C0             UXTB     R0,R0
+   \   0000002E   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    445          }
+    446          
+    447          /*******************************************************************************
+    448          * Function Name  : SPI_FLASH_SendHalfWord
+    449          * Description    : Sends a Half Word through the SPI interface and return the
+    450          *                  Half Word received from the SPI bus.
+    451          * Input          : Half Word : Half Word to send.
+    452          * Output         : None
+    453          * Return         : The value of the received Half Word.
+    454          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    455          u16 SPI_FLASH_SendHalfWord(u16 HalfWord)
+    456          {
+   \                     SPI_FLASH_SendHalfWord: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x....             LDR.N    R5,??DataTable11_3  ;; 0x40013000
+    457            /* Loop while DR register in not emplty */
+    458            while (SPI_I2S_GetFlagStatus(SPIn, SPI_I2S_FLAG_TXE) == RESET);
+   \                     ??SPI_FLASH_SendHalfWord_0: (+1)
+   \   00000006   0x2102             MOVS     R1,#+2
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   0000000E   0x2800             CMP      R0,#+0
+   \   00000010   0xD0F9             BEQ.N    ??SPI_FLASH_SendHalfWord_0
+    459          
+    460            /* Send Half Word through the SPIn peripheral */
+    461            SPI_I2S_SendData(SPIn, HalfWord);
+   \   00000012   0x4621             MOV      R1,R4
+   \   00000014   0x4628             MOV      R0,R5
+   \   00000016   0x.... 0x....      BL       SPI_I2S_SendData
+    462          
+    463            /* Wait to receive a Half Word */
+    464            while (SPI_I2S_GetFlagStatus(SPIn, SPI_I2S_FLAG_RXNE) == RESET);
+   \                     ??SPI_FLASH_SendHalfWord_1: (+1)
+   \   0000001A   0x2101             MOVS     R1,#+1
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       SPI_I2S_GetFlagStatus
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD0F9             BEQ.N    ??SPI_FLASH_SendHalfWord_1
+    465          
+    466            /* Return the Half Word read from the SPI bus */
+    467            return SPI_I2S_ReceiveData(SPIn);
+   \   00000026   0x4628             MOV      R0,R5
+   \   00000028   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   0000002C   0x.... 0x....      B.W      SPI_I2S_ReceiveData
+    468          }
+    469          
+    470          /*******************************************************************************
+    471          * Function Name  : SPI_FLASH_WriteEnable
+    472          * Description    : Enables the write access to the FLASH.
+    473          * Input          : None
+    474          * Output         : None
+    475          * Return         : None
+    476          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    477          void SPI_FLASH_WriteEnable(void)
+    478          {
+   \                     SPI_FLASH_WriteEnable: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    479            /* Select the FLASH: Chip Select low */
+    480          
+    481          	W25QXX_CS=0;
+   \   00000002   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+    482            /* Send "Write Enable" instruction */
+    483            SPI_FLASH_SendByte(W25X_WriteEnable);
+   \   00000008   0x2006             MOVS     R0,#+6
+   \   0000000A   0x.... 0x....      BL       SPI_FLASH_SendByte
+    484          
+    485            /* Deselect the FLASH: Chip Select high */
+    486          	W25QXX_CS=1;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x6020             STR      R0,[R4, #+0]
+    487          }
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    488          
+    489          /*******************************************************************************
+    490          * Function Name  : SPI_FLASH_WaitForWriteEnd
+    491          * Description    : Polls the status of the Write In Progress (WIP) flag in the
+    492          *                  FLASH's status  register  and  loop  until write  opertaion
+    493          *                  has completed.
+    494          * Input          : None
+    495          * Output         : None
+    496          * Return         : None
+    497          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    498          void SPI_FLASH_WaitForWriteEnd(void)
+    499          {
+   \                     SPI_FLASH_WaitForWriteEnd: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    500            u8 FLASH_Status = 0;
+    501          
+    502            /* Select the FLASH: Chip Select low */
+    503            W25QXX_CS=0;
+   \   00000002   0x....             LDR.N    R4,??DataTable11  ;; 0x424002bc
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x6020             STR      R0,[R4, #+0]
+    504            /* Send "Read Status Register" instruction */
+    505            SPI_FLASH_SendByte(W25X_ReadStatusReg);
+   \   00000008   0x2005             MOVS     R0,#+5
+   \   0000000A   0x.... 0x....      BL       SPI_FLASH_SendByte
+    506          
+    507            /* Loop as long as the memory is busy with a write cycle */
+    508            do
+    509            {
+    510              /* Send a dummy byte to generate the clock needed by the FLASH
+    511              and put the value of the status register in FLASH_Status variable */
+    512              FLASH_Status = SPI_FLASH_SendByte(Dummy_Byte);
+    513          
+    514            }
+    515            while ((FLASH_Status & WIP_Flag) == SET); /* Write in progress */
+   \                     ??SPI_FLASH_WaitForWriteEnd_0: (+1)
+   \   0000000E   0x20A5             MOVS     R0,#+165
+   \   00000010   0x.... 0x....      BL       SPI_FLASH_SendByte
+   \   00000014   0x07C0             LSLS     R0,R0,#+31
+   \   00000016   0xD4FA             BMI.N    ??SPI_FLASH_WaitForWriteEnd_0
+    516          
+    517            /* Deselect the FLASH: Chip Select high */
+    518            W25QXX_CS=1;
+   \   00000018   0x2001             MOVS     R0,#+1
+   \   0000001A   0x6020             STR      R0,[R4, #+0]
+    519          }
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+    520          
+    521          
+    522          //进入掉电模式
+
+   \                                 In section .text, align 2, keep-with-next
+    523          void SPI_Flash_PowerDown(void)   
+    524          { 
+    525            /* Select the FLASH: Chip Select low */
+    526          
+    527          }   
+   \                     SPI_Flash_PowerDown: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    528          
+    529          //唤醒
+
+   \                                 In section .text, align 2, keep-with-next
+    530          void SPI_Flash_WAKEUP(void)   
+    531          {
+    532            /* Select the FLASH: Chip Select low */
+    533          
+    534          }   
+   \                     SPI_Flash_WAKEUP: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \   00000000   0x424002BC         DC32     0x424002bc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \   00000000   0x........         DC32     hspi1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \   00000000   0x........         DC32     hdma_spi1_rx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \   00000000   0x40013000         DC32     0x40013000
+    535          
+    536          /******************* (C) COPYRIGHT 2010 www.armjishu.com *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   SPI_FLASH_BufferRead
+        24   -> HAL_SPI_Receive_DMA
+        24   -> SPI_FLASH_SendByte
+      24   SPI_FLASH_BufferWrite
+         0   -> SPI_FLASH_PageWrite
+        24   -> SPI_FLASH_PageWrite
+       8   SPI_FLASH_BulkErase
+         8   -> SPI_FLASH_SendByte
+         0   -> SPI_FLASH_WaitForWriteEnd
+         8   -> SPI_FLASH_WriteEnable
+      24   SPI_FLASH_PageWrite
+        24   -> SPI_FLASH_SendByte
+         0   -> SPI_FLASH_WaitForWriteEnd
+        24   -> SPI_FLASH_WriteEnable
+       0   SPI_FLASH_ReadByte
+         0   -> SPI_FLASH_SendByte
+       8   SPI_FLASH_ReadDeviceID
+         8   -> SPI_FLASH_SendByte
+      16   SPI_FLASH_ReadID
+        16   -> SPI_FLASH_SendByte
+      16   SPI_FLASH_SectorErase
+        16   -> SPI_FLASH_SendByte
+         0   -> SPI_FLASH_WaitForWriteEnd
+        16   -> SPI_FLASH_WriteEnable
+      16   SPI_FLASH_SendByte
+        16   -> SPI_I2S_GetFlagStatus
+        16   -> SPI_I2S_ReceiveData
+        16   -> SPI_I2S_SendData
+      16   SPI_FLASH_SendHalfWord
+        16   -> SPI_I2S_GetFlagStatus
+         0   -> SPI_I2S_ReceiveData
+        16   -> SPI_I2S_SendData
+       8   SPI_FLASH_StartReadSequence
+         0   -> SPI_FLASH_SendByte
+         8   -> SPI_FLASH_SendByte
+       8   SPI_FLASH_WaitForWriteEnd
+         8   -> SPI_FLASH_SendByte
+       8   SPI_FLASH_WriteEnable
+         8   -> SPI_FLASH_SendByte
+       0   SPI_Flash_PowerDown
+       0   SPI_Flash_WAKEUP
+      16   W25QXX_ReadID
+        16   -> SPI1_ReadWriteByte
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       1  DMA_ERRO_FLAG
+      96  SPI_FLASH_BufferRead
+     188  SPI_FLASH_BufferWrite
+      28  SPI_FLASH_BulkErase
+      88  SPI_FLASH_PageWrite
+       2  SPI_FLASH_ReadByte
+      44  SPI_FLASH_ReadDeviceID
+      50  SPI_FLASH_ReadID
+      54  SPI_FLASH_SectorErase
+      48  SPI_FLASH_SendByte
+      48  SPI_FLASH_SendHalfWord
+      42  SPI_FLASH_StartReadSequence
+      30  SPI_FLASH_WaitForWriteEnd
+      20  SPI_FLASH_WriteEnable
+       2  SPI_Flash_PowerDown
+       2  SPI_Flash_WAKEUP
+      54  W25QXX_ReadID
+
+ 
+   1 byte  in section .bss
+ 812 bytes in section .text
+ 
+ 812 bytes of CODE memory
+   1 byte  of DATA memory
+
+Errors: none
+Warnings: 20

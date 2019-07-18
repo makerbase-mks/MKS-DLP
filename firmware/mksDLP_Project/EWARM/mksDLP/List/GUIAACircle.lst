@@ -1,0 +1,256 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:19:51
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\AntiAlias\GUIAACircle.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\AntiAlias\GUIAACircle.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUIAACircle.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUIAACircle.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\AntiAlias\GUIAACircle.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUICirleAA.C
+     16          Purpose     : Draw Circle routines with Antialiasing
+     17          
+     18          TBD: Circle needs to be calculated from top to bottom in order
+     19          to avoid AA problems at certain positions.  
+     20              
+     21          ---------------------------END-OF-HEADER------------------------------
+     22          */
+     23          
+     24          #include "GUI_Protected.h"
+     25          
+     26          #include <stdio.h>
+     27          #include <string.h>
+     28          #include <math.h>
+     29          
+     30          #if GUI_SUPPORT_AA
+     31          
+     32          /*********************************************************************
+     33          *
+     34          *       Static code
+     35          *
+     36          **********************************************************************
+     37          */
+     38          /*********************************************************************
+     39          *
+     40          *       FillCircle
+     41          */
+     42          static void FillCircle(int x0, int y0, int r) {
+     43            int i, x;
+     44            int sqmax = r*r+r/2;
+     45            int yMin, yMax;
+     46            /* First step : find uppermost and lowermost coordinates */
+     47            yMin = y0 - r;
+     48            yMax = y0 + r;
+     49            /* Use Clipping rect to reduce calculation (if possible) */
+     50            if (GUI_Context.pClipRect_HL) {
+     51              if (yMax > GUI_Context.pClipRect_HL->y1)
+     52                yMax = GUI_Context.pClipRect_HL->y1;
+     53              if (yMin < GUI_Context.pClipRect_HL->y0)
+     54                yMin = GUI_Context.pClipRect_HL->y0;
+     55            }
+     56            /* Draw top half */
+     57            for (i=0, x=r; i<r; i++) {
+     58              int y = y0-i;
+     59              if ((y >= yMin) && (y <= yMax)) {
+     60                /* calc proper x-value */
+     61                while ((i*i+x*x) >sqmax)
+     62                  --x;
+     63                LCD_HL_DrawHLine (x0-x, y, x0+x);
+     64              }
+     65            }
+     66            /* Draw bottom half */
+     67            for (i=0, x=r; i<r; i++) {
+     68              int y = y0 + i;
+     69              if ((y >= yMin) && (y <= yMax)) {
+     70                /* calc proper x-value */
+     71                while ((i*i+x*x) >sqmax)
+     72                  --x;
+     73                LCD_HL_DrawHLine (x0-x, y, x0+x);
+     74              }
+     75            }
+     76          }
+     77          
+     78          /*********************************************************************
+     79          *
+     80          *       Public code
+     81          *
+     82          **********************************************************************
+     83          */
+     84          /*********************************************************************
+     85          *
+     86          *       GL_FillCircleAA_HiRes
+     87          */
+     88          void GL_FillCircleAA_HiRes(int x0, int y0, int r) {
+     89          /* Init AA Subsystem, pass horizontal limits */
+     90            GUI_AA_Init_HiRes(x0-r, x0+r);
+     91          /* Do the actual drawing */
+     92            FillCircle(x0, y0, r);
+     93          /* Cleanup */
+     94            GUI_AA_Exit();
+     95          }
+     96          
+     97          /*********************************************************************
+     98          *
+     99          *       GUI_AA_FillCircle
+    100          */
+    101          void GUI_AA_FillCircle(int x0, int y0, int r) {
+    102            #if (GUI_WINSUPPORT)
+    103              GUI_RECT Rect;
+    104            #endif
+    105            GUI_LOCK();
+    106            #if (GUI_WINSUPPORT)
+    107              WM_ADDORG_AA(x0,y0);
+    108            #endif
+    109            if (!GUI_Context.AA_HiResEnable) {
+    110              x0 *= GUI_Context.AA_Factor;
+    111              y0 *= GUI_Context.AA_Factor;
+    112              r  *= GUI_Context.AA_Factor;
+    113            }
+    114            #if (GUI_WINSUPPORT)
+    115              Rect.x0 = GUI_AA_HiRes2Pixel(x0 - r);
+    116              Rect.x1 = GUI_AA_HiRes2Pixel(x0 + r);
+    117              Rect.y0 = GUI_AA_HiRes2Pixel(y0 - r);
+    118              Rect.y1 = GUI_AA_HiRes2Pixel(y0 + r);
+    119              WM_ITERATE_START(&Rect); {
+    120            #endif
+    121            GL_FillCircleAA_HiRes(x0, y0, r);
+    122            #if (GUI_WINSUPPORT)
+    123              } WM_ITERATE_END();
+    124            #endif
+    125            GUI_UNLOCK();
+    126          }
+    127          
+    128          #else                            /* Avoid problems with empty object modules */
+    129            void GUIAACircle_C(void);
+
+   \                                 In section .text, align 2, keep-with-next
+    130            void GUIAACircle_C(void) {}
+   \                     GUIAACircle_C: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    131          #endif /* GUI_SUPPORT_AA */
+    132          
+    133          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GUIAACircle_C
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  GUIAACircle_C
+
+ 
+ 2 bytes in section .text
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: none

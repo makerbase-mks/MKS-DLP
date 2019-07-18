@@ -1,0 +1,179 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-1910977426
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=168000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=84
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[struct_types]
+Fmt0=CFG_ITMES-back_btn_color	4	0
+Fmt1=CFG_ITMES-back_btn_textcolor	4	0
+Fmt2=CFG_ITMES-background_color	4	0
+Fmt3=CFG_ITMES-btn_state_color	4	0
+Fmt4=CFG_ITMES-btn_state_sel_textcolor	4	0
+Fmt5=CFG_ITMES-btn_state_textcolor	4	0
+Fmt6=CFG_ITMES-btn_textcolor	4	0
+Fmt7=CFG_ITMES-dialog_btn_color	4	0
+Fmt8=CFG_ITMES-dialog_btn_textcolor	4	0
+Fmt9=CFG_ITMES-filename_color	4	0
+Fmt10=CFG_ITMES-printfile_textcolor	4	0
+Fmt11=CFG_ITMES-printing_bar_color_left	4	0
+Fmt12=CFG_ITMES-printing_bar_color_right	4	0
+Fmt13=CFG_ITMES-state_background_color	4	0
+Fmt14=CFG_ITMES-state_text_color	4	0
+Fmt15=CFG_ITMES-title_color	4	0
+Fmt16=FILINFO-lfname	4	0
+[array_types]
+Fmt0=WCHAR[2]	4	0
+Fmt1=char[2048]	4	0
+Fmt2=char[96]	4	0
+Fmt3=uint8_t[2048]	4	0
+Fmt4=uint8_t[256]	4	0
+Fmt5=unsigned char[256]	4	0
+Fmt6=unsigned char[32768]	4	0
+Fmt7=unsigned char[4]	4	0
+[watch_formats]
+Fmt0={W}0:*data_addr	4	0
+Fmt1={W}0:FlashID	4	0
+Fmt2={W}0:W25QXX_TYPE	4	0
+Fmt3={W}0:cfg_data	4	0
+Fmt4={W}0:cr1its	4	0
+Fmt5={W}0:data	4	0
+Fmt6={W}0:e2pr_Buf_Write	4	2
+Fmt7={W}0:eeprom_data_int16_t	4	0
+Fmt8={W}0:eeprom_data_int32_t	4	0
+Fmt9={W}0:gCfgItems.background_color	4	0
+Fmt10={W}0:gCfgItems.title_color	4	0
+Fmt11={W}0:huart1.Instance->SR	4	0
+Fmt12={W}0:ind	3	0
+Fmt13={W}0:isrflags	4	0
+Fmt14={W}0:max6675_temp	1	0
+Fmt15={W}0:mksCfg.bed_leveling_method	3	0
+Fmt16={W}0:mksCfg.heater_1_mintemp	3	0
+Fmt17={W}0:mksTmp.cfg_hardware_test_enable	4	0
+Fmt18={W}0:n	5	0
+Fmt19={W}0:p[i]	4	0
+Fmt20={W}0:param[ind]	3	0
+Fmt21={W}0:q	3	0
+Fmt22={W}0:test_recbuf	4	2
+Fmt23={W}0:test_writebuf	4	2
+Fmt24={W}0:textt	4	0
+Fmt25={W}0:w25qID	4	0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.cpp}.35.11" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\SDCard.cpp}.755.3" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop}.48.5" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.c}.340.9" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.c}.418.19" 0 0 1 "" 0 "" 0
+Bp5=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.c}.114.3" 0 0 1 "" 0 "" 0
+Bp6=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.c}.176.1" 0 0 1 "" 0 "" 0
+Bp7=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\HAL.cpp}.683.5" 0 0 1 "" 0 "" 0
+Bp8=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\STM32F4xx_MKS_Driver\Src\mks_test.c}.30.5" 0 0 1 "" 0 "" 0
+Bp9=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\SDCard.cpp}.1031.9" 0 0 1 "" 0 "" 0
+Bp10=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\SDCard.cpp}.1024.9" 0 0 1 "" 0 "" 0
+Bp11=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\SDCard.cpp}.1026.7" 0 0 1 "" 0 "" 0
+Bp12=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Repetier\SDCard.cpp}.4333.7" 0 0 1 "" 0 "" 0
+Bp13=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\mks_test.c}.437.1" 0 0 1 "" 0 "" 0
+Bp14=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\mks_test.c}.437.1" 0 0 1 "" 0 "" 0
+Bp15=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\mks_test.c}.37.4" 0 0 1 "" 0 "" 0
+Bp16=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\mks_test.c}.142.7" 0 0 1 "" 0 "" 0
+Bp17=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\Marlin_main.cpp}.6422.3" 0 0 1 "" 0 "" 0
+Bp18=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\User\ui\draw_dialog.cpp}.292.9" 0 0 1 "" 0 "" 0
+Bp19=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\stm32f4xx_it.cpp}.375.3" 0 0 1 "" 0 "" 0
+Bp20=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\wifi_module.cpp}.2886.2" 0 0 1 "" 0 "" 0
+Bp21=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\wifi_module.cpp}.3537.3" 0 0 1 "" 0 "" 0
+Bp22=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\Marlin\endstops.cpp}.538.1" 0 0 1 "" 0 "" 0
+Count=23
+[Aliases]
+Count=0
+SuppressDialog=0

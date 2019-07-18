@@ -1,0 +1,1825 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:03
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\LCDDriver\LCDDummy.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\LCDDriver\LCDDummy.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\LCDDummy.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\LCDDummy.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\LCDDriver\LCDDummy.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : LCDDummy.C
+     16          Purpose     : Empty driver
+     17                        This driver does no perform any function, but it can be
+     18                        used for 2 purposes:
+     19                        a) Satisfy all externals so an application can be
+     20                          compiled and linked in target hardware even if the
+     21                          driver is not already available
+     22                        b) Template for a starting point for a new driver.
+     23          ----------------------------------------------------------------------   
+     24          Adapting to a new system (creating a new driver):
+     25            In this case, the first step is to fill the routines 
+     26            LCD_L0_GetPixelIndex, LCD_L0_SetPixelIndex and LCD_L0_Init with
+     27            functionality, which is sufficient to make the hardware work.
+     28            A second (optional) step would be to optimize higher level routines. 
+     29          ----------------------------------------------------------------------   
+     30          Version-Date---Author-Explanation                                        
+     31          ----------------------------------------------------------------------   
+     32          1.00.00 020417 JE     a) Changed to have only to adapt _GetPixelIndex
+     33                                   and _SetPixelIndex
+     34          0.90.00 020214 JE     a) First release
+     35          ---------------------------END-OF-HEADER------------------------------
+     36          */
+     37          
+     38          #include "LCD_Private.h"      /* private modul definitions & config */
+     39          #include "GUI_Private.h"
+     40          #include "GUIDebug.h"
+     41          #include "lcd.h"
+     42          //#include "stm3210c_eval_lcd.h"
+     43          #include "LCDConf.h" 
+     44          #include "ili9488.h"
+     45          //#include "SZ_TouchScreen.h"
+     46          #include "mks_touch_screen.h"
+     47          
+     48          #if (LCD_CONTROLLER == -1) \
+     49              && (!defined(WIN32) | defined(LCD_SIMCONTROLLER))
+     50          
+     51          /*********************************************************************
+     52          *
+     53          *       Defines
+     54          *
+     55          **********************************************************************
+     56          */
+     57          
+     58          #ifndef LCD_INIT_CONTROLLER
+     59            #define LCD_INIT_CONTROLLER()	//LCD_Initializtion();
+     60          #endif
+     61          
+     62          /*********************************************************************
+     63          *
+     64          *       Macros for MIRROR_, SWAP_ and LUT_
+     65          */
+     66          #if (!defined (LCD_LUT_COM) && !defined(LCD_LUT_SEG))
+     67            #if   (!LCD_MIRROR_X && !LCD_MIRROR_Y && !LCD_SWAP_XY) 
+     68              #define LOG2PHYS_X(x, y) x
+     69              #define LOG2PHYS_Y(x, y) y
+     70            #elif (!LCD_MIRROR_X && !LCD_MIRROR_Y &&  LCD_SWAP_XY) 
+     71              #define LOG2PHYS_X(x, y) y
+     72              #define LOG2PHYS_Y(x, y) x
+     73            #elif (!LCD_MIRROR_X &&  LCD_MIRROR_Y && !LCD_SWAP_XY) 
+     74              #define LOG2PHYS_X(x, y) x
+     75              #define LOG2PHYS_Y(x, y) LCD_YSIZE - 1 - (y)
+     76            #elif (!LCD_MIRROR_X &&  LCD_MIRROR_Y &&  LCD_SWAP_XY) 
+     77              #define LOG2PHYS_X(x, y) y
+     78              #define LOG2PHYS_Y(x, y) LCD_XSIZE - 1 - (x)
+     79            #elif ( LCD_MIRROR_X && !LCD_MIRROR_Y && !LCD_SWAP_XY) 
+     80              #define LOG2PHYS_X(x, y) LCD_XSIZE - 1 - (x)
+     81              #define LOG2PHYS_Y(x, y) y
+     82            #elif ( LCD_MIRROR_X && !LCD_MIRROR_Y &&  LCD_SWAP_XY) 
+     83              #define LOG2PHYS_X(x, y) LCD_YSIZE - 1 - (y)
+     84              #define LOG2PHYS_Y(x, y) x
+     85            #elif ( LCD_MIRROR_X &&  LCD_MIRROR_Y && !LCD_SWAP_XY) 
+     86              #define LOG2PHYS_X(x, y) LCD_XSIZE - 1 - (x)
+     87              #define LOG2PHYS_Y(x, y) LCD_YSIZE - 1 - (y)
+     88            #elif ( LCD_MIRROR_X &&  LCD_MIRROR_Y &&  LCD_SWAP_XY) 
+     89              #define LOG2PHYS_X(x, y) LCD_YSIZE - 1 - (y)
+     90              #define LOG2PHYS_Y(x, y) LCD_XSIZE - 1 - (x)
+     91            #endif
+     92          #else
+     93            #if   ( defined (LCD_LUT_COM) && !defined(LCD_LUT_SEG))
+     94              #define LOG2PHYS_X(x, y) x
+     95              #define LOG2PHYS_Y(x, y) LCD__aLine2Com0[y]
+     96            #elif (!defined (LCD_LUT_COM) &&  defined(LCD_LUT_SEG))
+     97              #define LOG2PHYS_X(x, y) LCD__aCol2Seg0[x]
+     98              #define LOG2PHYS_Y(x, y) y
+     99            #elif ( defined (LCD_LUT_COM) &&  defined(LCD_LUT_SEG))
+    100              #define LOG2PHYS_X(x, y) LCD__aCol2Seg0[x]
+    101              #define LOG2PHYS_Y(x, y) LCD__aLine2Com0[y]
+    102            #endif
+    103          #endif
+    104          
+    105          /*********************************************************************
+    106          *
+    107          *       Static functions
+    108          *
+    109          **********************************************************************
+    110          */
+    111          
+    112          /*********************************************************************
+    113          *
+    114          *       Draw Bitmap 1 BPP
+    115          */
+    116          static void  _DrawBitLine1BPP(int x, int y, U8 const GUI_UNI_PTR *p, int Diff, int xsize, const LCD_PIXELINDEX*pTrans) {
+    117            LCD_PIXELINDEX Index0 = *(pTrans+0);
+    118            LCD_PIXELINDEX Index1 = *(pTrans+1);
+    119            x += Diff;
+    120            switch (GUI_Context.DrawMode & (LCD_DRAWMODE_TRANS | LCD_DRAWMODE_XOR)) {
+    121              case 0:
+    122          		#if 0
+    123                do {
+    124                  LCD_L0_SetPixelIndex(x++, y, (*p & (0x80 >> Diff)) ? Index1 : Index0);
+    125          			  if (++Diff == 8) {
+    126                    Diff = 0;
+    127          				  p++;
+    128          			  }
+    129          		  } while (--xsize);
+    130          
+    131          	   #else
+    132              ili9320_SetCursor(x, y);
+    133          	LCD_setWindowArea(x, y, xsize, 1);
+    134          	//
+    135          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    136          	for (; xsize > 0; xsize--)
+    137          	{
+    138          		
+    139          		LCD_WriteRAM((*p & (0x80 >> Diff)) ? Index1 : Index0);
+    140          		 if (++Diff == 8) {
+    141                    		Diff = 0;
+    142          			  p++;
+    143          		  }
+    144          	}
+    145          	//LCD_setWindowArea(0, 0, 319, 239);
+    146          	LCD_setWindowArea(0, 0, 480, 320);
+    147          	#endif
+    148          	
+    149                break;
+    150              case LCD_DRAWMODE_TRANS:
+    151          	#if 0
+    152                do {
+    153            		  if (*p & (0x80 >> Diff))
+    154                    		LCD_L0_SetPixelIndex(x, y, Index1);
+    155                  	 x++;
+    156          		 if (++Diff == 8) {
+    157                    		Diff = 0;
+    158          			 p++;
+    159          		}
+    160          	} while (--xsize);
+    161          
+    162          	#else
+    163              ili9320_SetCursor(x, y);
+    164          	LCD_setWindowArea(x, y, xsize, 1);
+    165          	//ili9320_SetCursor(x, y);
+    166          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    167          	for (; xsize > 0; xsize--)
+    168          	{
+    169          		
+    170          		if (*p & (0x80 >> Diff))
+    171                  LCD_WriteRAM(Index1);
+    172          		else
+    173          			LCD_WriteRAM(Index0);
+    174          	
+    175          		if (++Diff == 8) {
+    176          				Diff = 0;
+    177          				p++;
+    178          		}
+    179          	}
+    180          	//LCD_setWindowArea(0, 0, 319, 239);
+    181          	LCD_setWindowArea(0, 0, 480, 320);
+    182          	#endif
+    183                break;
+    184              case LCD_DRAWMODE_XOR:;
+    185                do {
+    186            		  if (*p & (0x80 >> Diff)) {
+    187                    int Pixel = LCD_L0_GetPixelIndex(x, y);
+    188                    LCD_L0_SetPixelIndex(x, y, LCD_NUM_COLORS - 1 - Pixel);
+    189                  }
+    190                  x++;
+    191          			  if (++Diff == 8) {
+    192                    Diff = 0;
+    193          				  p++;
+    194          			  }
+    195          		  } while (--xsize);
+    196                break;
+    197          	}
+    198          }
+    199          
+    200          /*********************************************************************
+    201          *
+    202          *       Draw Bitmap 1 BPP high speed
+    203          */
+
+   \                                 In section .text, align 2, keep-with-next
+    204          static void  _DrawBitLine1BPP_H(int x, int y, U8 const GUI_UNI_PTR *p, int Diff, int xsize, const LCD_PIXELINDEX*pTrans) {
+   \                     _DrawBitLine1BPP_H: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0x460F             MOV      R7,R1
+   \   00000006   0x4614             MOV      R4,R2
+   \   00000008   0x461D             MOV      R5,R3
+   \   0000000A   0x9909             LDR      R1,[SP, #+36]
+    205            LCD_PIXELINDEX Index0 = *(pTrans+0);
+   \   0000000C   0xF8B1 0x8000      LDRH     R8,[R1, #+0]
+    206            LCD_PIXELINDEX Index1 = *(pTrans+1);
+   \   00000010   0xF8B1 0x9002      LDRH     R9,[R1, #+2]
+    207            x += Diff;
+   \   00000014   0xEB05 0x0A00      ADD      R10,R5,R0
+   \   00000018   0x9E08             LDR      R6,[SP, #+32]
+    208            switch (GUI_Context.DrawMode & (LCD_DRAWMODE_TRANS | LCD_DRAWMODE_XOR)) {
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable7
+   \   0000001E   0x7B00             LDRB     R0,[R0, #+12]
+   \   00000020   0xF010 0x0003      ANDS     R0,R0,#0x3
+   \   00000024   0xD026             BEQ.N    ??_DrawBitLine1BPP_H_0
+   \   00000026   0x2802             CMP      R0,#+2
+   \   00000028   0xD036             BEQ.N    ??_DrawBitLine1BPP_H_1
+   \   0000002A   0xD218             BCS.N    ??_DrawBitLine1BPP_H_2
+    209              case 0:
+    210          	
+    211          		
+    212          	for (; xsize > 0; xsize--)
+    213          	{
+    214          		
+    215          		LCD_WriteRAM((*p & (0x80 >> Diff)) ? Index1 : Index0);
+    216          		 if (++Diff == 8) {
+    217                    		Diff = 0;
+    218          			  p++;
+    219          		  }
+    220          	}
+    221          	
+    222                break;
+    223              case LCD_DRAWMODE_TRANS:
+    224          	
+    225          	
+    226          	for (; xsize > 0; xsize--)
+    227          	{
+    228          		
+    229          		if (*p & (0x80 >> Diff))
+    230                  LCD_WriteRAM(Index1);
+    231          		else
+    232          			LCD_WriteRAM(Index0);
+    233          	
+    234          		if (++Diff == 8) {
+    235          				Diff = 0;
+    236          				p++;
+    237          		}
+    238          	}
+    239          	
+    240                break;
+    241              case LCD_DRAWMODE_XOR:;
+    242                do {
+    243            		  if (*p & (0x80 >> Diff)) {
+   \                     ??_DrawBitLine1BPP_H_3: (+1)
+   \   0000002C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000002E   0x2180             MOVS     R1,#+128
+   \   00000030   0x4129             ASRS     R1,R1,R5
+   \   00000032   0x4208             TST      R0,R1
+   \   00000034   0xD00A             BEQ.N    ??_DrawBitLine1BPP_H_4
+    244                    int Pixel = LCD_L0_GetPixelIndex(x, y);
+   \   00000036   0x4639             MOV      R1,R7
+   \   00000038   0x4650             MOV      R0,R10
+   \   0000003A   0x.... 0x....      BL       LCD_L0_GetPixelIndex
+    245                    LCD_L0_SetPixelIndex(x, y, LCD_NUM_COLORS - 1 - Pixel);
+   \   0000003E   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000042   0x1A0A             SUBS     R2,R1,R0
+   \   00000044   0x4639             MOV      R1,R7
+   \   00000046   0x4650             MOV      R0,R10
+   \   00000048   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    246                  }
+    247                  x++;
+   \                     ??_DrawBitLine1BPP_H_4: (+1)
+   \   0000004C   0xF10A 0x0A01      ADD      R10,R10,#+1
+    248          			  if (++Diff == 8) {
+   \   00000050   0x1C6D             ADDS     R5,R5,#+1
+   \   00000052   0x2D08             CMP      R5,#+8
+   \   00000054   0xD101             BNE.N    ??_DrawBitLine1BPP_H_5
+    249                    Diff = 0;
+   \   00000056   0x2500             MOVS     R5,#+0
+    250          				  p++;
+   \   00000058   0x1C64             ADDS     R4,R4,#+1
+    251          			  }
+    252          		  } while (--xsize);
+   \                     ??_DrawBitLine1BPP_H_5: (+1)
+   \   0000005A   0x1E76             SUBS     R6,R6,#+1
+   \   0000005C   0xD1E6             BNE.N    ??_DrawBitLine1BPP_H_3
+    253                break;
+    254          	}
+    255          }
+   \                     ??_DrawBitLine1BPP_H_2: (+1)
+   \   0000005E   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+   \                     ??_DrawBitLine1BPP_H_6: (+1)
+   \   00000062   0x4640             MOV      R0,R8
+   \                     ??_DrawBitLine1BPP_H_7: (+1)
+   \   00000064   0x.... 0x....      BL       LCD_WriteRAM
+   \   00000068   0x1C6D             ADDS     R5,R5,#+1
+   \   0000006A   0x2D08             CMP      R5,#+8
+   \   0000006C   0xD101             BNE.N    ??_DrawBitLine1BPP_H_8
+   \   0000006E   0x2500             MOVS     R5,#+0
+   \   00000070   0x1C64             ADDS     R4,R4,#+1
+   \                     ??_DrawBitLine1BPP_H_8: (+1)
+   \   00000072   0x1E76             SUBS     R6,R6,#+1
+   \                     ??_DrawBitLine1BPP_H_0: (+1)
+   \   00000074   0x2E01             CMP      R6,#+1
+   \   00000076   0xDBF2             BLT.N    ??_DrawBitLine1BPP_H_2
+   \   00000078   0x7820             LDRB     R0,[R4, #+0]
+   \   0000007A   0x2180             MOVS     R1,#+128
+   \   0000007C   0x4129             ASRS     R1,R1,R5
+   \   0000007E   0x4208             TST      R0,R1
+   \   00000080   0xD0EF             BEQ.N    ??_DrawBitLine1BPP_H_6
+   \   00000082   0x4648             MOV      R0,R9
+   \   00000084   0xE7EE             B.N      ??_DrawBitLine1BPP_H_7
+   \                     ??_DrawBitLine1BPP_H_9: (+1)
+   \   00000086   0x4640             MOV      R0,R8
+   \   00000088   0x.... 0x....      BL       LCD_WriteRAM
+   \                     ??_DrawBitLine1BPP_H_10: (+1)
+   \   0000008C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000008E   0x2D08             CMP      R5,#+8
+   \   00000090   0xD101             BNE.N    ??_DrawBitLine1BPP_H_11
+   \   00000092   0x2500             MOVS     R5,#+0
+   \   00000094   0x1C64             ADDS     R4,R4,#+1
+   \                     ??_DrawBitLine1BPP_H_11: (+1)
+   \   00000096   0x1E76             SUBS     R6,R6,#+1
+   \                     ??_DrawBitLine1BPP_H_1: (+1)
+   \   00000098   0x2E01             CMP      R6,#+1
+   \   0000009A   0xDBE0             BLT.N    ??_DrawBitLine1BPP_H_2
+   \   0000009C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000009E   0x2180             MOVS     R1,#+128
+   \   000000A0   0x4129             ASRS     R1,R1,R5
+   \   000000A2   0x4208             TST      R0,R1
+   \   000000A4   0xD0EF             BEQ.N    ??_DrawBitLine1BPP_H_9
+   \   000000A6   0x4648             MOV      R0,R9
+   \   000000A8   0x.... 0x....      BL       LCD_WriteRAM
+   \   000000AC   0xE7EE             B.N      ??_DrawBitLine1BPP_H_10
+    256          
+    257          /*********************************************************************
+    258          *
+    259          *       Draw Bitmap 2 BPP
+    260          */
+    261          #if (LCD_MAX_LOG_COLORS > 2)
+
+   \                                 In section .text, align 2, keep-with-next
+    262          static void  _DrawBitLine2BPP(int x, int y, U8 const GUI_UNI_PTR * p, int Diff, int xsize, const LCD_PIXELINDEX * pTrans) {
+   \                     _DrawBitLine2BPP: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x4615             MOV      R5,R2
+   \   00000008   0x461F             MOV      R7,R3
+    263            LCD_PIXELINDEX Pixels = *p;
+   \   0000000A   0x782E             LDRB     R6,[R5, #+0]
+    264            int CurrentPixel = Diff;
+    265            x += Diff;
+   \   0000000C   0xEB07 0x0800      ADD      R8,R7,R0
+   \   00000010   0xF8DD 0x9028      LDR      R9,[SP, #+40]
+   \   00000014   0xF8DD 0xA02C      LDR      R10,[SP, #+44]
+    266            switch (GUI_Context.DrawMode & (LCD_DRAWMODE_TRANS | LCD_DRAWMODE_XOR)) {
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable7
+   \   0000001C   0x7B00             LDRB     R0,[R0, #+12]
+   \   0000001E   0xF010 0x0003      ANDS     R0,R0,#0x3
+   \   00000022   0xD002             BEQ.N    ??_DrawBitLine2BPP_0
+   \   00000024   0x2802             CMP      R0,#+2
+   \   00000026   0xD03B             BEQ.N    ??_DrawBitLine2BPP_1
+   \   00000028   0xE076             B.N      ??_DrawBitLine2BPP_2
+    267              case 0:
+    268                if (pTrans) {
+   \                     ??_DrawBitLine2BPP_0: (+1)
+   \   0000002A   0xF04F 0x0BC0      MOV      R11,#+192
+   \   0000002E   0xF1BA 0x0F00      CMP      R10,#+0
+   \   00000032   0xD01B             BEQ.N    ??_DrawBitLine2BPP_3
+    269                  do {
+    270                    int Shift = (3 - CurrentPixel) << 1;
+   \                     ??_DrawBitLine2BPP_4: (+1)
+   \   00000034   0xF1C7 0x0003      RSB      R0,R7,#+3
+   \   00000038   0x0040             LSLS     R0,R0,#+1
+    271                    int Index = (Pixels & (0xC0 >> (6 - Shift))) >> Shift;
+    272                    LCD_PIXELINDEX PixelIndex = *(pTrans + Index);
+    273                    LCD_L0_SetPixelIndex(x++, y, PixelIndex);
+   \   0000003A   0xF1C0 0x0106      RSB      R1,R0,#+6
+   \   0000003E   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   00000042   0x4031             ANDS     R1,R1,R6
+   \   00000044   0xFA41 0xF000      ASR      R0,R1,R0
+   \   00000048   0xF83A 0x2010      LDRH     R2,[R10, R0, LSL #+1]
+   \   0000004C   0x4621             MOV      R1,R4
+   \   0000004E   0x4640             MOV      R0,R8
+   \   00000050   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+   \   00000054   0xF108 0x0801      ADD      R8,R8,#+1
+    274                    if (++CurrentPixel == 4) {
+   \   00000058   0x1C7F             ADDS     R7,R7,#+1
+   \   0000005A   0x2F04             CMP      R7,#+4
+   \   0000005C   0xD102             BNE.N    ??_DrawBitLine2BPP_5
+    275                      CurrentPixel = 0;
+   \   0000005E   0x2700             MOVS     R7,#+0
+    276                      Pixels = *(++p);
+   \   00000060   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    277                    }
+    278          		    } while (--xsize);
+   \                     ??_DrawBitLine2BPP_5: (+1)
+   \   00000064   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   00000068   0xD1E4             BNE.N    ??_DrawBitLine2BPP_4
+   \   0000006A   0xE055             B.N      ??_DrawBitLine2BPP_2
+    279                } else {
+    280                  do {
+    281                    int Shift = (3 - CurrentPixel) << 1;
+   \                     ??_DrawBitLine2BPP_3: (+1)
+   \   0000006C   0xF1C7 0x0003      RSB      R0,R7,#+3
+   \   00000070   0x0040             LSLS     R0,R0,#+1
+    282                    int Index = (Pixels & (0xC0 >> (6 - Shift))) >> Shift;
+    283                    LCD_L0_SetPixelIndex(x++, y, Index);
+   \   00000072   0xF1C0 0x0106      RSB      R1,R0,#+6
+   \   00000076   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   0000007A   0x4031             ANDS     R1,R1,R6
+   \   0000007C   0xFA41 0xF200      ASR      R2,R1,R0
+   \   00000080   0x4621             MOV      R1,R4
+   \   00000082   0x4640             MOV      R0,R8
+   \   00000084   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+   \   00000088   0xF108 0x0801      ADD      R8,R8,#+1
+    284                    if (++CurrentPixel == 4) {
+   \   0000008C   0x1C7F             ADDS     R7,R7,#+1
+   \   0000008E   0x2F04             CMP      R7,#+4
+   \   00000090   0xD102             BNE.N    ??_DrawBitLine2BPP_6
+    285                      CurrentPixel = 0;
+   \   00000092   0x2700             MOVS     R7,#+0
+    286                      Pixels = *(++p);
+   \   00000094   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    287                    }
+    288          		    } while (--xsize);
+   \                     ??_DrawBitLine2BPP_6: (+1)
+   \   00000098   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   0000009C   0xD1E6             BNE.N    ??_DrawBitLine2BPP_3
+   \   0000009E   0xE03B             B.N      ??_DrawBitLine2BPP_2
+    289                }
+    290                break;
+    291              case LCD_DRAWMODE_TRANS:
+    292                if (pTrans) {
+   \                     ??_DrawBitLine2BPP_1: (+1)
+   \   000000A0   0xF04F 0x0BC0      MOV      R11,#+192
+   \   000000A4   0xF1BA 0x0F00      CMP      R10,#+0
+   \   000000A8   0xD01C             BEQ.N    ??_DrawBitLine2BPP_7
+    293                  do {
+    294                    int Shift = (3 - CurrentPixel) << 1;
+   \                     ??_DrawBitLine2BPP_8: (+1)
+   \   000000AA   0xF1C7 0x0003      RSB      R0,R7,#+3
+   \   000000AE   0x0040             LSLS     R0,R0,#+1
+    295                    int Index = (Pixels & (0xC0 >> (6 - Shift))) >> Shift;
+   \   000000B0   0xF1C0 0x0106      RSB      R1,R0,#+6
+   \   000000B4   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   000000B8   0x4031             ANDS     R1,R1,R6
+   \   000000BA   0xFA51 0xF000      ASRS     R0,R1,R0
+    296                    if (Index) {
+   \   000000BE   0xD005             BEQ.N    ??_DrawBitLine2BPP_9
+    297                      LCD_PIXELINDEX PixelIndex = *(pTrans + Index);
+    298                      LCD_L0_SetPixelIndex(x, y, PixelIndex);
+   \   000000C0   0xF83A 0x2010      LDRH     R2,[R10, R0, LSL #+1]
+   \   000000C4   0x4621             MOV      R1,R4
+   \   000000C6   0x4640             MOV      R0,R8
+   \   000000C8   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    299                    }
+    300                    x++;
+   \                     ??_DrawBitLine2BPP_9: (+1)
+   \   000000CC   0xF108 0x0801      ADD      R8,R8,#+1
+    301                    if (++CurrentPixel == 4) {
+   \   000000D0   0x1C7F             ADDS     R7,R7,#+1
+   \   000000D2   0x2F04             CMP      R7,#+4
+   \   000000D4   0xD102             BNE.N    ??_DrawBitLine2BPP_10
+    302                      CurrentPixel = 0;
+   \   000000D6   0x2700             MOVS     R7,#+0
+    303                      Pixels = *(++p);
+   \   000000D8   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    304                    }
+    305          		    } while (--xsize);
+   \                     ??_DrawBitLine2BPP_10: (+1)
+   \   000000DC   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   000000E0   0xD1E3             BNE.N    ??_DrawBitLine2BPP_8
+   \   000000E2   0xE019             B.N      ??_DrawBitLine2BPP_2
+    306                } else {
+    307                  do {
+    308                    int Shift = (3 - CurrentPixel) << 1;
+   \                     ??_DrawBitLine2BPP_7: (+1)
+   \   000000E4   0xF1C7 0x0003      RSB      R0,R7,#+3
+   \   000000E8   0x0040             LSLS     R0,R0,#+1
+    309                    int Index = (Pixels & (0xC0 >> (6 - Shift))) >> Shift;
+   \   000000EA   0xF1C0 0x0106      RSB      R1,R0,#+6
+   \   000000EE   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   000000F2   0x4031             ANDS     R1,R1,R6
+   \   000000F4   0xFA51 0xF200      ASRS     R2,R1,R0
+    310                    if (Index) {
+   \   000000F8   0xD003             BEQ.N    ??_DrawBitLine2BPP_11
+    311                      LCD_L0_SetPixelIndex(x, y, Index);
+   \   000000FA   0x4621             MOV      R1,R4
+   \   000000FC   0x4640             MOV      R0,R8
+   \   000000FE   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    312                    }
+    313                    x++;
+   \                     ??_DrawBitLine2BPP_11: (+1)
+   \   00000102   0xF108 0x0801      ADD      R8,R8,#+1
+    314                    if (++CurrentPixel == 4) {
+   \   00000106   0x1C7F             ADDS     R7,R7,#+1
+   \   00000108   0x2F04             CMP      R7,#+4
+   \   0000010A   0xD102             BNE.N    ??_DrawBitLine2BPP_12
+    315                      CurrentPixel = 0;
+   \   0000010C   0x2700             MOVS     R7,#+0
+    316                      Pixels = *(++p);
+   \   0000010E   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    317                    }
+    318          		    } while (--xsize);
+   \                     ??_DrawBitLine2BPP_12: (+1)
+   \   00000112   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   00000116   0xD1E5             BNE.N    ??_DrawBitLine2BPP_7
+    319                }
+    320                break;
+    321            }
+    322          }
+   \                     ??_DrawBitLine2BPP_2: (+1)
+   \   00000118   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}   ;; return
+    323          #endif
+    324          
+    325          /*********************************************************************
+    326          *
+    327          *       Draw Bitmap 4 BPP
+    328          */
+    329          #if (LCD_MAX_LOG_COLORS > 4)
+
+   \                                 In section .text, align 2, keep-with-next
+    330          static void  _DrawBitLine4BPP(int x, int y, U8 const GUI_UNI_PTR * p, int Diff, int xsize, const LCD_PIXELINDEX * pTrans) {
+   \                     _DrawBitLine4BPP: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x4615             MOV      R5,R2
+   \   00000008   0x461F             MOV      R7,R3
+    331            LCD_PIXELINDEX Pixels = *p;
+   \   0000000A   0x782E             LDRB     R6,[R5, #+0]
+    332            int CurrentPixel = Diff;
+    333            x += Diff;
+   \   0000000C   0xEB07 0x0800      ADD      R8,R7,R0
+   \   00000010   0xF8DD 0x9028      LDR      R9,[SP, #+40]
+   \   00000014   0xF8DD 0xA02C      LDR      R10,[SP, #+44]
+    334            switch (GUI_Context.DrawMode & (LCD_DRAWMODE_TRANS | LCD_DRAWMODE_XOR)) {
+   \   00000018   0x....             LDR.N    R0,??DataTable7
+   \   0000001A   0x7B00             LDRB     R0,[R0, #+12]
+   \   0000001C   0xF010 0x0003      ANDS     R0,R0,#0x3
+   \   00000020   0xD002             BEQ.N    ??_DrawBitLine4BPP_0
+   \   00000022   0x2802             CMP      R0,#+2
+   \   00000024   0xD03B             BEQ.N    ??_DrawBitLine4BPP_1
+   \   00000026   0xE076             B.N      ??_DrawBitLine4BPP_2
+    335              case 0:
+    336                if (pTrans) {
+   \                     ??_DrawBitLine4BPP_0: (+1)
+   \   00000028   0xF04F 0x0BF0      MOV      R11,#+240
+   \   0000002C   0xF1BA 0x0F00      CMP      R10,#+0
+   \   00000030   0xD01B             BEQ.N    ??_DrawBitLine4BPP_3
+    337                  do {
+    338                    int Shift = (1 - CurrentPixel) << 2;
+   \                     ??_DrawBitLine4BPP_4: (+1)
+   \   00000032   0xF1C7 0x0001      RSB      R0,R7,#+1
+   \   00000036   0x0080             LSLS     R0,R0,#+2
+    339                    int Index = (Pixels & (0xF0 >> (4 - Shift))) >> Shift;
+    340                    LCD_PIXELINDEX PixelIndex = *(pTrans + Index);
+    341                    LCD_L0_SetPixelIndex(x++, y, PixelIndex);
+   \   00000038   0xF1C0 0x0104      RSB      R1,R0,#+4
+   \   0000003C   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   00000040   0x4031             ANDS     R1,R1,R6
+   \   00000042   0xFA41 0xF000      ASR      R0,R1,R0
+   \   00000046   0xF83A 0x2010      LDRH     R2,[R10, R0, LSL #+1]
+   \   0000004A   0x4621             MOV      R1,R4
+   \   0000004C   0x4640             MOV      R0,R8
+   \   0000004E   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+   \   00000052   0xF108 0x0801      ADD      R8,R8,#+1
+    342                    if (++CurrentPixel == 2) {
+   \   00000056   0x1C7F             ADDS     R7,R7,#+1
+   \   00000058   0x2F02             CMP      R7,#+2
+   \   0000005A   0xD102             BNE.N    ??_DrawBitLine4BPP_5
+    343                      CurrentPixel = 0;
+   \   0000005C   0x2700             MOVS     R7,#+0
+    344                      Pixels = *(++p);
+   \   0000005E   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    345                    }
+    346          		    } while (--xsize);
+   \                     ??_DrawBitLine4BPP_5: (+1)
+   \   00000062   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   00000066   0xD1E4             BNE.N    ??_DrawBitLine4BPP_4
+   \   00000068   0xE055             B.N      ??_DrawBitLine4BPP_2
+    347                } else {
+    348                  do {
+    349                    int Shift = (1 - CurrentPixel) << 2;
+   \                     ??_DrawBitLine4BPP_3: (+1)
+   \   0000006A   0xF1C7 0x0001      RSB      R0,R7,#+1
+   \   0000006E   0x0080             LSLS     R0,R0,#+2
+    350                    int Index = (Pixels & (0xF0 >> (4 - Shift))) >> Shift;
+    351                    LCD_L0_SetPixelIndex(x++, y, Index);
+   \   00000070   0xF1C0 0x0104      RSB      R1,R0,#+4
+   \   00000074   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   00000078   0x4031             ANDS     R1,R1,R6
+   \   0000007A   0xFA41 0xF200      ASR      R2,R1,R0
+   \   0000007E   0x4621             MOV      R1,R4
+   \   00000080   0x4640             MOV      R0,R8
+   \   00000082   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+   \   00000086   0xF108 0x0801      ADD      R8,R8,#+1
+    352                    if (++CurrentPixel == 2) {
+   \   0000008A   0x1C7F             ADDS     R7,R7,#+1
+   \   0000008C   0x2F02             CMP      R7,#+2
+   \   0000008E   0xD102             BNE.N    ??_DrawBitLine4BPP_6
+    353                      CurrentPixel = 0;
+   \   00000090   0x2700             MOVS     R7,#+0
+    354                      Pixels = *(++p);
+   \   00000092   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    355                    }
+    356          		    } while (--xsize);
+   \                     ??_DrawBitLine4BPP_6: (+1)
+   \   00000096   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   0000009A   0xD1E6             BNE.N    ??_DrawBitLine4BPP_3
+   \   0000009C   0xE03B             B.N      ??_DrawBitLine4BPP_2
+    357                }
+    358                break;
+    359              case LCD_DRAWMODE_TRANS:
+    360                if (pTrans) {
+   \                     ??_DrawBitLine4BPP_1: (+1)
+   \   0000009E   0xF04F 0x0BF0      MOV      R11,#+240
+   \   000000A2   0xF1BA 0x0F00      CMP      R10,#+0
+   \   000000A6   0xD01C             BEQ.N    ??_DrawBitLine4BPP_7
+    361                  do {
+    362                    int Shift = (1 - CurrentPixel) << 2;
+   \                     ??_DrawBitLine4BPP_8: (+1)
+   \   000000A8   0xF1C7 0x0001      RSB      R0,R7,#+1
+   \   000000AC   0x0080             LSLS     R0,R0,#+2
+    363                    int Index = (Pixels & (0xF0 >> (4 - Shift))) >> Shift;
+   \   000000AE   0xF1C0 0x0104      RSB      R1,R0,#+4
+   \   000000B2   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   000000B6   0x4031             ANDS     R1,R1,R6
+   \   000000B8   0xFA51 0xF000      ASRS     R0,R1,R0
+    364                    if (Index) {
+   \   000000BC   0xD005             BEQ.N    ??_DrawBitLine4BPP_9
+    365                      LCD_PIXELINDEX PixelIndex = *(pTrans + Index);
+    366                      LCD_L0_SetPixelIndex(x, y, PixelIndex);
+   \   000000BE   0xF83A 0x2010      LDRH     R2,[R10, R0, LSL #+1]
+   \   000000C2   0x4621             MOV      R1,R4
+   \   000000C4   0x4640             MOV      R0,R8
+   \   000000C6   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    367                    }
+    368                    x++;
+   \                     ??_DrawBitLine4BPP_9: (+1)
+   \   000000CA   0xF108 0x0801      ADD      R8,R8,#+1
+    369                    if (++CurrentPixel == 2) {
+   \   000000CE   0x1C7F             ADDS     R7,R7,#+1
+   \   000000D0   0x2F02             CMP      R7,#+2
+   \   000000D2   0xD102             BNE.N    ??_DrawBitLine4BPP_10
+    370                      CurrentPixel = 0;
+   \   000000D4   0x2700             MOVS     R7,#+0
+    371                      Pixels = *(++p);
+   \   000000D6   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    372                    }
+    373          		    } while (--xsize);
+   \                     ??_DrawBitLine4BPP_10: (+1)
+   \   000000DA   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   000000DE   0xD1E3             BNE.N    ??_DrawBitLine4BPP_8
+   \   000000E0   0xE019             B.N      ??_DrawBitLine4BPP_2
+    374                } else {
+    375                  do {
+    376                    int Shift = (1 - CurrentPixel) << 2;
+   \                     ??_DrawBitLine4BPP_7: (+1)
+   \   000000E2   0xF1C7 0x0001      RSB      R0,R7,#+1
+   \   000000E6   0x0080             LSLS     R0,R0,#+2
+    377                    int Index = (Pixels & (0xF0 >> (4 - Shift))) >> Shift;
+   \   000000E8   0xF1C0 0x0104      RSB      R1,R0,#+4
+   \   000000EC   0xFA4B 0xF101      ASR      R1,R11,R1
+   \   000000F0   0x4031             ANDS     R1,R1,R6
+   \   000000F2   0xFA51 0xF200      ASRS     R2,R1,R0
+    378                    if (Index) {
+   \   000000F6   0xD003             BEQ.N    ??_DrawBitLine4BPP_11
+    379                      LCD_L0_SetPixelIndex(x, y, Index);
+   \   000000F8   0x4621             MOV      R1,R4
+   \   000000FA   0x4640             MOV      R0,R8
+   \   000000FC   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    380                    }
+    381                    x++;
+   \                     ??_DrawBitLine4BPP_11: (+1)
+   \   00000100   0xF108 0x0801      ADD      R8,R8,#+1
+    382                    if (++CurrentPixel == 2) {
+   \   00000104   0x1C7F             ADDS     R7,R7,#+1
+   \   00000106   0x2F02             CMP      R7,#+2
+   \   00000108   0xD102             BNE.N    ??_DrawBitLine4BPP_12
+    383                      CurrentPixel = 0;
+   \   0000010A   0x2700             MOVS     R7,#+0
+    384                      Pixels = *(++p);
+   \   0000010C   0xF815 0x6F01      LDRB     R6,[R5, #+1]!
+    385                    }
+    386          		    } while (--xsize);
+   \                     ??_DrawBitLine4BPP_12: (+1)
+   \   00000110   0xF1B9 0x0901      SUBS     R9,R9,#+1
+   \   00000114   0xD1E5             BNE.N    ??_DrawBitLine4BPP_7
+    387                }
+    388                break;
+    389            }
+    390          }
+   \                     ??_DrawBitLine4BPP_2: (+1)
+   \   00000116   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}   ;; return
+    391          #endif
+    392          
+    393          /*********************************************************************
+    394          *
+    395          *       Draw Bitmap 8 BPP
+    396          */
+    397          #if (LCD_MAX_LOG_COLORS > 16)
+
+   \                                 In section .text, align 2, keep-with-next
+    398          static void  _DrawBitLine8BPP(int x, int y, U8 const GUI_UNI_PTR * p, int xsize, const LCD_PIXELINDEX * pTrans) {
+   \                     _DrawBitLine8BPP: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0x4616             MOV      R6,R2
+   \   0000000A   0x461F             MOV      R7,R3
+   \   0000000C   0xF8DD 0x8018      LDR      R8,[SP, #+24]
+    399            LCD_PIXELINDEX Pixel;
+    400            switch (GUI_Context.DrawMode & (LCD_DRAWMODE_TRANS | LCD_DRAWMODE_XOR)) {
+   \   00000010   0x....             LDR.N    R0,??DataTable7
+   \   00000012   0x7B00             LDRB     R0,[R0, #+12]
+   \   00000014   0xF010 0x0003      ANDS     R0,R0,#0x3
+   \   00000018   0xD002             BEQ.N    ??_DrawBitLine8BPP_0
+   \   0000001A   0x2802             CMP      R0,#+2
+   \   0000001C   0xD01B             BEQ.N    ??_DrawBitLine8BPP_1
+   \   0000001E   0xE038             B.N      ??_DrawBitLine8BPP_2
+    401              case 0:
+    402                if (pTrans) {
+   \                     ??_DrawBitLine8BPP_0: (+1)
+   \   00000020   0xF1B8 0x0F00      CMP      R8,#+0
+   \   00000024   0xD00C             BEQ.N    ??_DrawBitLine8BPP_3
+    403                  for (; xsize > 0; xsize--, x++, p++) {
+   \                     ??_DrawBitLine8BPP_4: (+1)
+   \   00000026   0x2F01             CMP      R7,#+1
+   \   00000028   0xDB33             BLT.N    ??_DrawBitLine8BPP_2
+    404                    Pixel = *p;
+    405                    LCD_L0_SetPixelIndex(x, y, *(pTrans + Pixel));
+   \   0000002A   0xF816 0x0B01      LDRB     R0,[R6], #+1
+   \   0000002E   0xF838 0x2010      LDRH     R2,[R8, R0, LSL #+1]
+   \   00000032   0x4629             MOV      R1,R5
+   \   00000034   0x4620             MOV      R0,R4
+   \   00000036   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    406                  }
+   \   0000003A   0x1E7F             SUBS     R7,R7,#+1
+   \   0000003C   0x1C64             ADDS     R4,R4,#+1
+   \   0000003E   0xE7F2             B.N      ??_DrawBitLine8BPP_4
+    407                } else {
+    408                  for (; xsize > 0; xsize--, x++, p++) {
+   \                     ??_DrawBitLine8BPP_3: (+1)
+   \   00000040   0x2F01             CMP      R7,#+1
+   \   00000042   0xDB26             BLT.N    ??_DrawBitLine8BPP_2
+    409                    LCD_L0_SetPixelIndex(x, y, *p);
+   \   00000044   0xF816 0x2B01      LDRB     R2,[R6], #+1
+   \   00000048   0x4629             MOV      R1,R5
+   \   0000004A   0x4620             MOV      R0,R4
+   \   0000004C   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    410                  }
+   \   00000050   0x1E7F             SUBS     R7,R7,#+1
+   \   00000052   0x1C64             ADDS     R4,R4,#+1
+   \   00000054   0xE7F4             B.N      ??_DrawBitLine8BPP_3
+    411                }
+    412                break;
+    413              case LCD_DRAWMODE_TRANS:
+    414                if (pTrans) {
+   \                     ??_DrawBitLine8BPP_1: (+1)
+   \   00000056   0xF1B8 0x0F00      CMP      R8,#+0
+   \   0000005A   0xD018             BEQ.N    ??_DrawBitLine8BPP_5
+    415                  for (; xsize > 0; xsize--, x++, p++) {
+   \                     ??_DrawBitLine8BPP_6: (+1)
+   \   0000005C   0x2F01             CMP      R7,#+1
+   \   0000005E   0xDB18             BLT.N    ??_DrawBitLine8BPP_2
+    416                    Pixel = *p;
+   \   00000060   0x7832             LDRB     R2,[R6, #+0]
+    417                    if (Pixel) {
+   \   00000062   0x2A00             CMP      R2,#+0
+   \   00000064   0xD005             BEQ.N    ??_DrawBitLine8BPP_7
+    418                      LCD_L0_SetPixelIndex(x, y, *(pTrans + Pixel));
+   \   00000066   0xF838 0x2012      LDRH     R2,[R8, R2, LSL #+1]
+   \   0000006A   0x4629             MOV      R1,R5
+   \   0000006C   0x4620             MOV      R0,R4
+   \   0000006E   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    419                    }
+    420                  }
+   \                     ??_DrawBitLine8BPP_7: (+1)
+   \   00000072   0x1E7F             SUBS     R7,R7,#+1
+   \   00000074   0x1C64             ADDS     R4,R4,#+1
+   \   00000076   0x1C76             ADDS     R6,R6,#+1
+   \   00000078   0xE7F0             B.N      ??_DrawBitLine8BPP_6
+    421                } else {
+    422                  for (; xsize > 0; xsize--, x++, p++) {
+    423                    Pixel = *p;
+   \                     ??_DrawBitLine8BPP_8: (+1)
+   \   0000007A   0x7832             LDRB     R2,[R6, #+0]
+    424                    if (Pixel) {
+   \   0000007C   0x2A00             CMP      R2,#+0
+   \   0000007E   0xD003             BEQ.N    ??_DrawBitLine8BPP_9
+    425                      LCD_L0_SetPixelIndex(x, y, Pixel);
+   \   00000080   0x4629             MOV      R1,R5
+   \   00000082   0x4620             MOV      R0,R4
+   \   00000084   0x.... 0x....      BL       LCD_L0_SetPixelIndex
+    426                    }
+    427                  }
+   \                     ??_DrawBitLine8BPP_9: (+1)
+   \   00000088   0x1E7F             SUBS     R7,R7,#+1
+   \   0000008A   0x1C64             ADDS     R4,R4,#+1
+   \   0000008C   0x1C76             ADDS     R6,R6,#+1
+   \                     ??_DrawBitLine8BPP_5: (+1)
+   \   0000008E   0x2F01             CMP      R7,#+1
+   \   00000090   0xDAF3             BGE.N    ??_DrawBitLine8BPP_8
+    428                }
+    429                break;
+    430            }
+    431          }
+   \                     ??_DrawBitLine8BPP_2: (+1)
+   \   00000092   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    432          #endif
+    433          
+    434          /*********************************************************************
+    435          *
+    436          *       Draw Bitmap 16 BPP
+    437          */
+    438          #if (LCD_BITSPERPIXEL > 8)
+    439          static void  DrawBitLine16BPP(int x, int y, U16 const GUI_UNI_PTR * p, int xsize, const LCD_PIXELINDEX * pTrans) {
+    440            LCD_PIXELINDEX pixel;
+    441            if ((GUI_Context.DrawMode & LCD_DRAWMODE_TRANS) == 0) {
+    442              if (pTrans) {
+    443          		#if 0
+    444                for (; xsize > 0; xsize--, x++, p++) {
+    445                  pixel = *p;
+    446                  LCD_L0_SetPixelIndex(x, y, *(pTrans + pixel));
+    447                }
+    448          	  #else
+    449                ili9320_SetCursor(x, y);
+    450          	LCD_setWindowArea(x, y, xsize, 1);
+    451          	//ili9320_SetCursor(x, y);
+    452          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    453          	for (; xsize > 0; xsize--,  p++)
+    454          	{
+    455          		pixel = *p;
+    456          		LCD_WriteRAM(*(pTrans + pixel));
+    457          	}
+    458          	//LCD_setWindowArea(0, 0, 319, 239);
+    459          	LCD_setWindowArea(0, 0, 480, 320);
+    460          	#endif
+    461              } else {
+    462              #if 0
+    463                for (;xsize > 0; xsize--, x++, p++) {
+    464                  LCD_L0_SetPixelIndex(x, y, *p);
+    465                }
+    466          	#else
+    467                ili9320_SetCursor(x, y);
+    468          	LCD_setWindowArea(x, y, xsize, 1);
+    469          	//ili9320_SetCursor(x, y);
+    470          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    471          	for (; xsize > 0; xsize--,  p++)
+    472          	{
+    473          		LCD_WriteRAM(*p);
+    474          	}
+    475          	//LCD_setWindowArea(0, 0, 319, 239);
+    476          	LCD_setWindowArea(0, 0, 480, 320);
+    477          	#endif
+    478              }
+    479            } 
+    480            else {
+    481              if (pTrans) {
+    482          		#if 0
+    483                for (; xsize > 0; xsize--, x++, p++) {
+    484                  pixel = *p;
+    485                  if (pixel) {
+    486                    LCD_L0_SetPixelIndex(x, y, *(pTrans + pixel));
+    487                  }
+    488          		
+    489          	#else
+    490                  ili9320_SetCursor(x, y);
+    491          	LCD_setWindowArea(x, y, xsize, 1);
+    492          	//ili9320_SetCursor(x, y);
+    493          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    494          	for (; xsize > 0; xsize--,  p++)
+    495          	{
+    496          		pixel = *p;
+    497          		if (pixel) {
+    498          			LCD_WriteRAM(*(pTrans + pixel));
+    499          		}
+    500          	}
+    501          	//LCD_setWindowArea(0, 0, 319, 239);
+    502          	LCD_setWindowArea(0, 0, 480, 320);
+    503          	#endif
+    504                }
+    505            
+    506          	else {
+    507              #if 0
+    508                for (; xsize > 0; xsize--, x++, p++) {
+    509                  pixel = *p;
+    510                  if (pixel) {
+    511                    LCD_L0_SetPixelIndex(x, y, pixel);
+    512                  }
+    513                }
+    514          	  #else
+    515                ili9320_SetCursor(x, y);
+    516          	LCD_setWindowArea(x, y, xsize, 1);
+    517          	//ili9320_SetCursor(x, y);
+    518          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+    519          	for (; xsize > 0; xsize--,  p++)
+    520          	{
+    521          		 pixel = *p;
+    522          		if (pixel) {
+    523          			LCD_WriteRAM(pixel);
+    524          		}
+    525          	}
+    526          	//LCD_setWindowArea(0, 0, 319, 239);
+    527          	LCD_setWindowArea(0, 0, 480, 320);
+    528          	#endif
+    529              }
+    530            }
+    531          }
+    532          
+    533          
+
+   \                                 In section .text, align 2, keep-with-next
+    534          static void  DrawBitLine16BPP_H(int x, int y, U16 const GUI_UNI_PTR * p, int xsize, const LCD_PIXELINDEX * pTrans) {
+   \                     DrawBitLine16BPP_H: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4614             MOV      R4,R2
+   \   00000004   0x461D             MOV      R5,R3
+   \   00000006   0x9E04             LDR      R6,[SP, #+16]
+    535            LCD_PIXELINDEX pixel;
+    536            if ((GUI_Context.DrawMode & LCD_DRAWMODE_TRANS) == 0) {
+   \   00000008   0x....             LDR.N    R0,??DataTable7
+   \   0000000A   0x7B00             LDRB     R0,[R0, #+12]
+   \   0000000C   0x0780             LSLS     R0,R0,#+30
+   \   0000000E   0xD413             BMI.N    ??DrawBitLine16BPP_H_0
+    537              if (pTrans) {
+   \   00000010   0x2E00             CMP      R6,#+0
+   \   00000012   0xD009             BEQ.N    ??DrawBitLine16BPP_H_1
+    538          	
+    539          	for (; xsize > 0; xsize--,  p++)
+   \                     ??DrawBitLine16BPP_H_2: (+1)
+   \   00000014   0x2D01             CMP      R5,#+1
+   \   00000016   0xDB26             BLT.N    ??DrawBitLine16BPP_H_3
+    540          	{
+    541          		pixel = *p;
+    542          		LCD_WriteRAM(*(pTrans + pixel));
+   \   00000018   0xF834 0x0B02      LDRH     R0,[R4], #+2
+   \   0000001C   0xF836 0x0010      LDRH     R0,[R6, R0, LSL #+1]
+   \   00000020   0x.... 0x....      BL       LCD_WriteRAM
+    543          	}
+   \   00000024   0x1E6D             SUBS     R5,R5,#+1
+   \   00000026   0xE7F5             B.N      ??DrawBitLine16BPP_H_2
+    544          	
+    545          	
+    546              } else {
+    547              
+    548          	
+    549          	for (; xsize > 0; xsize--,  p++)
+   \                     ??DrawBitLine16BPP_H_1: (+1)
+   \   00000028   0x2D01             CMP      R5,#+1
+   \   0000002A   0xDB1C             BLT.N    ??DrawBitLine16BPP_H_3
+    550          	{
+    551          		LCD_WriteRAM(*p);
+   \   0000002C   0xF834 0x0B02      LDRH     R0,[R4], #+2
+   \   00000030   0x.... 0x....      BL       LCD_WriteRAM
+    552          	}
+   \   00000034   0x1E6D             SUBS     R5,R5,#+1
+   \   00000036   0xE7F7             B.N      ??DrawBitLine16BPP_H_1
+    553          	
+    554          	
+    555              }
+    556            } 
+    557            else {
+    558              if (pTrans) {
+   \                     ??DrawBitLine16BPP_H_0: (+1)
+   \   00000038   0x2E00             CMP      R6,#+0
+   \   0000003A   0xD012             BEQ.N    ??DrawBitLine16BPP_H_4
+    559          	
+    560          	for (; xsize > 0; xsize--,  p++)
+   \                     ??DrawBitLine16BPP_H_5: (+1)
+   \   0000003C   0x2D01             CMP      R5,#+1
+   \   0000003E   0xDB12             BLT.N    ??DrawBitLine16BPP_H_3
+    561          	{
+    562          		pixel = *p;
+   \   00000040   0x8820             LDRH     R0,[R4, #+0]
+    563          		if (pixel) {
+   \   00000042   0x2800             CMP      R0,#+0
+   \   00000044   0xD003             BEQ.N    ??DrawBitLine16BPP_H_6
+    564          			LCD_WriteRAM(*(pTrans + pixel));
+   \   00000046   0xF836 0x0010      LDRH     R0,[R6, R0, LSL #+1]
+   \   0000004A   0x.... 0x....      BL       LCD_WriteRAM
+    565          		}
+    566          	}
+   \                     ??DrawBitLine16BPP_H_6: (+1)
+   \   0000004E   0x1E6D             SUBS     R5,R5,#+1
+   \   00000050   0x1CA4             ADDS     R4,R4,#+2
+   \   00000052   0xE7F3             B.N      ??DrawBitLine16BPP_H_5
+    567          	
+    568                }
+    569            
+    570          	else {
+    571             
+    572          	for (; xsize > 0; xsize--,  p++)
+    573          	{
+    574          		 pixel = *p;
+   \                     ??DrawBitLine16BPP_H_7: (+1)
+   \   00000054   0x8820             LDRH     R0,[R4, #+0]
+    575          		if (pixel) {
+   \   00000056   0x2800             CMP      R0,#+0
+   \   00000058   0xD001             BEQ.N    ??DrawBitLine16BPP_H_8
+    576          			LCD_WriteRAM(pixel);
+   \   0000005A   0x.... 0x....      BL       LCD_WriteRAM
+    577          		}
+    578          	}
+   \                     ??DrawBitLine16BPP_H_8: (+1)
+   \   0000005E   0x1E6D             SUBS     R5,R5,#+1
+   \   00000060   0x1CA4             ADDS     R4,R4,#+2
+   \                     ??DrawBitLine16BPP_H_4: (+1)
+   \   00000062   0x2D01             CMP      R5,#+1
+   \   00000064   0xDAF6             BGE.N    ??DrawBitLine16BPP_H_7
+    579          	
+    580          	
+    581              }
+    582            }
+    583          }
+   \                     ??DrawBitLine16BPP_H_3: (+1)
+   \   00000066   0xBD70             POP      {R4-R6,PC}       ;; return
+    584          #endif
+    585          
+    586          /*********************************************************************
+    587          *
+    588          *       Exported functions
+    589          *
+    590          **********************************************************************
+    591          */
+    592          
+    593          /*********************************************************************
+    594          *
+    595          *       LCD_L0_SetPixelIndex
+    596          *
+    597          * Purpose:
+    598          *   Sets the index of the given pixel. The upper layers
+    599          *   calling this routine make sure that the coordinates are in range, so
+    600          *   that no check on the parameters needs to be performed.
+    601          */
+
+   \                                 In section .text, align 2, keep-with-next
+    602          void LCD_L0_SetPixelIndex(int x, int y, int PixelIndex) {
+    603            /* Convert logical into physical coordinates (Dep. on LCDConf.h) */
+    604            #if LCD_SWAP_XY | LCD_MIRROR_X| LCD_MIRROR_Y
+    605              int xPhys = LOG2PHYS_X(x, y);
+                         ^
+Warning[Pe177]: variable "xPhys" was declared but never referenced
+    606              int yPhys = LOG2PHYS_Y(x, y);
+                         ^
+Warning[Pe177]: variable "yPhys" was declared but never referenced
+    607            #else
+    608              #define xPhys x
+    609              #define yPhys y
+    610            #endif
+    611            /* Write into hardware ... Adapt to your system */
+    612            {
+    613              //LCD_SetPoint(x,y,PixelIndex);/* ... */
+    614              ili9320_SetPoint(x,y,PixelIndex);
+   \                     LCD_L0_SetPixelIndex: (+1)
+   \   00000000   0xB292             UXTH     R2,R2
+   \   00000002   0xB289             UXTH     R1,R1
+   \   00000004   0xB280             UXTH     R0,R0
+   \   00000006   0x.... 0x....      B.W      ili9320_SetPoint
+    615            }
+    616          }
+    617          
+    618          /*********************************************************************
+    619          *
+    620          *       LCD_L0_GetPixelIndex
+    621          *
+    622          * Purpose:
+    623          *   Returns the index of the given pixel. The upper layers
+    624          *   calling this routine make sure that the coordinates are in range, so
+    625          *   that no check on the parameters needs to be performed.
+    626          */
+
+   \                                 In section .text, align 2, keep-with-next
+    627          unsigned int LCD_L0_GetPixelIndex(int x, int y) {
+    628            LCD_PIXELINDEX PixelIndex;
+    629            /* Convert logical into physical coordinates (Dep. on LCDConf.h) */
+    630            #if LCD_SWAP_XY | LCD_MIRROR_X| LCD_MIRROR_Y
+    631              int xPhys = LOG2PHYS_X(x, y);
+                         ^
+Warning[Pe177]: variable "xPhys" was declared but never referenced
+    632              int yPhys = LOG2PHYS_Y(x, y);
+                         ^
+Warning[Pe177]: variable "yPhys" was declared but never referenced
+    633            #else
+    634              #define xPhys x
+    635              #define yPhys y
+    636            #endif
+    637            /* Read from hardware ... Adapt to your system */
+    638            {
+    639              //PixelIndex =  LCD_GetPoint(x,y);/* ... */
+    640              PixelIndex =  ili9320_GetPoint(x,y);
+    641            }
+    642            return PixelIndex;
+   \                     LCD_L0_GetPixelIndex: (+1)
+   \   00000000   0xB289             UXTH     R1,R1
+   \   00000002   0xB280             UXTH     R0,R0
+   \   00000004   0x.... 0x....      B.W      ili9320_GetPoint
+    643          }
+    644          
+    645          /*********************************************************************
+    646          *
+    647          *       LCD_L0_XorPixel
+    648          */
+
+   \                                 In section .text, align 2, keep-with-next
+    649          void LCD_L0_XorPixel(int x, int y) {
+   \                     LCD_L0_XorPixel: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    650            LCD_PIXELINDEX PixelIndex = LCD_L0_GetPixelIndex(x, y);
+   \   00000006   0x.... 0x....      BL       LCD_L0_GetPixelIndex
+    651            LCD_L0_SetPixelIndex(x, y, LCD_NUM_COLORS - PixelIndex - 1);
+   \   0000000A   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   0000000E   0xB280             UXTH     R0,R0
+   \   00000010   0x1A0A             SUBS     R2,R1,R0
+   \   00000012   0x4629             MOV      R1,R5
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0xE8BD 0x4038      POP      {R3-R5,LR}
+   \   0000001A   0x....             B.N      LCD_L0_SetPixelIndex
+    652          }
+    653          
+    654          /*********************************************************************
+    655          *
+    656          *       LCD_L0_DrawHLine
+    657          */
+
+   \                                 In section .text, align 2, keep-with-next
+    658          void LCD_L0_DrawHLine  (int x0, int y,  int x1) {
+   \                     LCD_L0_DrawHLine: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    659            if (GUI_Context.DrawMode & LCD_DRAWMODE_XOR) {
+   \   00000008   0x....             LDR.N    R7,??DataTable7
+   \   0000000A   0x7B38             LDRB     R0,[R7, #+12]
+   \   0000000C   0x07C0             LSLS     R0,R0,#+31
+   \   0000000E   0xD507             BPL.N    ??LCD_L0_DrawHLine_0
+    660              for (; x0 <= x1; x0++) {
+   \                     ??LCD_L0_DrawHLine_1: (+1)
+   \   00000010   0x42A6             CMP      R6,R4
+   \   00000012   0xDB28             BLT.N    ??LCD_L0_DrawHLine_2
+    661                LCD_L0_XorPixel(x0, y);
+   \   00000014   0x4629             MOV      R1,R5
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       LCD_L0_XorPixel
+    662              }
+   \   0000001C   0x1C64             ADDS     R4,R4,#+1
+   \   0000001E   0xE7F7             B.N      ??LCD_L0_DrawHLine_1
+    663            } else {
+    664            #if 0
+    665              for (; x0 <= x1; x0++) {	
+    666                LCD_L0_SetPixelIndex(x0, y, LCD_COLORINDEX);
+    667              }
+    668          	#else
+    669              ili9320_SetCursor(x0, y);
+   \                     ??LCD_L0_DrawHLine_0: (+1)
+   \   00000020   0xB289             UXTH     R1,R1
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0xB280             UXTH     R0,R0
+   \   00000026   0x.... 0x....      BL       ili9320_SetCursor
+    670          	LCD_setWindowArea(x0, y, x1 - x0 + 1, 1);
+   \   0000002A   0x2301             MOVS     R3,#+1
+   \   0000002C   0x1B30             SUBS     R0,R6,R4
+   \   0000002E   0x1C42             ADDS     R2,R0,#+1
+   \   00000030   0xB292             UXTH     R2,R2
+   \   00000032   0x4629             MOV      R1,R5
+   \   00000034   0xB289             UXTH     R1,R1
+   \   00000036   0x4620             MOV      R0,R4
+   \   00000038   0xB280             UXTH     R0,R0
+   \   0000003A   0x.... 0x....      BL       LCD_setWindowArea
+    671          	//ili9320_SetCursor(x0, y);
+    672          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+   \   0000003E   0x.... 0x....      BL       LCD_WriteRAM_Prepare
+   \   00000042   0xE003             B.N      ??LCD_L0_DrawHLine_3
+    673          	for (; x0 <= x1; x0++) 
+    674          	{
+    675          		LCD_WriteRAM(LCD_COLORINDEX);
+   \                     ??LCD_L0_DrawHLine_4: (+1)
+   \   00000044   0x8878             LDRH     R0,[R7, #+2]
+   \   00000046   0x.... 0x....      BL       LCD_WriteRAM
+    676          	}
+   \   0000004A   0x1C64             ADDS     R4,R4,#+1
+   \                     ??LCD_L0_DrawHLine_3: (+1)
+   \   0000004C   0x42A6             CMP      R6,R4
+   \   0000004E   0xDAF9             BGE.N    ??LCD_L0_DrawHLine_4
+    677          	//LCD_setWindowArea(0, 0, 319, 239);
+    678          	LCD_setWindowArea(0, 0, 480, 320);
+   \   00000050   0xF44F 0x73A0      MOV      R3,#+320
+   \   00000054   0xF44F 0x72F0      MOV      R2,#+480
+   \   00000058   0x2100             MOVS     R1,#+0
+   \   0000005A   0x4608             MOV      R0,R1
+   \   0000005C   0xB001             ADD      SP,SP,#+4
+   \   0000005E   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000062   0x.... 0x....      B.W      LCD_setWindowArea
+    679          	#endif
+    680            }
+    681          }
+   \                     ??LCD_L0_DrawHLine_2: (+1)
+   \   00000066   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    682          
+    683          /*********************************************************************
+    684          *
+    685          *       LCD_L0_DrawVLine
+    686          */
+
+   \                                 In section .text, align 2, keep-with-next
+    687          void LCD_L0_DrawVLine  (int x, int y0,  int y1) {
+   \                     LCD_L0_DrawVLine: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+    688            if (GUI_Context.DrawMode & LCD_DRAWMODE_XOR) {
+   \   00000008   0x....             LDR.N    R7,??DataTable7
+   \   0000000A   0x7B38             LDRB     R0,[R7, #+12]
+   \   0000000C   0x07C0             LSLS     R0,R0,#+31
+   \   0000000E   0xD507             BPL.N    ??LCD_L0_DrawVLine_0
+    689              for (; y0 <= y1; y0++) {
+   \                     ??LCD_L0_DrawVLine_1: (+1)
+   \   00000010   0x42AE             CMP      R6,R5
+   \   00000012   0xDB28             BLT.N    ??LCD_L0_DrawVLine_2
+    690                LCD_L0_XorPixel(x, y0);
+   \   00000014   0x4629             MOV      R1,R5
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       LCD_L0_XorPixel
+    691              }
+   \   0000001C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000001E   0xE7F7             B.N      ??LCD_L0_DrawVLine_1
+    692            } else {
+    693            #if 0
+    694              for (; y0 <= y1; y0++) {
+    695                LCD_L0_SetPixelIndex(x, y0, LCD_COLORINDEX);
+    696              }
+    697          	#else
+    698              ili9320_SetCursor(x, y0);
+   \                     ??LCD_L0_DrawVLine_0: (+1)
+   \   00000020   0xB289             UXTH     R1,R1
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0xB280             UXTH     R0,R0
+   \   00000026   0x.... 0x....      BL       ili9320_SetCursor
+    699          	LCD_setWindowArea(x, y0, 1, y1 - y0 + 1);
+   \   0000002A   0x1B70             SUBS     R0,R6,R5
+   \   0000002C   0x1C43             ADDS     R3,R0,#+1
+   \   0000002E   0xB29B             UXTH     R3,R3
+   \   00000030   0x2201             MOVS     R2,#+1
+   \   00000032   0x4629             MOV      R1,R5
+   \   00000034   0xB289             UXTH     R1,R1
+   \   00000036   0x4620             MOV      R0,R4
+   \   00000038   0xB280             UXTH     R0,R0
+   \   0000003A   0x.... 0x....      BL       LCD_setWindowArea
+    700          	//ili9320_SetCursor(x, y0);
+    701          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+   \   0000003E   0x.... 0x....      BL       LCD_WriteRAM_Prepare
+   \   00000042   0xE003             B.N      ??LCD_L0_DrawVLine_3
+    702          	for (; y0 <= y1; y0++)
+    703          	{
+    704          		LCD_WriteRAM(LCD_COLORINDEX);
+   \                     ??LCD_L0_DrawVLine_4: (+1)
+   \   00000044   0x8878             LDRH     R0,[R7, #+2]
+   \   00000046   0x.... 0x....      BL       LCD_WriteRAM
+    705          	}
+   \   0000004A   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??LCD_L0_DrawVLine_3: (+1)
+   \   0000004C   0x42AE             CMP      R6,R5
+   \   0000004E   0xDAF9             BGE.N    ??LCD_L0_DrawVLine_4
+    706          	//LCD_setWindowArea(0, 0, 319, 239);
+    707          	LCD_setWindowArea(0, 0, 480, 320);
+   \   00000050   0xF44F 0x73A0      MOV      R3,#+320
+   \   00000054   0xF44F 0x72F0      MOV      R2,#+480
+   \   00000058   0x2100             MOVS     R1,#+0
+   \   0000005A   0x4608             MOV      R0,R1
+   \   0000005C   0xB001             ADD      SP,SP,#+4
+   \   0000005E   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000062   0x.... 0x....      B.W      LCD_setWindowArea
+    708          	#endif
+    709            }
+    710          }
+   \                     ??LCD_L0_DrawVLine_2: (+1)
+   \   00000066   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    711          
+    712          /*********************************************************************
+    713          *
+    714          *       LCD_L0_FillRect
+    715          */
+
+   \                                 In section .text, align 2, keep-with-next
+    716          void LCD_L0_FillRect(int x0, int y0, int x1, int y1) {
+   \                     LCD_L0_FillRect: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0x4616             MOV      R6,R2
+   \   0000000A   0x461F             MOV      R7,R3
+    717            #if 0
+    718            for (; y0 <= y1; y0++) {
+    719              LCD_L0_DrawHLine(x0, y0, x1);
+    720            }
+    721            #else
+    722          	int tmpX = x0;
+    723            ili9320_SetCursor(x0, y0);
+   \   0000000C   0xB289             UXTH     R1,R1
+   \   0000000E   0xB280             UXTH     R0,R0
+   \   00000010   0x.... 0x....      BL       ili9320_SetCursor
+    724          	LCD_setWindowArea(x0, y0, x1 - x0 + 1, y1 - y0 + 1);
+   \   00000014   0x1B78             SUBS     R0,R7,R5
+   \   00000016   0x1C43             ADDS     R3,R0,#+1
+   \   00000018   0xB29B             UXTH     R3,R3
+   \   0000001A   0x1B30             SUBS     R0,R6,R4
+   \   0000001C   0x1C42             ADDS     R2,R0,#+1
+   \   0000001E   0xB292             UXTH     R2,R2
+   \   00000020   0x4629             MOV      R1,R5
+   \   00000022   0xB289             UXTH     R1,R1
+   \   00000024   0x4620             MOV      R0,R4
+   \   00000026   0xB280             UXTH     R0,R0
+   \   00000028   0x.... 0x....      BL       LCD_setWindowArea
+    725          	//ili9320_SetCursor(x0, y0);
+    726          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+   \   0000002C   0x.... 0x....      BL       LCD_WriteRAM_Prepare
+   \   00000030   0xE008             B.N      ??LCD_L0_FillRect_0
+    727          	for(; y0 <= y1; y0++)
+    728          	{
+    729          		for (tmpX = x0; tmpX <= x1; tmpX++) 
+    730          		{
+    731          			LCD_WriteRAM(LCD_COLORINDEX);
+   \                     ??LCD_L0_FillRect_1: (+1)
+   \   00000032   0x....             LDR.N    R0,??DataTable7
+   \   00000034   0x8840             LDRH     R0,[R0, #+2]
+   \   00000036   0x.... 0x....      BL       LCD_WriteRAM
+    732          		}
+   \   0000003A   0xF108 0x0801      ADD      R8,R8,#+1
+   \                     ??LCD_L0_FillRect_2: (+1)
+   \   0000003E   0x4546             CMP      R6,R8
+   \   00000040   0xDAF7             BGE.N    ??LCD_L0_FillRect_1
+   \   00000042   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??LCD_L0_FillRect_0: (+1)
+   \   00000044   0x42AF             CMP      R7,R5
+   \   00000046   0xDB01             BLT.N    ??LCD_L0_FillRect_3
+   \   00000048   0x46A0             MOV      R8,R4
+   \   0000004A   0xE7F8             B.N      ??LCD_L0_FillRect_2
+    733          	}
+    734          	
+    735          	//LCD_setWindowArea(0, 0, 319, 239);
+    736          	LCD_setWindowArea(0, 0, 480, 320);
+   \                     ??LCD_L0_FillRect_3: (+1)
+   \   0000004C   0xF44F 0x73A0      MOV      R3,#+320
+   \   00000050   0xF44F 0x72F0      MOV      R2,#+480
+   \   00000054   0x2100             MOVS     R1,#+0
+   \   00000056   0x4608             MOV      R0,R1
+   \   00000058   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   0000005C   0x.... 0x....      B.W      LCD_setWindowArea
+    737          	#endif
+    738          }
+    739          
+    740          /*********************************************************************
+    741          *
+    742          *       LCD_L0_DrawBitmap
+    743          */
+
+   \                                 In section .text, align 2, keep-with-next
+    744          void LCD_L0_DrawBitmap(int x0, int y0,
+    745                                 int xsize, int ysize,
+    746                                 int BitsPerPixel, 
+    747                                 int BytesPerLine,
+    748                                 const U8 GUI_UNI_PTR * pData, int Diff,
+    749                                 const LCD_PIXELINDEX* pTrans)
+    750          {
+   \                     LCD_L0_DrawBitmap: (+1)
+   \   00000000   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0x4616             MOV      R6,R2
+   \   0000000A   0x4698             MOV      R8,R3
+    751            int i;
+    752          
+    753            #if 0
+    754            /* Use _DrawBitLineXBPP */
+    755            for (i=0; i<ysize; i++) {
+    756              switch (BitsPerPixel) {
+    757              case 1:
+    758                _DrawBitLine1BPP(x0, i + y0, pData, Diff, xsize, pTrans);
+    759                break;
+    760              #if (LCD_MAX_LOG_COLORS > 2)
+    761                case 2:
+    762                  _DrawBitLine2BPP(x0, i + y0, pData, Diff, xsize, pTrans);
+    763                  break;
+    764              #endif
+    765              #if (LCD_MAX_LOG_COLORS > 4)
+    766                case 4:
+    767                  _DrawBitLine4BPP(x0, i + y0, pData, Diff, xsize, pTrans);
+    768                  break;
+    769              #endif
+    770              #if (LCD_MAX_LOG_COLORS > 16)
+    771                case 8:
+    772                  _DrawBitLine8BPP(x0, i + y0, pData, xsize, pTrans);
+    773                  break;
+    774              #endif
+    775              #if (LCD_BITSPERPIXEL > 8)
+    776                case 16:
+    777                  DrawBitLine16BPP(x0, i + y0, (const U16 *)pData, xsize, pTrans);
+    778                  break;
+    779              #endif
+    780              }
+    781              pData += BytesPerLine;
+    782            }
+    783            
+    784            #else
+    785          	int tmpX = x0;
+                 	    ^
+Warning[Pe177]: variable "tmpX" was declared but never referenced
+    786            	int tmpXsize = xsize;
+                   	    ^
+Warning[Pe177]: variable "tmpXsize" was declared but never referenced
+
+  static void  _DrawBitLine1BPP(int x, int y, U8 const GUI_UNI_PTR *p, int Diff, int xsize, const LCD_PIXELINDEX*pTrans) {
+               ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\LCDDriver\LCDDummy.c",116  Warning[Pe177]: 
+          function "_DrawBitLine1BPP" was declared but never referenced
+
+  static void  DrawBitLine16BPP(int x, int y, U16 const GUI_UNI_PTR * p, int xsize, const LCD_PIXELINDEX * pTrans) {
+               ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\LCDDriver\LCDDummy.c",439  Warning[Pe177]: 
+          function "DrawBitLine16BPP" was declared but never referenced
+    787            	int tmpYsize = ysize;
+   \   0000000C   0x4647             MOV      R7,R8
+    788              ili9320_SetCursor(x0, y0);
+   \   0000000E   0xB289             UXTH     R1,R1
+   \   00000010   0xB280             UXTH     R0,R0
+   \   00000012   0x.... 0x....      BL       ili9320_SetCursor
+    789          	LCD_setWindowArea(x0, y0, xsize, ysize);
+   \   00000016   0x4643             MOV      R3,R8
+   \   00000018   0xB29B             UXTH     R3,R3
+   \   0000001A   0x4632             MOV      R2,R6
+   \   0000001C   0xB292             UXTH     R2,R2
+   \   0000001E   0x4629             MOV      R1,R5
+   \   00000020   0xB289             UXTH     R1,R1
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0xB280             UXTH     R0,R0
+   \   00000026   0x.... 0x....      BL       LCD_setWindowArea
+    790          	LCD_WriteRAM_Prepare(); /* Prepare to write GRAM */	
+   \   0000002A   0x.... 0x....      BL       LCD_WriteRAM_Prepare
+   \   0000002E   0xF8DD 0x8034      LDR      R8,[SP, #+52]
+   \   00000032   0xF8DD 0xB038      LDR      R11,[SP, #+56]
+   \   00000036   0xF8DD 0x903C      LDR      R9,[SP, #+60]
+   \   0000003A   0xF8DD 0xA040      LDR      R10,[SP, #+64]
+   \   0000003E   0xE009             B.N      ??LCD_L0_DrawBitmap_0
+    791          	for(; tmpYsize > 0; tmpYsize--)
+    792          	{
+    793          		
+    794          		switch (BitsPerPixel) {
+    795          		    case 1:
+    796          		      _DrawBitLine1BPP_H(x0, y0, pData, Diff, xsize, pTrans);
+    797          		      break;
+    798          		    #if (LCD_MAX_LOG_COLORS > 2)
+    799          		      case 2:
+    800          		        _DrawBitLine2BPP(x0, i + y0, pData, Diff, xsize, pTrans);
+    801          		        break;
+    802          		    #endif
+    803          		    #if (LCD_MAX_LOG_COLORS > 4)
+    804          		      case 4:
+    805          		        _DrawBitLine4BPP(x0, i + y0, pData, Diff, xsize, pTrans);
+    806          		        break;
+    807          		    #endif
+    808          		    #if (LCD_MAX_LOG_COLORS > 16)
+    809          		      case 8:
+    810          		        _DrawBitLine8BPP(x0, i + y0, pData, xsize, pTrans);
+    811          		        break;
+    812          		    #endif
+    813          		    #if (LCD_BITSPERPIXEL > 8)
+    814          		      case 16:
+    815          		        DrawBitLine16BPP_H(x0, y0, (const U16 *)pData, xsize, pTrans);
+   \                     ??LCD_L0_DrawBitmap_1: (+1)
+   \   00000040   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \   00000044   0x4633             MOV      R3,R6
+   \   00000046   0x465A             MOV      R2,R11
+   \   00000048   0x4629             MOV      R1,R5
+   \   0000004A   0x4620             MOV      R0,R4
+   \   0000004C   0x.... 0x....      BL       DrawBitLine16BPP_H
+    816          		        break;
+    817          		    #endif
+    818          		    }
+    819          		
+    820          		pData += BytesPerLine;
+   \                     ??LCD_L0_DrawBitmap_2: (+1)
+   \   00000050   0x44C3             ADD      R11,R8,R11
+   \   00000052   0x1E7F             SUBS     R7,R7,#+1
+   \                     ??LCD_L0_DrawBitmap_0: (+1)
+   \   00000054   0x2F01             CMP      R7,#+1
+   \   00000056   0xDB35             BLT.N    ??LCD_L0_DrawBitmap_3
+   \   00000058   0x980C             LDR      R0,[SP, #+48]
+   \   0000005A   0x2801             CMP      R0,#+1
+   \   0000005C   0xD008             BEQ.N    ??LCD_L0_DrawBitmap_4
+   \   0000005E   0x2802             CMP      R0,#+2
+   \   00000060   0xD010             BEQ.N    ??LCD_L0_DrawBitmap_5
+   \   00000062   0x2804             CMP      R0,#+4
+   \   00000064   0xD019             BEQ.N    ??LCD_L0_DrawBitmap_6
+   \   00000066   0x2808             CMP      R0,#+8
+   \   00000068   0xD022             BEQ.N    ??LCD_L0_DrawBitmap_7
+   \   0000006A   0x2810             CMP      R0,#+16
+   \   0000006C   0xD0E8             BEQ.N    ??LCD_L0_DrawBitmap_1
+   \   0000006E   0xE7EF             B.N      ??LCD_L0_DrawBitmap_2
+   \                     ??LCD_L0_DrawBitmap_4: (+1)
+   \   00000070   0xF8CD 0xA004      STR      R10,[SP, #+4]
+   \   00000074   0x9600             STR      R6,[SP, #+0]
+   \   00000076   0x464B             MOV      R3,R9
+   \   00000078   0x465A             MOV      R2,R11
+   \   0000007A   0x4629             MOV      R1,R5
+   \   0000007C   0x4620             MOV      R0,R4
+   \   0000007E   0x.... 0x....      BL       _DrawBitLine1BPP_H
+   \   00000082   0xE7E5             B.N      ??LCD_L0_DrawBitmap_2
+   \                     ??LCD_L0_DrawBitmap_5: (+1)
+   \   00000084   0xF8CD 0xA004      STR      R10,[SP, #+4]
+   \   00000088   0x9600             STR      R6,[SP, #+0]
+   \   0000008A   0x464B             MOV      R3,R9
+   \   0000008C   0x465A             MOV      R2,R11
+   \   0000008E   0x9802             LDR      R0,[SP, #+8]
+   \   00000090   0x1829             ADDS     R1,R5,R0
+   \   00000092   0x4620             MOV      R0,R4
+   \   00000094   0x.... 0x....      BL       _DrawBitLine2BPP
+   \   00000098   0xE7DA             B.N      ??LCD_L0_DrawBitmap_2
+   \                     ??LCD_L0_DrawBitmap_6: (+1)
+   \   0000009A   0xF8CD 0xA004      STR      R10,[SP, #+4]
+   \   0000009E   0x9600             STR      R6,[SP, #+0]
+   \   000000A0   0x464B             MOV      R3,R9
+   \   000000A2   0x465A             MOV      R2,R11
+   \   000000A4   0x9802             LDR      R0,[SP, #+8]
+   \   000000A6   0x1829             ADDS     R1,R5,R0
+   \   000000A8   0x4620             MOV      R0,R4
+   \   000000AA   0x.... 0x....      BL       _DrawBitLine4BPP
+   \   000000AE   0xE7CF             B.N      ??LCD_L0_DrawBitmap_2
+   \                     ??LCD_L0_DrawBitmap_7: (+1)
+   \   000000B0   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \   000000B4   0x4633             MOV      R3,R6
+   \   000000B6   0x465A             MOV      R2,R11
+   \   000000B8   0x9802             LDR      R0,[SP, #+8]
+   \   000000BA   0x1829             ADDS     R1,R5,R0
+   \   000000BC   0x4620             MOV      R0,R4
+   \   000000BE   0x.... 0x....      BL       _DrawBitLine8BPP
+   \   000000C2   0xE7C5             B.N      ??LCD_L0_DrawBitmap_2
+    821          	}
+    822          
+    823            #endif
+    824          }
+   \                     ??LCD_L0_DrawBitmap_3: (+1)
+   \   000000C4   0xE8BD 0x8FF7      POP      {R0-R2,R4-R11,PC}  ;; return
+    825          
+    826          /*********************************************************************
+    827          *
+    828          *       LCD_L0_SetOrg
+    829          */
+
+   \                                 In section .text, align 2, keep-with-next
+    830          void LCD_L0_SetOrg(int x, int y) {
+    831            GUI_USE_PARA(x);
+    832            GUI_USE_PARA(y);
+    833          }
+   \                     LCD_L0_SetOrg: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    834          
+    835          /*********************************************************************
+    836          *
+    837          *       LCD_On / LCD_Off
+    838          */
+
+   \                                 In section .text, align 2, keep-with-next
+    839          void LCD_On (void) {
+    840          #ifdef LCD_ON
+    841            LCD_ON();
+    842          #endif
+    843          }
+   \                     LCD_L0_On: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    844          
+
+   \                                 In section .text, align 2, keep-with-next
+    845          void LCD_Off (void) {
+    846          #ifdef LCD_OFF
+    847            LCD_OFF();
+    848          #endif
+    849          }
+   \                     LCD_L0_Off: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    850          
+    851          /*********************************************************************
+    852          *
+    853          *       LCD_L0_Init
+    854          *
+    855          * Purpose:
+    856          *   Initialises the LCD-controller.
+    857          */
+
+   \                                 In section .text, align 2, keep-with-next
+    858          int  LCD_L0_Init(void) {
+   \                     LCD_L0_Init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    859            LCD_INIT_CONTROLLER();
+   \   00000002   0x.... 0x....      BL       LCD_Initializtion
+    860            return 0;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0xBD02             POP      {R1,PC}          ;; return
+    861          }
+    862          
+    863          /*********************************************************************
+    864          *
+    865          *       LCD_L0_SetLUTEntry
+    866          */
+
+   \                                 In section .text, align 2, keep-with-next
+    867          void LCD_L0_SetLUTEntry(U8 Pos, LCD_COLOR Color) {
+    868            GUI_USE_PARA(Pos);
+    869            GUI_USE_PARA(Color);
+    870          }
+   \                     LCD_L0_SetLUTEntry: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x........         DC32     GUI_Context
+    871          
+    872          #else
+    873          
+    874          void LCDDummy_c(void);
+    875          void LCDDummy_c(void) { } /* avoid empty object files */
+    876          
+    877          #endif /* (LCD_CONTROLLER undefined) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   DrawBitLine16BPP_H
+        16   -> LCD_WriteRAM
+      48   LCD_L0_DrawBitmap
+        48   -> DrawBitLine16BPP_H
+        48   -> LCD_WriteRAM_Prepare
+        48   -> LCD_setWindowArea
+        48   -> _DrawBitLine1BPP_H
+        48   -> _DrawBitLine2BPP
+        48   -> _DrawBitLine4BPP
+        48   -> _DrawBitLine8BPP
+        48   -> ili9320_SetCursor
+      24   LCD_L0_DrawHLine
+        24   -> LCD_L0_XorPixel
+        24   -> LCD_WriteRAM
+        24   -> LCD_WriteRAM_Prepare
+         0   -> LCD_setWindowArea
+        24   -> LCD_setWindowArea
+        24   -> ili9320_SetCursor
+      24   LCD_L0_DrawVLine
+        24   -> LCD_L0_XorPixel
+        24   -> LCD_WriteRAM
+        24   -> LCD_WriteRAM_Prepare
+         0   -> LCD_setWindowArea
+        24   -> LCD_setWindowArea
+        24   -> ili9320_SetCursor
+      24   LCD_L0_FillRect
+        24   -> LCD_WriteRAM
+        24   -> LCD_WriteRAM_Prepare
+         0   -> LCD_setWindowArea
+        24   -> LCD_setWindowArea
+        24   -> ili9320_SetCursor
+       0   LCD_L0_GetPixelIndex
+         0   -> ili9320_GetPoint
+       8   LCD_L0_Init
+         8   -> LCD_Initializtion
+       0   LCD_L0_Off
+       0   LCD_L0_On
+       0   LCD_L0_SetLUTEntry
+       0   LCD_L0_SetOrg
+       0   LCD_L0_SetPixelIndex
+         0   -> ili9320_SetPoint
+      16   LCD_L0_XorPixel
+        16   -> LCD_L0_GetPixelIndex
+         0   -> LCD_L0_SetPixelIndex
+      32   _DrawBitLine1BPP_H
+        32   -> LCD_L0_GetPixelIndex
+        32   -> LCD_L0_SetPixelIndex
+        32   -> LCD_WriteRAM
+      40   _DrawBitLine2BPP
+        40   -> LCD_L0_SetPixelIndex
+      40   _DrawBitLine4BPP
+        40   -> LCD_L0_SetPixelIndex
+      24   _DrawBitLine8BPP
+        24   -> LCD_L0_SetPixelIndex
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+     104  DrawBitLine16BPP_H
+     200  LCD_L0_DrawBitmap
+     104  LCD_L0_DrawHLine
+     104  LCD_L0_DrawVLine
+      96  LCD_L0_FillRect
+       8  LCD_L0_GetPixelIndex
+      10  LCD_L0_Init
+       2  LCD_L0_Off
+       2  LCD_L0_On
+       2  LCD_L0_SetLUTEntry
+       2  LCD_L0_SetOrg
+      10  LCD_L0_SetPixelIndex
+      28  LCD_L0_XorPixel
+     174  _DrawBitLine1BPP_H
+     284  _DrawBitLine2BPP
+     282  _DrawBitLine4BPP
+     150  _DrawBitLine8BPP
+
+ 
+ 1 566 bytes in section .text
+ 
+ 1 566 bytes of CODE memory
+
+Errors: none
+Warnings: 8

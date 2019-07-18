@@ -1,0 +1,216 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:28
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_BringToBottom.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_BringToBottom.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\WM_BringToBottom.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\WM_BringToBottom.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_BringToBottom.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : WM_BringToBottom.c
+     16          Purpose     : Window manager routine
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include "WM_Intern.h"
+     21          
+     22          #if GUI_WINSUPPORT    /* If 0, WM will not generate any code */
+     23          #include "GUIDebug.h"
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *       Public code
+     28          *
+     29          **********************************************************************
+     30          */
+     31          /*********************************************************************
+     32          *
+     33          *       WM_BringToBottom
+     34          */
+
+   \                                 In section .text, align 2, keep-with-next
+     35          void WM_BringToBottom(WM_HWIN hWin) {
+   \                     WM_BringToBottom: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     36            WM_HWIN hParent;
+     37            WM_HWIN hPrev;
+     38            WM_Obj* pWin;
+     39            WM_Obj* pPrev;
+     40            WM_Obj* pParent;
+     41            WM_LOCK();
+     42            if (hWin) {
+   \   00000004   0xD01A             BEQ.N    ??WM_BringToBottom_0
+     43              pWin = WM_H2P(hWin);
+   \   00000006   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   0000000A   0x4605             MOV      R5,R0
+     44              hPrev = WM__GetPrevSibling(hWin);
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0x.... 0x....      BL       WM__GetPrevSibling
+   \   00000012   0x0006             MOVS     R6,R0
+     45              if (hPrev) {                   /* If there is no previous one, there is nothing to do ! */
+   \   00000014   0xD012             BEQ.N    ??WM_BringToBottom_0
+     46                hParent = WM_GetParent(hWin);
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       WM_GetParent
+     47                pParent = WM_H2P(hParent);
+   \   0000001C   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000020   0x4607             MOV      R7,R0
+     48                /* unlink hWin */
+     49                pPrev = WM_H2P(hPrev);
+   \   00000022   0x4630             MOV      R0,R6
+   \   00000024   0x.... 0x....      BL       GUI_ALLOC_h2p
+     50                pPrev->hNext = pWin->hNext;
+   \   00000028   0x8B69             LDRH     R1,[R5, #+26]
+   \   0000002A   0x8341             STRH     R1,[R0, #+26]
+     51                /* Link from parent (making it the first child) */
+     52                pWin->hNext = pParent->hFirstChild;
+   \   0000002C   0x8B38             LDRH     R0,[R7, #+24]
+   \   0000002E   0x8368             STRH     R0,[R5, #+26]
+     53                pParent->hFirstChild = hWin;
+   \   00000030   0x833C             STRH     R4,[R7, #+24]
+     54                /* Send message in order to make sure top window will be drawn */
+     55                WM_InvalidateArea(&pWin->Rect);
+   \   00000032   0x4628             MOV      R0,R5
+   \   00000034   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \   00000038   0x.... 0x....      B.W      WM_InvalidateArea
+     56              }
+     57            }
+     58            WM_UNLOCK();
+     59          }
+   \                     ??WM_BringToBottom_0: (+1)
+   \   0000003C   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+     60          
+     61          #else
+     62            void WM_BringToBottom_c(void) {} /* avoid empty object files */
+     63          #endif   /* GUI_WINSUPPORT */
+     64          
+     65          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   WM_BringToBottom
+        24   -> GUI_ALLOC_h2p
+        24   -> WM_GetParent
+         0   -> WM_InvalidateArea
+        24   -> WM__GetPrevSibling
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      62  WM_BringToBottom
+
+ 
+ 62 bytes in section .text
+ 
+ 62 bytes of CODE memory
+
+Errors: none
+Warnings: none

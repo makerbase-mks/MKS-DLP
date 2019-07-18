@@ -1,0 +1,1096 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  11:56:41
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_info.cpp
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_info.cpp
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\draw_info.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\draw_info.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_info.cpp
+      1          #include "gui.h"
+      2          #include "button.h"
+      3          #include "draw_ui.h"
+
+  #define UNUSED(x) (void) (x)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\Third_Party\Marlin\macros.h",101  Warning[Pe047]: 
+          incompatible redefinition of macro "UNUSED" (declared at line 87 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_def.h")
+
+  		volatile volatile float desireBedTempBak;
+  		         ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Inc\mks_cfg.h",351  Warning[Pe083]: 
+          type qualifier specified more than once
+
+  #define IS_SPI_MODE(MODE) (((MODE) == SPI_Mode_Master) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",173  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_MODE" (declared at line
+          511 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DATASIZE(DATASIZE) (((DATASIZE) == SPI_DataSize_16b) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",185  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DATASIZE" (declared at
+          line 523 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPOL(CPOL) (((CPOL) == SPI_CPOL_Low) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",197  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPOL" (declared at line
+          526 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CPHA(CPHA) (((CPHA) == SPI_CPHA_1Edge) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",209  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CPHA" (declared at line
+          529 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_NSS(NSS) (((NSS) == SPI_NSS_Soft) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",221  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_NSS" (declared at line
+          532 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_BAUDRATE_PRESCALER(PRESCALER) (((PRESCALER) == SPI_BaudRatePrescaler_2) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",239  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_BAUDRATE_PRESCALER"
+          (declared at line 536 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_FIRST_BIT(BIT) (((BIT) == SPI_FirstBit_MSB) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",257  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_FIRST_BIT" (declared at
+          line 545 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_DIRECTION(DIRECTION) (((DIRECTION) == SPI_Direction_Rx) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",400  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_DIRECTION" (declared at
+          line 514 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_CRCERR                 ((uint16_t)0x0010)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",442  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_CRCERR" (declared at
+          line 293 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_MODF                   ((uint16_t)0x0020)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",443  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_MODF" (declared at line
+          294 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL) ((POLYNOMIAL) >= 0x1)
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",462  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_SPI_CRC_POLYNOMIAL" (declared
+          at line 554 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_TXE                   SPI_I2S_IT_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",473  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_TXE" (declared at line
+          280 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_RXNE                  SPI_I2S_IT_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",474  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_RXNE" (declared at line
+          281 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_IT_ERR                   SPI_I2S_IT_ERR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",475  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_IT_ERR" (declared at line
+          282 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_RXNE                SPI_I2S_FLAG_RXNE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",477  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_RXNE" (declared at line
+          290 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_TXE                 SPI_I2S_FLAG_TXE
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",478  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_TXE" (declared at line
+          291 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_OVR                 SPI_I2S_FLAG_OVR
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",479  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_OVR" (declared at line
+          295 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+  #define SPI_FLAG_BSY                 SPI_I2S_FLAG_BSY
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_spi.h",480  Warning[Pe047]: 
+          incompatible redefinition of macro "SPI_FLAG_BSY" (declared at line
+          292 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_spi.h")
+
+    #define FILAMENT_CHANGE_TEXT_EN				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_en.h",165  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_EN"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_CN            "解除绑定?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_s_cn.h",248  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_CN"
+          (declared at line 243)
+
+    #define FILAMENT_CHANGE_TEXT_T_CN				"待打印機暫停后,\n請按<進料>或<退料>"
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_t_cn.h",157  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_T_CN"
+          (declared at line 143)
+
+    #define FILAMENT_CHANGE_TEXT_RU				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_ru.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_RU"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_RU            "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_ru.h",260  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_RU"
+          (declared at line 255)
+
+    #define FILAMENT_CHANGE_TEXT_FR				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_fr.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_FR"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_FR        "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_fr.h",263  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_FR"
+          (declared at line 259)
+
+    #define FILAMENT_CHANGE_TEXT_SP				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_sp.h",162  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_SP"
+          (declared at line 143)
+
+    #define FILAMENT_CHANGE_TEXT_IT				"Please click <Load> \nor <unload>,After \npinter pause."
+            ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_it.h",163  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_IT"
+          (declared at line 143)
+
+  #define DIALOG_UNBIND_PRINTER_IT                "Unbind the printer?"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Language_it.h",259  Warning[Pe047]: 
+          incompatible redefinition of macro "DIALOG_UNBIND_PRINTER_IT"
+          (declared at line 254)
+
+  #define FILAMENT_CHANGE_TEXT_JP				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Multi_language.h",688  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_JP"
+          (declared at line 681)
+
+  #define FILAMENT_CHANGE_TEXT_GN				"Please click <Load> \nor <unload>,After \npinter pause."
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\Multi_language\Multi_language.h",896  Warning[Pe047]: 
+          incompatible redefinition of macro "FILAMENT_CHANGE_TEXT_GN"
+          (declared at line 890)
+
+  #define Simple_Dec"����"
+                    ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",387  Warning[Pe1649]: 
+          white space is required between the macro name "Simple_Dec" and its
+          replacement text
+
+  #define Simple_Speed "�ٶ�"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",442  Warning[Pe047]: 
+          incompatible redefinition of macro "Simple_Speed" (declared at line
+          439)
+
+  #define Complex_Speed "�ٶ�"
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\User\ui\draw_ui.h",443  Warning[Pe047]: 
+          incompatible redefinition of macro "Complex_Speed" (declared at line
+          440)
+      4          #include "draw_info.h"
+      5          #include "mks_dlp_main.h"
+      6          
+      7          
+
+   \                                 In section .bss, align 4
+      8          GUI_HWIN hInfoWnd;
+   \                     hInfoWnd:
+   \   00000000                      DS8 2
+   \   00000002                      DS8 2
+   \   00000004                      DS8 2
+   \   00000006                      DS8 2
+   \   00000008                      DS8 2
+   \   0000000A                      DS8 2
+   \   0000000C                      DS8 24
+   \   00000024                      DS8 24
+      9          static BUTTON_STRUCT buttonRet,buttonBeeper;
+     10          static TEXT_Handle Systom,Firmware_ver,Wifi_ver;
+                                                        ^
+Warning[Pe177]: variable "Wifi_ver" was declared but never referenced
+     11          static TEXT_Handle Systom_val,Firmware_ver_val,Wifi_ver_val;
+                                                                ^
+Warning[Pe177]: variable "Wifi_ver_val" was declared but never referenced
+     12          
+     13          void buzzer_onoff_display();
+     14          
+
+   \                                 In section .text, align 2, keep-with-next
+     15          static void cbInfoWin(WM_MESSAGE * pMsg) {
+     16          
+     17              switch (pMsg->MsgId)
+   \                     _Z9cbInfoWinP10WM_MESSAGE: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x290C             CMP      R1,#+12
+   \   00000004   0xD100             BNE.N    ??cbInfoWin_0
+   \   00000006   0x4770             BX       LR
+   \                     ??cbInfoWin_0: (+1)
+   \   00000008   0xB510             PUSH     {R4,LR}
+   \   0000000A   0x290D             CMP      R1,#+13
+   \   0000000C   0xD035             BEQ.N    ??cbInfoWin_1
+   \   0000000E   0x290F             CMP      R1,#+15
+   \   00000010   0xD002             BEQ.N    ??cbInfoWin_2
+   \   00000012   0x2926             CMP      R1,#+38
+   \   00000014   0xD013             BEQ.N    ??cbInfoWin_3
+   \   00000016   0xE02C             B.N      ??cbInfoWin_4
+     18              {
+     19              case WM_PAINT:
+     20          		GUI_SetColor(0XD8D8D8);
+   \                     ??cbInfoWin_2: (+1)
+   \   00000018   0x....             LDR.N    R0,??DataTable8_1  ;; 0xd8d8d8
+   \   0000001A   0x.... 0x....      BL       GUI_SetColor
+     21          		GUI_DrawRect(15, 58,465,58);
+   \   0000001E   0xF240 0x14D1      MOVW     R4,#+465
+   \   00000022   0x233A             MOVS     R3,#+58
+   \   00000024   0x4622             MOV      R2,R4
+   \   00000026   0x4619             MOV      R1,R3
+   \   00000028   0x200F             MOVS     R0,#+15
+   \   0000002A   0x.... 0x....      BL       GUI_DrawRect
+     22                  GUI_DrawRect(15, 102,465,102);
+   \   0000002E   0x2366             MOVS     R3,#+102
+   \   00000030   0x4622             MOV      R2,R4
+   \   00000032   0x4619             MOV      R1,R3
+   \   00000034   0x200F             MOVS     R0,#+15
+   \   00000036   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000003A   0x.... 0x....      B.W      GUI_DrawRect
+     23          
+     24                  break;
+     25              case WM_TOUCH:
+     26                  
+     27                  break;
+     28              case WM_TOUCH_CHILD:
+     29                  
+     30                  break;
+     31                  
+     32              case WM_NOTIFY_PARENT:   
+     33                  if(pMsg->Data.v == WM_NOTIFICATION_RELEASED)
+   \                     ??cbInfoWin_3: (+1)
+   \   0000003E   0x6881             LDR      R1,[R0, #+8]
+   \   00000040   0x2902             CMP      R1,#+2
+   \   00000042   0xD11A             BNE.N    ??cbInfoWin_1
+     34                  {
+     35                      if(pMsg->hWinSrc == buttonRet.btnHandle)
+   \   00000044   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   00000048   0x....             LDR.N    R1,??DataTable8_2
+   \   0000004A   0xF9B1 0x200C      LDRSH    R2,[R1, #+12]
+   \   0000004E   0x4290             CMP      R0,R2
+   \   00000050   0xD108             BNE.N    ??cbInfoWin_5
+     36                      {
+     37           				    last_disp_state = INFO_UI;
+   \   00000052   0x2025             MOVS     R0,#+37
+   \   00000054   0x....             LDR.N    R1,??DataTable8_3
+   \   00000056   0x7008             STRB     R0,[R1, #+0]
+     38          					Clear_Info();
+   \   00000058   0x.... 0x....      BL       Clear_Info
+     39          					draw_return_ui();               
+   \   0000005C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000060   0x.... 0x....      B.W      draw_return_ui
+     40                      }
+     41                  
+     42                      else if(pMsg->hWinSrc == buttonBeeper.btnHandle)
+   \                     ??cbInfoWin_5: (+1)
+   \   00000064   0xF9B1 0x1024      LDRSH    R1,[R1, #+36]
+   \   00000068   0x4288             CMP      R0,R1
+   \   0000006A   0xD106             BNE.N    ??cbInfoWin_1
+     43                      {
+     44          
+     45                          buzzer_onoff_display();
+   \   0000006C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000070   0x....             B.N      _Z20buzzer_onoff_displayv
+     46                      }
+     47                  }
+     48                  break;
+     49          		default:
+     50          			WM_DefaultProc(pMsg);        
+   \                     ??cbInfoWin_4: (+1)
+   \   00000072   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000076   0x.... 0x....      B.W      WM_DefaultProc
+     51              }
+     52          
+     53          }
+   \                     ??cbInfoWin_1: (+1)
+   \   0000007A   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void buzzer_onoff_display()
+     55          {
+   \                     _Z20buzzer_onoff_displayv: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+     56              if(mksdlp.get_buzzer_status()==1)
+   \   00000006   0x....             LDR.N    R4,??DataTable8_4
+   \   00000008   0x....             LDR.N    R5,??DataTable8_5
+   \   0000000A   0x....             LDR.N    R6,??DataTable8_6
+   \   0000000C   0x....             LDR.N    R7,??DataTable8_2
+   \   0000000E   0x.... 0x....      LDR.W    R8,??DataTable8_7
+   \   00000012   0x4640             MOV      R0,R8
+   \   00000014   0x.... 0x....      BL       _ZN7MKS_DLP17get_buzzer_statusEv
+   \   00000018   0x2801             CMP      R0,#+1
+   \   0000001A   0xD116             BNE.N    ??buzzer_onoff_display_0
+     57              {
+     58                  mksdlp.buzzer_enable(0);
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x4640             MOV      R0,R8
+   \   00000020   0x.... 0x....      BL       _ZN7MKS_DLP13buzzer_enableEh
+     59                  BUTTON_SetBmpFileName(buttonBeeper.btnHandle, "bmp_buzzer_off.bin",1);
+   \   00000024   0x2201             MOVS     R2,#+1
+   \   00000026   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_buzzer_off.bin">`
+   \   0000002A   0xF9B7 0x0024      LDRSH    R0,[R7, #+36]
+   \   0000002E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     60                  BUTTON_SetBitmapEx(buttonBeeper.btnHandle, 0, &bmp_struct_140X90,BMP_PIC_X, BMP_PIC_Y); 
+   \   00000032   0xF996 0x0000      LDRSB    R0,[R6, #+0]
+   \   00000036   0x9000             STR      R0,[SP, #+0]
+   \   00000038   0xF995 0x3000      LDRSB    R3,[R5, #+0]
+   \   0000003C   0x4622             MOV      R2,R4
+   \   0000003E   0x2100             MOVS     R1,#+0
+   \   00000040   0xF9B7 0x0024      LDRSH    R0,[R7, #+36]
+   \   00000044   0x.... 0x....      BL       BUTTON_SetBitmapEx
+   \   00000048   0xE015             B.N      ??buzzer_onoff_display_1
+     61              }
+     62              else
+     63              {
+     64                  mksdlp.buzzer_enable(1);
+   \                     ??buzzer_onoff_display_0: (+1)
+   \   0000004A   0x2101             MOVS     R1,#+1
+   \   0000004C   0x4640             MOV      R0,R8
+   \   0000004E   0x.... 0x....      BL       _ZN7MKS_DLP13buzzer_enableEh
+     65                  BUTTON_SetBmpFileName(buttonBeeper.btnHandle, "bmp_buzzer_on.bin",1);
+   \   00000052   0x2201             MOVS     R2,#+1
+   \   00000054   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_buzzer_on.bin">`
+   \   00000058   0xF9B7 0x0024      LDRSH    R0,[R7, #+36]
+   \   0000005C   0x.... 0x....      BL       BUTTON_SetBmpFileName
+     66                  BUTTON_SetBitmapEx(buttonBeeper.btnHandle, 0, &bmp_struct_140X90,BMP_PIC_X, BMP_PIC_Y);
+   \   00000060   0xF996 0x0000      LDRSB    R0,[R6, #+0]
+   \   00000064   0x9000             STR      R0,[SP, #+0]
+   \   00000066   0xF995 0x3000      LDRSB    R3,[R5, #+0]
+   \   0000006A   0x4622             MOV      R2,R4
+   \   0000006C   0x2100             MOVS     R1,#+0
+   \   0000006E   0xF9B7 0x0024      LDRSH    R0,[R7, #+36]
+   \   00000072   0x.... 0x....      BL       BUTTON_SetBitmapEx
+     67              }
+     68          
+     69          }
+   \                     ??buzzer_onoff_display_1: (+1)
+   \   00000076   0xE8BD 0x81F3      POP      {R0,R1,R4-R8,PC}  ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void draw_Info()
+     71          {
+   \                     draw_Info: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0xB08D             SUB      SP,SP,#+52
+     72              char buf[30]={0};
+   \   00000006   0xA805             ADD      R0,SP,#+20
+   \   00000008   0x2120             MOVS     R1,#+32
+   \   0000000A   0x.... 0x....      BL       __aeabi_memclr4
+     73              
+     74          	if(disp_state_stack._disp_state[disp_state_stack._disp_index] != INFO_UI)
+   \   0000000E   0x....             LDR.N    R0,??DataTable8_8
+   \   00000010   0xF990 0x1064      LDRSB    R1,[R0, #+100]
+   \   00000014   0x560A             LDRSB    R2,[R1, R0]
+   \   00000016   0x2A25             CMP      R2,#+37
+   \   00000018   0xD005             BEQ.N    ??draw_Info_0
+     75          	{
+     76          		disp_state_stack._disp_index++;
+   \   0000001A   0x1C49             ADDS     R1,R1,#+1
+   \   0000001C   0xF880 0x1064      STRB     R1,[R0, #+100]
+     77          		disp_state_stack._disp_state[disp_state_stack._disp_index] = INFO_UI;
+   \   00000020   0x2225             MOVS     R2,#+37
+   \   00000022   0xB249             SXTB     R1,R1
+   \   00000024   0x540A             STRB     R2,[R1, R0]
+     78          	}
+     79          	disp_state = INFO_UI;
+   \                     ??draw_Info_0: (+1)
+   \   00000026   0x2025             MOVS     R0,#+37
+   \   00000028   0x....             LDR.N    R1,??DataTable8_9
+   \   0000002A   0x7008             STRB     R0,[R1, #+0]
+     80          	
+     81          	GUI_SetBkColor(gCfgItems.background_color);
+   \   0000002C   0x....             LDR.N    R5,??DataTable8_10
+   \   0000002E   0x6868             LDR      R0,[R5, #+4]
+   \   00000030   0x.... 0x....      BL       GUI_SetBkColor
+     82          	GUI_SetColor(gCfgItems.title_color);
+   \   00000034   0x6DA8             LDR      R0,[R5, #+88]
+   \   00000036   0x.... 0x....      BL       GUI_SetColor
+     83          	GUI_Clear();    
+   \   0000003A   0x.... 0x....      BL       GUI_Clear
+     84          
+     85              hInfoWnd = WM_CreateWindow(0, 0, LCD_WIDTH, LCD_HEIGHT, WM_CF_SHOW, cbInfoWin, 0);
+   \   0000003E   0x2000             MOVS     R0,#+0
+   \   00000040   0x9002             STR      R0,[SP, #+8]
+   \   00000042   0x....             LDR.N    R0,??DataTable8_11
+   \   00000044   0x9001             STR      R0,[SP, #+4]
+   \   00000046   0x2002             MOVS     R0,#+2
+   \   00000048   0x9000             STR      R0,[SP, #+0]
+   \   0000004A   0xF44F 0x73A0      MOV      R3,#+320
+   \   0000004E   0xF44F 0x72F0      MOV      R2,#+480
+   \   00000052   0x2100             MOVS     R1,#+0
+   \   00000054   0x4608             MOV      R0,R1
+   \   00000056   0x.... 0x....      BL       WM_CreateWindow
+   \   0000005A   0x....             LDR.N    R4,??DataTable8_2
+   \   0000005C   0x8020             STRH     R0,[R4, #+0]
+     86              Systom = TEXT_CreateEx(15,24,220, 24, hInfoWnd, WM_CF_SHOW, TEXT_CF_LEFT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+   \   0000005E   0x....             ADR.N    R6,??DataTable8  ;; " "
+   \   00000060   0x9604             STR      R6,[SP, #+16]
+   \   00000062   0xF44F 0x71B0      MOV      R1,#+352
+   \   00000066   0x9103             STR      R1,[SP, #+12]
+   \   00000068   0x210C             MOVS     R1,#+12
+   \   0000006A   0x9102             STR      R1,[SP, #+8]
+   \   0000006C   0x2102             MOVS     R1,#+2
+   \   0000006E   0x9101             STR      R1,[SP, #+4]
+   \   00000070   0x9000             STR      R0,[SP, #+0]
+   \   00000072   0x2318             MOVS     R3,#+24
+   \   00000074   0x22DC             MOVS     R2,#+220
+   \   00000076   0x4619             MOV      R1,R3
+   \   00000078   0x200F             MOVS     R0,#+15
+   \   0000007A   0x.... 0x....      BL       TEXT_CreateEx
+   \   0000007E   0x8060             STRH     R0,[R4, #+2]
+     87              Firmware_ver= TEXT_CreateEx(15,68,220, 24, hInfoWnd, WM_CF_SHOW, TEXT_CF_LEFT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+   \   00000080   0x9604             STR      R6,[SP, #+16]
+   \   00000082   0xF44F 0x70B0      MOV      R0,#+352
+   \   00000086   0x9003             STR      R0,[SP, #+12]
+   \   00000088   0x200C             MOVS     R0,#+12
+   \   0000008A   0x9002             STR      R0,[SP, #+8]
+   \   0000008C   0x2002             MOVS     R0,#+2
+   \   0000008E   0x9001             STR      R0,[SP, #+4]
+   \   00000090   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   00000094   0x9000             STR      R0,[SP, #+0]
+   \   00000096   0x2318             MOVS     R3,#+24
+   \   00000098   0x22DC             MOVS     R2,#+220
+   \   0000009A   0x2144             MOVS     R1,#+68
+   \   0000009C   0x200F             MOVS     R0,#+15
+   \   0000009E   0x.... 0x....      BL       TEXT_CreateEx
+   \   000000A2   0x80A0             STRH     R0,[R4, #+4]
+     88              //Wifi_ver = TEXT_CreateEx(15,220,220, 50, hInfoWnd, WM_CF_SHOW, TEXT_CF_LEFT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+     89              Systom_val = TEXT_CreateEx(255,24,210, 24, hInfoWnd, WM_CF_SHOW, TEXT_CF_RIGHT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+   \   000000A4   0x9604             STR      R6,[SP, #+16]
+   \   000000A6   0xF44F 0x70B0      MOV      R0,#+352
+   \   000000AA   0x9003             STR      R0,[SP, #+12]
+   \   000000AC   0x200D             MOVS     R0,#+13
+   \   000000AE   0x9002             STR      R0,[SP, #+8]
+   \   000000B0   0x2002             MOVS     R0,#+2
+   \   000000B2   0x9001             STR      R0,[SP, #+4]
+   \   000000B4   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   000000B8   0x9000             STR      R0,[SP, #+0]
+   \   000000BA   0x2318             MOVS     R3,#+24
+   \   000000BC   0x22D2             MOVS     R2,#+210
+   \   000000BE   0x4619             MOV      R1,R3
+   \   000000C0   0x20FF             MOVS     R0,#+255
+   \   000000C2   0x.... 0x....      BL       TEXT_CreateEx
+   \   000000C6   0x80E0             STRH     R0,[R4, #+6]
+     90              Firmware_ver_val= TEXT_CreateEx(255,68,210, 24, hInfoWnd, WM_CF_SHOW, TEXT_CF_RIGHT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+   \   000000C8   0x9604             STR      R6,[SP, #+16]
+   \   000000CA   0xF44F 0x70B0      MOV      R0,#+352
+   \   000000CE   0x9003             STR      R0,[SP, #+12]
+   \   000000D0   0x200D             MOVS     R0,#+13
+   \   000000D2   0x9002             STR      R0,[SP, #+8]
+   \   000000D4   0x2002             MOVS     R0,#+2
+   \   000000D6   0x9001             STR      R0,[SP, #+4]
+   \   000000D8   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   000000DC   0x9000             STR      R0,[SP, #+0]
+   \   000000DE   0x2318             MOVS     R3,#+24
+   \   000000E0   0x22D2             MOVS     R2,#+210
+   \   000000E2   0x2144             MOVS     R1,#+68
+   \   000000E4   0x20FF             MOVS     R0,#+255
+   \   000000E6   0x.... 0x....      BL       TEXT_CreateEx
+   \   000000EA   0x8120             STRH     R0,[R4, #+8]
+     91              //Wifi_ver_val = TEXT_CreateEx(255,220,220, 50, hInfoWnd, WM_CF_SHOW, TEXT_CF_RIGHT|TEXT_CF_VCENTER,  GUI_ID_TEXT0, " ");
+     92              
+     93          	//buttonRet.btnHandle = BUTTON_CreateEx(BTN_X_PIXEL*2+INTERVAL_H*3,BTN_Y_PIXEL+BTN_TEXT_Y_PIXEL+INTERVAL_V+2,BTN_X_PIXEL,BTN_Y_PIXEL,hInfoWnd,BUTTON_CF_SHOW, 0, 308);
+     94              //buttonBeeper.btnHandle = BUTTON_CreateEx(15,235,50, 40, hInfoWnd, BUTTON_CF_SHOW, 0, 308);
+     95              //buttonRet.btnHandle = BUTTON_CreateEx(325,235,140,70,hInfoWnd, BUTTON_CF_SHOW, 0, 101);
+     96          	buttonBeeper.btnHandle = BUTTON_CreateEx(15,215,140,90,hInfoWnd, BUTTON_CF_SHOW, 0, 104);//alloc_win_id());
+   \   000000EC   0x2068             MOVS     R0,#+104
+   \   000000EE   0x9003             STR      R0,[SP, #+12]
+   \   000000F0   0x2000             MOVS     R0,#+0
+   \   000000F2   0x9002             STR      R0,[SP, #+8]
+   \   000000F4   0x2002             MOVS     R0,#+2
+   \   000000F6   0x9001             STR      R0,[SP, #+4]
+   \   000000F8   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   000000FC   0x9000             STR      R0,[SP, #+0]
+   \   000000FE   0x235A             MOVS     R3,#+90
+   \   00000100   0x228C             MOVS     R2,#+140
+   \   00000102   0x21D7             MOVS     R1,#+215
+   \   00000104   0x200F             MOVS     R0,#+15
+   \   00000106   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000010A   0x84A0             STRH     R0,[R4, #+36]
+     97          	buttonRet.btnHandle = BUTTON_CreateEx(325,215,140,90,hInfoWnd, BUTTON_CF_SHOW, 0, 106);//alloc_win_id());
+   \   0000010C   0x206A             MOVS     R0,#+106
+   \   0000010E   0x9003             STR      R0,[SP, #+12]
+   \   00000110   0x2000             MOVS     R0,#+0
+   \   00000112   0x9002             STR      R0,[SP, #+8]
+   \   00000114   0x2002             MOVS     R0,#+2
+   \   00000116   0x9001             STR      R0,[SP, #+4]
+   \   00000118   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   0000011C   0x9000             STR      R0,[SP, #+0]
+   \   0000011E   0x235A             MOVS     R3,#+90
+   \   00000120   0x228C             MOVS     R2,#+140
+   \   00000122   0x21D7             MOVS     R1,#+215
+   \   00000124   0xF240 0x1045      MOVW     R0,#+325
+   \   00000128   0x.... 0x....      BL       BUTTON_CreateEx
+   \   0000012C   0x81A0             STRH     R0,[R4, #+12]
+     98          
+     99              //BUTTON_SetBmpFileName(buttonBeeper.btnHandle, NULL,1);
+    100              BUTTON_SetBmpFileName(buttonRet.btnHandle, "bmp_back140x90.bin",1);
+   \   0000012E   0x2201             MOVS     R2,#+1
+   \   00000130   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_back140x90.bin">`
+   \   00000134   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    101              BUTTON_SetBitmapEx(buttonRet.btnHandle, 0, &bmp_struct_140X90,BMP_PIC_X, BMP_PIC_Y);   
+   \   00000138   0x....             LDR.N    R6,??DataTable8_4
+   \   0000013A   0x....             LDR.N    R7,??DataTable8_5
+   \   0000013C   0x.... 0x....      LDR.W    R8,??DataTable8_6
+   \   00000140   0xF998 0x0000      LDRSB    R0,[R8, #+0]
+   \   00000144   0x9000             STR      R0,[SP, #+0]
+   \   00000146   0xF997 0x3000      LDRSB    R3,[R7, #+0]
+   \   0000014A   0x4632             MOV      R2,R6
+   \   0000014C   0x2100             MOVS     R1,#+0
+   \   0000014E   0xF9B4 0x000C      LDRSH    R0,[R4, #+12]
+   \   00000152   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    102          
+    103          	TEXT_SetBkColor(Systom,  gCfgItems.background_color);
+   \   00000156   0x6869             LDR      R1,[R5, #+4]
+   \   00000158   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000015C   0x.... 0x....      BL       TEXT_SetBkColor
+    104          	TEXT_SetTextColor(Systom, gCfgItems.state_msg_textcolor);
+   \   00000160   0x69E9             LDR      R1,[R5, #+28]
+   \   00000162   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   00000166   0x.... 0x....      BL       TEXT_SetTextColor
+    105              TEXT_SetBkColor(Firmware_ver,  gCfgItems.background_color);
+   \   0000016A   0x6869             LDR      R1,[R5, #+4]
+   \   0000016C   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000170   0x.... 0x....      BL       TEXT_SetBkColor
+    106          	TEXT_SetTextColor(Firmware_ver, gCfgItems.state_msg_textcolor);
+   \   00000174   0x69E9             LDR      R1,[R5, #+28]
+   \   00000176   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   0000017A   0x.... 0x....      BL       TEXT_SetTextColor
+    107          	TEXT_SetBkColor(Systom_val,  gCfgItems.background_color);
+   \   0000017E   0x6869             LDR      R1,[R5, #+4]
+   \   00000180   0xF9B4 0x0006      LDRSH    R0,[R4, #+6]
+   \   00000184   0x.... 0x....      BL       TEXT_SetBkColor
+    108          	TEXT_SetTextColor(Systom_val, gCfgItems.state_msg_textcolor);
+   \   00000188   0x69E9             LDR      R1,[R5, #+28]
+   \   0000018A   0xF9B4 0x0006      LDRSH    R0,[R4, #+6]
+   \   0000018E   0x.... 0x....      BL       TEXT_SetTextColor
+    109              TEXT_SetBkColor(Firmware_ver_val,  gCfgItems.background_color);
+   \   00000192   0x6869             LDR      R1,[R5, #+4]
+   \   00000194   0xF9B4 0x0008      LDRSH    R0,[R4, #+8]
+   \   00000198   0x.... 0x....      BL       TEXT_SetBkColor
+    110          	TEXT_SetTextColor(Firmware_ver_val, gCfgItems.state_msg_textcolor);
+   \   0000019C   0x69E9             LDR      R1,[R5, #+28]
+   \   0000019E   0xF9B4 0x0008      LDRSH    R0,[R4, #+8]
+   \   000001A2   0x.... 0x....      BL       TEXT_SetTextColor
+    111          
+    112              
+    113              BUTTON_SetBkColor(buttonBeeper.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000001A6   0x68AA             LDR      R2,[R5, #+8]
+   \   000001A8   0x2101             MOVS     R1,#+1
+   \   000001AA   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   000001AE   0x.... 0x....      BL       BUTTON_SetBkColor
+    114              BUTTON_SetBkColor(buttonBeeper.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000001B2   0x68AA             LDR      R2,[R5, #+8]
+   \   000001B4   0x2100             MOVS     R1,#+0
+   \   000001B6   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   000001BA   0x.... 0x....      BL       BUTTON_SetBkColor
+    115              BUTTON_SetTextColor(buttonBeeper.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000001BE   0x692A             LDR      R2,[R5, #+16]
+   \   000001C0   0x2101             MOVS     R1,#+1
+   \   000001C2   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   000001C6   0x.... 0x....      BL       BUTTON_SetTextColor
+    116              BUTTON_SetTextColor(buttonBeeper.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000001CA   0x692A             LDR      R2,[R5, #+16]
+   \   000001CC   0x2100             MOVS     R1,#+0
+   \   000001CE   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   000001D2   0x.... 0x....      BL       BUTTON_SetTextColor
+    117              
+    118              BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_color);
+   \   000001D6   0x68AA             LDR      R2,[R5, #+8]
+   \   000001D8   0x2101             MOVS     R1,#+1
+   \   000001DA   0xF9B4 0x000C      LDRSH    R0,[R4, #+12]
+   \   000001DE   0x.... 0x....      BL       BUTTON_SetBkColor
+    119              BUTTON_SetBkColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_color);
+   \   000001E2   0x68AA             LDR      R2,[R5, #+8]
+   \   000001E4   0x2100             MOVS     R1,#+0
+   \   000001E6   0xF9B4 0x000C      LDRSH    R0,[R4, #+12]
+   \   000001EA   0x.... 0x....      BL       BUTTON_SetBkColor
+    120              BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_PRESSED, gCfgItems.btn_textcolor);
+   \   000001EE   0x692A             LDR      R2,[R5, #+16]
+   \   000001F0   0x2101             MOVS     R1,#+1
+   \   000001F2   0xF9B4 0x000C      LDRSH    R0,[R4, #+12]
+   \   000001F6   0x.... 0x....      BL       BUTTON_SetTextColor
+    121              BUTTON_SetTextColor(buttonRet.btnHandle, BUTTON_CI_UNPRESSED, gCfgItems.btn_textcolor);
+   \   000001FA   0x692A             LDR      R2,[R5, #+16]
+   \   000001FC   0x2100             MOVS     R1,#+0
+   \   000001FE   0xF9B4 0x000C      LDRSH    R0,[R4, #+12]
+   \   00000202   0x.... 0x....      BL       BUTTON_SetTextColor
+    122          
+    123              TEXT_SetText(Systom,about_menu.systom);
+   \   00000206   0x....             LDR.N    R5,??DataTable8_12
+   \   00000208   0x6A69             LDR      R1,[R5, #+36]
+   \   0000020A   0xF9B4 0x0002      LDRSH    R0,[R4, #+2]
+   \   0000020E   0x.... 0x....      BL       TEXT_SetText
+    124              TEXT_SetText(Systom_val,about_menu.systom_v);
+   \   00000212   0x6AE9             LDR      R1,[R5, #+44]
+   \   00000214   0xF9B4 0x0006      LDRSH    R0,[R4, #+6]
+   \   00000218   0x.... 0x....      BL       TEXT_SetText
+    125              TEXT_SetText(Firmware_ver,about_menu.firmware);
+   \   0000021C   0x6AA9             LDR      R1,[R5, #+40]
+   \   0000021E   0xF9B4 0x0004      LDRSH    R0,[R4, #+4]
+   \   00000222   0x.... 0x....      BL       TEXT_SetText
+    126              sprintf(buf,about_menu.firmware_val,mksdlp.get_cpld_ver());
+   \   00000226   0x.... 0x....      LDR.W    R9,??DataTable8_7
+   \   0000022A   0x4648             MOV      R0,R9
+   \   0000022C   0x.... 0x....      BL       _ZN7MKS_DLP12get_cpld_verEv
+   \   00000230   0x4602             MOV      R2,R0
+   \   00000232   0x6B29             LDR      R1,[R5, #+48]
+   \   00000234   0xA805             ADD      R0,SP,#+20
+   \   00000236   0x.... 0x....      BL       sprintf
+    127              TEXT_SetText(Firmware_ver_val,buf);    
+   \   0000023A   0xA905             ADD      R1,SP,#+20
+   \   0000023C   0xF9B4 0x0008      LDRSH    R0,[R4, #+8]
+   \   00000240   0x.... 0x....      BL       TEXT_SetText
+    128          
+    129              if(mksdlp.get_buzzer_status()!=1)
+   \   00000244   0x4648             MOV      R0,R9
+   \   00000246   0x.... 0x....      BL       _ZN7MKS_DLP17get_buzzer_statusEv
+   \   0000024A   0x2801             CMP      R0,#+1
+   \   0000024C   0xD012             BEQ.N    ??draw_Info_1
+    130              {
+    131                  BUTTON_SetBmpFileName(buttonBeeper.btnHandle, "bmp_buzzer_off.bin",1);
+   \   0000024E   0x2201             MOVS     R2,#+1
+   \   00000250   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_buzzer_off.bin">`
+   \   00000254   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   00000258   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    132                  BUTTON_SetBitmapEx(buttonBeeper.btnHandle, 0, &bmp_struct_140X90,BMP_PIC_X, BMP_PIC_Y); 
+   \   0000025C   0xF998 0x0000      LDRSB    R0,[R8, #+0]
+   \   00000260   0x9000             STR      R0,[SP, #+0]
+   \   00000262   0xF997 0x3000      LDRSB    R3,[R7, #+0]
+   \   00000266   0x4632             MOV      R2,R6
+   \   00000268   0x2100             MOVS     R1,#+0
+   \   0000026A   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   0000026E   0x.... 0x....      BL       BUTTON_SetBitmapEx
+   \   00000272   0xE011             B.N      ??draw_Info_2
+    133              }
+    134              else
+    135              {
+    136                  BUTTON_SetBmpFileName(buttonBeeper.btnHandle, "bmp_buzzer_on.bin",1);
+   \                     ??draw_Info_1: (+1)
+   \   00000274   0x2201             MOVS     R2,#+1
+   \   00000276   0x.... 0x....      ADR.W    R1,`?<Constant "bmp_buzzer_on.bin">`
+   \   0000027A   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   0000027E   0x.... 0x....      BL       BUTTON_SetBmpFileName
+    137                  BUTTON_SetBitmapEx(buttonBeeper.btnHandle, 0, &bmp_struct_140X90,BMP_PIC_X, BMP_PIC_Y);
+   \   00000282   0xF998 0x0000      LDRSB    R0,[R8, #+0]
+   \   00000286   0x9000             STR      R0,[SP, #+0]
+   \   00000288   0xF997 0x3000      LDRSB    R3,[R7, #+0]
+   \   0000028C   0x4632             MOV      R2,R6
+   \   0000028E   0x2100             MOVS     R1,#+0
+   \   00000290   0xF9B4 0x0024      LDRSH    R0,[R4, #+36]
+   \   00000294   0x.... 0x....      BL       BUTTON_SetBitmapEx
+    138              }
+    139          
+    140          
+    141              //if(gCfgItems.multiple_language != 0)
+    142              {
+    143                  //BUTTON_SetText(buttonRet.btnHandle, "RETURN");
+    144                  //if(gCfgItems.beeper_on==1)
+    145                      //BUTTON_SetText(buttonBeeper.btnHandle, "BEEPER on");
+    146                  //else
+    147                      //BUTTON_SetText(buttonBeeper.btnHandle, "BEEPER off");
+    148              }
+    149          }
+   \                     ??draw_Info_2: (+1)
+   \   00000298   0xB00D             ADD      SP,SP,#+52
+   \   0000029A   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    150          
+
+   \                                 In section .text, align 2, keep-with-next
+    151          void Clear_Info()
+    152          {
+   \                     Clear_Info: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    153          	GUI_SetBkColor(gCfgItems.background_color);
+   \   00000002   0x....             LDR.N    R0,??DataTable8_10
+   \   00000004   0x6840             LDR      R0,[R0, #+4]
+   \   00000006   0x.... 0x....      BL       GUI_SetBkColor
+    154          	if(WM_IsWindow(hInfoWnd))
+   \   0000000A   0x....             LDR.N    R4,??DataTable8_2
+   \   0000000C   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   00000010   0x.... 0x....      BL       WM_IsWindow
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD005             BEQ.N    ??Clear_Info_0
+    155          	{
+    156          		WM_DeleteWindow(hInfoWnd);
+   \   00000018   0xF9B4 0x0000      LDRSH    R0,[R4, #+0]
+   \   0000001C   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000020   0x.... 0x....      B.W      WM_DeleteWindow
+    157          		//GUI_Exec();
+    158          	}
+    159          	
+    160          	//GUI_Clear();
+    161          }
+   \                     ??Clear_Info_0: (+1)
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \   00000000   0x20 0x00          DC8      " ",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \   00000000   0x00D8D8D8         DC32     0xd8d8d8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \   00000000   0x........         DC32     hInfoWnd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \   00000000   0x........         DC32     last_disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \   00000000   0x........         DC32     bmp_struct_140X90
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \   00000000   0x........         DC32     BMP_PIC_X
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \   00000000   0x........         DC32     BMP_PIC_Y
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \   00000000   0x........         DC32     mksdlp
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \   00000000   0x........         DC32     disp_state_stack
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \   00000000   0x........         DC32     disp_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_10:
+   \   00000000   0x........         DC32     gCfgItems
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_11:
+   \   00000000   0x........         DC32     _Z9cbInfoWinP10WM_MESSAGE
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_12:
+   \   00000000   0x........         DC32     about_menu
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_buzzer_off.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_buzzer_off.bin"
+   \              0x70 0x5F    
+   \              0x62 0x75    
+   \              0x7A 0x7A    
+   \              0x65 0x72    
+   \              0x5F 0x6F    
+   \              0x66 0x66    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_buzzer_on.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_buzzer_on.bin"
+   \              0x70 0x5F    
+   \              0x62 0x75    
+   \              0x7A 0x7A    
+   \              0x65 0x72    
+   \              0x5F 0x6F    
+   \              0x6E 0x2E    
+   \              0x62 0x69    
+   \              0x6E 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "bmp_back140x90.bin">`:
+   \   00000000   0x62 0x6D          DC8 "bmp_back140x90.bin"
+   \              0x70 0x5F    
+   \              0x62 0x61    
+   \              0x63 0x6B    
+   \              0x31 0x34    
+   \              0x30 0x78    
+   \              0x39 0x30    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {'\\000'}>`:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+
+   \                                 In section .rodata, align 2, keep-with-next
+   \                     `?<Constant " ">`:
+   \   00000000   0x20 0x00          DC8 " "
+    162          
+    163          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Clear_Info
+         8   -> GUI_SetBkColor
+         0   -> WM_DeleteWindow
+         8   -> WM_IsWindow
+      32   buzzer_onoff_display()
+        32   -> BUTTON_SetBitmapEx
+        32   -> BUTTON_SetBmpFileName
+        32   -> MKS_DLP::buzzer_enable(uint8_t)
+        32   -> MKS_DLP::get_buzzer_status()
+       8   cbInfoWin(WM_MESSAGE *)
+         8   -> Clear_Info
+         0   -> GUI_DrawRect
+         8   -> GUI_DrawRect
+         8   -> GUI_SetColor
+         0   -> WM_DefaultProc
+         0   -> buzzer_onoff_display()
+         0   -> draw_return_ui
+      80   draw_Info
+        80   -> BUTTON_CreateEx
+        80   -> BUTTON_SetBitmapEx
+        80   -> BUTTON_SetBkColor
+        80   -> BUTTON_SetBmpFileName
+        80   -> BUTTON_SetTextColor
+        80   -> GUI_Clear
+        80   -> GUI_SetBkColor
+        80   -> GUI_SetColor
+        80   -> MKS_DLP::get_buzzer_status()
+        80   -> MKS_DLP::get_cpld_ver()
+        80   -> TEXT_CreateEx
+        80   -> TEXT_SetBkColor
+        80   -> TEXT_SetText
+        80   -> TEXT_SetTextColor
+        80   -> WM_CreateWindow
+        80   -> __aeabi_memclr4
+        80   -> sprintf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  ?<Constant " ">
+      20  ?<Constant "bmp_back140x90.bin">
+      20  ?<Constant "bmp_buzzer_off.bin">
+      20  ?<Constant "bmp_buzzer_on.bin">
+      32  ?<Constant {'\000'}>
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_10
+       4  ??DataTable8_11
+       4  ??DataTable8_12
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      38  Clear_Info
+     122  buzzer_onoff_display()
+     124  cbInfoWin(WM_MESSAGE *)
+     670  draw_Info
+      60  hInfoWnd
+          Systom
+          Firmware_ver
+          Systom_val
+          Firmware_ver_val
+          buttonRet
+          buttonBeeper
+
+ 
+    60 bytes in section .bss
+    34 bytes in section .rodata
+ 1 066 bytes in section .text
+ 
+ 1 066 bytes of CODE  memory
+    34 bytes of CONST memory
+    60 bytes of DATA  memory
+
+Errors: none
+Warnings: 37

@@ -1,0 +1,445 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:19:56
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Polygon.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Polygon.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUIDEMO_Polygon.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUIDEMO_Polygon.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Polygon.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUIDEMO_Polygon.c
+     16          Purpose     : Several GUIDEMO routines
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include "GUI.h"
+     21          #include "GUIDEMO.h"
+     22          
+     23          #define COUNTOF(Obj) (sizeof(Obj)/sizeof(Obj[0]))
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *       Static data
+     28          *
+     29          **********************************************************************
+     30          */
+     31          
+
+   \                                 In section .text, align 4, keep-with-next
+     32          static const GUI_POINT _aArrow[] = {
+   \                     _aArrow:
+   \   00000000   0x0000 0x001E      DC16 0, 30, -40, 0, -10, 10, -10, -50, 10, -50, 10, 10, 40, 0
+   \              0xFFD8 0x0000
+   \              0xFFF6 0x000A
+   \              0xFFF6 0xFFCE
+   \              0x000A 0xFFCE
+   \              0x000A 0x000A
+   \              0x0028 0x0000
+     33            {  0,  30 },
+     34            {-40,   0 },
+     35            {-10,  10 },
+     36            {-10, -50 },
+     37            { 10, -50 },
+     38            { 10,  10 },
+     39            { 40,   0 }
+     40          };
+     41          
+
+   \                                 In section .text, align 4, keep-with-next
+     42          static const GUI_POINT _aTriangle[] = {
+   \                     _aTriangle:
+   \   00000000   0x0000 0x0000      DC16 0, 0, -30, 30, 30, 30
+   \              0xFFE2 0x001E
+   \              0x001E 0x001E
+     43          	{  0,  0 }, 
+     44            {-30, 30 },
+     45            { 30, 30 },
+     46          };
+     47          
+     48          #if GUI_SUPPORT_AA
+     49          static const GUI_POINT _aiCursor[] = {
+     50            {  0,  -10 }, 
+     51            { 50,    0 }, 
+     52            {  0, -100 }, 
+     53            {-50,    0 }
+     54          };
+     55          #endif
+     56          
+     57          /*********************************************************************
+     58          *
+     59          *       static code
+     60          *
+     61          **********************************************************************
+     62          */
+     63          /*********************************************************************
+     64          *
+     65          *       _MagnifyPolygon
+     66          */
+     67          #if ((LCD_XSIZE != 320) || (LCD_YSIZE != 240))
+
+   \                                 In section .text, align 2, keep-with-next
+     68          static void _MagnifyPolygon(GUI_POINT* pDest, const GUI_POINT* pSrc, int NumPoints, float Mag) {
+   \                     _MagnifyPolygon: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+     69            int j;
+     70            for (j = 0; j < NumPoints; j++) {
+   \   00000002   0x2300             MOVS     R3,#+0
+   \   00000004   0xE01F             B.N      ??_MagnifyPolygon_0
+     71              (pDest + j)->x = (pSrc + j)->x * Mag;
+                                    ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \                     ??_MagnifyPolygon_1: (+1)
+   \   00000006   0xF931 0x4023      LDRSH    R4,[R1, R3, LSL #+2]
+   \   0000000A   0xEE00 0x4A90      VMOV     S1,R4
+   \   0000000E   0xEEF8 0x0AE0      VCVT.F32.S32 S1,S1
+   \   00000012   0xEE60 0x0A80      VMUL.F32 S1,S1,S0
+   \   00000016   0xEEFD 0x0AE0      VCVT.S32.F32 S1,S1
+   \   0000001A   0xEE10 0x4A90      VMOV     R4,S1
+   \   0000001E   0xF820 0x4023      STRH     R4,[R0, R3, LSL #+2]
+     72              (pDest + j)->y = (pSrc + j)->y * Mag;
+                                    ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \   00000022   0xEB01 0x0483      ADD      R4,R1,R3, LSL #+2
+   \   00000026   0xF9B4 0x4002      LDRSH    R4,[R4, #+2]
+   \   0000002A   0xEE00 0x4A90      VMOV     S1,R4
+   \   0000002E   0xEEF8 0x0AE0      VCVT.F32.S32 S1,S1
+   \   00000032   0xEE60 0x0A80      VMUL.F32 S1,S1,S0
+   \   00000036   0xEEFD 0x0AE0      VCVT.S32.F32 S1,S1
+   \   0000003A   0xEE10 0x4A90      VMOV     R4,S1
+   \   0000003E   0xEB00 0x0583      ADD      R5,R0,R3, LSL #+2
+   \   00000042   0x806C             STRH     R4,[R5, #+2]
+     73            }
+   \   00000044   0x1C5B             ADDS     R3,R3,#+1
+   \                     ??_MagnifyPolygon_0: (+1)
+   \   00000046   0x4293             CMP      R3,R2
+   \   00000048   0xDBDD             BLT.N    ??_MagnifyPolygon_1
+     74          }
+   \   0000004A   0xBC30             POP      {R4,R5}
+   \   0000004C   0x4770             BX       LR               ;; return
+     75          #endif
+     76          
+     77          /*********************************************************************
+     78          *
+     79          *       public code
+     80          *
+     81          **********************************************************************
+     82          */
+     83          /*********************************************************************
+     84          *
+     85          *       GUIDEMO_DemoPolygon
+     86          */
+
+   \                                 In section .text, align 4, keep-with-next
+     87          void GUIDEMO_DemoPolygon(void) {
+   \                     GUIDEMO_DemoPolygon: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+   \   00000002   0xED2D 0x8B02      VPUSH    {D8}
+   \   00000006   0xB088             SUB      SP,SP,#+32
+     88            GUI_COLOR Color;
+     89            int XMid  = (LCD_XSIZE >> 1);
+     90            int YMid  = (LCD_YSIZE >> 1);
+     91            GUIDEMO_ShowIntro("Arbitrary Polygons", 
+     92                              "\nStandard and antialiased");
+   \   00000008   0x.... 0x....      ADR.W    R1,`?<Constant "\\nStandard and antiali...">`
+   \   0000000C   0x.... 0x....      ADR.W    R0,`?<Constant "Arbitrary Polygons">`
+   \   00000010   0x.... 0x....      BL       GUIDEMO_ShowIntro
+     93            GUI_SetColor(GUI_WHITE);
+   \   00000014   0xF06F 0x407F      MVN      R0,#-16777216
+   \   00000018   0x.... 0x....      BL       GUI_SetColor
+     94            #if GUIDEMO_LARGE
+     95              GUI_SetFont(&GUI_FontComic18B_ASCII);
+   \   0000001C   0x....             LDR.N    R0,??DataTable5_1
+   \   0000001E   0x.... 0x....      BL       GUI_SetFont
+     96              GUI_DispStringAt("Arbitrary\nPolygons", 0, 0);
+   \   00000022   0x2200             MOVS     R2,#+0
+   \   00000024   0x4611             MOV      R1,R2
+   \   00000026   0x.... 0x....      ADR.W    R0,`?<Constant "Arbitrary\\nPolygons">`
+   \   0000002A   0x.... 0x....      BL       GUI_DispStringAt
+     97              YMid += 10;
+     98            #endif
+     99            #if ((LCD_XSIZE != 320) || (LCD_YSIZE != 240))
+    100              {
+    101                GUI_POINT aPolygon[8];
+    102                float Factor;
+    103                #if ((LCD_XSIZE / 320) < (LCD_YSIZE / 240))
+    104                  Factor = LCD_XSIZE / 320.f;
+    105                #else
+    106                  Factor = LCD_YSIZE / 240.f;
+    107                #endif
+    108                #if !(GUIDEMO_LARGE)
+    109                  Factor *= 1.2f;
+    110                #endif
+    111                /* Draw arrows */
+    112                _MagnifyPolygon(aPolygon, _aArrow, COUNTOF(_aArrow), Factor);
+   \   0000002E   0xED9F 0x....      VLDR.W   S16,??DataTable5  ;; 0x3faaaaab
+   \   00000032   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \   00000036   0x2207             MOVS     R2,#+7
+   \   00000038   0x.... 0x....      ADR.W    R1,_aArrow
+   \   0000003C   0xA800             ADD      R0,SP,#+0
+   \   0000003E   0x.... 0x....      BL       _MagnifyPolygon
+    113                GUI_FillPolygon(aPolygon, 7, XMid - (50 * Factor), YMid);
+                                                    ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \   00000042   0x23AA             MOVS     R3,#+170
+   \   00000044   0x22AD             MOVS     R2,#+173
+   \   00000046   0x2107             MOVS     R1,#+7
+   \   00000048   0xA800             ADD      R0,SP,#+0
+   \   0000004A   0x.... 0x....      BL       GUI_FillPolygon
+    114                GUI_FillPolygon(aPolygon, 7, XMid + (50 * Factor), YMid);
+                                                    ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \   0000004E   0x23AA             MOVS     R3,#+170
+   \   00000050   0xF44F 0x7299      MOV      R2,#+306
+   \   00000054   0x2107             MOVS     R1,#+7
+   \   00000056   0xA800             ADD      R0,SP,#+0
+   \   00000058   0x.... 0x....      BL       GUI_FillPolygon
+    115                /* Draw triangle */
+    116                _MagnifyPolygon(aPolygon, _aTriangle, COUNTOF(_aTriangle), Factor);
+   \   0000005C   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \   00000060   0x2203             MOVS     R2,#+3
+   \   00000062   0x.... 0x....      ADR.W    R1,_aTriangle
+   \   00000066   0xA800             ADD      R0,SP,#+0
+   \   00000068   0x.... 0x....      BL       _MagnifyPolygon
+    117                Color = GUIDEMO_SetColor(GUI_GREEN);
+    118                if (Color != GUI_GREEN) {
+   \   0000006C   0xF44F 0x407F      MOV      R0,#+65280
+   \   00000070   0x.... 0x....      BL       GUIDEMO_SetColor
+   \   00000074   0xF5B0 0x4F7F      CMP      R0,#+65280
+   \   00000078   0xD003             BEQ.N    ??GUIDEMO_DemoPolygon_0
+    119                  GUI_SetColor(GUI_YELLOW);
+   \   0000007A   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   0000007E   0x.... 0x....      BL       GUI_SetColor
+    120                }
+    121                GUI_FillPolygon(aPolygon, 3, XMid, YMid + (10 * Factor));
+                                                          ^
+Warning[Pa093]: implicit conversion from floating point to integer
+   \                     ??GUIDEMO_DemoPolygon_0: (+1)
+   \   00000082   0x23B7             MOVS     R3,#+183
+   \   00000084   0x22F0             MOVS     R2,#+240
+   \   00000086   0x2103             MOVS     R1,#+3
+   \   00000088   0xA800             ADD      R0,SP,#+0
+   \   0000008A   0x.... 0x....      BL       GUI_FillPolygon
+    122                /* Draw cursor */
+    123                #if GUI_SUPPORT_AA
+    124                  GUI_SetColor(GUI_WHITE);
+    125                  GUI_AA_EnableHiRes();
+    126                  _MagnifyPolygon(aPolygon, _aiCursor, COUNTOF(_aiCursor), Factor);
+    127                  GUI_AA_FillPolygon(aPolygon, 4, XMid * 3, (YMid - (10 * Factor)) * 3);
+    128                #endif
+    129              }
+    130            #else
+    131              GUI_FillPolygon(_aArrow, 7, XMid - 50, YMid);
+    132              GUI_FillPolygon(_aArrow, 7, XMid + 50, YMid);
+    133              /* Draw triangle */
+    134              Color = GUIDEMO_SetColor(GUI_GREEN);
+    135              if (Color != GUI_GREEN) {
+    136                GUI_SetColor(GUI_YELLOW);
+    137              }
+    138              GUI_FillPolygon(_aTriangle, 3, XMid, YMid + 10);
+    139              /* Draw cursor */
+    140              #if GUI_SUPPORT_AA
+    141                GUI_SetColor(GUI_WHITE);
+    142                GUI_AA_EnableHiRes();
+    143                GUI_AA_FillPolygon((GUI_POINT*)_aiCursor, 4, XMid * 3, (YMid - 10) * 3);
+    144              #endif
+    145            #endif
+    146            GUIDEMO_Wait();
+   \   0000008E   0x.... 0x....      BL       GUIDEMO_Wait
+    147          }
+   \   00000092   0xB008             ADD      SP,SP,#+32
+   \   00000094   0xECBD 0x8B02      VPOP     {D8}
+   \   00000098   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x3FAAAAAB         DC32     0x3faaaaab
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x........         DC32     GUI_FontComic18B_ASCII
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Arbitrary Polygons">`:
+   \   00000000   0x41 0x72          DC8 "Arbitrary Polygons"
+   \              0x62 0x69    
+   \              0x74 0x72    
+   \              0x61 0x72    
+   \              0x79 0x20    
+   \              0x50 0x6F    
+   \              0x6C 0x79    
+   \              0x67 0x6F    
+   \              0x6E 0x73    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "\\nStandard and antiali...">`:
+   \   00000000   0x0A 0x53          DC8 "\012Standard and antialiased"
+   \              0x74 0x61    
+   \              0x6E 0x64    
+   \              0x61 0x72    
+   \              0x64 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20    
+   \              0x61 0x6E    
+   \              0x74 0x69    
+   \              0x61 0x6C    
+   \              0x69 0x61    
+   \              0x73 0x65    
+   \              0x64 0x00    
+   \   0000001A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Arbitrary\\nPolygons">`:
+   \   00000000   0x41 0x72          DC8 "Arbitrary\012Polygons"
+   \              0x62 0x69    
+   \              0x74 0x72    
+   \              0x61 0x72    
+   \              0x79 0x0A    
+   \              0x50 0x6F    
+   \              0x6C 0x79    
+   \              0x67 0x6F    
+   \              0x6E 0x73    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   GUIDEMO_DemoPolygon
+        48   -> GUIDEMO_SetColor
+        48   -> GUIDEMO_ShowIntro
+        48   -> GUIDEMO_Wait
+        48   -> GUI_DispStringAt
+        48   -> GUI_FillPolygon
+        48   -> GUI_SetColor
+        48   -> GUI_SetFont
+        48   -> _MagnifyPolygon
+       8   _MagnifyPolygon
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  ?<Constant "Arbitrary Polygons">
+      20  ?<Constant "Arbitrary\nPolygons">
+      28  ?<Constant "\nStandard and antiali...">
+       4  ??DataTable5
+       4  ??DataTable5_1
+     154  GUIDEMO_DemoPolygon
+      78  _MagnifyPolygon
+      28  _aArrow
+      12  _aTriangle
+
+ 
+ 348 bytes in section .text
+ 
+ 348 bytes of CODE memory
+
+Errors: none
+Warnings: 5

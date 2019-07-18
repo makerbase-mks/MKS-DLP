@@ -1,0 +1,579 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:59
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_MinMaxRest.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_MinMaxRest.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\FRAMEWIN_MinMaxRest.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\FRAMEWIN_MinMaxRest.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_MinMaxRest.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : FRAMEWIN_MinMaxRest.c
+     16          Purpose     : Add. framewin routines
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include <stdlib.h>
+     21          #include <string.h>
+     22          #include "FRAMEWIN_Private.h"
+     23          #include "WIDGET.h"
+     24          #include "GUI_Protected.h"
+     25          #include "WM_Intern.h"
+     26          
+     27          #if GUI_WINSUPPORT
+     28          
+     29          /*********************************************************************
+     30          *
+     31          *           Static routines
+     32          *
+     33          **********************************************************************
+     34          */
+     35          /*********************************************************************
+     36          *
+     37          *       _InvalidateButton
+     38          */
+
+   \                                 In section .text, align 2, keep-with-next
+     39          static void _InvalidateButton(FRAMEWIN_Obj* pObj, int Id) {
+   \                     _InvalidateButton: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
+     40            WM_HWIN hChild;
+     41            WM_Obj* pChild;
+     42            for (hChild = pObj->Widget.Win.hFirstChild; hChild; hChild = pChild->hNext) {
+   \   00000004   0xF9B0 0x5018      LDRSH    R5,[R0, #+24]
+   \   00000008   0xE00D             B.N      ??_InvalidateButton_0
+     43              pChild = WM_H2P(hChild);
+   \                     ??_InvalidateButton_1: (+1)
+   \   0000000A   0x4628             MOV      R0,R5
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000010   0x4606             MOV      R6,R0
+     44              if (WM_GetId(hChild) == Id) {
+   \   00000012   0x4628             MOV      R0,R5
+   \   00000014   0x.... 0x....      BL       WM_GetId
+   \   00000018   0x42A0             CMP      R0,R4
+   \   0000001A   0xD102             BNE.N    ??_InvalidateButton_2
+     45                WM_InvalidateWindow(hChild);
+   \   0000001C   0x4628             MOV      R0,R5
+   \   0000001E   0x.... 0x....      BL       WM_InvalidateWindow
+     46              }
+     47            }
+   \                     ??_InvalidateButton_2: (+1)
+   \   00000022   0xF9B6 0x501A      LDRSH    R5,[R6, #+26]
+   \                     ??_InvalidateButton_0: (+1)
+   \   00000026   0x2D00             CMP      R5,#+0
+   \   00000028   0xD1EF             BNE.N    ??_InvalidateButton_1
+     48          }
+   \   0000002A   0xBD70             POP      {R4-R6,PC}       ;; return
+     49          
+     50          /*********************************************************************
+     51          *
+     52          *       _RestoreMinimized
+     53          */
+
+   \                                 In section .text, align 2, keep-with-next
+     54          static void _RestoreMinimized(FRAMEWIN_Handle hObj, FRAMEWIN_Obj* pObj) {
+   \                     _RestoreMinimized: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x460C             MOV      R4,R1
+     55            /* When window was minimized, restore it */
+     56            if (pObj->Flags & FRAMEWIN_SF_MINIMIZED) {
+   \   00000004   0xF894 0x105C      LDRB     R1,[R4, #+92]
+   \   00000008   0x0649             LSLS     R1,R1,#+25
+   \   0000000A   0xD527             BPL.N    ??_RestoreMinimized_0
+     57              int OldHeight = 1 + pObj->Widget.Win.Rect.y1 - pObj->Widget.Win.Rect.y0;
+     58              int NewHeight = 1 + pObj->rRestore.y1 - pObj->rRestore.y0;
+     59              WM_ResizeWindow(hObj, 0, NewHeight - OldHeight);
+   \   0000000C   0x1CA5             ADDS     R5,R4,#+2
+   \   0000000E   0xF9B5 0x1056      LDRSH    R1,[R5, #+86]
+   \   00000012   0x1C49             ADDS     R1,R1,#+1
+   \   00000014   0xF9B5 0x2052      LDRSH    R2,[R5, #+82]
+   \   00000018   0x1A89             SUBS     R1,R1,R2
+   \   0000001A   0xF9B5 0x2004      LDRSH    R2,[R5, #+4]
+   \   0000001E   0x1A89             SUBS     R1,R1,R2
+   \   00000020   0xF9B4 0x2002      LDRSH    R2,[R4, #+2]
+   \   00000024   0x1889             ADDS     R1,R1,R2
+   \   00000026   0x1E4A             SUBS     R2,R1,#+1
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x.... 0x....      BL       WM_ResizeWindow
+     60              WM_ShowWindow(pObj->hClient);
+   \   0000002E   0xF9B5 0x004A      LDRSH    R0,[R5, #+74]
+   \   00000032   0x.... 0x....      BL       WM_ShowWindow
+     61              WM_ShowWindow(pObj->hMenu);
+   \   00000036   0xF9B5 0x004C      LDRSH    R0,[R5, #+76]
+   \   0000003A   0x.... 0x....      BL       WM_ShowWindow
+     62              FRAMEWIN__UpdatePositions(pObj);
+   \   0000003E   0x4620             MOV      R0,R4
+   \   00000040   0x.... 0x....      BL       FRAMEWIN__UpdatePositions
+     63              pObj->Flags &= ~FRAMEWIN_SF_MINIMIZED;
+   \   00000044   0xF8B4 0x005C      LDRH     R0,[R4, #+92]
+   \   00000048   0xF64F 0x71BF      MOVW     R1,#+65471
+   \   0000004C   0x4008             ANDS     R0,R1,R0
+   \   0000004E   0xF8A4 0x005C      STRH     R0,[R4, #+92]
+     64              _InvalidateButton(pObj, GUI_ID_MINIMIZE);
+   \   00000052   0x2108             MOVS     R1,#+8
+   \   00000054   0x4620             MOV      R0,R4
+   \   00000056   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   0000005A   0x....             B.N      _InvalidateButton
+     65            }
+     66          }
+   \                     ??_RestoreMinimized_0: (+1)
+   \   0000005C   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+     67          
+     68          /*********************************************************************
+     69          *
+     70          *       _RestoreMaximized
+     71          */
+
+   \                                 In section .text, align 2, keep-with-next
+     72          static void _RestoreMaximized(FRAMEWIN_Handle hObj, FRAMEWIN_Obj* pObj) {
+   \                     _RestoreMaximized: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+     73            /* When window was maximized, restore it */
+     74            if (pObj->Flags & FRAMEWIN_SF_MAXIMIZED) {
+   \   00000008   0xF205 0x0652      ADDW     R6,R5,#+82
+   \   0000000C   0x7AB0             LDRB     R0,[R6, #+10]
+   \   0000000E   0x0600             LSLS     R0,R0,#+24
+   \   00000010   0xD522             BPL.N    ??_RestoreMaximized_0
+     75              GUI_RECT r = pObj->rRestore;
+   \   00000012   0xF9B5 0x7052      LDRSH    R7,[R5, #+82]
+   \   00000016   0xF9B6 0x8002      LDRSH    R8,[R6, #+2]
+   \   0000001A   0xF9B6 0x9004      LDRSH    R9,[R6, #+4]
+   \   0000001E   0xF9B6 0xA006      LDRSH    R10,[R6, #+6]
+     76              WM_MoveTo(hObj, r.x0, r.y0);
+   \   00000022   0x4642             MOV      R2,R8
+   \   00000024   0x4639             MOV      R1,R7
+   \   00000026   0x4620             MOV      R0,R4
+   \   00000028   0x.... 0x....      BL       WM_MoveTo
+     77              WM_SetSize(hObj, r.x1 - r.x0 + 1, r.y1 - r.y0 + 1);
+   \   0000002C   0xEBAA 0x0008      SUB      R0,R10,R8
+   \   00000030   0x1C42             ADDS     R2,R0,#+1
+   \   00000032   0xEBA9 0x0007      SUB      R0,R9,R7
+   \   00000036   0x1C41             ADDS     R1,R0,#+1
+   \   00000038   0x4620             MOV      R0,R4
+   \   0000003A   0x.... 0x....      BL       WM_SetSize
+     78              FRAMEWIN__UpdatePositions(pObj);
+   \   0000003E   0x4628             MOV      R0,R5
+   \   00000040   0x.... 0x....      BL       FRAMEWIN__UpdatePositions
+     79              pObj->Flags &= ~FRAMEWIN_SF_MAXIMIZED;
+   \   00000044   0x8970             LDRH     R0,[R6, #+10]
+   \   00000046   0xF64F 0x717F      MOVW     R1,#+65407
+   \   0000004A   0x4008             ANDS     R0,R1,R0
+   \   0000004C   0x8170             STRH     R0,[R6, #+10]
+     80              _InvalidateButton(pObj, GUI_ID_MAXIMIZE);
+   \   0000004E   0x2107             MOVS     R1,#+7
+   \   00000050   0x4628             MOV      R0,R5
+   \   00000052   0xE8BD 0x47F0      POP      {R4-R10,LR}
+   \   00000056   0x....             B.N      _InvalidateButton
+     81            }
+     82          }
+   \                     ??_RestoreMaximized_0: (+1)
+   \   00000058   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+     83          
+     84          /*********************************************************************
+     85          *
+     86          *       _MinimizeFramewin
+     87          */
+
+   \                                 In section .text, align 2, keep-with-next
+     88          static void _MinimizeFramewin(FRAMEWIN_Handle hObj, FRAMEWIN_Obj* pObj) {
+   \                     _MinimizeFramewin: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+     89            _RestoreMaximized(hObj, pObj);
+   \   00000008   0x.... 0x....      BL       _RestoreMaximized
+     90            /* When window is not minimized, minimize it */
+     91            if ((pObj->Flags & FRAMEWIN_SF_MINIMIZED) == 0) {
+   \   0000000C   0xF105 0x0620      ADD      R6,R5,#+32
+   \   00000010   0xF896 0x003C      LDRB     R0,[R6, #+60]
+   \   00000014   0x0640             LSLS     R0,R0,#+25
+   \   00000016   0xD42E             BMI.N    ??_MinimizeFramewin_0
+     92              int OldHeight = pObj->Widget.Win.Rect.y1 - pObj->Widget.Win.Rect.y0 + 1;
+   \   00000018   0xF9B5 0x0006      LDRSH    R0,[R5, #+6]
+   \   0000001C   0xF9B5 0x1002      LDRSH    R1,[R5, #+2]
+   \   00000020   0x1A40             SUBS     R0,R0,R1
+   \   00000022   0x1C47             ADDS     R7,R0,#+1
+     93              int NewHeight = FRAMEWIN__CalcTitleHeight(pObj) + pObj->Widget.pEffect->EffectSize * 2 + 2;    
+   \   00000024   0x4628             MOV      R0,R5
+   \   00000026   0x.... 0x....      BL       FRAMEWIN__CalcTitleHeight
+   \   0000002A   0x6A29             LDR      R1,[R5, #+32]
+   \   0000002C   0x6949             LDR      R1,[R1, #+20]
+   \   0000002E   0xEB00 0x0041      ADD      R0,R0,R1, LSL #+1
+   \   00000032   0xF100 0x0802      ADD      R8,R0,#+2
+     94              pObj->rRestore = pObj->Widget.Win.Rect;
+   \   00000036   0xF105 0x0052      ADD      R0,R5,#+82
+   \   0000003A   0x4629             MOV      R1,R5
+   \   0000003C   0x2208             MOVS     R2,#+8
+   \   0000003E   0x.... 0x....      BL       __aeabi_memcpy
+     95              WM_HideWindow(pObj->hClient);
+   \   00000042   0xF9B6 0x002C      LDRSH    R0,[R6, #+44]
+   \   00000046   0x.... 0x....      BL       WM_HideWindow
+     96              WM_HideWindow(pObj->hMenu);
+   \   0000004A   0xF9B6 0x002E      LDRSH    R0,[R6, #+46]
+   \   0000004E   0x.... 0x....      BL       WM_HideWindow
+     97              WM_ResizeWindow(hObj, 0, NewHeight - OldHeight);
+   \   00000052   0xEBA8 0x0207      SUB      R2,R8,R7
+   \   00000056   0x2100             MOVS     R1,#+0
+   \   00000058   0x4620             MOV      R0,R4
+   \   0000005A   0x.... 0x....      BL       WM_ResizeWindow
+     98              FRAMEWIN__UpdatePositions(pObj);
+   \   0000005E   0x4628             MOV      R0,R5
+   \   00000060   0x.... 0x....      BL       FRAMEWIN__UpdatePositions
+     99              pObj->Flags |= FRAMEWIN_SF_MINIMIZED;
+   \   00000064   0x8FB0             LDRH     R0,[R6, #+60]
+   \   00000066   0xF040 0x0040      ORR      R0,R0,#0x40
+   \   0000006A   0x87B0             STRH     R0,[R6, #+60]
+    100              _InvalidateButton(pObj, GUI_ID_MINIMIZE);
+   \   0000006C   0x2108             MOVS     R1,#+8
+   \   0000006E   0x4628             MOV      R0,R5
+   \   00000070   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   00000074   0x....             B.N      _InvalidateButton
+    101            }
+    102          }
+   \                     ??_MinimizeFramewin_0: (+1)
+   \   00000076   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    103          
+    104          /*********************************************************************
+    105          *
+    106          *       _MaximizeFramewin
+    107          */
+
+   \                                 In section .text, align 2, keep-with-next
+    108          static void _MaximizeFramewin(FRAMEWIN_Handle hObj, FRAMEWIN_Obj* pObj) {
+   \                     _MaximizeFramewin: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+    109            _RestoreMinimized(hObj, pObj);
+   \   00000008   0x.... 0x....      BL       _RestoreMinimized
+    110            /* When window is not maximized, maximize it */
+    111            if ((pObj->Flags & FRAMEWIN_SF_MAXIMIZED) == 0) {
+   \   0000000C   0xF895 0x005C      LDRB     R0,[R5, #+92]
+   \   00000010   0x0600             LSLS     R0,R0,#+24
+   \   00000012   0xD43B             BMI.N    ??_MaximizeFramewin_0
+    112              WM_HWIN hParent = pObj->Widget.Win.hParent;
+    113              WM_Obj* pParent = WM_H2P(hParent);
+   \   00000014   0xF9B5 0x0016      LDRSH    R0,[R5, #+22]
+   \   00000018   0x.... 0x....      BL       GUI_ALLOC_h2p
+    114              GUI_RECT r = pParent->Rect;
+   \   0000001C   0xF9B0 0x6000      LDRSH    R6,[R0, #+0]
+   \   00000020   0xF9B0 0x7002      LDRSH    R7,[R0, #+2]
+   \   00000024   0xF9B0 0x8004      LDRSH    R8,[R0, #+4]
+   \   00000028   0xF9B0 0x9006      LDRSH    R9,[R0, #+6]
+    115              if (pParent->hParent == 0) {
+   \   0000002C   0xF9B0 0x0016      LDRSH    R0,[R0, #+22]
+   \   00000030   0x2800             CMP      R0,#+0
+   \   00000032   0xD105             BNE.N    ??_MaximizeFramewin_1
+    116                r.x1 = LCD_GetXSize();
+   \   00000034   0x.... 0x....      BL       LCD_GetXSize
+   \   00000038   0x4680             MOV      R8,R0
+    117                r.y1 = LCD_GetYSize();
+   \   0000003A   0x.... 0x....      BL       LCD_GetYSize
+   \   0000003E   0x4681             MOV      R9,R0
+    118              }
+    119              pObj->rRestore = pObj->Widget.Win.Rect;
+   \                     ??_MaximizeFramewin_1: (+1)
+   \   00000040   0xF105 0x0052      ADD      R0,R5,#+82
+   \   00000044   0x4629             MOV      R1,R5
+   \   00000046   0x2208             MOVS     R2,#+8
+   \   00000048   0x.... 0x....      BL       __aeabi_memcpy
+    120              WM_MoveTo(hObj, r.x0, r.y0);
+   \   0000004C   0x463A             MOV      R2,R7
+   \   0000004E   0x4631             MOV      R1,R6
+   \   00000050   0x4620             MOV      R0,R4
+   \   00000052   0x.... 0x....      BL       WM_MoveTo
+    121              WM_SetSize(hObj, r.x1 - r.x0 + 1, r.y1 - r.y0 + 1);
+   \   00000056   0xFA0F 0xF989      SXTH     R9,R9
+   \   0000005A   0xEBA9 0x0007      SUB      R0,R9,R7
+   \   0000005E   0x1C42             ADDS     R2,R0,#+1
+   \   00000060   0xFA0F 0xF888      SXTH     R8,R8
+   \   00000064   0xEBA8 0x0006      SUB      R0,R8,R6
+   \   00000068   0x1C41             ADDS     R1,R0,#+1
+   \   0000006A   0x4620             MOV      R0,R4
+   \   0000006C   0x.... 0x....      BL       WM_SetSize
+    122              FRAMEWIN__UpdatePositions(pObj);
+   \   00000070   0x4628             MOV      R0,R5
+   \   00000072   0x.... 0x....      BL       FRAMEWIN__UpdatePositions
+    123              pObj->Flags |= FRAMEWIN_SF_MAXIMIZED;
+   \   00000076   0xF8B5 0x005C      LDRH     R0,[R5, #+92]
+   \   0000007A   0xF040 0x0080      ORR      R0,R0,#0x80
+   \   0000007E   0xF8A5 0x005C      STRH     R0,[R5, #+92]
+    124              _InvalidateButton(pObj, GUI_ID_MAXIMIZE);
+   \   00000082   0x2107             MOVS     R1,#+7
+   \   00000084   0x4628             MOV      R0,R5
+   \   00000086   0xE8BD 0x43F4      POP      {R2,R4-R9,LR}
+   \   0000008A   0x....             B.N      _InvalidateButton
+    125            }
+    126          }
+   \                     ??_MaximizeFramewin_0: (+1)
+   \   0000008C   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}    ;; return
+    127          
+    128          /*********************************************************************
+    129          *
+    130          *        Public code
+    131          *
+    132          **********************************************************************
+    133          */
+    134          /*********************************************************************
+    135          *
+    136          *       FRAMEWIN_Minimize
+    137          */
+
+   \                                 In section .text, align 2, keep-with-next
+    138          void FRAMEWIN_Minimize(FRAMEWIN_Handle hObj) {
+   \                     FRAMEWIN_Minimize: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    139            if (hObj) {
+   \   00000004   0xD006             BEQ.N    ??FRAMEWIN_Minimize_0
+    140              FRAMEWIN_Obj* pObj;
+    141              WM_LOCK();
+    142              pObj = FRAMEWIN_H2P(hObj);
+   \   00000006   0x.... 0x....      BL       GUI_ALLOC_h2p
+    143              _MinimizeFramewin(hObj, pObj);
+   \   0000000A   0x4601             MOV      R1,R0
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000012   0x....             B.N      _MinimizeFramewin
+    144              WM_UNLOCK();
+    145            }
+    146          }
+   \                     ??FRAMEWIN_Minimize_0: (+1)
+   \   00000014   0xBD10             POP      {R4,PC}          ;; return
+    147          
+    148          /*********************************************************************
+    149          *
+    150          *       FRAMEWIN_Maximize
+    151          */
+
+   \                                 In section .text, align 2, keep-with-next
+    152          void FRAMEWIN_Maximize(FRAMEWIN_Handle hObj) {
+   \                     FRAMEWIN_Maximize: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    153            if (hObj) {
+   \   00000004   0xD006             BEQ.N    ??FRAMEWIN_Maximize_0
+    154              FRAMEWIN_Obj* pObj;
+    155              WM_LOCK();
+    156              pObj = FRAMEWIN_H2P(hObj);
+   \   00000006   0x.... 0x....      BL       GUI_ALLOC_h2p
+    157              _MaximizeFramewin(hObj, pObj);
+   \   0000000A   0x4601             MOV      R1,R0
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000012   0x....             B.N      _MaximizeFramewin
+    158              WM_UNLOCK();
+    159            }
+    160          }
+   \                     ??FRAMEWIN_Maximize_0: (+1)
+   \   00000014   0xBD10             POP      {R4,PC}          ;; return
+    161          
+    162          /*********************************************************************
+    163          *
+    164          *       FRAMEWIN_Restore
+    165          */
+
+   \                                 In section .text, align 2, keep-with-next
+    166          void FRAMEWIN_Restore(FRAMEWIN_Handle hObj) {
+   \                     FRAMEWIN_Restore: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    167            if (hObj) {
+   \   00000004   0xD00B             BEQ.N    ??FRAMEWIN_Restore_0
+    168              FRAMEWIN_Obj* pObj;
+    169              WM_LOCK();
+    170              pObj = FRAMEWIN_H2P(hObj);
+   \   00000006   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   0000000A   0x4605             MOV      R5,R0
+    171              _RestoreMinimized(hObj, pObj);
+   \   0000000C   0x4629             MOV      R1,R5
+   \   0000000E   0x4620             MOV      R0,R4
+   \   00000010   0x.... 0x....      BL       _RestoreMinimized
+    172              _RestoreMaximized(hObj, pObj);
+   \   00000014   0x4629             MOV      R1,R5
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   0000001C   0x....             B.N      _RestoreMaximized
+    173              WM_UNLOCK();
+    174            }
+    175          }
+   \                     ??FRAMEWIN_Restore_0: (+1)
+   \   0000001E   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    176          
+    177          #else
+    178            void FRAMEWIN_MinMaxRest_c(void) {} /* avoid empty object files */
+    179          #endif /* GUI_WINSUPPORT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   FRAMEWIN_Maximize
+         8   -> GUI_ALLOC_h2p
+         0   -> _MaximizeFramewin
+       8   FRAMEWIN_Minimize
+         8   -> GUI_ALLOC_h2p
+         0   -> _MinimizeFramewin
+      16   FRAMEWIN_Restore
+        16   -> GUI_ALLOC_h2p
+         0   -> _RestoreMaximized
+        16   -> _RestoreMinimized
+      16   _InvalidateButton
+        16   -> GUI_ALLOC_h2p
+        16   -> WM_GetId
+        16   -> WM_InvalidateWindow
+      32   _MaximizeFramewin
+        32   -> FRAMEWIN__UpdatePositions
+        32   -> GUI_ALLOC_h2p
+        32   -> LCD_GetXSize
+        32   -> LCD_GetYSize
+        32   -> WM_MoveTo
+        32   -> WM_SetSize
+         0   -> _InvalidateButton
+        32   -> _RestoreMinimized
+        32   -> __aeabi_memcpy
+      24   _MinimizeFramewin
+        24   -> FRAMEWIN__CalcTitleHeight
+        24   -> FRAMEWIN__UpdatePositions
+        24   -> WM_HideWindow
+        24   -> WM_ResizeWindow
+         0   -> _InvalidateButton
+        24   -> _RestoreMaximized
+        24   -> __aeabi_memcpy
+      32   _RestoreMaximized
+        32   -> FRAMEWIN__UpdatePositions
+        32   -> WM_MoveTo
+        32   -> WM_SetSize
+         0   -> _InvalidateButton
+      16   _RestoreMinimized
+        16   -> FRAMEWIN__UpdatePositions
+        16   -> WM_ResizeWindow
+        16   -> WM_ShowWindow
+         0   -> _InvalidateButton
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      22  FRAMEWIN_Maximize
+      22  FRAMEWIN_Minimize
+      32  FRAMEWIN_Restore
+      44  _InvalidateButton
+     144  _MaximizeFramewin
+     122  _MinimizeFramewin
+      92  _RestoreMaximized
+      94  _RestoreMinimized
+
+ 
+ 572 bytes in section .text
+ 
+ 572 bytes of CODE memory
+
+Errors: none
+Warnings: none

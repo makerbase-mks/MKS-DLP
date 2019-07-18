@@ -1,0 +1,237 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:29
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_CriticalHandle.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_CriticalHandle.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\WM_CriticalHandle.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\WM_CriticalHandle.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM_CriticalHandle.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : WM_CriticalHandle.c
+     16          Purpose     : Windows manager, add. module
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include "WM_Intern.h"
+     21          
+     22          #if GUI_WINSUPPORT    /* If 0, WM will not generate any code */
+     23          #include "GUIDebug.h"
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *       Public code
+     28          *
+     29          **********************************************************************
+     30          */
+     31          /*********************************************************************
+     32          *
+     33          *       WM__AddCriticalHandle
+     34          */
+
+   \                                 In section .text, align 2, keep-with-next
+     35          void WM__AddCriticalHandle(WM_CRITICAL_HANDLE* pCriticalHandle) {
+     36            pCriticalHandle->pNext   = WM__pFirstCriticalHandle;
+   \                     WM__AddCriticalHandle: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable1
+   \   00000002   0x680A             LDR      R2,[R1, #+0]
+   \   00000004   0x6002             STR      R2,[R0, #+0]
+     37            WM__pFirstCriticalHandle = pCriticalHandle;
+   \   00000006   0x6008             STR      R0,[R1, #+0]
+     38          }
+   \   00000008   0x4770             BX       LR               ;; return
+     39          
+     40          /*********************************************************************
+     41          *
+     42          *       WM__RemoveCriticalHandle
+     43          */
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void WM__RemoveCriticalHandle(WM_CRITICAL_HANDLE* pCriticalHandle) {
+     45            if (WM__pFirstCriticalHandle) {
+   \                     WM__RemoveCriticalHandle: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable1
+   \   00000002   0x680A             LDR      R2,[R1, #+0]
+   \   00000004   0x2A00             CMP      R2,#+0
+   \   00000006   0xD100             BNE.N    ??WM__RemoveCriticalHandle_0
+   \   00000008   0x4770             BX       LR
+     46              WM_CRITICAL_HANDLE *pCH, *pLast = 0;
+   \                     ??WM__RemoveCriticalHandle_0: (+1)
+   \   0000000A   0xB410             PUSH     {R4}
+   \   0000000C   0x2300             MOVS     R3,#+0
+     47              for (pCH = WM__pFirstCriticalHandle; pCH; pCH = pCH->pNext) {
+   \   0000000E   0xE001             B.N      ??WM__RemoveCriticalHandle_1
+     48                if (pCH == pCriticalHandle) {
+     49                  if (pLast) {
+     50                    pLast->pNext = pCH->pNext;
+     51                  } else if (pCH->pNext) {
+     52                    WM__pFirstCriticalHandle = pCH->pNext;
+     53                  } else {
+     54                    WM__pFirstCriticalHandle = 0;
+     55                  }
+     56                  break;
+     57                }
+     58                pLast = pCH;
+   \                     ??WM__RemoveCriticalHandle_2: (+1)
+   \   00000010   0x4613             MOV      R3,R2
+   \   00000012   0x4622             MOV      R2,R4
+   \                     ??WM__RemoveCriticalHandle_1: (+1)
+   \   00000014   0x2A00             CMP      R2,#+0
+   \   00000016   0xD00C             BEQ.N    ??WM__RemoveCriticalHandle_3
+   \   00000018   0x6814             LDR      R4,[R2, #+0]
+   \   0000001A   0x4282             CMP      R2,R0
+   \   0000001C   0xD1F8             BNE.N    ??WM__RemoveCriticalHandle_2
+   \   0000001E   0x2B00             CMP      R3,#+0
+   \   00000020   0xD001             BEQ.N    ??WM__RemoveCriticalHandle_4
+   \   00000022   0x601C             STR      R4,[R3, #+0]
+   \   00000024   0xE005             B.N      ??WM__RemoveCriticalHandle_3
+   \                     ??WM__RemoveCriticalHandle_4: (+1)
+   \   00000026   0x2C00             CMP      R4,#+0
+   \   00000028   0xD001             BEQ.N    ??WM__RemoveCriticalHandle_5
+   \   0000002A   0x600C             STR      R4,[R1, #+0]
+   \   0000002C   0xE001             B.N      ??WM__RemoveCriticalHandle_3
+   \                     ??WM__RemoveCriticalHandle_5: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0x6008             STR      R0,[R1, #+0]
+     59              }
+     60            }
+     61          }
+   \                     ??WM__RemoveCriticalHandle_3: (+1)
+   \   00000032   0xBC10             POP      {R4}
+   \   00000034   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     WM__pFirstCriticalHandle
+     62          
+     63          #else
+     64            void WM_CriticalHandle_C(void) {} /* avoid empty object files */
+     65          #endif   /* GUI_WINSUPPORT */
+     66          
+     67          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   WM__AddCriticalHandle
+       4   WM__RemoveCriticalHandle
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+      10  WM__AddCriticalHandle
+      54  WM__RemoveCriticalHandle
+
+ 
+ 68 bytes in section .text
+ 
+ 68 bytes of CODE memory
+
+Errors: none
+Warnings: none

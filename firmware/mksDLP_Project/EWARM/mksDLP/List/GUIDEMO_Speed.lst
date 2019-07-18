@@ -1,0 +1,413 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:19:57
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Speed.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Speed.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUIDEMO_Speed.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUIDEMO_Speed.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Speed.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUIDEMO_Speed.c
+     16          Purpose     : Speed demo
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include <stdlib.h>  /* for rand */
+     21          #include "GUI.h"
+     22          #include "GUIDEMO.h"
+     23          
+
+   \                                 In section .text, align 4, keep-with-next
+     24          static const GUI_COLOR _aColor[8] = {
+   \                     _aColor:
+   \   00000000   0x00000000         DC32 0, 255, 65280, 65535, 16711680, 16711935, 16776960, 16777215
+   \              0x000000FF   
+   \              0x0000FF00   
+   \              0x0000FFFF   
+   \              0x00FF0000   
+   \              0x00FF00FF   
+   \              0x00FFFF00   
+   \              0x00FFFFFF   
+     25            0x000000, 
+     26            0x0000FF, 
+     27            0x00FF00, 
+     28            0x00FFFF, 
+     29            0xFF0000, 
+     30            0xFF00FF, 
+     31            0xFFFF00, 
+     32            0xFFFFFF
+     33          };
+     34          
+     35          /*********************************************************************
+     36          *
+     37          *       GUIDEMO_Speed
+     38          *
+     39          **********************************************************************
+     40          */
+     41          
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void GUIDEMO_Speed(void) {
+   \                     GUIDEMO_Speed: (+1)
+   \   00000000   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+     43            int t, i;
+     44            I32 NumPixels = 0;
+   \   00000004   0x2400             MOVS     R4,#+0
+     45            U16 aColorIndex[8];
+     46            GUIDEMO_ShowIntro("High speed",
+     47                              "\nmulti layer clipping"
+     48                              "\nhighly optimized drivers"
+     49                              );
+   \   00000006   0x.... 0x....      ADR.W    R1,`?<Constant "\\nmulti layer clipping...">`
+   \   0000000A   0x.... 0x....      ADR.W    R0,`?<Constant "High speed">`
+   \   0000000E   0x.... 0x....      BL       GUIDEMO_ShowIntro
+     50            for (i = 0; i< 8; i++) {
+   \   00000012   0x4625             MOV      R5,R4
+   \   00000014   0xE009             B.N      ??GUIDEMO_Speed_0
+     51              aColorIndex[i] = GUI_Color2Index(_aColor[i]);
+   \                     ??GUIDEMO_Speed_1: (+1)
+   \   00000016   0x.... 0x....      ADR.W    R0,_aColor
+   \   0000001A   0xF850 0x0025      LDR      R0,[R0, R5, LSL #+2]
+   \   0000001E   0x.... 0x....      BL       GUI_Color2Index
+   \   00000022   0xA900             ADD      R1,SP,#+0
+   \   00000024   0xF821 0x0015      STRH     R0,[R1, R5, LSL #+1]
+     52            }  
+   \   00000028   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??GUIDEMO_Speed_0: (+1)
+   \   0000002A   0x2D08             CMP      R5,#+8
+   \   0000002C   0xDBF3             BLT.N    ??GUIDEMO_Speed_1
+     53            t = GUI_GetTime();
+   \   0000002E   0x.... 0x....      BL       GUI_GetTime
+   \   00000032   0x4605             MOV      R5,R0
+     54            for (i = 0; ((GUI_GetTime() - t) < 8000) && !GUIDEMO_CheckCancel(); i++) {
+   \   00000034   0x4626             MOV      R6,R4
+   \   00000036   0xE058             B.N      ??GUIDEMO_Speed_2
+     55              GUI_RECT r;
+     56              GUI_SetColorIndex(aColorIndex[i&7]);
+   \                     ??GUIDEMO_Speed_3: (+1)
+   \   00000038   0xF006 0x0007      AND      R0,R6,#0x7
+   \   0000003C   0xA900             ADD      R1,SP,#+0
+   \   0000003E   0xF831 0x0010      LDRH     R0,[R1, R0, LSL #+1]
+   \   00000042   0x.... 0x....      BL       GUI_SetColorIndex
+     57              /* Calculate random positions */
+     58              r.x0 = rand() % LCD_XSIZE - LCD_XSIZE / 2;
+   \   00000046   0x.... 0x....      BL       rand
+   \   0000004A   0xF44F 0x77F0      MOV      R7,#+480
+   \   0000004E   0x4639             MOV      R1,R7
+   \   00000050   0xFB90 0xF1F1      SDIV     R1,R0,R1
+   \   00000054   0xFB07 0x0011      MLS      R0,R7,R1,R0
+   \   00000058   0xF1A0 0x08F0      SUB      R8,R0,#+240
+   \   0000005C   0xFA0F 0xF888      SXTH     R8,R8
+     59              r.y0 = rand() % LCD_YSIZE - LCD_YSIZE / 2;
+   \   00000060   0x.... 0x....      BL       rand
+   \   00000064   0xF44F 0x79A0      MOV      R9,#+320
+   \   00000068   0x4649             MOV      R1,R9
+   \   0000006A   0xFB90 0xF1F1      SDIV     R1,R0,R1
+   \   0000006E   0xFB09 0x0011      MLS      R0,R9,R1,R0
+   \   00000072   0xF1A0 0x0AA0      SUB      R10,R0,#+160
+   \   00000076   0xFA0F 0xFA8A      SXTH     R10,R10
+     60              r.x1 = r.x0 + 20 + rand() % LCD_XSIZE;
+   \   0000007A   0x.... 0x....      BL       rand
+   \   0000007E   0xEB00 0x0108      ADD      R1,R0,R8
+   \   00000082   0x3114             ADDS     R1,R1,#+20
+   \   00000084   0x463A             MOV      R2,R7
+   \   00000086   0xFB90 0xF0F2      SDIV     R0,R0,R2
+   \   0000008A   0xFB07 0x1710      MLS      R7,R7,R0,R1
+   \   0000008E   0xB23F             SXTH     R7,R7
+     61              r.y1 = r.y0 + 20 + rand() % LCD_YSIZE;
+   \   00000090   0x.... 0x....      BL       rand
+   \   00000094   0xEB00 0x010A      ADD      R1,R0,R10
+   \   00000098   0x3114             ADDS     R1,R1,#+20
+   \   0000009A   0x464A             MOV      R2,R9
+   \   0000009C   0xFB90 0xF0F2      SDIV     R0,R0,R2
+   \   000000A0   0xFB09 0x1910      MLS      R9,R9,R0,R1
+   \   000000A4   0xFA0F 0xF989      SXTH     R9,R9
+     62              GUI_FillRect(r.x0, r.y0, r.x1, r.y1);
+   \   000000A8   0x464B             MOV      R3,R9
+   \   000000AA   0x463A             MOV      R2,R7
+   \   000000AC   0x4651             MOV      R1,R10
+   \   000000AE   0x4640             MOV      R0,R8
+   \   000000B0   0x.... 0x....      BL       GUI_FillRect
+     63              /* Clip rectangle to visible area and add the number of pixels (for speed computation) */
+     64              if (r.x1 >= LCD_XSIZE)
+   \   000000B4   0xF5B7 0x7FF0      CMP      R7,#+480
+   \   000000B8   0xDB01             BLT.N    ??GUIDEMO_Speed_4
+     65                r.x1 = LCD_XSIZE - 1;
+   \   000000BA   0xF240 0x17DF      MOVW     R7,#+479
+     66              if (r.y1 >= LCD_YSIZE)
+   \                     ??GUIDEMO_Speed_4: (+1)
+   \   000000BE   0xF5B9 0x7FA0      CMP      R9,#+320
+   \   000000C2   0xDB01             BLT.N    ??GUIDEMO_Speed_5
+     67                r.y1 = LCD_YSIZE - 1;
+   \   000000C4   0xF240 0x193F      MOVW     R9,#+319
+     68              if (r.x0 < 0 )
+   \                     ??GUIDEMO_Speed_5: (+1)
+   \   000000C8   0xF1B8 0x0F00      CMP      R8,#+0
+   \   000000CC   0xD501             BPL.N    ??GUIDEMO_Speed_6
+     69                r.x0 = 0;
+   \   000000CE   0xF04F 0x0800      MOV      R8,#+0
+     70              if (r.y1 < 0)
+   \                     ??GUIDEMO_Speed_6: (+1)
+   \   000000D2   0xF1B9 0x0F00      CMP      R9,#+0
+   \   000000D6   0xD501             BPL.N    ??GUIDEMO_Speed_7
+     71                r.y1 = 0;
+   \   000000D8   0xF04F 0x0900      MOV      R9,#+0
+     72              NumPixels += (r.x1 - r.x0) * (r.y1 - r.y0);
+   \                     ??GUIDEMO_Speed_7: (+1)
+   \   000000DC   0xEBA7 0x0008      SUB      R0,R7,R8
+   \   000000E0   0xEBA9 0x010A      SUB      R1,R9,R10
+   \   000000E4   0xFB01 0x4400      MLA      R4,R1,R0,R4
+     73              /* Allow short breaks so we do not use all available CPU time ... */
+     74            }
+   \   000000E8   0x1C76             ADDS     R6,R6,#+1
+   \                     ??GUIDEMO_Speed_2: (+1)
+   \   000000EA   0x.... 0x....      BL       GUI_GetTime
+   \   000000EE   0x1B40             SUBS     R0,R0,R5
+   \   000000F0   0xF5B0 0x5FFA      CMP      R0,#+8000
+   \   000000F4   0xDA03             BGE.N    ??GUIDEMO_Speed_8
+   \   000000F6   0x.... 0x....      BL       GUIDEMO_CheckCancel
+   \   000000FA   0x2800             CMP      R0,#+0
+   \   000000FC   0xD09C             BEQ.N    ??GUIDEMO_Speed_3
+     75            t = (GUI_GetTime() - t) / 100;
+   \                     ??GUIDEMO_Speed_8: (+1)
+   \   000000FE   0x.... 0x....      BL       GUI_GetTime
+   \   00000102   0x1B40             SUBS     R0,R0,R5
+   \   00000104   0x2164             MOVS     R1,#+100
+   \   00000106   0xFB90 0xF5F1      SDIV     R5,R0,R1
+     76            GUI_Clear();
+   \   0000010A   0x.... 0x....      BL       GUI_Clear
+     77            GUIDEMO_NotifyStartNext();
+   \   0000010E   0x.... 0x....      BL       GUIDEMO_NotifyStartNext
+     78            #if GUIDEMO_LARGE
+     79              GUI_SetFont(&GUI_FontComic24B_ASCII);
+   \   00000112   0x....             LDR.N    R0,??DataTable4
+   \   00000114   0x.... 0x....      BL       GUI_SetFont
+     80            #elif !(GUIDEMO_TINY)
+     81              GUI_SetFont(&GUI_Font16B_ASCII);
+     82            #else
+     83              GUI_SetFont(&GUI_Font13B_ASCII);
+     84            #endif
+     85            GUI_SetColor(GUI_WHITE);
+   \   00000118   0xF06F 0x407F      MVN      R0,#-16777216
+   \   0000011C   0x.... 0x....      BL       GUI_SetColor
+     86            GUI_DispStringAt("Pixels/sec: ", 5, (LCD_YSIZE - GUI_GetFontSizeY()) / 2);
+   \   00000120   0x.... 0x....      BL       GUI_GetFontSizeY
+   \   00000124   0xF5C0 0x70A0      RSB      R0,R0,#+320
+   \   00000128   0xEB00 0x70D0      ADD      R0,R0,R0, LSR #+31
+   \   0000012C   0x1042             ASRS     R2,R0,#+1
+   \   0000012E   0x2105             MOVS     R1,#+5
+   \   00000130   0x.... 0x....      ADR.W    R0,`?<Constant "Pixels/sec: ">`
+   \   00000134   0x.... 0x....      BL       GUI_DispStringAt
+     87            if (t == 0)
+   \   00000138   0x2D00             CMP      R5,#+0
+   \   0000013A   0xD100             BNE.N    ??GUIDEMO_Speed_9
+     88              t++;
+   \   0000013C   0x2501             MOVS     R5,#+1
+     89            GUI_DispDecMin(10 * (NumPixels / t));
+   \                     ??GUIDEMO_Speed_9: (+1)
+   \   0000013E   0xFB94 0xF0F5      SDIV     R0,R4,R5
+   \   00000142   0xEB00 0x0180      ADD      R1,R0,R0, LSL #+2
+   \   00000146   0x0048             LSLS     R0,R1,#+1
+   \   00000148   0x.... 0x....      BL       GUI_DispDecMin
+     90            GUIDEMO_Wait();
+   \   0000014C   0x.... 0x....      BL       GUIDEMO_Wait
+     91          }
+   \   00000150   0xE8BD 0x87FF      POP      {R0-R10,PC}      ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     GUI_FontComic24B_ASCII
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "High speed">`:
+   \   00000000   0x48 0x69          DC8 "High speed"
+   \              0x67 0x68    
+   \              0x20 0x73    
+   \              0x70 0x65    
+   \              0x65 0x64    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "\\nmulti layer clipping...">`:
+   \   00000000   0x0A 0x6D          DC8 "\012multi layer clipping\012highly optimized drivers"
+   \              0x75 0x6C    
+   \              0x74 0x69    
+   \              0x20 0x6C    
+   \              0x61 0x79    
+   \              0x65 0x72    
+   \              0x20 0x63    
+   \              0x6C 0x69    
+   \              0x70 0x70    
+   \              0x69 0x6E    
+   \              0x67 0x0A    
+   \              0x68 0x69    
+   \              0x67 0x68    
+   \              0x6C 0x79    
+   \              0x20 0x6F    
+   \              0x70 0x74    
+   \              0x69 0x6D    
+   \              0x69 0x7A    
+   \              0x65 0x64    
+   \              0x20 0x64    
+   \              0x72 0x69    
+   \              0x76 0x65    
+   \              0x72 0x73    
+   \              0x00         
+   \   0000002F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Pixels/sec: ">`:
+   \   00000000   0x50 0x69          DC8 "Pixels/sec: "
+   \              0x78 0x65    
+   \              0x6C 0x73    
+   \              0x2F 0x73    
+   \              0x65 0x63    
+   \              0x3A 0x20    
+   \              0x00         
+   \   0000000D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   GUIDEMO_Speed
+        48   -> GUIDEMO_CheckCancel
+        48   -> GUIDEMO_NotifyStartNext
+        48   -> GUIDEMO_ShowIntro
+        48   -> GUIDEMO_Wait
+        48   -> GUI_Clear
+        48   -> GUI_Color2Index
+        48   -> GUI_DispDecMin
+        48   -> GUI_DispStringAt
+        48   -> GUI_FillRect
+        48   -> GUI_GetFontSizeY
+        48   -> GUI_GetTime
+        48   -> GUI_SetColor
+        48   -> GUI_SetColorIndex
+        48   -> GUI_SetFont
+        48   -> rand
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?<Constant "High speed">
+      16  ?<Constant "Pixels/sec: ">
+      48  ?<Constant "\nmulti layer clipping...">
+       4  ??DataTable4
+     340  GUIDEMO_Speed
+      32  _aColor
+
+ 
+ 452 bytes in section .text
+ 
+ 452 bytes of CODE memory
+
+Errors: none
+Warnings: none

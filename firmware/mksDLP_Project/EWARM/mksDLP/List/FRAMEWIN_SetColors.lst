@@ -1,0 +1,312 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:59
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetColors.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetColors.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\FRAMEWIN_SetColors.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\FRAMEWIN_SetColors.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetColors.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : FRAMEWIN_SetColors.c
+     16          Purpose     : Implementation of framewindow widget
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "FRAMEWIN_Private.h"
+     21          
+     22          #if GUI_WINSUPPORT
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *        Exported routines:  Set Properties
+     27          *
+     28          **********************************************************************
+     29          */
+     30          /*********************************************************************
+     31          *
+     32          *       FRAMEWIN_SetBarColor
+     33          */
+
+   \                                 In section .text, align 2, keep-with-next
+     34          void FRAMEWIN_SetBarColor(FRAMEWIN_Handle hObj, unsigned Index, GUI_COLOR Color) {
+   \                     FRAMEWIN_SetBarColor: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+     35            if (hObj) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD00B             BEQ.N    ??FRAMEWIN_SetBarColor_0
+     36              FRAMEWIN_Obj* pObj;
+     37              GUI_LOCK();
+     38              pObj = FRAMEWIN_H2P(hObj);
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+     39              if (Index < GUI_COUNTOF(pObj->Props.aBarColor)) {
+   \   00000010   0x2D02             CMP      R5,#+2
+   \   00000012   0xD207             BCS.N    ??FRAMEWIN_SetBarColor_0
+     40                pObj->Props.aBarColor[Index] = Color;
+   \   00000014   0xEB00 0x0085      ADD      R0,R0,R5, LSL #+2
+   \   00000018   0x62C6             STR      R6,[R0, #+44]
+     41                FRAMEWIN_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+     42              }
+     43              GUI_UNLOCK();
+     44            }
+     45          }
+   \                     ??FRAMEWIN_SetBarColor_0: (+1)
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+     46          
+     47          /*********************************************************************
+     48          *
+     49          *       FRAMEWIN_SetTextColor
+     50          */
+
+   \                                 In section .text, align 2, keep-with-next
+     51          void FRAMEWIN_SetTextColor(FRAMEWIN_Handle hObj, GUI_COLOR Color) {
+   \                     FRAMEWIN_SetTextColor: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+     52            if (hObj) {
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD00E             BEQ.N    ??FRAMEWIN_SetTextColor_0
+     53              FRAMEWIN_Obj* pObj;
+     54              int i;
+     55              GUI_LOCK();
+     56              pObj = FRAMEWIN_H2P(hObj);
+   \   0000000A   0x.... 0x....      BL       GUI_ALLOC_h2p
+     57              for (i = 0; i < GUI_COUNTOF(pObj->Props.aTextColor); i++) {
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0xE003             B.N      ??FRAMEWIN_SetTextColor_1
+     58                pObj->Props.aTextColor[i] = Color;
+   \                     ??FRAMEWIN_SetTextColor_2: (+1)
+   \   00000012   0xEB00 0x0281      ADD      R2,R0,R1, LSL #+2
+   \   00000016   0x6355             STR      R5,[R2, #+52]
+     59              }
+   \   00000018   0x1C49             ADDS     R1,R1,#+1
+   \                     ??FRAMEWIN_SetTextColor_1: (+1)
+   \   0000001A   0x2902             CMP      R1,#+2
+   \   0000001C   0xD3F9             BCC.N    ??FRAMEWIN_SetTextColor_2
+     60              FRAMEWIN_Invalidate(hObj);
+   \   0000001E   0x4620             MOV      R0,R4
+   \   00000020   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   00000024   0x.... 0x....      B.W      WM_InvalidateWindow
+     61              GUI_UNLOCK();
+     62            }
+     63          }
+   \                     ??FRAMEWIN_SetTextColor_0: (+1)
+   \   00000028   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+     64          
+     65          /*********************************************************************
+     66          *
+     67          *       FRAMEWIN_SetTextColorEx
+     68          */
+
+   \                                 In section .text, align 2, keep-with-next
+     69          void FRAMEWIN_SetTextColorEx(FRAMEWIN_Handle hObj, unsigned Index, GUI_COLOR Color) {
+   \                     FRAMEWIN_SetTextColorEx: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+     70            if (hObj) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD00B             BEQ.N    ??FRAMEWIN_SetTextColorEx_0
+     71              FRAMEWIN_Obj* pObj;
+     72              GUI_LOCK();
+     73              pObj = FRAMEWIN_H2P(hObj);
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+     74              if (Index < GUI_COUNTOF(pObj->Props.aTextColor)) {
+   \   00000010   0x2D02             CMP      R5,#+2
+   \   00000012   0xD207             BCS.N    ??FRAMEWIN_SetTextColorEx_0
+     75                pObj->Props.aTextColor[Index] = Color;
+   \   00000014   0xEB00 0x0085      ADD      R0,R0,R5, LSL #+2
+   \   00000018   0x6346             STR      R6,[R0, #+52]
+     76                FRAMEWIN_Invalidate(hObj);
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000020   0x.... 0x....      B.W      WM_InvalidateWindow
+     77              }
+     78              GUI_UNLOCK();
+     79            }
+     80          }
+   \                     ??FRAMEWIN_SetTextColorEx_0: (+1)
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+     81          
+     82          /*********************************************************************
+     83          *
+     84          *       FRAMEWIN_SetClientColor
+     85          */
+
+   \                                 In section .text, align 2, keep-with-next
+     86          void FRAMEWIN_SetClientColor(FRAMEWIN_Handle hObj, GUI_COLOR Color) {
+   \                     FRAMEWIN_SetClientColor: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+     87            if (hObj) {
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD00B             BEQ.N    ??FRAMEWIN_SetClientColor_0
+     88              FRAMEWIN_Obj* pObj;
+     89              GUI_LOCK();
+     90              pObj = FRAMEWIN_H2P(hObj);
+   \   00000008   0x.... 0x....      BL       GUI_ALLOC_h2p
+     91              if (pObj->Props.ClientColor != Color) {
+   \   0000000C   0x6BC1             LDR      R1,[R0, #+60]
+   \   0000000E   0x42A1             CMP      R1,R4
+   \   00000010   0xD006             BEQ.N    ??FRAMEWIN_SetClientColor_0
+     92                pObj->Props.ClientColor = Color;
+   \   00000012   0x63C4             STR      R4,[R0, #+60]
+     93                FRAMEWIN_Invalidate(pObj->hClient);
+   \   00000014   0xF9B0 0x004C      LDRSH    R0,[R0, #+76]
+   \   00000018   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001C   0x.... 0x....      B.W      WM_InvalidateWindow
+     94              }
+     95              GUI_UNLOCK();
+     96            }
+     97          }
+   \                     ??FRAMEWIN_SetClientColor_0: (+1)
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+     98          
+     99          #else
+    100            void FRAMEWIN_SetColors_C(void) {} /* avoid empty object files */
+    101          #endif /* GUI_WINSUPPORT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   FRAMEWIN_SetBarColor
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+       8   FRAMEWIN_SetClientColor
+         8   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+      16   FRAMEWIN_SetTextColor
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+      16   FRAMEWIN_SetTextColorEx
+        16   -> GUI_ALLOC_h2p
+         0   -> WM_InvalidateWindow
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      38  FRAMEWIN_SetBarColor
+      34  FRAMEWIN_SetClientColor
+      42  FRAMEWIN_SetTextColor
+      38  FRAMEWIN_SetTextColorEx
+
+ 
+ 152 bytes in section .text
+ 
+ 152 bytes of CODE memory
+
+Errors: none
+Warnings: none

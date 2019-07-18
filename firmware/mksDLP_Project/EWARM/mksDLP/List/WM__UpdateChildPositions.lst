@@ -1,0 +1,328 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:28
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM__UpdateChildPositions.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM__UpdateChildPositions.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\WM__UpdateChildPositions.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\WM__UpdateChildPositions.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\WM\WM__UpdateChildPositions.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : WM__UpdateChildPositions.C
+     16          Purpose     : Windows manager, add. module
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include <stddef.h>
+     21          #include "WM_Intern.h"
+     22          
+     23          #if GUI_WINSUPPORT    /* If 0, WM will not generate any code */
+     24          #include "GUIDebug.h"
+     25          #define WM_DEBUG_LEVEL 1
+     26          
+     27          /*********************************************************************
+     28          *
+     29          *       Public code
+     30          *
+     31          **********************************************************************
+     32          */
+     33          /*********************************************************************
+     34          *
+     35          *       WM__UpdateChildPositions
+     36          *
+     37          * Purpose:
+     38          *   Move and/or resize all children of a resized window.
+     39          *   What exactly happens to the window depends on how the edges are
+     40          *   anchored.
+     41          */
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void WM__UpdateChildPositions(WM_Obj* pObj, int dx0, int dy0, int dx1, int dy1) {
+   \                     WM__UpdateChildPositions: (+1)
+   \   00000000   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+     43            WM_HWIN hChild;
+     44            WM_Obj* pChild;
+     45            int dx, dy, dw, dh;
+     46            for (hChild = pObj->hFirstChild; hChild; hChild = pChild->hNext) {
+   \   00000006   0xF9B0 0x0018      LDRSH    R0,[R0, #+24]
+   \   0000000A   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   0000000E   0xE02A             B.N      ??WM__UpdateChildPositions_0
+     47              int Status;
+     48              GUI_RECT rOld, rNew;
+     49              pChild = WM_H2P(hChild);
+     50              /* Compute size of new rectangle */
+     51              rOld = pChild->Rect;
+     52              rNew = rOld;
+     53              Status = pChild->Status & (WM_SF_ANCHOR_RIGHT | WM_SF_ANCHOR_LEFT);
+     54              switch (Status) {
+     55                case WM_SF_ANCHOR_RIGHT:                      /* Right ANCHOR : Move window with right side */
+     56                  rNew.x0 += dx1;
+     57                  rNew.x1 += dx1;
+     58                  break;
+     59                case WM_SF_ANCHOR_RIGHT | WM_SF_ANCHOR_LEFT:    /* Left & Right ANCHOR: Resize window */
+     60                  rNew.x0 += dx0;
+     61                  rNew.x1 += dx1;
+     62                  break;
+     63                default:                                    /* Left ANCHOR: Move window with left side of parent */
+     64                  rNew.x0 += dx0;
+     65                  rNew.x1 += dx0;
+     66              }
+     67              Status = pChild->Status & (WM_SF_ANCHOR_TOP   | WM_SF_ANCHOR_BOTTOM);
+     68              switch (Status) {
+     69                case WM_SF_ANCHOR_BOTTOM:                     /* Bottom ANCHOR */
+     70                  rNew.y0 += dy1;
+     71                  rNew.y1 += dy1;
+     72                  break;
+     73                case WM_SF_ANCHOR_BOTTOM | WM_SF_ANCHOR_TOP:    /* resize window */
+     74                  rNew.y0 += dy0;
+     75                  rNew.y1 += dy1;
+     76                  break;
+     77                default:                                    /* Top ANCHOR */
+     78                  rNew.y0 += dy0;
+   \                     ??WM__UpdateChildPositions_1: (+1)
+   \   00000010   0x9A03             LDR      R2,[SP, #+12]
+   \   00000012   0x1851             ADDS     R1,R2,R1
+   \   00000014   0xB209             SXTH     R1,R1
+   \   00000016   0x9101             STR      R1,[SP, #+4]
+     79                  rNew.y1 += dy0;
+   \   00000018   0x9903             LDR      R1,[SP, #+12]
+   \   0000001A   0xEB01 0x0B00      ADD      R11,R1,R0
+     80              }
+     81              /* Set new window position using Move and Resize as required */
+     82              dx = rNew.x0 - rOld.x0;
+   \                     ??WM__UpdateChildPositions_2: (+1)
+   \   0000001E   0xEBA9 0x0108      SUB      R1,R9,R8
+     83              dy = rNew.y0 - rOld.y0;
+   \   00000022   0x9801             LDR      R0,[SP, #+4]
+   \   00000024   0x1B82             SUBS     R2,R0,R6
+     84              if (dx || dy) {
+   \   00000026   0xEA52 0x0001      ORRS     R0,R2,R1
+   \   0000002A   0xD003             BEQ.N    ??WM__UpdateChildPositions_3
+     85                WM_MoveWindow(hChild, dx, dy);
+   \   0000002C   0xF9BD 0x0000      LDRSH    R0,[SP, #+0]
+   \   00000030   0x.... 0x....      BL       WM_MoveWindow
+     86              }
+     87              dw = (rNew.x1 - rNew.x0) - (rOld.x1 - rOld.x0);
+   \                     ??WM__UpdateChildPositions_3: (+1)
+   \   00000034   0xFA0F 0xFA8A      SXTH     R10,R10
+   \   00000038   0xEBAA 0x0009      SUB      R0,R10,R9
+   \   0000003C   0x1B40             SUBS     R0,R0,R5
+   \   0000003E   0xEB08 0x0100      ADD      R1,R8,R0
+     88              dh = (rNew.y1 - rNew.y0) - (rOld.y1 - rOld.y0);
+   \   00000042   0xFA0F 0xFB8B      SXTH     R11,R11
+   \   00000046   0x9801             LDR      R0,[SP, #+4]
+   \   00000048   0xEBAB 0x0000      SUB      R0,R11,R0
+   \   0000004C   0x1B00             SUBS     R0,R0,R4
+   \   0000004E   0x1832             ADDS     R2,R6,R0
+     89              if (dw || dh) {
+   \   00000050   0xEA52 0x0001      ORRS     R0,R2,R1
+   \   00000054   0xD003             BEQ.N    ??WM__UpdateChildPositions_4
+     90                WM_ResizeWindow(hChild, dw, dh);
+   \   00000056   0xF9BD 0x0000      LDRSH    R0,[SP, #+0]
+   \   0000005A   0x.... 0x....      BL       WM_ResizeWindow
+     91              }
+   \                     ??WM__UpdateChildPositions_4: (+1)
+   \   0000005E   0xF9B7 0x001A      LDRSH    R0,[R7, #+26]
+   \   00000062   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \                     ??WM__UpdateChildPositions_0: (+1)
+   \   00000066   0xF9BD 0x0000      LDRSH    R0,[SP, #+0]
+   \   0000006A   0x2800             CMP      R0,#+0
+   \   0000006C   0xD04E             BEQ.N    ??WM__UpdateChildPositions_5
+   \   0000006E   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000072   0x4607             MOV      R7,R0
+   \   00000074   0xF9B7 0x8000      LDRSH    R8,[R7, #+0]
+   \   00000078   0xF9B7 0x6002      LDRSH    R6,[R7, #+2]
+   \   0000007C   0xF9B7 0x5004      LDRSH    R5,[R7, #+4]
+   \   00000080   0xF9B7 0x4006      LDRSH    R4,[R7, #+6]
+   \   00000084   0x4642             MOV      R2,R8
+   \   00000086   0x4631             MOV      R1,R6
+   \   00000088   0x46AC             MOV      R12,R5
+   \   0000008A   0x4620             MOV      R0,R4
+   \   0000008C   0x8BBB             LDRH     R3,[R7, #+28]
+   \   0000008E   0xF403 0x7E20      AND      LR,R3,#0x280
+   \   00000092   0xF1BE 0x0F80      CMP      LR,#+128
+   \   00000096   0xD003             BEQ.N    ??WM__UpdateChildPositions_6
+   \   00000098   0xF5BE 0x7F20      CMP      LR,#+640
+   \   0000009C   0xD00A             BEQ.N    ??WM__UpdateChildPositions_7
+   \   0000009E   0xE013             B.N      ??WM__UpdateChildPositions_8
+   \                     ??WM__UpdateChildPositions_6: (+1)
+   \   000000A0   0xF8DD 0xE010      LDR      LR,[SP, #+16]
+   \   000000A4   0xEB0E 0x0902      ADD      R9,LR,R2
+   \   000000A8   0xFA0F 0xF989      SXTH     R9,R9
+   \   000000AC   0x4672             MOV      R2,LR
+   \   000000AE   0xEB02 0x0A0C      ADD      R10,R2,R12
+   \   000000B2   0xE012             B.N      ??WM__UpdateChildPositions_9
+   \                     ??WM__UpdateChildPositions_7: (+1)
+   \   000000B4   0xF8DD 0xE008      LDR      LR,[SP, #+8]
+   \   000000B8   0xEB0E 0x0902      ADD      R9,LR,R2
+   \   000000BC   0xFA0F 0xF989      SXTH     R9,R9
+   \   000000C0   0x9A04             LDR      R2,[SP, #+16]
+   \   000000C2   0xEB02 0x0A0C      ADD      R10,R2,R12
+   \   000000C6   0xE008             B.N      ??WM__UpdateChildPositions_9
+   \                     ??WM__UpdateChildPositions_8: (+1)
+   \   000000C8   0xF8DD 0xE008      LDR      LR,[SP, #+8]
+   \   000000CC   0xEB0E 0x0902      ADD      R9,LR,R2
+   \   000000D0   0xFA0F 0xF989      SXTH     R9,R9
+   \   000000D4   0x4672             MOV      R2,LR
+   \   000000D6   0xEB02 0x0A0C      ADD      R10,R2,R12
+   \                     ??WM__UpdateChildPositions_9: (+1)
+   \   000000DA   0xF403 0x62A0      AND      R2,R3,#0x500
+   \   000000DE   0xF5B2 0x7F80      CMP      R2,#+256
+   \   000000E2   0xD003             BEQ.N    ??WM__UpdateChildPositions_10
+   \   000000E4   0xF5B2 0x6FA0      CMP      R2,#+1280
+   \   000000E8   0xD008             BEQ.N    ??WM__UpdateChildPositions_11
+   \   000000EA   0xE791             B.N      ??WM__UpdateChildPositions_1
+   \                     ??WM__UpdateChildPositions_10: (+1)
+   \   000000EC   0x9A0E             LDR      R2,[SP, #+56]
+   \   000000EE   0x1851             ADDS     R1,R2,R1
+   \   000000F0   0xB209             SXTH     R1,R1
+   \   000000F2   0x9101             STR      R1,[SP, #+4]
+   \   000000F4   0x990E             LDR      R1,[SP, #+56]
+   \   000000F6   0xEB01 0x0B00      ADD      R11,R1,R0
+   \   000000FA   0xE790             B.N      ??WM__UpdateChildPositions_2
+   \                     ??WM__UpdateChildPositions_11: (+1)
+   \   000000FC   0x9A03             LDR      R2,[SP, #+12]
+   \   000000FE   0x1851             ADDS     R1,R2,R1
+   \   00000100   0xB209             SXTH     R1,R1
+   \   00000102   0x9101             STR      R1,[SP, #+4]
+   \   00000104   0x990E             LDR      R1,[SP, #+56]
+   \   00000106   0xEB01 0x0B00      ADD      R11,R1,R0
+   \   0000010A   0xE788             B.N      ??WM__UpdateChildPositions_2
+     92            }
+     93          }
+   \                     ??WM__UpdateChildPositions_5: (+1)
+   \   0000010C   0xB005             ADD      SP,SP,#+20
+   \   0000010E   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+     94          
+     95          #else
+     96            void WM_UpdateChildPositions_C(void) {} /* avoid empty object files */
+     97          #endif   /* GUI_WINSUPPORT */
+     98          
+     99          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      56   WM__UpdateChildPositions
+        56   -> GUI_ALLOC_h2p
+        56   -> WM_MoveWindow
+        56   -> WM_ResizeWindow
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     274  WM__UpdateChildPositions
+
+ 
+ 274 bytes in section .text
+ 
+ 274 bytes of CODE memory
+
+Errors: none
+Warnings: none

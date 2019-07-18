@@ -1,0 +1,311 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:49
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\EDIT_Default.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\EDIT_Default.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\EDIT_Default.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\EDIT_Default.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\EDIT_Default.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : EDIT_Default.c
+     16          Purpose     : Implementation of edit widget
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "EDIT.h"
+     21          #include "EDIT_Private.h"
+     22          
+     23          #if GUI_WINSUPPORT
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *       EDIT_SetDefaultFont
+     28          */
+
+   \                                 In section .text, align 2, keep-with-next
+     29          void EDIT_SetDefaultFont(const GUI_FONT* pFont) {
+     30            EDIT__DefaultProps.pFont = pFont;
+   \                     EDIT_SetDefaultFont: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable7
+   \   00000002   0x6088             STR      R0,[R1, #+8]
+     31          }
+   \   00000004   0x4770             BX       LR               ;; return
+     32          
+     33          /*********************************************************************
+     34          *
+     35          *       EDIT_GetDefaultFont
+     36          */
+
+   \                                 In section .text, align 2, keep-with-next
+     37          const GUI_FONT GUI_UNI_PTR * EDIT_GetDefaultFont(void) {
+     38            return EDIT__DefaultProps.pFont;
+   \                     EDIT_GetDefaultFont: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7
+   \   00000002   0x6880             LDR      R0,[R0, #+8]
+   \   00000004   0x4770             BX       LR               ;; return
+     39          }
+     40          
+     41          /*********************************************************************
+     42          *
+     43          *       EDIT_SetDefaultTextAlign
+     44          */
+
+   \                                 In section .text, align 2, keep-with-next
+     45          void EDIT_SetDefaultTextAlign(int Align) {
+     46            EDIT__DefaultProps.Align = Align;
+   \                     EDIT_SetDefaultTextAlign: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable7
+   \   00000002   0x6008             STR      R0,[R1, #+0]
+     47          }
+   \   00000004   0x4770             BX       LR               ;; return
+     48          
+     49          /*********************************************************************
+     50          *
+     51          *       EDIT_GetDefaultTextAlign
+     52          */
+
+   \                                 In section .text, align 2, keep-with-next
+     53          int EDIT_GetDefaultTextAlign(void) {
+     54            return EDIT__DefaultProps.Align;
+   \                     EDIT_GetDefaultTextAlign: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     55          }
+     56          
+     57          /*********************************************************************
+     58          *
+     59          *       EDIT_SetDefaultTextColor
+     60          */
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void EDIT_SetDefaultTextColor(unsigned int Index, GUI_COLOR Color) {
+     62            if (Index <= GUI_COUNTOF(EDIT__DefaultProps.aTextColor)) {
+   \                     EDIT_SetDefaultTextColor: (+1)
+   \   00000000   0x2803             CMP      R0,#+3
+   \   00000002   0xD203             BCS.N    ??EDIT_SetDefaultTextColor_0
+     63              EDIT__DefaultProps.aTextColor[Index] = Color;
+   \   00000004   0x....             LDR.N    R2,??DataTable7
+   \   00000006   0xEB02 0x0080      ADD      R0,R2,R0, LSL #+2
+   \   0000000A   0x60C1             STR      R1,[R0, #+12]
+     64            }
+     65          }
+   \                     ??EDIT_SetDefaultTextColor_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+     66          
+     67          /*********************************************************************
+     68          *
+     69          *       EDIT_SetDefaultBkColor
+     70          */
+
+   \                                 In section .text, align 2, keep-with-next
+     71          void EDIT_SetDefaultBkColor(unsigned int Index, GUI_COLOR Color) {
+     72            if (Index <= GUI_COUNTOF(EDIT__DefaultProps.aBkColor)) {
+   \                     EDIT_SetDefaultBkColor: (+1)
+   \   00000000   0x2803             CMP      R0,#+3
+   \   00000002   0xD203             BCS.N    ??EDIT_SetDefaultBkColor_0
+     73              EDIT__DefaultProps.aBkColor[Index] = Color;
+   \   00000004   0x....             LDR.N    R2,??DataTable7
+   \   00000006   0xEB02 0x0080      ADD      R0,R2,R0, LSL #+2
+   \   0000000A   0x6141             STR      R1,[R0, #+20]
+     74            }
+     75          }
+   \                     ??EDIT_SetDefaultBkColor_0: (+1)
+   \   0000000C   0x4770             BX       LR               ;; return
+     76          
+     77          /*********************************************************************
+     78          *
+     79          *       EDIT_GetDefaultTextColor
+     80          */
+
+   \                                 In section .text, align 2, keep-with-next
+     81          GUI_COLOR EDIT_GetDefaultTextColor(unsigned int Index) {
+     82            GUI_COLOR Color = 0;
+   \                     EDIT_GetDefaultTextColor: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+     83            if (Index <= GUI_COUNTOF(EDIT__DefaultProps.aTextColor)) {
+   \   00000002   0x2803             CMP      R0,#+3
+   \   00000004   0xD203             BCS.N    ??EDIT_GetDefaultTextColor_0
+     84              Color = EDIT__DefaultProps.aTextColor[Index];
+   \   00000006   0x....             LDR.N    R1,??DataTable7
+   \   00000008   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
+   \   0000000C   0x68C1             LDR      R1,[R0, #+12]
+     85            }
+     86            return Color;
+   \                     ??EDIT_GetDefaultTextColor_0: (+1)
+   \   0000000E   0x4608             MOV      R0,R1
+   \   00000010   0x4770             BX       LR               ;; return
+     87          }
+     88          
+     89          /*********************************************************************
+     90          *
+     91          *       EDIT_GetDefaultBkColor
+     92          */
+
+   \                                 In section .text, align 2, keep-with-next
+     93          GUI_COLOR EDIT_GetDefaultBkColor(unsigned int Index) {
+     94            GUI_COLOR Color = 0;
+   \                     EDIT_GetDefaultBkColor: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+     95            if (Index <= GUI_COUNTOF(EDIT__DefaultProps.aBkColor)) {
+   \   00000002   0x2803             CMP      R0,#+3
+   \   00000004   0xD203             BCS.N    ??EDIT_GetDefaultBkColor_0
+     96              Color = EDIT__DefaultProps.aBkColor[Index];
+   \   00000006   0x....             LDR.N    R1,??DataTable7
+   \   00000008   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
+   \   0000000C   0x6941             LDR      R1,[R0, #+20]
+     97            }
+     98            return Color;
+   \                     ??EDIT_GetDefaultBkColor_0: (+1)
+   \   0000000E   0x4608             MOV      R0,R1
+   \   00000010   0x4770             BX       LR               ;; return
+     99          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x........         DC32     EDIT__DefaultProps
+    100          
+    101          #else  /* avoid empty object files */
+    102          
+    103          void EDIT_Default_C(void) {}
+    104          
+    105          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EDIT_GetDefaultBkColor
+       0   EDIT_GetDefaultFont
+       0   EDIT_GetDefaultTextAlign
+       0   EDIT_GetDefaultTextColor
+       0   EDIT_SetDefaultBkColor
+       0   EDIT_SetDefaultFont
+       0   EDIT_SetDefaultTextAlign
+       0   EDIT_SetDefaultTextColor
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+      18  EDIT_GetDefaultBkColor
+       6  EDIT_GetDefaultFont
+       6  EDIT_GetDefaultTextAlign
+      18  EDIT_GetDefaultTextColor
+      14  EDIT_SetDefaultBkColor
+       6  EDIT_SetDefaultFont
+       6  EDIT_SetDefaultTextAlign
+      14  EDIT_SetDefaultTextColor
+
+ 
+ 92 bytes in section .text
+ 
+ 92 bytes of CODE memory
+
+Errors: none
+Warnings: none

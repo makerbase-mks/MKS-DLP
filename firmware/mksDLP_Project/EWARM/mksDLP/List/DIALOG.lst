@@ -1,0 +1,502 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:47
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\DIALOG.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\DIALOG.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\DIALOG.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\DIALOG.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\DIALOG.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : 
+     16          Purpose     : Dialog box include
+     17          ----------------------------------------------------------------------
+     18          Open items:
+     19          None
+     20          --------------------END-OF-HEADER-------------------------------------
+     21          */
+     22          
+     23          #include <stddef.h>           /* needed for definition of NULL */
+     24          #include "DIALOG.h"
+     25          #include "WIDGET.h"
+     26          #include "WM_Intern.h"
+     27          
+     28          
+     29          
+     30          #if GUI_WINSUPPORT
+     31          
+     32          /*********************************************************************
+     33          *
+     34          *       Private config defaults
+     35          *
+     36          **********************************************************************
+     37          */
+     38          
+     39          /* Define colors */
+     40          #ifndef DIALOG_BKCOLOR0_DEFAULT
+     41            #define DIALOG_BKCOLOR0_DEFAULT 0xc0c0c0
+     42          #endif
+     43          
+     44          /*********************************************************************
+     45          *
+     46          *       static data;
+     47          *
+     48          **********************************************************************
+     49          */
+     50          
+
+   \                                 In section .data, align 4
+     51          static LCD_COLOR _BkColor = DIALOG_BKCOLOR0_DEFAULT;
+   \                     _BkColor:
+   \   00000000   0x00C0C0C0         DC32 12632256
+     52          
+     53          /*********************************************************************
+     54          *
+     55          *       Public code: API functions
+     56          *
+     57          **********************************************************************
+     58          */
+     59          /*********************************************************************
+     60          *
+     61          *       DIALOG_GetBkColor
+     62          */
+
+   \                                 In section .text, align 2, keep-with-next
+     63          LCD_COLOR DIALOG_GetBkColor(void) {
+     64            return _BkColor;
+   \                     DIALOG_GetBkColor: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable4
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     65          }
+     66          
+     67          /*********************************************************************
+     68          *
+     69          *       DIALOG_SetBkColor
+     70          */
+
+   \                                 In section .text, align 2, keep-with-next
+     71          LCD_COLOR DIALOG_SetBkColor(LCD_COLOR BkColor) {
+     72            LCD_COLOR r;
+     73            r = _BkColor;
+   \                     DIALOG_SetBkColor: (+1)
+   \   00000000   0x....             LDR.N    R2,??DataTable4
+   \   00000002   0x6811             LDR      R1,[R2, #+0]
+     74            _BkColor = BkColor;
+   \   00000004   0x6010             STR      R0,[R2, #+0]
+     75            return r;
+   \   00000006   0x4608             MOV      R0,R1
+   \   00000008   0x4770             BX       LR               ;; return
+     76          }
+     77          /*********************************************************************
+     78          *
+     79          *       GUI_SetDialogStatusPtr
+     80          */
+
+   \                                 In section .text, align 2, keep-with-next
+     81          void GUI_SetDialogStatusPtr(WM_HWIN hDialog, WM_DIALOG_STATUS* pDialogStatus) {
+   \                     GUI_SetDialogStatusPtr: (+1)
+   \   00000000   0xB53E             PUSH     {R1-R5,LR}
+     82            WM_MESSAGE Msg = {0};
+   \   00000002   0xAA00             ADD      R2,SP,#+0
+   \   00000004   0x2300             MOVS     R3,#+0
+   \   00000006   0x461C             MOV      R4,R3
+   \   00000008   0x461D             MOV      R5,R3
+   \   0000000A   0xC238             STM      R2!,{R3-R5}
+     83            Msg.MsgId = WM_HANDLE_DIALOG_STATUS;
+   \   0000000C   0x222A             MOVS     R2,#+42
+   \   0000000E   0x9200             STR      R2,[SP, #+0]
+     84            Msg.Data.p = pDialogStatus;
+   \   00000010   0x9102             STR      R1,[SP, #+8]
+     85            WM_SendMessage(hDialog, &Msg);
+   \   00000012   0xA900             ADD      R1,SP,#+0
+   \   00000014   0x.... 0x....      BL       WM_SendMessage
+     86          }
+   \   00000018   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+     87          
+     88          /*********************************************************************
+     89          *
+     90          *       GUI_GetDialogStatusPtr
+     91          */
+
+   \                                 In section .text, align 2, keep-with-next
+     92          WM_DIALOG_STATUS*  GUI_GetDialogStatusPtr(WM_HWIN hDialog) {
+   \                     GUI_GetDialogStatusPtr: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB084             SUB      SP,SP,#+16
+     93            WM_MESSAGE Msg = {0};
+   \   00000004   0xA900             ADD      R1,SP,#+0
+   \   00000006   0x2200             MOVS     R2,#+0
+   \   00000008   0x4613             MOV      R3,R2
+   \   0000000A   0x4614             MOV      R4,R2
+   \   0000000C   0xC11C             STM      R1!,{R2-R4}
+     94            Msg.MsgId = WM_HANDLE_DIALOG_STATUS;
+   \   0000000E   0x212A             MOVS     R1,#+42
+   \   00000010   0x9100             STR      R1,[SP, #+0]
+     95            WM_SendMessage(hDialog, &Msg);
+   \   00000012   0xA900             ADD      R1,SP,#+0
+   \   00000014   0x.... 0x....      BL       WM_SendMessage
+     96            return (WM_DIALOG_STATUS*)Msg.Data.p;
+   \   00000018   0x9802             LDR      R0,[SP, #+8]
+   \   0000001A   0xB004             ADD      SP,SP,#+16
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+     97          }
+     98          /*********************************************************************
+     99          *
+    100          *       GUI_CreateDialogbox
+    101          */
+
+   \                                 In section .text, align 2, keep-with-next
+    102          WM_HWIN GUI_CreateDialogBox(const GUI_WIDGET_CREATE_INFO* paWidget, int NumWidgets, WM_CALLBACK* cb, WM_HWIN hParent,
+    103                                      int x0, int y0)
+    104          {
+   \                     GUI_CreateDialogBox: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4619             MOV      R1,R3
+    105            WM_HWIN hDialog = paWidget->pfCreateIndirect(paWidget, hParent, x0, y0, cb);     /* Create parent window */
+   \   00000008   0x9200             STR      R2,[SP, #+0]
+   \   0000000A   0x9B07             LDR      R3,[SP, #+28]
+   \   0000000C   0x9A06             LDR      R2,[SP, #+24]
+   \   0000000E   0x6826             LDR      R6,[R4, #+0]
+   \   00000010   0x47B0             BLX      R6
+   \   00000012   0x4606             MOV      R6,R0
+    106            WM_HWIN hDialogClient = WM_GetClientWindow(hDialog);
+   \   00000014   0x.... 0x....      BL       WM_GetClientWindow
+   \   00000018   0x4607             MOV      R7,R0
+    107            WIDGET_OrState(hDialog, paWidget->Flags);
+   \   0000001A   0x8A61             LDRH     R1,[R4, #+18]
+   \   0000001C   0x4630             MOV      R0,R6
+   \   0000001E   0x.... 0x....      BL       WIDGET_OrState
+    108            WM_ShowWindow(hDialog);
+   \   00000022   0x4630             MOV      R0,R6
+   \   00000024   0x.... 0x....      BL       WM_ShowWindow
+    109            WM_ShowWindow(hDialogClient);
+   \   00000028   0x4638             MOV      R0,R7
+   \   0000002A   0x.... 0x....      BL       WM_ShowWindow
+   \   0000002E   0xE00B             B.N      ??GUI_CreateDialogBox_0
+    110            while (--NumWidgets > 0) {
+    111              WM_HWIN hChild;
+    112              paWidget++;
+   \                     ??GUI_CreateDialogBox_1: (+1)
+   \   00000030   0x3418             ADDS     R4,R4,#+24
+    113              hChild = paWidget->pfCreateIndirect(paWidget, hDialogClient, 0, 0, 0);     /* Create child window */
+   \   00000032   0x2000             MOVS     R0,#+0
+   \   00000034   0x9000             STR      R0,[SP, #+0]
+   \   00000036   0x4603             MOV      R3,R0
+   \   00000038   0x4602             MOV      R2,R0
+   \   0000003A   0x4639             MOV      R1,R7
+   \   0000003C   0x4620             MOV      R0,R4
+   \   0000003E   0xF8D4 0xC000      LDR      R12,[R4, #+0]
+   \   00000042   0x47E0             BLX      R12
+    114              WM_ShowWindow(hChild);
+   \   00000044   0x.... 0x....      BL       WM_ShowWindow
+    115            }
+   \                     ??GUI_CreateDialogBox_0: (+1)
+   \   00000048   0x1E6D             SUBS     R5,R5,#+1
+   \   0000004A   0x2D01             CMP      R5,#+1
+   \   0000004C   0xDAF0             BGE.N    ??GUI_CreateDialogBox_1
+    116            WM_SetFocusOnNextChild(hDialog);     /* Set the focus to the first child */
+   \   0000004E   0x4630             MOV      R0,R6
+   \   00000050   0x.... 0x....      BL       WM_SetFocusOnNextChild
+    117            WM_SendMessageNoPara(hDialogClient, WM_INIT_DIALOG);
+   \   00000054   0x211E             MOVS     R1,#+30
+   \   00000056   0x4638             MOV      R0,R7
+   \   00000058   0x.... 0x....      BL       WM_SendMessageNoPara
+    118            return hDialog;
+   \   0000005C   0x4630             MOV      R0,R6
+   \   0000005E   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    119          }
+    120          
+    121          /*********************************************************************
+    122          *
+    123          *       GUI_EndDialog
+    124          */
+
+   \                                 In section .text, align 2, keep-with-next
+    125          void GUI_EndDialog(WM_HWIN hDialog, int r) {
+   \                     GUI_EndDialog: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    126            WM_DIALOG_STATUS* pStatus;
+    127            pStatus = GUI_GetDialogStatusPtr(hDialog);
+   \   00000006   0x.... 0x....      BL       GUI_GetDialogStatusPtr
+    128            if (pStatus) {
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD002             BEQ.N    ??GUI_EndDialog_0
+    129              pStatus->ReturnValue = r;
+   \   0000000E   0x6045             STR      R5,[R0, #+4]
+    130              pStatus->Done = 1;
+   \   00000010   0x2101             MOVS     R1,#+1
+   \   00000012   0x6001             STR      R1,[R0, #+0]
+    131            }
+    132            WM_DeleteWindow(hDialog);
+   \                     ??GUI_EndDialog_0: (+1)
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \   0000001A   0x.... 0x....      B.W      WM_DeleteWindow
+    133          }
+    134          
+    135          
+    136          /*********************************************************************
+    137          *
+    138          *       GUI_ExecCreatedDialog
+    139          */
+
+   \                                 In section .text, align 2, keep-with-next
+    140          int     GUI_ExecCreatedDialog (WM_HWIN hDialog) {
+   \                     GUI_ExecCreatedDialog: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+    141            WM_DIALOG_STATUS DialogStatus = {0};
+   \   00000004   0x.... 0x....      ADR.W    R1,`?<Constant {0}>_2`
+   \   00000008   0xE9D1 0x2300      LDRD     R2,R3,[R1, #+0]
+   \   0000000C   0xE9CD 0x2300      STRD     R2,R3,[SP, #+0]
+    142            /* Let window know how to send feedback (close info & return value) */
+    143            GUI_SetDialogStatusPtr(hDialog, &DialogStatus);
+   \   00000010   0xA900             ADD      R1,SP,#+0
+   \   00000012   0x.... 0x....      BL       GUI_SetDialogStatusPtr
+   \   00000016   0xE005             B.N      ??GUI_ExecCreatedDialog_0
+    144            while (!DialogStatus.Done) {
+    145              if (!GUI_Exec()) {
+   \                     ??GUI_ExecCreatedDialog_1: (+1)
+   \   00000018   0x.... 0x....      BL       GUI_Exec
+   \   0000001C   0x2800             CMP      R0,#+0
+   \   0000001E   0xD101             BNE.N    ??GUI_ExecCreatedDialog_0
+    146                GUI_X_WAIT_EVENT();      /* Wait for event (keyboard, mouse or whatever) */
+   \   00000020   0x.... 0x....      BL       GUI_X_ExecIdle
+    147              }
+    148            }
+   \                     ??GUI_ExecCreatedDialog_0: (+1)
+   \   00000024   0x9800             LDR      R0,[SP, #+0]
+   \   00000026   0x2800             CMP      R0,#+0
+   \   00000028   0xD0F6             BEQ.N    ??GUI_ExecCreatedDialog_1
+    149            return DialogStatus.ReturnValue;
+   \   0000002A   0x9801             LDR      R0,[SP, #+4]
+   \   0000002C   0xBD0E             POP      {R1-R3,PC}       ;; return
+    150          }
+    151          
+    152          /*********************************************************************
+    153          *
+    154          *       GUI_ExecDialogbox
+    155          *
+    156          * Purpose:
+    157          *  Create and execute a dialog
+    158          *  The name is somewhat confusing, it should really be something like
+    159          *  GUI_CreateExecDialog. However, we keep it like that for compatibility
+    160          *
+    161          */
+
+   \                                 In section .text, align 2, keep-with-next
+    162          int GUI_ExecDialogBox(const GUI_WIDGET_CREATE_INFO* paWidget,
+    163                                int NumWidgets, WM_CALLBACK* cb, WM_HWIN hParent, int x0, int y0)
+    164          {
+   \                     GUI_ExecDialogBox: (+1)
+   \   00000000   0xB51C             PUSH     {R2-R4,LR}
+    165            WM_HWIN hDialog;
+    166            hDialog = GUI_CreateDialogBox(paWidget, NumWidgets, cb, hParent, x0, y0);
+   \   00000002   0x9C05             LDR      R4,[SP, #+20]
+   \   00000004   0x9401             STR      R4,[SP, #+4]
+   \   00000006   0x9C04             LDR      R4,[SP, #+16]
+   \   00000008   0x9400             STR      R4,[SP, #+0]
+   \   0000000A   0x.... 0x....      BL       GUI_CreateDialogBox
+    167            return GUI_ExecCreatedDialog(hDialog);
+   \   0000000E   0xE8BD 0x4016      POP      {R1,R2,R4,LR}
+   \   00000012   0x....             B.N      GUI_ExecCreatedDialog
+    168          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x........         DC32     _BkColor
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant {0}>_2`:
+   \   00000000   0x00000000         DC32 0
+   \   00000004   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {0}>`:
+   \   00000000   0x00000000         DC32 0
+   \   00000004   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {0}>_1`:
+   \   00000000   0x00000000         DC32 0
+   \   00000004   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    169          
+    170          
+    171          #else
+    172            void Dialog_c(void);    /* Avoid problems with empty object modules */
+    173            void Dialog_c(void){}
+    174          #endif   /* GUI_WINSUPPORT */
+    175          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DIALOG_GetBkColor
+       0   DIALOG_SetBkColor
+      24   GUI_CreateDialogBox
+        24   -- Indirect call
+        24   -> WIDGET_OrState
+        24   -> WM_GetClientWindow
+        24   -> WM_SendMessageNoPara
+        24   -> WM_SetFocusOnNextChild
+        24   -> WM_ShowWindow
+      16   GUI_EndDialog
+        16   -> GUI_GetDialogStatusPtr
+         0   -> WM_DeleteWindow
+      16   GUI_ExecCreatedDialog
+        16   -> GUI_Exec
+        16   -> GUI_SetDialogStatusPtr
+        16   -> GUI_X_ExecIdle
+      16   GUI_ExecDialogBox
+        16   -> GUI_CreateDialogBox
+         0   -> GUI_ExecCreatedDialog
+      24   GUI_GetDialogStatusPtr
+        24   -> WM_SendMessage
+      24   GUI_SetDialogStatusPtr
+        24   -> WM_SendMessage
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?<Constant {0}>
+      12  ?<Constant {0}>_1
+       8  ?<Constant {0}>_2
+       4  ??DataTable4
+       6  DIALOG_GetBkColor
+      10  DIALOG_SetBkColor
+      96  GUI_CreateDialogBox
+      30  GUI_EndDialog
+      46  GUI_ExecCreatedDialog
+      20  GUI_ExecDialogBox
+      30  GUI_GetDialogStatusPtr
+      26  GUI_SetDialogStatusPtr
+       4  _BkColor
+
+ 
+   4 bytes in section .data
+  24 bytes in section .rodata
+ 276 bytes in section .text
+ 
+ 276 bytes of CODE  memory
+  24 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,316 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:45
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\CHECKBOX_Default.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\CHECKBOX_Default.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\CHECKBOX_Default.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\CHECKBOX_Default.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\CHECKBOX_Default.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : CHECKBOX_Default.c
+     16          Purpose     : Implementation of checkbox widget
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "CHECKBOX_Private.h"
+     21          
+     22          #if GUI_WINSUPPORT
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *       Exported routines
+     27          *
+     28          **********************************************************************
+     29          */
+     30          /*********************************************************************
+     31          *
+     32          *       CHECKBOX_SetDefaultSpacing
+     33          */
+
+   \                                 In section .text, align 2, keep-with-next
+     34          void CHECKBOX_SetDefaultSpacing(int Spacing) {
+     35            CHECKBOX__DefaultProps.Spacing = Spacing;
+   \                     CHECKBOX_SetDefaultSpacing: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable9
+   \   00000002   0x7588             STRB     R0,[R1, #+22]
+     36          }
+   \   00000004   0x4770             BX       LR               ;; return
+     37          
+     38          /*********************************************************************
+     39          *
+     40          *       CHECKBOX_SetDefaultTextColor
+     41          */
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void CHECKBOX_SetDefaultTextColor(GUI_COLOR Color) {
+     43            CHECKBOX__DefaultProps.TextColor = Color;
+   \                     CHECKBOX_SetDefaultTextColor: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable9
+   \   00000002   0x6108             STR      R0,[R1, #+16]
+     44          }
+   \   00000004   0x4770             BX       LR               ;; return
+     45          
+     46          /*********************************************************************
+     47          *
+     48          *       CHECKBOX_SetDefaultBkColor
+     49          */
+
+   \                                 In section .text, align 2, keep-with-next
+     50          void CHECKBOX_SetDefaultBkColor(GUI_COLOR Color) {
+     51            CHECKBOX__DefaultProps.BkColor = Color;
+   \                     CHECKBOX_SetDefaultBkColor: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable9
+   \   00000002   0x60C8             STR      R0,[R1, #+12]
+     52          }
+   \   00000004   0x4770             BX       LR               ;; return
+     53          
+     54          /*********************************************************************
+     55          *
+     56          *       CHECKBOX_SetDefaultFont
+     57          */
+
+   \                                 In section .text, align 2, keep-with-next
+     58          void CHECKBOX_SetDefaultFont(const GUI_FONT GUI_UNI_PTR * pFont) {
+     59            CHECKBOX__DefaultProps.pFont = pFont;
+   \                     CHECKBOX_SetDefaultFont: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable9
+   \   00000002   0x6008             STR      R0,[R1, #+0]
+     60          }
+   \   00000004   0x4770             BX       LR               ;; return
+     61          
+     62          /*********************************************************************
+     63          *
+     64          *       CHECKBOX_SetDefaultAlign
+     65          */
+
+   \                                 In section .text, align 2, keep-with-next
+     66          void CHECKBOX_SetDefaultAlign(int Align) {
+     67            CHECKBOX__DefaultProps.Align = Align;
+   \                     CHECKBOX_SetDefaultAlign: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable9
+   \   00000002   0x8288             STRH     R0,[R1, #+20]
+     68          }
+   \   00000004   0x4770             BX       LR               ;; return
+     69          
+     70          /*********************************************************************
+     71          *
+     72          *       CHECKBOX_GetDefaultSpacing
+     73          */
+
+   \                                 In section .text, align 2, keep-with-next
+     74          int CHECKBOX_GetDefaultSpacing(void) {
+     75            return CHECKBOX__DefaultProps.Spacing;
+   \                     CHECKBOX_GetDefaultSpacing: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9
+   \   00000002   0x7D80             LDRB     R0,[R0, #+22]
+   \   00000004   0x4770             BX       LR               ;; return
+     76          }
+     77          
+     78          /*********************************************************************
+     79          *
+     80          *       CHECKBOX_GetDefaultTextColor
+     81          */
+
+   \                                 In section .text, align 2, keep-with-next
+     82          GUI_COLOR CHECKBOX_GetDefaultTextColor(void) {
+     83            return CHECKBOX__DefaultProps.TextColor;
+   \                     CHECKBOX_GetDefaultTextColor: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9
+   \   00000002   0x6900             LDR      R0,[R0, #+16]
+   \   00000004   0x4770             BX       LR               ;; return
+     84          }
+     85          
+     86          /*********************************************************************
+     87          *
+     88          *       CHECKBOX_GetDefaultBkColor
+     89          */
+
+   \                                 In section .text, align 2, keep-with-next
+     90          GUI_COLOR CHECKBOX_GetDefaultBkColor(void) {
+     91            return CHECKBOX__DefaultProps.BkColor;
+   \                     CHECKBOX_GetDefaultBkColor: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9
+   \   00000002   0x68C0             LDR      R0,[R0, #+12]
+   \   00000004   0x4770             BX       LR               ;; return
+     92          }
+     93          
+     94          /*********************************************************************
+     95          *
+     96          *       CHECKBOX_GetDefaultFont
+     97          */
+
+   \                                 In section .text, align 2, keep-with-next
+     98          const GUI_FONT GUI_UNI_PTR * CHECKBOX_GetDefaultFont(void) {
+     99            return CHECKBOX__DefaultProps.pFont;
+   \                     CHECKBOX_GetDefaultFont: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    100          }
+    101          
+    102          /*********************************************************************
+    103          *
+    104          *       CHECKBOX_GetDefaultAlign
+    105          */
+
+   \                                 In section .text, align 2, keep-with-next
+    106          int CHECKBOX_GetDefaultAlign(void) {
+    107            return CHECKBOX__DefaultProps.Align;
+   \                     CHECKBOX_GetDefaultAlign: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9
+   \   00000002   0xF9B0 0x0014      LDRSH    R0,[R0, #+20]
+   \   00000006   0x4770             BX       LR               ;; return
+    108          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \   00000000   0x........         DC32     CHECKBOX__DefaultProps
+    109          
+    110          #else                            /* Avoid problems with empty object modules */
+    111            void CHECKBOX_Default_C(void);
+    112            void CHECKBOX_Default_C(void) {}
+    113          #endif
+    114          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CHECKBOX_GetDefaultAlign
+       0   CHECKBOX_GetDefaultBkColor
+       0   CHECKBOX_GetDefaultFont
+       0   CHECKBOX_GetDefaultSpacing
+       0   CHECKBOX_GetDefaultTextColor
+       0   CHECKBOX_SetDefaultAlign
+       0   CHECKBOX_SetDefaultBkColor
+       0   CHECKBOX_SetDefaultFont
+       0   CHECKBOX_SetDefaultSpacing
+       0   CHECKBOX_SetDefaultTextColor
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       8  CHECKBOX_GetDefaultAlign
+       6  CHECKBOX_GetDefaultBkColor
+       6  CHECKBOX_GetDefaultFont
+       6  CHECKBOX_GetDefaultSpacing
+       6  CHECKBOX_GetDefaultTextColor
+       6  CHECKBOX_SetDefaultAlign
+       6  CHECKBOX_SetDefaultBkColor
+       6  CHECKBOX_SetDefaultFont
+       6  CHECKBOX_SetDefaultSpacing
+       6  CHECKBOX_SetDefaultTextColor
+
+ 
+ 66 bytes in section .text
+ 
+ 66 bytes of CODE memory
+
+Errors: none
+Warnings: none

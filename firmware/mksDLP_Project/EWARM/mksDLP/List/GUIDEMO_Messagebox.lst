@@ -1,0 +1,268 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:19:56
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Messagebox.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Messagebox.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUIDEMO_Messagebox.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUIDEMO_Messagebox.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_Messagebox.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUIDEMO_Messagebox.c
+     16          Purpose     : Messagebox samples
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include <stddef.h>           /* needed for definition of NULL */
+     21          #include "GUI.h"
+     22          #include "GUIDEMO.h"
+     23          #include "LCD_ConfDefaults.h"
+     24          
+     25          #if GUI_WINSUPPORT
+     26          
+     27          #include "WM.h"
+     28          #include "DIALOG.h"
+     29          
+     30          /*********************************************************************
+     31          *
+     32          *       GUIDEMO_Dialog
+     33          *
+     34          **********************************************************************
+     35          */
+     36          
+
+   \                                 In section .text, align 2, keep-with-next
+     37          void GUIDEMO_Messagebox(void) {
+   \                     GUIDEMO_Messagebox: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     38            GUI_COLOR Color;
+     39            GUIDEMO_ShowIntro("Message boxes",
+     40                              "Message boxes" "\ncan easily be created");
+   \   00000002   0x.... 0x....      ADR.W    R1,`?<Constant "Message boxes\\ncan eas...">`
+   \   00000006   0x.... 0x....      ADR.W    R0,`?<Constant "Message boxes">`
+   \   0000000A   0x.... 0x....      BL       GUIDEMO_ShowIntro
+     41            Color = WM_SetDesktopColor(GUI_RED);
+   \   0000000E   0x20FF             MOVS     R0,#+255
+   \   00000010   0x.... 0x....      BL       WM_SetDesktopColor
+   \   00000014   0x4604             MOV      R4,R0
+     42            GUI_MessageBox("Message", "Text", 0);
+   \   00000016   0x.... 0x....      ADR.W    R5,`?<Constant "Text">`
+   \   0000001A   0x2200             MOVS     R2,#+0
+   \   0000001C   0x4629             MOV      R1,R5
+   \   0000001E   0x.... 0x....      ADR.W    R0,`?<Constant "Message">`
+   \   00000022   0x.... 0x....      BL       GUI_MessageBox
+     43            GUI_Delay(1000);
+   \   00000026   0xF44F 0x707A      MOV      R0,#+1000
+   \   0000002A   0x.... 0x....      BL       GUI_Delay
+     44            GUI_MessageBox("2. Message", "Text", 0);
+   \   0000002E   0x2200             MOVS     R2,#+0
+   \   00000030   0x4629             MOV      R1,R5
+   \   00000032   0x.... 0x....      ADR.W    R0,`?<Constant "2. Message">`
+   \   00000036   0x.... 0x....      BL       GUI_MessageBox
+     45            GUI_Delay(1000);
+   \   0000003A   0xF44F 0x707A      MOV      R0,#+1000
+   \   0000003E   0x.... 0x....      BL       GUI_Delay
+     46            WM_SetDesktopColor(Color);
+   \   00000042   0x4620             MOV      R0,R4
+   \   00000044   0x.... 0x....      BL       WM_SetDesktopColor
+     47            GUIDEMO_NotifyStartNext();
+   \   00000048   0xE8BD 0x4031      POP      {R0,R4,R5,LR}
+   \   0000004C   0x.... 0x....      B.W      GUIDEMO_NotifyStartNext
+     48          
+     49          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Message boxes">`:
+   \   00000000   0x4D 0x65          DC8 "Message boxes"
+   \              0x73 0x73    
+   \              0x61 0x67    
+   \              0x65 0x20    
+   \              0x62 0x6F    
+   \              0x78 0x65    
+   \              0x73 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Message boxes\\ncan eas...">`:
+   \   00000000   0x4D 0x65          DC8 "Message boxes\012can easily be created"
+   \              0x73 0x73    
+   \              0x61 0x67    
+   \              0x65 0x20    
+   \              0x62 0x6F    
+   \              0x78 0x65    
+   \              0x73 0x0A    
+   \              0x63 0x61    
+   \              0x6E 0x20    
+   \              0x65 0x61    
+   \              0x73 0x69    
+   \              0x6C 0x79    
+   \              0x20 0x62    
+   \              0x65 0x20    
+   \              0x63 0x72    
+   \              0x65 0x61    
+   \              0x74 0x65    
+   \              0x64 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Message">`:
+   \   00000000   0x4D 0x65          DC8 "Message"
+   \              0x73 0x73    
+   \              0x61 0x67    
+   \              0x65 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Text">`:
+   \   00000000   0x54 0x65          DC8 "Text"
+   \              0x78 0x74    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "2. Message">`:
+   \   00000000   0x32 0x2E          DC8 "2. Message"
+   \              0x20 0x4D    
+   \              0x65 0x73    
+   \              0x73 0x61    
+   \              0x67 0x65    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+     50          
+     51          #else
+     52          
+     53          void GUIDEMO_Messagebox(void) {}
+     54          
+     55          #endif /* GUI_SUPPORT_MEMDEV */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   GUIDEMO_Messagebox
+         0   -> GUIDEMO_NotifyStartNext
+        16   -> GUIDEMO_ShowIntro
+        16   -> GUI_Delay
+        16   -> GUI_MessageBox
+        16   -> WM_SetDesktopColor
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?<Constant "2. Message">
+      16  ?<Constant "Message boxes">
+      36  ?<Constant "Message boxes\ncan eas...">
+       8  ?<Constant "Message">
+       8  ?<Constant "Text">
+      80  GUIDEMO_Messagebox
+
+ 
+ 160 bytes in section .text
+ 
+ 160 bytes of CODE memory
+
+Errors: none
+Warnings: none

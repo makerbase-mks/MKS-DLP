@@ -1,0 +1,356 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:58:19
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Core\GUI_UC.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Core\GUI_UC.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUI_UC.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUI_UC.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Core\GUI_UC.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUI_UC_EncodeUTF8.c
+     16          Purpose     : Encoding routines
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "GUI_Protected.h"
+     21          
+     22          /*********************************************************************
+     23          *
+     24          *       Public code
+     25          *
+     26          **********************************************************************
+     27          */
+     28          /*********************************************************************
+     29          *
+     30          *       GUI_UC_GetCharSize
+     31          */
+
+   \                                 In section .text, align 2, keep-with-next
+     32          int GUI_UC_GetCharSize(const char GUI_UNI_PTR * s) {
+     33            int r;
+     34            GUI_LOCK();
+     35            r =  GUI_Context.pUC_API->pfGetCharSize(s);
+     36            GUI_UNLOCK();
+     37            return r;
+   \                     GUI_UC_GetCharSize: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable6
+   \   00000002   0x69C9             LDR      R1,[R1, #+28]
+   \   00000004   0x6849             LDR      R1,[R1, #+4]
+   \   00000006   0x4708             BX       R1
+     38          }
+     39          
+     40          /*********************************************************************
+     41          *
+     42          *       GUI_UC_GetCharCode
+     43          */
+
+   \                                 In section .text, align 2, keep-with-next
+     44          U16 GUI_UC_GetCharCode(const char GUI_UNI_PTR * s) {
+     45            U16 r;
+     46            GUI_LOCK();
+     47            r =  GUI_Context.pUC_API->pfGetCharCode(s);
+     48            GUI_UNLOCK();
+     49            return r;
+   \                     GUI_UC_GetCharCode: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable6
+   \   00000002   0x69C9             LDR      R1,[R1, #+28]
+   \   00000004   0x6809             LDR      R1,[R1, #+0]
+   \   00000006   0x4708             BX       R1
+     50          }
+     51          
+     52          /*********************************************************************
+     53          *
+     54          *       GUI_UC_Encode
+     55          */
+
+   \                                 In section .text, align 2, keep-with-next
+     56          int GUI_UC_Encode(char* s, U16 Char) {
+     57            #if GUI_COMPILER_SUPPORTS_FP
+     58              int r;
+     59              GUI_LOCK();
+     60              r = GUI_Context.pUC_API->pfEncode(s, Char);
+     61              GUI_UNLOCK();
+     62              return r;
+   \                     GUI_UC_Encode: (+1)
+   \   00000000   0x....             LDR.N    R2,??DataTable6
+   \   00000002   0x69D2             LDR      R2,[R2, #+28]
+   \   00000004   0x68D2             LDR      R2,[R2, #+12]
+   \   00000006   0x4710             BX       R2
+     63            #else
+     64              GUI_USE_PARA(s);
+     65              GUI_USE_PARA(Char);
+     66              return 0;
+     67            #endif
+     68          }
+     69          
+     70          /*********************************************************************
+     71          *
+     72          *       GUI_UC__CalcSizeOfChar
+     73          */
+
+   \                                 In section .text, align 2, keep-with-next
+     74          int GUI_UC__CalcSizeOfChar(U16 Char) {
+     75            return GUI_Context.pUC_API->pfCalcSizeOfChar(Char);
+   \                     GUI_UC__CalcSizeOfChar: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable6
+   \   00000002   0x69C9             LDR      R1,[R1, #+28]
+   \   00000004   0x6889             LDR      R1,[R1, #+8]
+   \   00000006   0x4708             BX       R1
+     76          }
+     77          
+     78          /*********************************************************************
+     79          *
+     80          *       GUI_UC__GetCharCodeInc
+     81          */
+
+   \                                 In section .text, align 2, keep-with-next
+     82          U16 GUI_UC__GetCharCodeInc(const char GUI_UNI_PTR ** ps) {
+   \                     GUI_UC__GetCharCodeInc: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+     83            const char GUI_UNI_PTR * s;
+     84            U16 r;
+     85            s   = *ps;
+   \   00000004   0x6825             LDR      R5,[R4, #+0]
+     86            r   = GUI_UC__GetCharCode(s);
+   \   00000006   0x....             LDR.N    R6,??DataTable6
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x69F1             LDR      R1,[R6, #+28]
+   \   0000000C   0x6809             LDR      R1,[R1, #+0]
+   \   0000000E   0x4788             BLX      R1
+   \   00000010   0x4607             MOV      R7,R0
+     87            s  += GUI_UC__GetCharSize(s);
+   \   00000012   0x4628             MOV      R0,R5
+   \   00000014   0x69F1             LDR      R1,[R6, #+28]
+   \   00000016   0x6849             LDR      R1,[R1, #+4]
+   \   00000018   0x4788             BLX      R1
+   \   0000001A   0x1940             ADDS     R0,R0,R5
+     88            *ps = s;
+   \   0000001C   0x6020             STR      R0,[R4, #+0]
+     89            return r;
+   \   0000001E   0x4638             MOV      R0,R7
+   \   00000020   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     90          }
+     91          
+     92          /*********************************************************************
+     93          *
+     94          *       GUI_UC__NumChars2NumBytes
+     95          */
+
+   \                                 In section .text, align 2, keep-with-next
+     96          int GUI_UC__NumChars2NumBytes(const char GUI_UNI_PTR * s, int NumChars) {
+   \                     GUI_UC__NumChars2NumBytes: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+     97            int CharSize, NumBytes = 0;
+   \   00000006   0x2600             MOVS     R6,#+0
+   \   00000008   0xE006             B.N      ??GUI_UC__NumChars2NumBytes_0
+     98            while (NumChars--) {
+     99              CharSize = GUI_UC__GetCharSize(s);
+   \                     ??GUI_UC__NumChars2NumBytes_1: (+1)
+   \   0000000A   0x4620             MOV      R0,R4
+   \   0000000C   0x....             LDR.N    R1,??DataTable6
+   \   0000000E   0x69C9             LDR      R1,[R1, #+28]
+   \   00000010   0x6849             LDR      R1,[R1, #+4]
+   \   00000012   0x4788             BLX      R1
+    100              s += CharSize;    
+   \   00000014   0x1904             ADDS     R4,R0,R4
+    101              NumBytes += CharSize;
+   \   00000016   0x1986             ADDS     R6,R0,R6
+    102            }
+   \                     ??GUI_UC__NumChars2NumBytes_0: (+1)
+   \   00000018   0x4628             MOV      R0,R5
+   \   0000001A   0x1E45             SUBS     R5,R0,#+1
+   \   0000001C   0x2800             CMP      R0,#+0
+   \   0000001E   0xD1F4             BNE.N    ??GUI_UC__NumChars2NumBytes_1
+    103            return NumBytes;
+   \   00000020   0x4630             MOV      R0,R6
+   \   00000022   0xBD70             POP      {R4-R6,PC}       ;; return
+    104          }
+    105          
+    106          /*********************************************************************
+    107          *
+    108          *       GUI_UC__NumBytes2NumChars
+    109          */
+
+   \                                 In section .text, align 2, keep-with-next
+    110          int GUI_UC__NumBytes2NumChars(const char GUI_UNI_PTR * s, int NumBytes) {
+   \                     GUI_UC__NumBytes2NumChars: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    111            int CharSize, Chars = 0, Bytes = 0;
+   \   00000006   0x2600             MOVS     R6,#+0
+   \   00000008   0x4637             MOV      R7,R6
+   \   0000000A   0xE006             B.N      ??GUI_UC__NumBytes2NumChars_0
+    112            while (NumBytes > Bytes) {
+    113              CharSize = GUI_UC__GetCharSize(s + Bytes);
+    114              Bytes += CharSize;
+   \                     ??GUI_UC__NumBytes2NumChars_1: (+1)
+   \   0000000C   0x1938             ADDS     R0,R7,R4
+   \   0000000E   0x....             LDR.N    R1,??DataTable6
+   \   00000010   0x69C9             LDR      R1,[R1, #+28]
+   \   00000012   0x6849             LDR      R1,[R1, #+4]
+   \   00000014   0x4788             BLX      R1
+   \   00000016   0x19C7             ADDS     R7,R0,R7
+    115              Chars++;
+   \   00000018   0x1C76             ADDS     R6,R6,#+1
+    116            }
+   \                     ??GUI_UC__NumBytes2NumChars_0: (+1)
+   \   0000001A   0x42AF             CMP      R7,R5
+   \   0000001C   0xDBF6             BLT.N    ??GUI_UC__NumBytes2NumChars_1
+    117            return Chars;
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    118          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x........         DC32     GUI_Context
+    119          
+    120          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GUI_UC_Encode
+         0   -- Indirect call
+       0   GUI_UC_GetCharCode
+         0   -- Indirect call
+       0   GUI_UC_GetCharSize
+         0   -- Indirect call
+       0   GUI_UC__CalcSizeOfChar
+         0   -- Indirect call
+      24   GUI_UC__GetCharCodeInc
+        24   -- Indirect call
+      24   GUI_UC__NumBytes2NumChars
+        24   -- Indirect call
+      16   GUI_UC__NumChars2NumBytes
+        16   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       8  GUI_UC_Encode
+       8  GUI_UC_GetCharCode
+       8  GUI_UC_GetCharSize
+       8  GUI_UC__CalcSizeOfChar
+      34  GUI_UC__GetCharCodeInc
+      34  GUI_UC__NumBytes2NumChars
+      36  GUI_UC__NumChars2NumBytes
+
+ 
+ 140 bytes in section .text
+ 
+ 140 bytes of CODE memory
+
+Errors: none
+Warnings: none

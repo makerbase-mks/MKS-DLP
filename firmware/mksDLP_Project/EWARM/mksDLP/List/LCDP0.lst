@@ -1,0 +1,253 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:04
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\ConvertMono\LCDP0.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\ConvertMono\LCDP0.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\LCDP0.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\LCDP0.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\ConvertMono\LCDP0.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : LCDP0.C
+     16          Purpose     : Color conversion routines for LCD-drivers
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "LCD_Private.h"    /* inter modul definitions */
+     21          #include "GUI.h"
+     22          
+     23          /*********************************************************************
+     24          *
+     25          *       Public code, 1/2/4/8 bpp color, LUT
+     26          *
+     27          **********************************************************************
+     28          */
+     29          /*********************************************************************
+     30          *
+     31          *       LCD_Color2Index_0
+     32          */
+
+   \                                 In section .text, align 2, keep-with-next
+     33          unsigned LCD_Color2Index_0(LCD_COLOR Color, const LCD_PHYSPALETTE* pPhysPal) {
+   \                     LCD_Color2Index_0: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x4604             MOV      R4,R0
+     34            int i;
+     35            int NumEntries = pPhysPal->NumEntries;
+   \   00000006   0x680D             LDR      R5,[R1, #+0]
+     36            int BestIndex = 0;
+   \   00000008   0x2600             MOVS     R6,#+0
+     37            U32 BestDiff = 0xffffff; /* Initialize to worst match */
+   \   0000000A   0xF06F 0x477F      MVN      R7,#-16777216
+     38            const LCD_COLOR* pPalEntry;
+     39          /* Try to find perfect match */
+     40            i=0; pPalEntry = &pPhysPal->pPalEntries[0];
+   \   0000000E   0x46B0             MOV      R8,R6
+   \   00000010   0xF8D1 0x9004      LDR      R9,[R1, #+4]
+     41            do {
+     42          	  if (Color==*(pPalEntry+i))
+   \                     ??LCD_Color2Index_0_0: (+1)
+   \   00000014   0xF859 0x0028      LDR      R0,[R9, R8, LSL #+2]
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD101             BNE.N    ??LCD_Color2Index_0_1
+     43          	    return i;
+   \   0000001C   0x4640             MOV      R0,R8
+   \   0000001E   0xE012             B.N      ??LCD_Color2Index_0_2
+     44            } while (++i<NumEntries);
+   \                     ??LCD_Color2Index_0_1: (+1)
+   \   00000020   0xF108 0x0801      ADD      R8,R8,#+1
+   \   00000024   0x45A8             CMP      R8,R5
+   \   00000026   0xDBF5             BLT.N    ??LCD_Color2Index_0_0
+     45          /* Find best match */
+     46            i=0; pPalEntry = &pPhysPal->pPalEntries[0];
+   \   00000028   0x46B0             MOV      R8,R6
+     47            do {
+     48              U32 Diff = GUI_CalcColorDist (Color, *(pPalEntry+i));
+   \                     ??LCD_Color2Index_0_3: (+1)
+   \   0000002A   0xF859 0x1028      LDR      R1,[R9, R8, LSL #+2]
+   \   0000002E   0x4620             MOV      R0,R4
+   \   00000030   0x.... 0x....      BL       GUI_CalcColorDist
+     49              if (Diff < BestDiff) {
+   \   00000034   0x42B8             CMP      R0,R7
+   \   00000036   0xD201             BCS.N    ??LCD_Color2Index_0_4
+     50                BestDiff  = Diff;
+   \   00000038   0x4607             MOV      R7,R0
+     51                BestIndex = i;
+   \   0000003A   0x4646             MOV      R6,R8
+     52              }
+     53            } while (++i<NumEntries);
+   \                     ??LCD_Color2Index_0_4: (+1)
+   \   0000003C   0xF108 0x0801      ADD      R8,R8,#+1
+   \   00000040   0x45A8             CMP      R8,R5
+   \   00000042   0xDBF2             BLT.N    ??LCD_Color2Index_0_3
+     54            return BestIndex;
+   \   00000044   0x4630             MOV      R0,R6
+   \                     ??LCD_Color2Index_0_2: (+1)
+   \   00000046   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+     55          }
+     56          
+     57          /*********************************************************************
+     58          *
+     59          *       LCD_Index2Color_0
+     60          */
+
+   \                                 In section .text, align 2, keep-with-next
+     61          LCD_COLOR LCD_Index2Color_0(int Index, const LCD_PHYSPALETTE* pPhysPal) {
+     62            if ((unsigned)Index >= (unsigned) pPhysPal->NumEntries) {
+   \                     LCD_Index2Color_0: (+1)
+   \   00000000   0x680A             LDR      R2,[R1, #+0]
+   \   00000002   0x4290             CMP      R0,R2
+   \   00000004   0xD301             BCC.N    ??LCD_Index2Color_0_0
+     63              return 0;     /* Illegal index */
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x4770             BX       LR
+     64            }
+     65            return *(pPhysPal->pPalEntries+Index);
+   \                     ??LCD_Index2Color_0_0: (+1)
+   \   0000000A   0x6849             LDR      R1,[R1, #+4]
+   \   0000000C   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \   00000010   0x4770             BX       LR               ;; return
+     66          }
+     67          
+     68          /*********************************************************************
+     69          *
+     70          *       LCD_GetIndexMask_0
+     71          */
+
+   \                                 In section .text, align 2, keep-with-next
+     72          unsigned LCD_GetIndexMask_0(void) {
+     73            return ((1 << LCD_BITSPERPIXEL) - 1);
+   \                     LCD_GetIndexMask_0: (+1)
+   \   00000000   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   00000004   0x4770             BX       LR               ;; return
+     74          }
+     75          
+     76          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   LCD_Color2Index_0
+        32   -> GUI_CalcColorDist
+       0   LCD_GetIndexMask_0
+       0   LCD_Index2Color_0
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      74  LCD_Color2Index_0
+       6  LCD_GetIndexMask_0
+      18  LCD_Index2Color_0
+
+ 
+ 98 bytes in section .text
+ 
+ 98 bytes of CODE memory
+
+Errors: none
+Warnings: none

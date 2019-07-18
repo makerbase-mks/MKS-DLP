@@ -1,0 +1,368 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  11:15:26
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\string_deal.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\string_deal.c -D
+#        USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\string_deal.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\string_deal.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\string_deal.c
+      1          #include "ff.h"
+
+   \                                 In section .text, align 2
+   \   __intrinsic __nounwind __interwork __softfp char *strrchr(char const *, int)
+   \                     strrchr: (+1)
+   \   00000000   0x.... 0x....      B.W      __iar_Strrchr
+      2          #include "ffconf.h"
+      3          #include "string_deal.h"
+      4          
+      5          #if _LFN_UNICODE 
+      6          void cutFileName(TCHAR *path, int len, int bytePerLine,  TCHAR *outStr)
+      7          #else
+
+   \                                 In section .text, align 2, keep-with-next
+      8          void cutFileName(char *path, int len, int bytePerLine,  char *outStr)
+      9          #endif
+     10          {
+   \                     cutFileName: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0xB084             SUB      SP,SP,#+16
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x460D             MOV      R5,R1
+   \   0000000A   0x4616             MOV      R6,R2
+   \   0000000C   0x461F             MOV      R7,R3
+     11          	#if _LFN_UNICODE 
+     12          	TCHAR *tmpFile;
+     13          	TCHAR *strIndex1 = 0, *strIndex2 = 0, *beginIndex;
+     14          	TCHAR secSeg[10] = {0};
+     15          	TCHAR gFileTail[4] = {'~', '.', 'g', '\0'};
+     16          	#else
+     17          	char *tmpFile;
+     18          	char *strIndex1 = 0, *strIndex2 = 0, *beginIndex;
+     19          	char secSeg[10] = {0};
+   \   0000000E   0xA800             ADD      R0,SP,#+0
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x460A             MOV      R2,R1
+   \   00000014   0x460B             MOV      R3,R1
+   \   00000016   0xC00E             STM      R0!,{R1-R3}
+     20          	#endif
+     21          	
+     22          	if(path == 0 || len <= 3 || outStr == 0)
+   \   00000018   0x2C00             CMP      R4,#+0
+   \   0000001A   0xD04A             BEQ.N    ??cutFileName_0
+   \   0000001C   0x2D04             CMP      R5,#+4
+   \   0000001E   0xDB48             BLT.N    ??cutFileName_0
+   \   00000020   0x2F00             CMP      R7,#+0
+   \   00000022   0xD046             BEQ.N    ??cutFileName_0
+     23          	{
+     24          		return;
+     25          	}
+     26          	
+     27          	tmpFile = path;
+     28          	#if _LFN_UNICODE
+     29          	strIndex1 = (WCHAR *)wcsstr((const WCHAR *)tmpFile, (const WCHAR *)'/');
+     30          	strIndex2 = (WCHAR *)wcsstr((const WCHAR *)tmpFile, (const WCHAR *)'.');
+     31          	#else
+     32          	strIndex1 = (char *)strrchr(tmpFile, '/');
+   \   00000024   0x212F             MOVS     R1,#+47
+   \   00000026   0x4620             MOV      R0,R4
+   \   00000028   0x.... 0x....      BL       strrchr
+   \   0000002C   0x4680             MOV      R8,R0
+     33          	strIndex2 = (char *)strrchr(tmpFile, '.');
+   \   0000002E   0x212E             MOVS     R1,#+46
+   \   00000030   0x4620             MOV      R0,R4
+   \   00000032   0x.... 0x....      BL       strrchr
+     34          	#endif
+     35          
+     36          	if(strIndex1 != 0)
+   \   00000036   0xF1B8 0x0F00      CMP      R8,#+0
+   \   0000003A   0xD001             BEQ.N    ??cutFileName_1
+     37          	{
+     38          		beginIndex = strIndex1 + 1;	
+   \   0000003C   0xF108 0x0401      ADD      R4,R8,#+1
+     39          	}
+     40          	/*if((strIndex1 != 0) && (strIndex2 != 0) && (strIndex1 < strIndex2))
+     41          	{
+     42          		beginIndex = strIndex1 + 1;			
+     43          	}*/
+     44          	else
+     45          	{
+     46          		beginIndex = tmpFile;
+     47          	}
+     48          
+     49          	if(strIndex2 == 0 ||  (strIndex1 > strIndex2))	//not gcode file
+   \                     ??cutFileName_1: (+1)
+   \   00000040   0x2800             CMP      R0,#+0
+   \   00000042   0xD001             BEQ.N    ??cutFileName_2
+   \   00000044   0x4540             CMP      R0,R8
+   \   00000046   0xD20F             BCS.N    ??cutFileName_3
+     50          	{
+     51          		#if _LFN_UNICODE
+     52          			if(wcslen(beginIndex) > len)
+     53          			{
+     54          				wcsncpy(outStr, beginIndex, len);
+     55          			
+     56          			}
+     57          			else
+     58          			{
+     59          				wcscpy(outStr, beginIndex);
+     60          			}
+     61          		#else
+     62          			if(strlen(beginIndex) > len)
+   \                     ??cutFileName_2: (+1)
+   \   00000048   0x4620             MOV      R0,R4
+   \   0000004A   0x.... 0x....      BL       strlen
+   \   0000004E   0x4285             CMP      R5,R0
+   \   00000050   0xD205             BCS.N    ??cutFileName_4
+     63          			{
+     64          				strncpy(outStr, beginIndex, len);
+   \   00000052   0x462A             MOV      R2,R5
+   \   00000054   0x4621             MOV      R1,R4
+   \   00000056   0x4638             MOV      R0,R7
+   \   00000058   0x.... 0x....      BL       strncpy
+   \   0000005C   0xE017             B.N      ??cutFileName_5
+     65          			
+     66          			}
+     67          			else
+     68          			{
+     69          				strcpy(outStr, beginIndex);
+   \                     ??cutFileName_4: (+1)
+   \   0000005E   0x4621             MOV      R1,R4
+   \   00000060   0x4638             MOV      R0,R7
+   \   00000062   0x.... 0x....      BL       strcpy
+   \   00000066   0xE012             B.N      ??cutFileName_5
+     70          			}
+     71          		#endif
+     72          	}
+     73          	else //gcode file
+     74          	{
+     75          		if(strIndex2 - beginIndex > (len - 2))
+   \                     ??cutFileName_3: (+1)
+   \   00000068   0x1B00             SUBS     R0,R0,R4
+   \   0000006A   0x1EA9             SUBS     R1,R5,#+2
+   \   0000006C   0x4281             CMP      R1,R0
+   \   0000006E   0xDA09             BGE.N    ??cutFileName_6
+     76          		{
+     77          			#if _LFN_UNICODE
+     78          				wcsncpy(outStr, (const WCHAR *)beginIndex, len - 3);
+     79          				wcscat(outStr, (const WCHAR *)gFileTail);
+     80          			#else
+     81          				//strncpy(outStr, beginIndex, len - 3);
+     82          				strncpy(outStr, beginIndex, len - 4);
+   \   00000070   0x1F2A             SUBS     R2,R5,#+4
+   \   00000072   0x4621             MOV      R1,R4
+   \   00000074   0x4638             MOV      R0,R7
+   \   00000076   0x.... 0x....      BL       strncpy
+     83          				strcat(outStr, "~.g");
+   \   0000007A   0x....             ADR.N    R1,??DataTable2  ;; "~.g"
+   \   0000007C   0x4638             MOV      R0,R7
+   \   0000007E   0x.... 0x....      BL       strcat
+   \   00000082   0xE004             B.N      ??cutFileName_5
+     84          			#endif
+     85          		
+     86          		}
+     87          		else
+     88          		{
+     89          			#if _LFN_UNICODE
+     90          				wcsncpy(outStr, (const WCHAR *)beginIndex, strIndex2 - beginIndex + 1);
+     91          				wcscat(outStr, (const WCHAR *)&gFileTail[3]);
+     92          			#else
+     93                                          //#if ENABLED(MKS_DLP_BOARD)
+     94                                          strncpy(outStr, beginIndex, strIndex2 - beginIndex + 2);
+   \                     ??cutFileName_6: (+1)
+   \   00000084   0x1C82             ADDS     R2,R0,#+2
+   \   00000086   0x4621             MOV      R1,R4
+   \   00000088   0x4638             MOV      R0,R7
+   \   0000008A   0x.... 0x....      BL       strncpy
+     95                                          //#else
+     96          				//strncpy(outStr, beginIndex, strIndex2 - beginIndex + 1);
+     97          				//strcat(outStr, "g");
+     98                                          //#endif
+     99          			#endif
+    100          		}
+    101          		
+    102          	}
+    103          	#if _LFN_UNICODE
+    104          	if(wcslen(outStr) > bytePerLine)
+    105          	{
+    106          		
+    107          		wcscpy(secSeg, (const WCHAR *)&outStr[bytePerLine]);
+    108          		outStr[bytePerLine] = '\n';
+    109          		outStr[bytePerLine + 1] = '\0';
+    110          		wcscat(outStr, (const WCHAR *)secSeg);
+    111          		
+    112          	}
+    113          	#else
+    114          	if(strlen(outStr) > bytePerLine)
+   \                     ??cutFileName_5: (+1)
+   \   0000008E   0x4638             MOV      R0,R7
+   \   00000090   0x.... 0x....      BL       strlen
+   \   00000094   0x4286             CMP      R6,R0
+   \   00000096   0xD20C             BCS.N    ??cutFileName_0
+    115          	{
+    116          		
+    117          		strcpy(secSeg, &outStr[bytePerLine]);
+   \   00000098   0x19F1             ADDS     R1,R6,R7
+   \   0000009A   0xA800             ADD      R0,SP,#+0
+   \   0000009C   0x.... 0x....      BL       strcpy
+    118          		outStr[bytePerLine] = '\n';
+   \   000000A0   0x200A             MOVS     R0,#+10
+   \   000000A2   0x55F0             STRB     R0,[R6, R7]
+    119          		outStr[bytePerLine + 1] = '\0';
+   \   000000A4   0x2000             MOVS     R0,#+0
+   \   000000A6   0x19F1             ADDS     R1,R6,R7
+   \   000000A8   0x7048             STRB     R0,[R1, #+1]
+    120          		strcat(outStr, secSeg);
+   \   000000AA   0xA900             ADD      R1,SP,#+0
+   \   000000AC   0x4638             MOV      R0,R7
+   \   000000AE   0x.... 0x....      BL       strcat
+    121          		
+    122          	}
+    123          	#endif
+    124          }
+   \                     ??cutFileName_0: (+1)
+   \   000000B2   0xE8BD 0x81FF      POP      {R0-R8,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x7E 0x2E          DC8      "~.g"
+   \              0x67 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {0}>`:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "~.g">`:
+   \   00000000   0x7E 0x2E          DC8 "~.g"
+   \              0x67 0x00    
+    125          	
+    126          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   cutFileName
+        40   -> strcat
+        40   -> strcpy
+        40   -> strlen
+        40   -> strncpy
+        40   -> strrchr
+       0   strrchr
+         0   -> __iar_Strrchr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ?<Constant "~.g">
+      12  ?<Constant {0}>
+       4  ??DataTable2
+     182  cutFileName
+       4  strrchr
+
+ 
+  16 bytes in section .rodata
+ 190 bytes in section .text
+ 
+ 186 bytes of CODE  memory (+ 4 bytes shared)
+  16 bytes of CONST memory
+
+Errors: none
+Warnings: none

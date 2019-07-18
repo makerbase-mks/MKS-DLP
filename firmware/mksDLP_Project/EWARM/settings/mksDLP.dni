@@ -1,0 +1,150 @@
+[DebugChecksum]
+Checksum=1351386011
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=168000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=84
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[struct_types]
+Fmt0=DMA_Stream_TypeDef-CR	4	0
+Fmt1=SPI_TypeDef-CR1	4	0
+Fmt2=SPI_TypeDef-CR2	4	0
+[array_types]
+Fmt0=uint8_t[192]	4	0
+Fmt1=uint8_t[196]	4	0
+Fmt2=unsigned char[32]	4	0
+[watch_formats]
+Fmt0={W}0:*spi1_hdmatx_CR	4	0
+Fmt1={W}0:FlashID	4	0
+Fmt2={W}0:SSD2828_DATA	4	0
+Fmt3={W}0:SSD2828_ID	4	0
+Fmt4={W}0:Temp	4	0
+Fmt5={W}0:W25QXX_TYPE	4	0
+Fmt6={W}0:disp_state_stack._disp_index	3	0
+Fmt7={W}0:gCfgItems.background_color	4	0
+Fmt8={W}0:gCfgItems.btn_text_bkcolor	4	0
+Fmt9={W}0:gCfgItems.btn_textcolor	4	0
+Fmt10={W}0:gCfgItems.dialog_text_color	4	0
+Fmt11={W}0:gCfgItems.msg_area_bkcolor	4	0
+Fmt12={W}0:mksCfg.invert_z_dir	3	0
+Fmt13={W}0:mksCfg.z_home_dir	3	0
+Fmt14={W}0:mksCfg.z_max_endstop_inverting	3	0
+Fmt15={W}0:mksCfg.z_min_endstop_inverting	3	0
+Fmt16={W}0:oregist1	4	0
+Fmt17={W}0:oregist2	4	0
+Fmt18={W}0:point	4	0
+Fmt19={W}0:ssd_id	4	0
+Fmt20={W}0:ssd_id1	4	0
+Fmt21={W}0:ssd_isr_data	4	0
+Fmt22={W}0:ssd_test_data	4	0
+Fmt23={W}0:test_cmdread	4	0
+Fmt24={W}0:tmp_index	4	0
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Src\ili9320.c}.920.1" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\BSP\Components\SSD2828\ssd2828.c}.257.3" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\BSP\Components\SSD2828\ssd2828.cpp}.353.3" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\BSP\Components\SSD2828\ssd2828.cpp}.353.3" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\BSP\Components\SSD2828\ssd2828.cpp}.353.3" 0 0 1 "" 0 "" 0
+Bp5=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Drivers\BSP\Components\SSD2828\ssd2828.cpp}.353.3" 0 0 1 "" 0 "" 0
+Bp6=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\User\ui\touch_calibrate.cpp}.604.6" 0 0 1 "" 0 "" 0
+Bp7=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\User\ui\touch_calibrate.cpp}.430.4" 0 0 1 "" 0 "" 0
+Count=8
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\Ucgui\GUI\Core\GUI_DrawHLine.c" ""
+A1=_ "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\Ucgui\GUI\Core\GUI_DrawVLine.c" ""
+A2=_ "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\Ucgui\GUI\Widget\WIDGET_Effect_3D.c" ""
+Count=3
+SuppressDialog=0
+[CallStackLog]
+Enabled=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=

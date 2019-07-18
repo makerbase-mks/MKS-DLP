@@ -1,0 +1,246 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:59:11
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_DeleteColumn.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_DeleteColumn.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\LISTVIEW_DeleteColumn.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\LISTVIEW_DeleteColumn.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\LISTVIEW_DeleteColumn.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : LISTVIEW_DeleteColumn.c
+     16          Purpose     : Implementation of LISTVIEW_DeleteColumn
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include "LISTVIEW_Private.h"
+     21          
+     22          #if GUI_WINSUPPORT
+     23          
+     24          /*********************************************************************
+     25          *
+     26          *       Public routines
+     27          *
+     28          **********************************************************************
+     29          */
+     30          /*********************************************************************
+     31          *
+     32          *       LISTVIEW_DeleteColumn
+     33          */
+
+   \                                 In section .text, align 2, keep-with-next
+     34          void LISTVIEW_DeleteColumn(LISTVIEW_Handle hObj, unsigned Index) {
+   \                     LISTVIEW_DeleteColumn: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+     35            if (hObj) {
+   \   00000008   0x2C00             CMP      R4,#+0
+   \   0000000A   0xD03B             BEQ.N    ??LISTVIEW_DeleteColumn_0
+     36              LISTVIEW_Obj* pObj;
+     37              WM_LOCK();
+     38              pObj = LISTVIEW_H2P(hObj);
+   \   0000000C   0x.... 0x....      BL       GUI_ALLOC_h2p
+   \   00000010   0x4606             MOV      R6,R0
+     39              if (Index < GUI_ARRAY_GetNumItems(&pObj->AlignArray)) {
+   \   00000012   0xF106 0x002E      ADD      R0,R6,#+46
+   \   00000016   0x.... 0x....      BL       GUI_ARRAY_GetNumItems
+   \   0000001A   0x4285             CMP      R5,R0
+   \   0000001C   0xD232             BCS.N    ??LISTVIEW_DeleteColumn_0
+     40                unsigned NumRows, i;
+     41                GUI_ARRAY* pRow;
+     42                HEADER_DeleteItem(pObj->hHeader, Index);
+   \   0000001E   0x4629             MOV      R1,R5
+   \   00000020   0xF9B6 0x0028      LDRSH    R0,[R6, #+40]
+   \   00000024   0x.... 0x....      BL       HEADER_DeleteItem
+     43                GUI_ARRAY_DeleteItem(&pObj->AlignArray, Index);
+   \   00000028   0x4629             MOV      R1,R5
+   \   0000002A   0xF106 0x002E      ADD      R0,R6,#+46
+   \   0000002E   0x.... 0x....      BL       GUI_ARRAY_DeleteItem
+     44                NumRows = GUI_ARRAY_GetNumItems(&pObj->RowArray);
+   \   00000032   0xF106 0x002A      ADD      R0,R6,#+42
+   \   00000036   0x.... 0x....      BL       GUI_ARRAY_GetNumItems
+   \   0000003A   0x4607             MOV      R7,R0
+     45                for (i = 0; i < NumRows; i++) {
+   \   0000003C   0xF04F 0x0800      MOV      R8,#+0
+   \   00000040   0xE014             B.N      ??LISTVIEW_DeleteColumn_1
+     46                  LISTVIEW_ITEM * pItem;
+     47                  pRow = (GUI_ARRAY*)GUI_ARRAY_GetpItem(&pObj->RowArray, i);
+   \                     ??LISTVIEW_DeleteColumn_2: (+1)
+   \   00000042   0x4641             MOV      R1,R8
+   \   00000044   0xF106 0x002A      ADD      R0,R6,#+42
+   \   00000048   0x.... 0x....      BL       GUI_ARRAY_GetpItem
+   \   0000004C   0x4681             MOV      R9,R0
+     48                  /* Delete attached info items */
+     49                  pItem = (LISTVIEW_ITEM *)GUI_ARRAY_GetpItem(pRow, Index);
+   \   0000004E   0x4629             MOV      R1,R5
+   \   00000050   0x.... 0x....      BL       GUI_ARRAY_GetpItem
+     50                  if (pItem->hItemInfo) {
+   \   00000054   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000058   0x2800             CMP      R0,#+0
+   \   0000005A   0xD001             BEQ.N    ??LISTVIEW_DeleteColumn_3
+     51                    GUI_ALLOC_Free(pItem->hItemInfo);
+   \   0000005C   0x.... 0x....      BL       GUI_ALLOC_Free
+     52                  }
+     53                  /* Delete cell */
+     54                  GUI_ARRAY_DeleteItem(pRow, Index);
+   \                     ??LISTVIEW_DeleteColumn_3: (+1)
+   \   00000060   0x4629             MOV      R1,R5
+   \   00000062   0x4648             MOV      R0,R9
+   \   00000064   0x.... 0x....      BL       GUI_ARRAY_DeleteItem
+     55                }
+   \   00000068   0xF108 0x0801      ADD      R8,R8,#+1
+   \                     ??LISTVIEW_DeleteColumn_1: (+1)
+   \   0000006C   0x45B8             CMP      R8,R7
+   \   0000006E   0xD3E8             BCC.N    ??LISTVIEW_DeleteColumn_2
+     56                LISTVIEW__UpdateScrollParas(hObj, pObj);
+   \   00000070   0x4631             MOV      R1,R6
+   \   00000072   0x4620             MOV      R0,R4
+   \   00000074   0x.... 0x....      BL       LISTVIEW__UpdateScrollParas
+     57                LISTVIEW__InvalidateInsideArea(hObj, pObj);
+   \   00000078   0x4631             MOV      R1,R6
+   \   0000007A   0x4620             MOV      R0,R4
+   \   0000007C   0xE8BD 0x43F4      POP      {R2,R4-R9,LR}
+   \   00000080   0x.... 0x....      B.W      LISTVIEW__InvalidateInsideArea
+     58              }
+     59              WM_UNLOCK();
+     60            }
+     61          }
+   \                     ??LISTVIEW_DeleteColumn_0: (+1)
+   \   00000084   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}    ;; return
+     62          
+     63          #else                            /* Avoid problems with empty object modules */
+     64            void LISTVIEW_DeleteColumn_C(void);
+     65            void LISTVIEW_DeleteColumn_C(void) {}
+     66          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   LISTVIEW_DeleteColumn
+        32   -> GUI_ALLOC_Free
+        32   -> GUI_ALLOC_h2p
+        32   -> GUI_ARRAY_DeleteItem
+        32   -> GUI_ARRAY_GetNumItems
+        32   -> GUI_ARRAY_GetpItem
+        32   -> HEADER_DeleteItem
+         0   -> LISTVIEW__InvalidateInsideArea
+        32   -> LISTVIEW__UpdateScrollParas
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     136  LISTVIEW_DeleteColumn
+
+ 
+ 136 bytes in section .text
+ 
+ 136 bytes of CODE memory
+
+Errors: none
+Warnings: none

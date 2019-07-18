@@ -1,0 +1,1399 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:59
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetResizeable.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetResizeable.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\FRAMEWIN_SetResizeable.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\FRAMEWIN_SetResizeable.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_SetResizeable.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : FRAMEWIN_SetResizeable.c
+     16          Purpose     : 
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          #include <stdlib.h>
+     21          #include "FRAMEWIN_Private.h"
+     22          
+     23          #if GUI_WINSUPPORT
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *        Defines
+     28          *
+     29          **********************************************************************
+     30          */
+     31          
+     32          #ifndef   FRAMEWIN_REACT_BORDER
+     33            #define FRAMEWIN_REACT_BORDER 3
+     34          #endif
+     35          #ifndef   FRAMEWIN_MINSIZE_X
+     36            #define FRAMEWIN_MINSIZE_X    20
+     37          #endif
+     38          #ifndef   FRAMEWIN_MINSIZE_Y
+     39            #define FRAMEWIN_MINSIZE_Y    20
+     40          #endif
+     41          
+     42          #define FRAMEWIN_RESIZE_X     (1<<0)
+     43          #define FRAMEWIN_RESIZE_Y     (1<<1)
+     44          #define FRAMEWIN_REPOS_X      (1<<2)
+     45          #define FRAMEWIN_REPOS_Y      (1<<3)
+     46          #define FRAMEWIN_MOUSEOVER    (1<<4)
+     47          #define FRAMEWIN_RESIZE       (FRAMEWIN_RESIZE_X | FRAMEWIN_RESIZE_Y | FRAMEWIN_REPOS_X | FRAMEWIN_REPOS_Y)
+     48          
+     49          /*********************************************************************
+     50          *
+     51          *        Static data
+     52          *
+     53          **********************************************************************
+     54          */
+     55          
+
+   \                                 In section .bss, align 4
+     56          static GUI_HOOK _HOOK_Resizeable;
+   \                     _HOOK_Resizeable:
+   \   00000000                      DS8 8
+
+   \                                 In section .bss, align 4
+     57          static int      _CaptureX;
+   \                     _CaptureX:
+   \   00000000                      DS8 4
+   \   00000004                      DS8 4
+   \   00000008                      DS8 4
+     58          static int      _CaptureY;
+     59          static int      _CaptureFlags;
+     60          
+     61          #if GUI_SUPPORT_CURSOR
+
+   \                                 In section .bss, align 4
+     62            static const GUI_CURSOR GUI_UNI_PTR * _pOldCursor;
+   \                     _pOldCursor:
+   \   00000000                      DS8 4
+     63          #endif
+     64          
+     65          /*********************************************************************
+     66          *
+     67          *        Static data, cursors
+     68          *
+     69          **********************************************************************
+     70          */
+     71          #if GUI_SUPPORT_CURSOR
+     72          
+     73          /*********************************************************************
+     74          *
+     75          *        Cursor colors
+     76          */
+
+   \                                 In section .rodata, align 4, keep-with-next
+     77          static GUI_CONST_STORAGE GUI_COLOR _ColorsCursor[] = {
+   \                     _ColorsCursor:
+   \   00000000   0x000000FF         DC32 255, 0, 16777215
+   \              0x00000000   
+   \              0x00FFFFFF   
+     78               0x0000FF,0x000000,0xFFFFFF
+     79          };
+     80          
+
+   \                                 In section .rodata, align 4, keep-with-next
+     81          static GUI_CONST_STORAGE GUI_LOGPALETTE _PalCursor = {
+   \                     _PalCursor:
+   \   00000000   0x00000003         DC32 3
+   \   00000004   0x01 0x00          DC8 1, 0, 0, 0
+   \              0x00 0x00    
+   \   00000008   0x........         DC32 _ColorsCursor
+     82            3,	/* number of entries */
+     83            1, 	/* Has transparency */
+     84            &_ColorsCursor[0]
+     85          };
+     86          
+     87          /*********************************************************************
+     88          *
+     89          *        Cursor data, CursorH
+     90          */
+
+   \                                 In section .rodata, align 4, keep-with-next
+     91          static GUI_CONST_STORAGE unsigned char _acResizeCursorH[] = {
+   \                     _acResizeCursorH:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x40    
+   \   00000016   0x00 0x40          DC8 0, 64, 0, 1, 64, 0, 80, 0, 6, 64, 0, 100, 0, 26, 85, 85, 105, 0
+   \              0x00 0x01    
+   \              0x40 0x00    
+   \              0x50 0x00    
+   \              0x06 0x40    
+   \              0x00 0x64    
+   \              0x00 0x1A    
+   \              0x55 0x55    
+   \              0x69 0x00    
+   \   00000028   0x6A 0xAA          DC8 106, 170, 170, 170, 64, 26, 85, 85, 105, 0, 6, 64, 0, 100, 0, 1, 64
+   \              0xAA 0xAA    
+   \              0x40 0x1A    
+   \              0x55 0x55    
+   \              0x69 0x00    
+   \              0x06 0x40    
+   \              0x00 0x64    
+   \              0x00 0x01    
+   \              0x40         
+   \   00000039   0x00 0x50          DC8 0, 80, 0, 0, 64, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x40 0x00    
+   \              0x40 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000004F   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+     92            0x00, 0x00, 0x00, 0x00, 0x00,
+     93            0x00, 0x00, 0x00, 0x00, 0x00,
+     94            0x00, 0x00, 0x00, 0x00, 0x00,
+     95            0x00, 0x00, 0x00, 0x00, 0x00,
+     96            0x00, 0x40, 0x00, 0x40, 0x00,
+     97            0x01, 0x40, 0x00, 0x50, 0x00,
+     98            0x06, 0x40, 0x00, 0x64, 0x00,
+     99            0x1A, 0x55, 0x55, 0x69, 0x00,
+    100            0x6A, 0xAA, 0xAA, 0xAA, 0x40,
+    101            0x1A, 0x55, 0x55, 0x69, 0x00,
+    102            0x06, 0x40, 0x00, 0x64, 0x00,
+    103            0x01, 0x40, 0x00, 0x50, 0x00,
+    104            0x00, 0x40, 0x00, 0x40, 0x00,
+    105            0x00, 0x00, 0x00, 0x00, 0x00,
+    106            0x00, 0x00, 0x00, 0x00, 0x00,
+    107            0x00, 0x00, 0x00, 0x00, 0x00,
+    108            0x00, 0x00, 0x00, 0x00, 0x00
+    109          };
+    110          
+
+   \                                 In section .rodata, align 4, keep-with-next
+    111          static GUI_CONST_STORAGE GUI_BITMAP _bmResizeCursorH = {
+   \                     _bmResizeCursorH:
+   \   00000000   0x0011 0x0011      DC16 17, 17, 5, 2
+   \              0x0005 0x0002
+   \   00000008   0x........         DC32 _acResizeCursorH, _PalCursor
+   \              0x........   
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    112           17,  /* XSize */
+    113           17,  /* YSize */
+    114           5,   /* BytesPerLine */
+    115           2,   /* BitsPerPixel */
+    116           _acResizeCursorH,    /* Pointer to picture data (indices) */
+    117           &_PalCursor          /* Pointer to palette */
+    118          };
+    119          
+
+   \                                 In section .text, align 4, keep-with-next
+    120          static GUI_CONST_STORAGE GUI_CURSOR _ResizeCursorH = {
+   \                     _ResizeCursorH:
+   \   00000000   0x........         DC32 _bmResizeCursorH, 8, 8
+   \              0x00000008   
+   \              0x00000008   
+    121            &_bmResizeCursorH, 8, 8
+    122          };
+    123          
+    124          /*********************************************************************
+    125          *
+    126          *        Cursor data, CursorV
+    127          */
+
+   \                                 In section .rodata, align 4, keep-with-next
+    128          static GUI_CONST_STORAGE unsigned char _acResizeCursorV[] = {
+   \                     _acResizeCursorV:
+   \   00000000   0x00 0x00          DC8 0, 0, 64, 0, 0, 0, 1, 144, 0, 0, 0, 6, 164, 0, 0, 0, 26, 169, 0, 0
+   \              0x40 0x00    
+   \              0x00 0x00    
+   \              0x01 0x90    
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \              0xA4 0x00    
+   \              0x00 0x00    
+   \              0x1A 0xA9    
+   \              0x00 0x00    
+   \   00000014   0x00 0x55          DC8 0, 85, 149, 64, 0, 0, 1, 144, 0, 0, 0, 1, 144, 0, 0, 0, 1, 144, 0
+   \              0x95 0x40    
+   \              0x00 0x00    
+   \              0x01 0x90    
+   \              0x00 0x00    
+   \              0x00 0x01    
+   \              0x90 0x00    
+   \              0x00 0x00    
+   \              0x01 0x90    
+   \              0x00         
+   \   00000027   0x00 0x00          DC8 0, 0, 1, 144, 0, 0, 0, 1, 144, 0, 0, 0, 1, 144, 0, 0, 0, 1, 144, 0
+   \              0x01 0x90    
+   \              0x00 0x00    
+   \              0x00 0x01    
+   \              0x90 0x00    
+   \              0x00 0x00    
+   \              0x01 0x90    
+   \              0x00 0x00    
+   \              0x00 0x01    
+   \              0x90 0x00    
+   \   0000003B   0x00 0x00          DC8 0, 0, 85, 149, 64, 0, 0, 26, 169, 0, 0, 0, 6, 164, 0, 0, 0, 1, 144
+   \              0x55 0x95    
+   \              0x40 0x00    
+   \              0x00 0x1A    
+   \              0xA9 0x00    
+   \              0x00 0x00    
+   \              0x06 0xA4    
+   \              0x00 0x00    
+   \              0x00 0x01    
+   \              0x90         
+   \   0000004E   0x00 0x00          DC8 0, 0, 0, 0, 64, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x40 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    129            0x00, 0x00, 0x40, 0x00, 0x00,
+    130            0x00, 0x01, 0x90, 0x00, 0x00,
+    131            0x00, 0x06, 0xA4, 0x00, 0x00,
+    132            0x00, 0x1A, 0xA9, 0x00, 0x00,
+    133            0x00, 0x55, 0x95, 0x40, 0x00,
+    134            0x00, 0x01, 0x90, 0x00, 0x00,
+    135            0x00, 0x01, 0x90, 0x00, 0x00,
+    136            0x00, 0x01, 0x90, 0x00, 0x00,
+    137            0x00, 0x01, 0x90, 0x00, 0x00,
+    138            0x00, 0x01, 0x90, 0x00, 0x00,
+    139            0x00, 0x01, 0x90, 0x00, 0x00,
+    140            0x00, 0x01, 0x90, 0x00, 0x00,
+    141            0x00, 0x55, 0x95, 0x40, 0x00,
+    142            0x00, 0x1A, 0xA9, 0x00, 0x00,
+    143            0x00, 0x06, 0xA4, 0x00, 0x00,
+    144            0x00, 0x01, 0x90, 0x00, 0x00,
+    145            0x00, 0x00, 0x40, 0x00, 0x00
+    146          };
+    147          
+
+   \                                 In section .rodata, align 4, keep-with-next
+    148          static GUI_CONST_STORAGE GUI_BITMAP _bmResizeCursorV = {
+   \                     _bmResizeCursorV:
+   \   00000000   0x0011 0x0011      DC16 17, 17, 5, 2
+   \              0x0005 0x0002
+   \   00000008   0x........         DC32 _acResizeCursorV, _PalCursor
+   \              0x........   
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    149           17,  /* XSize */
+    150           17,  /* YSize */
+    151           5,   /* BytesPerLine */
+    152           2,   /* BitsPerPixel */
+    153           _acResizeCursorV,    /* Pointer to picture data (indices) */
+    154           &_PalCursor          /* Pointer to palette */
+    155          };
+    156          
+
+   \                                 In section .text, align 4, keep-with-next
+    157          static GUI_CONST_STORAGE GUI_CURSOR _ResizeCursorV = {
+   \                     _ResizeCursorV:
+   \   00000000   0x........         DC32 _bmResizeCursorV, 8, 8
+   \              0x00000008   
+   \              0x00000008   
+    158            &_bmResizeCursorV, 8, 8
+    159          };
+    160          
+    161          /*********************************************************************
+    162          *
+    163          *        Cursor data, CursorDD
+    164          */
+
+   \                                 In section .rodata, align 4, keep-with-next
+    165          static GUI_CONST_STORAGE unsigned char _acResizeCursorDD[] = {
+   \                     _acResizeCursorDD:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 85, 0, 0, 0, 6, 164, 0, 0, 0, 6
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x05 0x55    
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \              0xA4 0x00    
+   \              0x00 0x00    
+   \              0x06         
+   \   00000015   0x90 0x00          DC8 144, 0, 0, 0, 6, 100, 0, 0, 0, 5, 25, 0, 0, 0, 4, 6, 64, 0, 0, 0, 1
+   \              0x00 0x00    
+   \              0x06 0x64    
+   \              0x00 0x00    
+   \              0x00 0x05    
+   \              0x19 0x00    
+   \              0x00 0x00    
+   \              0x04 0x06    
+   \              0x40 0x00    
+   \              0x00 0x00    
+   \              0x01         
+   \   0000002A   0x90 0x00          DC8 144, 0, 0, 0, 0, 100, 4, 0, 0, 0, 25, 20, 0, 0, 0, 6, 100, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x64    
+   \              0x04 0x00    
+   \              0x00 0x00    
+   \              0x19 0x14    
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \              0x64 0x00    
+   \              0x00 0x00    
+   \   0000003E   0x01 0xA4          DC8 1, 164, 0, 0, 0, 6, 164, 0, 0, 0, 21, 84, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \              0xA4 0x00    
+   \              0x00 0x00    
+   \              0x15 0x54    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000053   0x00 0x00          DC8 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00         
+    166            0x00, 0x00, 0x00, 0x00, 0x00,
+    167            0x00, 0x00, 0x00, 0x00, 0x00,
+    168            0x05, 0x55, 0x00, 0x00, 0x00,
+    169            0x06, 0xA4, 0x00, 0x00, 0x00,
+    170            0x06, 0x90, 0x00, 0x00, 0x00,
+    171            0x06, 0x64, 0x00, 0x00, 0x00,
+    172            0x05, 0x19, 0x00, 0x00, 0x00,
+    173            0x04, 0x06, 0x40, 0x00, 0x00,
+    174            0x00, 0x01, 0x90, 0x00, 0x00,
+    175            0x00, 0x00, 0x64, 0x04, 0x00,
+    176            0x00, 0x00, 0x19, 0x14, 0x00,
+    177            0x00, 0x00, 0x06, 0x64, 0x00,
+    178            0x00, 0x00, 0x01, 0xA4, 0x00,
+    179            0x00, 0x00, 0x06, 0xA4, 0x00,
+    180            0x00, 0x00, 0x15, 0x54, 0x00,
+    181            0x00, 0x00, 0x00, 0x00, 0x00,
+    182            0x00, 0x00, 0x00, 0x00, 0x00
+    183          };
+    184          
+
+   \                                 In section .rodata, align 4, keep-with-next
+    185          static GUI_CONST_STORAGE GUI_BITMAP _bmResizeCursorDD = {
+   \                     _bmResizeCursorDD:
+   \   00000000   0x0011 0x0011      DC16 17, 17, 5, 2
+   \              0x0005 0x0002
+   \   00000008   0x........         DC32 _acResizeCursorDD, _PalCursor
+   \              0x........   
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    186           17,  /* XSize */
+    187           17,  /* YSize */
+    188           5,   /* BytesPerLine */
+    189           2,   /* BitsPerPixel */
+    190           _acResizeCursorDD,   /* Pointer to picture data (indices) */
+    191           &_PalCursor          /* Pointer to palette */
+    192          };
+    193          
+
+   \                                 In section .text, align 4, keep-with-next
+    194          static GUI_CONST_STORAGE GUI_CURSOR _ResizeCursorDD = {
+   \                     _ResizeCursorDD:
+   \   00000000   0x........         DC32 _bmResizeCursorDD, 8, 8
+   \              0x00000008   
+   \              0x00000008   
+    195            &_bmResizeCursorDD, 8, 8
+    196          };
+    197          
+    198          /*********************************************************************
+    199          *
+    200          *        Cursor data, CursorDU
+    201          */
+
+   \                                 In section .rodata, align 4, keep-with-next
+    202          static GUI_CONST_STORAGE unsigned char _acResizeCursorDU[] = {
+   \                     _acResizeCursorDU:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 84, 0, 0, 0, 6, 164, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x15 0x54    
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \              0xA4 0x00    
+   \              0x00         
+   \   00000015   0x00 0x01          DC8 0, 1, 164, 0, 0, 0, 6, 100, 0, 0, 0, 25, 20, 0, 0, 0, 100, 4, 0, 0
+   \              0xA4 0x00    
+   \              0x00 0x00    
+   \              0x06 0x64    
+   \              0x00 0x00    
+   \              0x00 0x19    
+   \              0x14 0x00    
+   \              0x00 0x00    
+   \              0x64 0x04    
+   \              0x00 0x00    
+   \   00000029   0x01 0x90          DC8 1, 144, 0, 0, 4, 6, 64, 0, 0, 5, 25, 0, 0, 0, 6, 100, 0, 0, 0, 6
+   \              0x00 0x00    
+   \              0x04 0x06    
+   \              0x40 0x00    
+   \              0x00 0x05    
+   \              0x19 0x00    
+   \              0x00 0x00    
+   \              0x06 0x64    
+   \              0x00 0x00    
+   \              0x00 0x06    
+   \   0000003D   0x90 0x00          DC8 144, 0, 0, 0, 6, 164, 0, 0, 0, 5, 85, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x06 0xA4    
+   \              0x00 0x00    
+   \              0x00 0x05    
+   \              0x55 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000052   0x00 0x00          DC8 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+    203            0x00, 0x00, 0x00, 0x00, 0x00,
+    204            0x00, 0x00, 0x00, 0x00, 0x00,
+    205            0x00, 0x00, 0x15, 0x54, 0x00,
+    206            0x00, 0x00, 0x06, 0xA4, 0x00,
+    207            0x00, 0x00, 0x01, 0xA4, 0x00,
+    208            0x00, 0x00, 0x06, 0x64, 0x00,
+    209            0x00, 0x00, 0x19, 0x14, 0x00,
+    210            0x00, 0x00, 0x64, 0x04, 0x00,
+    211            0x00, 0x01, 0x90, 0x00, 0x00,
+    212            0x04, 0x06, 0x40, 0x00, 0x00,
+    213            0x05, 0x19, 0x00, 0x00, 0x00,
+    214            0x06, 0x64, 0x00, 0x00, 0x00,
+    215            0x06, 0x90, 0x00, 0x00, 0x00,
+    216            0x06, 0xA4, 0x00, 0x00, 0x00,
+    217            0x05, 0x55, 0x00, 0x00, 0x00,
+    218            0x00, 0x00, 0x00, 0x00, 0x00,
+    219            0x00, 0x00, 0x00, 0x00, 0x00
+    220          };
+    221          
+
+   \                                 In section .rodata, align 4, keep-with-next
+    222          static GUI_CONST_STORAGE GUI_BITMAP _bmResizeCursorDU = {
+   \                     _bmResizeCursorDU:
+   \   00000000   0x0011 0x0011      DC16 17, 17, 5, 2
+   \              0x0005 0x0002
+   \   00000008   0x........         DC32 _acResizeCursorDU, _PalCursor
+   \              0x........   
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+    223           17,  /* XSize */
+    224           17,  /* YSize */
+    225           5,   /* BytesPerLine */
+    226           2,   /* BitsPerPixel */
+    227           _acResizeCursorDU,   /* Pointer to picture data (indices) */
+    228           &_PalCursor          /* Pointer to palette */
+    229          };
+    230          
+
+   \                                 In section .text, align 4, keep-with-next
+    231          static GUI_CONST_STORAGE GUI_CURSOR _ResizeCursorDU = {
+   \                     _ResizeCursorDU:
+   \   00000000   0x........         DC32 _bmResizeCursorDU, 8, 8
+   \              0x00000008   
+   \              0x00000008   
+    232            &_bmResizeCursorDU, 8, 8
+    233          };
+    234          
+    235          #endif
+    236          
+    237          /*********************************************************************
+    238          *
+    239          *        Static code, helpers
+    240          *
+    241          **********************************************************************
+    242          */
+    243          /*********************************************************************
+    244          *
+    245          *       _SetResizeCursor
+    246          */
+    247          #if GUI_SUPPORT_CURSOR
+
+   \                                 In section .text, align 2, keep-with-next
+    248          static void _SetResizeCursor(int Mode) {
+   \                     _SetResizeCursor: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    249            const GUI_CURSOR GUI_UNI_PTR * pNewCursor = NULL;
+   \   00000002   0x2100             MOVS     R1,#+0
+    250            if (Mode) {
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD016             BEQ.N    ??_SetResizeCursor_0
+    251              int Direction;
+    252              Direction = Mode & (FRAMEWIN_RESIZE_X | FRAMEWIN_RESIZE_Y);
+   \   00000008   0xF000 0x0103      AND      R1,R0,#0x3
+    253              if (Direction == FRAMEWIN_RESIZE_X) {
+   \   0000000C   0x2901             CMP      R1,#+1
+   \   0000000E   0xD102             BNE.N    ??_SetResizeCursor_1
+    254                pNewCursor = &_ResizeCursorH;
+   \   00000010   0x.... 0x....      ADR.W    R1,_ResizeCursorH
+   \   00000014   0xE00F             B.N      ??_SetResizeCursor_0
+    255              } else if (Direction == FRAMEWIN_RESIZE_Y) {
+   \                     ??_SetResizeCursor_1: (+1)
+   \   00000016   0x2902             CMP      R1,#+2
+   \   00000018   0xD102             BNE.N    ??_SetResizeCursor_2
+    256                pNewCursor = &_ResizeCursorV;
+   \   0000001A   0x.... 0x....      ADR.W    R1,_ResizeCursorV
+   \   0000001E   0xE00A             B.N      ??_SetResizeCursor_0
+    257              } else {
+    258                Direction = Mode & (FRAMEWIN_REPOS_X | FRAMEWIN_REPOS_Y);
+   \                     ??_SetResizeCursor_2: (+1)
+   \   00000020   0xF000 0x010C      AND      R1,R0,#0xC
+    259                if ((Direction == (FRAMEWIN_REPOS_X | FRAMEWIN_REPOS_Y)) || !Direction) {
+   \   00000024   0x290C             CMP      R1,#+12
+   \   00000026   0xD001             BEQ.N    ??_SetResizeCursor_3
+   \   00000028   0x2900             CMP      R1,#+0
+   \   0000002A   0xD102             BNE.N    ??_SetResizeCursor_4
+    260                  pNewCursor = &_ResizeCursorDD;
+   \                     ??_SetResizeCursor_3: (+1)
+   \   0000002C   0x.... 0x....      ADR.W    R1,_ResizeCursorDD
+   \   00000030   0xE001             B.N      ??_SetResizeCursor_0
+    261                } else {
+    262                  pNewCursor = &_ResizeCursorDU;
+   \                     ??_SetResizeCursor_4: (+1)
+   \   00000032   0x.... 0x....      ADR.W    R1,_ResizeCursorDU
+    263                }
+    264              }
+    265            }
+    266            if (pNewCursor) {
+   \                     ??_SetResizeCursor_0: (+1)
+   \   00000036   0x....             LDR.N    R4,??DataTable19
+   \   00000038   0x2900             CMP      R1,#+0
+   \   0000003A   0xD007             BEQ.N    ??_SetResizeCursor_5
+    267              const GUI_CURSOR GUI_UNI_PTR * pOldCursor;
+    268              pOldCursor = GUI_CURSOR_Select(pNewCursor);
+   \   0000003C   0x4608             MOV      R0,R1
+   \   0000003E   0x.... 0x....      BL       GUI_CURSOR_Select
+    269              if (_pOldCursor == NULL) {
+   \   00000042   0x6821             LDR      R1,[R4, #+0]
+   \   00000044   0x2900             CMP      R1,#+0
+   \   00000046   0xD108             BNE.N    ??_SetResizeCursor_6
+    270                _pOldCursor = pOldCursor;
+   \   00000048   0x6020             STR      R0,[R4, #+0]
+   \   0000004A   0xBD10             POP      {R4,PC}
+    271              }
+    272            } else if (_pOldCursor) {
+   \                     ??_SetResizeCursor_5: (+1)
+   \   0000004C   0x6820             LDR      R0,[R4, #+0]
+   \   0000004E   0x2800             CMP      R0,#+0
+   \   00000050   0xD003             BEQ.N    ??_SetResizeCursor_6
+    273              GUI_CURSOR_Select(_pOldCursor);
+   \   00000052   0x.... 0x....      BL       GUI_CURSOR_Select
+    274              _pOldCursor = NULL;
+   \   00000056   0x2000             MOVS     R0,#+0
+   \   00000058   0x6020             STR      R0,[R4, #+0]
+    275            }
+    276          }
+   \                     ??_SetResizeCursor_6: (+1)
+   \   0000005A   0xBD10             POP      {R4,PC}          ;; return
+    277          #endif
+    278          
+    279          /*********************************************************************
+    280          *
+    281          *       _SetCapture
+    282          */
+
+   \                                 In section .text, align 2, keep-with-next
+    283          static void _SetCapture(FRAMEWIN_Handle hWin, int x, int y, int Mode) {
+   \                     _SetCapture: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x461D             MOV      R5,R3
+    284            if ((_CaptureFlags & FRAMEWIN_REPOS_X) == 0) {
+   \   00000006   0x....             LDR.N    R6,??DataTable19_1
+   \   00000008   0x68B0             LDR      R0,[R6, #+8]
+   \   0000000A   0x0743             LSLS     R3,R0,#+29
+   \   0000000C   0xD400             BMI.N    ??_SetCapture_0
+    285              _CaptureX = x;
+   \   0000000E   0x6031             STR      R1,[R6, #+0]
+    286            }
+    287            if ((_CaptureFlags & FRAMEWIN_REPOS_Y) == 0) {
+   \                     ??_SetCapture_0: (+1)
+   \   00000010   0x0700             LSLS     R0,R0,#+28
+   \   00000012   0xD400             BMI.N    ??_SetCapture_1
+    288              _CaptureY = y;
+   \   00000014   0x6072             STR      R2,[R6, #+4]
+    289            }
+    290            if (Mode) {
+   \                     ??_SetCapture_1: (+1)
+   \   00000016   0x2D00             CMP      R5,#+0
+   \   00000018   0xD011             BEQ.N    ??_SetCapture_2
+    291              if (WM_HasCaptured(hWin) == 0) {
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0x.... 0x....      BL       WM_HasCaptured
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD103             BNE.N    ??_SetCapture_3
+    292                WM_SetCapture(hWin, 0);
+   \   00000024   0x2100             MOVS     R1,#+0
+   \   00000026   0x4620             MOV      R0,R4
+   \   00000028   0x.... 0x....      BL       WM_SetCapture
+    293              }
+    294            #if GUI_SUPPORT_CURSOR
+    295              _SetResizeCursor(Mode);
+   \                     ??_SetCapture_3: (+1)
+   \   0000002C   0x4628             MOV      R0,R5
+   \   0000002E   0x.... 0x....      BL       _SetResizeCursor
+    296            #endif
+    297              if (Mode & FRAMEWIN_MOUSEOVER) {
+   \   00000032   0x06E8             LSLS     R0,R5,#+27
+   \   00000034   0xD500             BPL.N    ??_SetCapture_4
+    298                Mode = 0;
+   \   00000036   0x2500             MOVS     R5,#+0
+    299              }
+    300              _CaptureFlags = (Mode | FRAMEWIN_MOUSEOVER);
+   \                     ??_SetCapture_4: (+1)
+   \   00000038   0xF045 0x0010      ORR      R0,R5,#0x10
+   \   0000003C   0x60B0             STR      R0,[R6, #+8]
+    301            }
+    302          }
+   \                     ??_SetCapture_2: (+1)
+   \   0000003E   0xBD70             POP      {R4-R6,PC}       ;; return
+    303          
+    304          /*********************************************************************
+    305          *
+    306          *       _ChangeWindowPosSize
+    307          */
+
+   \                                 In section .text, align 2, keep-with-next
+    308          static void _ChangeWindowPosSize(FRAMEWIN_Handle hWin, int* px, int* py) {
+   \                     _ChangeWindowPosSize: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0xB083             SUB      SP,SP,#+12
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x460D             MOV      R5,R1
+   \   0000000A   0x4616             MOV      R6,R2
+    309            int dx = 0, dy = 0;
+   \   0000000C   0xF04F 0x0900      MOV      R9,#+0
+   \   00000010   0x464F             MOV      R7,R9
+    310            GUI_RECT Rect;
+    311            WM_GetClientRectEx(hWin, &Rect);
+   \   00000012   0xA900             ADD      R1,SP,#+0
+   \   00000014   0x.... 0x....      BL       WM_GetClientRectEx
+    312            /* Calculate new size of window */
+    313            if (_CaptureFlags & FRAMEWIN_RESIZE_X) {
+   \   00000018   0x.... 0x....      LDR.W    R8,??DataTable19_1
+   \   0000001C   0xF8D8 0x0008      LDR      R0,[R8, #+8]
+   \   00000020   0x07C1             LSLS     R1,R0,#+31
+   \   00000022   0xD509             BPL.N    ??_ChangeWindowPosSize_0
+    314              dx = (_CaptureFlags & FRAMEWIN_REPOS_X) ? (_CaptureX - *px) : (*px - _CaptureX);
+   \   00000024   0x6829             LDR      R1,[R5, #+0]
+   \   00000026   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \   0000002A   0x0743             LSLS     R3,R0,#+29
+   \   0000002C   0xD502             BPL.N    ??_ChangeWindowPosSize_1
+   \   0000002E   0xEBA2 0x0901      SUB      R9,R2,R1
+   \   00000032   0xE001             B.N      ??_ChangeWindowPosSize_0
+   \                     ??_ChangeWindowPosSize_1: (+1)
+   \   00000034   0xEBA1 0x0902      SUB      R9,R1,R2
+    315            }
+    316            if (_CaptureFlags & FRAMEWIN_RESIZE_Y) {
+   \                     ??_ChangeWindowPosSize_0: (+1)
+   \   00000038   0x0781             LSLS     R1,R0,#+30
+   \   0000003A   0xD507             BPL.N    ??_ChangeWindowPosSize_2
+    317              dy = (_CaptureFlags & FRAMEWIN_REPOS_Y) ? (_CaptureY - *py) : (*py - _CaptureY);
+   \   0000003C   0xF8D8 0x1004      LDR      R1,[R8, #+4]
+   \   00000040   0x6832             LDR      R2,[R6, #+0]
+   \   00000042   0x0703             LSLS     R3,R0,#+28
+   \   00000044   0xD501             BPL.N    ??_ChangeWindowPosSize_3
+   \   00000046   0x1A8F             SUBS     R7,R1,R2
+   \   00000048   0xE000             B.N      ??_ChangeWindowPosSize_2
+   \                     ??_ChangeWindowPosSize_3: (+1)
+   \   0000004A   0x1A57             SUBS     R7,R2,R1
+    318            }
+    319            /* Check the minimal size of window */
+    320            if ((Rect.x1 + dx + 1) < FRAMEWIN_MINSIZE_X) {
+   \                     ??_ChangeWindowPosSize_2: (+1)
+   \   0000004C   0xF9BD 0x1004      LDRSH    R1,[SP, #+4]
+   \   00000050   0xEB09 0x0201      ADD      R2,R9,R1
+   \   00000054   0x1C52             ADDS     R2,R2,#+1
+   \   00000056   0x2A14             CMP      R2,#+20
+   \   00000058   0xDA05             BGE.N    ??_ChangeWindowPosSize_4
+    321              dx = FRAMEWIN_MINSIZE_X - Rect.x1 - 1;
+   \   0000005A   0xF1C1 0x0913      RSB      R9,R1,#+19
+    322              *px = _CaptureX + dx;
+   \   0000005E   0xF8D8 0x1000      LDR      R1,[R8, #+0]
+   \   00000062   0x4449             ADD      R1,R9,R1
+   \   00000064   0x6029             STR      R1,[R5, #+0]
+    323            }
+    324            if ((Rect.y1 + dy + 1) < FRAMEWIN_MINSIZE_Y) {
+   \                     ??_ChangeWindowPosSize_4: (+1)
+   \   00000066   0xF9BD 0x1006      LDRSH    R1,[SP, #+6]
+   \   0000006A   0x187A             ADDS     R2,R7,R1
+   \   0000006C   0x1C52             ADDS     R2,R2,#+1
+   \   0000006E   0x2A14             CMP      R2,#+20
+   \   00000070   0xDA05             BGE.N    ??_ChangeWindowPosSize_5
+    325              dy = FRAMEWIN_MINSIZE_Y - Rect.y1 - 1;
+   \   00000072   0xF1C1 0x0713      RSB      R7,R1,#+19
+    326              *py = _CaptureY + dy;
+   \   00000076   0xF8D8 0x1004      LDR      R1,[R8, #+4]
+   \   0000007A   0x1879             ADDS     R1,R7,R1
+   \   0000007C   0x6031             STR      R1,[R6, #+0]
+    327            }
+    328            /* Set new window position */
+    329            if (_CaptureFlags & FRAMEWIN_REPOS_X) {
+   \                     ??_ChangeWindowPosSize_5: (+1)
+   \   0000007E   0x0740             LSLS     R0,R0,#+29
+   \   00000080   0xD505             BPL.N    ??_ChangeWindowPosSize_6
+    330              WM_MoveWindow(hWin, -dx, 0);
+   \   00000082   0x2200             MOVS     R2,#+0
+   \   00000084   0xF1C9 0x0100      RSB      R1,R9,#+0
+   \   00000088   0x4620             MOV      R0,R4
+   \   0000008A   0x.... 0x....      BL       WM_MoveWindow
+    331            }
+    332            if (_CaptureFlags & FRAMEWIN_REPOS_Y) {
+   \                     ??_ChangeWindowPosSize_6: (+1)
+   \   0000008E   0xF898 0x0008      LDRB     R0,[R8, #+8]
+   \   00000092   0x0700             LSLS     R0,R0,#+28
+   \   00000094   0xD504             BPL.N    ??_ChangeWindowPosSize_7
+    333              WM_MoveWindow(hWin, 0, -dy);
+   \   00000096   0x427A             RSBS     R2,R7,#+0
+   \   00000098   0x2100             MOVS     R1,#+0
+   \   0000009A   0x4620             MOV      R0,R4
+   \   0000009C   0x.... 0x....      BL       WM_MoveWindow
+    334            }
+    335            /* Set new window size */
+    336            WM_ResizeWindow(hWin, dx, dy);
+   \                     ??_ChangeWindowPosSize_7: (+1)
+   \   000000A0   0x463A             MOV      R2,R7
+   \   000000A2   0x4649             MOV      R1,R9
+   \   000000A4   0x4620             MOV      R0,R4
+   \   000000A6   0x.... 0x....      BL       WM_ResizeWindow
+    337          }
+   \   000000AA   0xE8BD 0x83F7      POP      {R0-R2,R4-R9,PC}  ;; return
+    338          
+    339          /*********************************************************************
+    340          *
+    341          *       _CheckBorderX
+    342          */
+
+   \                                 In section .text, align 2, keep-with-next
+    343          static int _CheckBorderX(int x, int x1, int Border) {
+    344            int Mode = 0;
+   \                     _CheckBorderX: (+1)
+   \   00000000   0x2300             MOVS     R3,#+0
+    345            if (x > (x1 - Border)) {
+   \   00000002   0x1A89             SUBS     R1,R1,R2
+   \   00000004   0x4281             CMP      R1,R0
+   \   00000006   0xDA01             BGE.N    ??_CheckBorderX_0
+    346              Mode = FRAMEWIN_RESIZE_X;
+   \   00000008   0x2301             MOVS     R3,#+1
+   \   0000000A   0xE002             B.N      ??_CheckBorderX_1
+    347            } else if (x < (Border)) {
+   \                     ??_CheckBorderX_0: (+1)
+   \   0000000C   0x4290             CMP      R0,R2
+   \   0000000E   0xDA00             BGE.N    ??_CheckBorderX_1
+    348              Mode = FRAMEWIN_RESIZE_X | FRAMEWIN_REPOS_X;
+   \   00000010   0x2305             MOVS     R3,#+5
+    349            }
+    350            return Mode;
+   \                     ??_CheckBorderX_1: (+1)
+   \   00000012   0x4618             MOV      R0,R3
+   \   00000014   0x4770             BX       LR               ;; return
+    351          }
+    352          
+    353          /*********************************************************************
+    354          *
+    355          *       _CheckBorderY
+    356          */
+
+   \                                 In section .text, align 2, keep-with-next
+    357          static int _CheckBorderY(int y, int y1, int Border) {
+    358            int Mode = 0;
+   \                     _CheckBorderY: (+1)
+   \   00000000   0x2300             MOVS     R3,#+0
+    359            if (y > (y1 - Border)) {
+   \   00000002   0x1A89             SUBS     R1,R1,R2
+   \   00000004   0x4281             CMP      R1,R0
+   \   00000006   0xDA01             BGE.N    ??_CheckBorderY_0
+    360              Mode = FRAMEWIN_RESIZE_Y;
+   \   00000008   0x2302             MOVS     R3,#+2
+   \   0000000A   0xE002             B.N      ??_CheckBorderY_1
+    361            } else if (y < (Border)) {
+   \                     ??_CheckBorderY_0: (+1)
+   \   0000000C   0x4290             CMP      R0,R2
+   \   0000000E   0xDA00             BGE.N    ??_CheckBorderY_1
+    362              Mode = FRAMEWIN_RESIZE_Y | FRAMEWIN_REPOS_Y;
+   \   00000010   0x230A             MOVS     R3,#+10
+    363            }
+    364            return Mode;
+   \                     ??_CheckBorderY_1: (+1)
+   \   00000012   0x4618             MOV      R0,R3
+   \   00000014   0x4770             BX       LR               ;; return
+    365          }
+    366          
+    367          /*********************************************************************
+    368          *
+    369          *       _CheckReactBorder
+    370          */
+
+   \                                 In section .text, align 2, keep-with-next
+    371          static int _CheckReactBorder(FRAMEWIN_Handle hWin, int x, int y) {
+   \                     _CheckReactBorder: (+1)
+   \   00000000   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x4615             MOV      R5,R2
+    372            int Mode = 0;
+   \   00000008   0x2600             MOVS     R6,#+0
+    373            GUI_RECT r;
+    374            WM_GetClientRectEx(hWin, &r);
+   \   0000000A   0xA900             ADD      R1,SP,#+0
+   \   0000000C   0x.... 0x....      BL       WM_GetClientRectEx
+    375            if ((x >= 0) && (y >= 0) && (x <= r.x1) && (y <= r.y1)) {
+   \   00000010   0x2C00             CMP      R4,#+0
+   \   00000012   0xD424             BMI.N    ??_CheckReactBorder_0
+   \   00000014   0x2D00             CMP      R5,#+0
+   \   00000016   0xD422             BMI.N    ??_CheckReactBorder_0
+   \   00000018   0xF9BD 0x7004      LDRSH    R7,[SP, #+4]
+   \   0000001C   0x42A7             CMP      R7,R4
+   \   0000001E   0xDB1E             BLT.N    ??_CheckReactBorder_0
+   \   00000020   0xF9BD 0x8006      LDRSH    R8,[SP, #+6]
+   \   00000024   0x45A8             CMP      R8,R5
+   \   00000026   0xDB1A             BLT.N    ??_CheckReactBorder_0
+    376              Mode |= _CheckBorderX(x, r.x1, FRAMEWIN_REACT_BORDER);
+   \   00000028   0x2203             MOVS     R2,#+3
+   \   0000002A   0x4639             MOV      R1,R7
+   \   0000002C   0x4620             MOV      R0,R4
+   \   0000002E   0x.... 0x....      BL       _CheckBorderX
+   \   00000032   0x0006             MOVS     R6,R0
+    377              if (Mode) {
+   \   00000034   0xD006             BEQ.N    ??_CheckReactBorder_1
+    378                Mode |= _CheckBorderY(y, r.y1, 4 * FRAMEWIN_REACT_BORDER);
+   \   00000036   0x220C             MOVS     R2,#+12
+   \   00000038   0x4641             MOV      R1,R8
+   \   0000003A   0x4628             MOV      R0,R5
+   \   0000003C   0x.... 0x....      BL       _CheckBorderY
+   \   00000040   0x4306             ORRS     R6,R0,R6
+   \   00000042   0xE00C             B.N      ??_CheckReactBorder_0
+    379              } else {
+    380                Mode |= _CheckBorderY(y, r.y1, FRAMEWIN_REACT_BORDER);
+   \                     ??_CheckReactBorder_1: (+1)
+   \   00000044   0x2203             MOVS     R2,#+3
+   \   00000046   0x4641             MOV      R1,R8
+   \   00000048   0x4628             MOV      R0,R5
+   \   0000004A   0x.... 0x....      BL       _CheckBorderY
+   \   0000004E   0x0006             MOVS     R6,R0
+    381                if (Mode) {
+   \   00000050   0xD005             BEQ.N    ??_CheckReactBorder_0
+    382                  Mode |= _CheckBorderX(x, r.x1, 4 * FRAMEWIN_REACT_BORDER);
+   \   00000052   0x220C             MOVS     R2,#+12
+   \   00000054   0x4639             MOV      R1,R7
+   \   00000056   0x4620             MOV      R0,R4
+   \   00000058   0x.... 0x....      BL       _CheckBorderX
+   \   0000005C   0x4306             ORRS     R6,R0,R6
+    383                }
+    384              }
+    385            }
+    386            return Mode;
+   \                     ??_CheckReactBorder_0: (+1)
+   \   0000005E   0x4630             MOV      R0,R6
+   \   00000060   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}  ;; return
+    387          }
+    388          
+    389          /*********************************************************************
+    390          *
+    391          *       _OnTouch
+    392          */
+
+   \                                 In section .text, align 2, keep-with-next
+    393          static int _OnTouch(FRAMEWIN_Handle hWin, WM_MESSAGE* pMsg) {
+   \                     _OnTouch: (+1)
+   \   00000000   0xB57C             PUSH     {R2-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    394            const GUI_PID_STATE* pState = (const GUI_PID_STATE*)pMsg->Data.p;
+   \   00000004   0x688D             LDR      R5,[R1, #+8]
+    395            if (pState) {  /* Something happened in our area (pressed or released) */
+   \   00000006   0x2D00             CMP      R5,#+0
+   \   00000008   0xD03C             BEQ.N    ??_OnTouch_0
+    396              int x, y, Mode;
+    397              x    = pState->x;
+   \   0000000A   0x6828             LDR      R0,[R5, #+0]
+   \   0000000C   0x9001             STR      R0,[SP, #+4]
+    398              y    = pState->y;
+   \   0000000E   0x6868             LDR      R0,[R5, #+4]
+   \   00000010   0x9000             STR      R0,[SP, #+0]
+    399              Mode = _CheckReactBorder(hWin, x, y);
+   \   00000012   0x4602             MOV      R2,R0
+   \   00000014   0x9901             LDR      R1,[SP, #+4]
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       _CheckReactBorder
+   \   0000001C   0x4606             MOV      R6,R0
+    400              if (pState->Pressed == 1) {
+   \   0000001E   0x7A28             LDRB     R0,[R5, #+8]
+   \   00000020   0x2801             CMP      R0,#+1
+   \   00000022   0xD121             BNE.N    ??_OnTouch_1
+    401                if (_CaptureFlags & FRAMEWIN_RESIZE) {
+   \   00000024   0x....             LDR.N    R0,??DataTable19_1
+   \   00000026   0x7A00             LDRB     R0,[R0, #+8]
+   \   00000028   0xF010 0x0F0F      TST      R0,#0xF
+   \   0000002C   0xD00C             BEQ.N    ??_OnTouch_2
+    402                  _ChangeWindowPosSize(hWin, &x, &y);
+   \   0000002E   0xAA00             ADD      R2,SP,#+0
+   \   00000030   0xA901             ADD      R1,SP,#+4
+   \   00000032   0x4620             MOV      R0,R4
+   \   00000034   0x.... 0x....      BL       _ChangeWindowPosSize
+    403                  _SetCapture(hWin, x, y, 0);
+   \   00000038   0x2300             MOVS     R3,#+0
+   \   0000003A   0x9A00             LDR      R2,[SP, #+0]
+   \   0000003C   0x9901             LDR      R1,[SP, #+4]
+   \   0000003E   0x4620             MOV      R0,R4
+   \   00000040   0x.... 0x....      BL       _SetCapture
+    404                  return 1;
+   \   00000044   0x2001             MOVS     R0,#+1
+   \   00000046   0xBD76             POP      {R1,R2,R4-R6,PC}
+    405                } else if (Mode) {
+   \                     ??_OnTouch_2: (+1)
+   \   00000048   0x2E00             CMP      R6,#+0
+   \   0000004A   0xD01B             BEQ.N    ??_OnTouch_0
+    406                  WM_SetFocus(hWin);
+   \   0000004C   0x4620             MOV      R0,R4
+   \   0000004E   0x.... 0x....      BL       WM_SetFocus
+    407                  WM_BringToTop(hWin);
+   \   00000052   0x4620             MOV      R0,R4
+   \   00000054   0x.... 0x....      BL       WM_BringToTop
+    408                  _SetCapture(hWin, x, y, Mode);
+   \   00000058   0x4633             MOV      R3,R6
+   \   0000005A   0x9A00             LDR      R2,[SP, #+0]
+   \   0000005C   0x9901             LDR      R1,[SP, #+4]
+   \   0000005E   0x4620             MOV      R0,R4
+   \   00000060   0x.... 0x....      BL       _SetCapture
+    409                  return 1;
+   \   00000064   0x2001             MOVS     R0,#+1
+   \   00000066   0xBD76             POP      {R1,R2,R4-R6,PC}
+    410                }
+    411                #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    412                else if (_CaptureFlags) {
+    413                  WM_ReleaseCapture();
+    414                  return 1;
+    415                }
+    416                #endif
+    417              } else if (WM_HasCaptured(hWin)) {
+   \                     ??_OnTouch_1: (+1)
+   \   00000068   0x4620             MOV      R0,R4
+   \   0000006A   0x.... 0x....      BL       WM_HasCaptured
+   \   0000006E   0x2800             CMP      R0,#+0
+   \   00000070   0xD008             BEQ.N    ??_OnTouch_0
+    418                _CaptureFlags &= ~(FRAMEWIN_RESIZE);
+   \   00000072   0x....             LDR.N    R0,??DataTable19_1
+   \   00000074   0x6881             LDR      R1,[R0, #+8]
+   \   00000076   0xF021 0x010F      BIC      R1,R1,#0xF
+   \   0000007A   0x6081             STR      R1,[R0, #+8]
+    419                #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    420                  if (!Mode)
+    421                #endif
+    422                {
+    423                  WM_ReleaseCapture();
+   \   0000007C   0x.... 0x....      BL       WM_ReleaseCapture
+    424                }
+    425                return 1;
+   \   00000080   0x2001             MOVS     R0,#+1
+   \   00000082   0xBD76             POP      {R1,R2,R4-R6,PC}
+    426              }
+    427            }
+    428            return 0;
+   \                     ??_OnTouch_0: (+1)
+   \   00000084   0x2000             MOVS     R0,#+0
+   \   00000086   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    429          }
+    430          
+    431          /*******************************************************************
+    432          *
+    433          *       _ForwardMouseOverMsg
+    434          */
+    435          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    436          static int _ForwardMouseOverMsg(FRAMEWIN_Handle hWin, WM_MESSAGE* pMsg) {
+    437            GUI_PID_STATE* pState = (GUI_PID_STATE *)pMsg->Data.p;
+    438            WM_HWIN hBelow;
+    439            pState->x += WM_GetWindowOrgX(hWin);
+    440            pState->y += WM_GetWindowOrgY(hWin);
+    441            hBelow = WM_Screen2hWin(pState->x, pState->y);
+    442            if (hBelow && (hBelow != hWin)) {
+    443              pState->x -= WM_GetWindowOrgX(hBelow);
+    444              pState->y -= WM_GetWindowOrgY(hBelow);
+    445              WM__SendMessage(hBelow, pMsg);
+    446              return 1;
+    447            }
+    448            return 0;
+    449          }
+    450          #endif
+    451          
+    452          /*********************************************************************
+    453          *
+    454          *       _OnMouseOver
+    455          */
+    456          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    457          static int _OnMouseOver(FRAMEWIN_Handle hWin, WM_MESSAGE* pMsg) {
+    458            const GUI_PID_STATE* pState = (const GUI_PID_STATE *)pMsg->Data.p;
+    459            if (pState) {
+    460              int x, y, Mode;
+    461              x    = pState->x;
+    462              y    = pState->y;
+    463              Mode = _CheckReactBorder(hWin, x, y);
+    464              if (Mode) {
+    465                if (_ForwardMouseOverMsg(hWin, pMsg) == 0) {
+    466                  _SetCapture(hWin, x, y, Mode | FRAMEWIN_MOUSEOVER);
+    467                }
+    468                return 1;
+    469              } else if (WM_HasCaptured(hWin)) {
+    470                if ((_CaptureFlags & FRAMEWIN_RESIZE) == 0) {
+    471                  WM_ReleaseCapture();
+    472                  _ForwardMouseOverMsg(hWin, pMsg);
+    473                }
+    474                return 1;
+    475              }
+    476            }
+    477            return 0;
+    478          }
+    479          #endif
+    480          
+    481          /*********************************************************************
+    482          *
+    483          *       static code, hook function
+    484          *
+    485          **********************************************************************
+    486          */
+    487          /*********************************************************************
+    488          *
+    489          *       _HOOKFUNC_Resizeable
+    490          */
+
+   \                                 In section .text, align 2, keep-with-next
+    491          static int _HOOKFUNC_Resizeable(WM_MESSAGE* pMsg) {
+   \                     _HOOKFUNC_Resizeable: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    492            WM_HWIN hWin = pMsg->hWin;
+   \   00000004   0xF9B4 0x5004      LDRSH    R5,[R4, #+4]
+    493            if (WM_HasCaptured(hWin) && (_CaptureFlags == 0)) {
+   \   00000008   0x4628             MOV      R0,R5
+   \   0000000A   0x.... 0x....      BL       WM_HasCaptured
+   \   0000000E   0x2800             CMP      R0,#+0
+   \   00000010   0xD003             BEQ.N    ??_HOOKFUNC_Resizeable_0
+   \   00000012   0x....             LDR.N    R0,??DataTable19_1
+   \   00000014   0x6880             LDR      R0,[R0, #+8]
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD01C             BEQ.N    ??_HOOKFUNC_Resizeable_1
+    494              return 0;
+    495            }
+    496            if (FRAMEWIN_IsMinimized(hWin) || FRAMEWIN_IsMaximized(hWin)) {
+   \                     ??_HOOKFUNC_Resizeable_0: (+1)
+   \   0000001A   0x4628             MOV      R0,R5
+   \   0000001C   0x.... 0x....      BL       FRAMEWIN_IsMinimized
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD117             BNE.N    ??_HOOKFUNC_Resizeable_1
+   \   00000024   0x4628             MOV      R0,R5
+   \   00000026   0x.... 0x....      BL       FRAMEWIN_IsMaximized
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD112             BNE.N    ??_HOOKFUNC_Resizeable_1
+    497              return 0;
+    498            }
+    499            switch(pMsg->MsgId) {
+   \   0000002E   0x6820             LDR      R0,[R4, #+0]
+   \   00000030   0x280C             CMP      R0,#+12
+   \   00000032   0xD002             BEQ.N    ??_HOOKFUNC_Resizeable_2
+   \   00000034   0x2818             CMP      R0,#+24
+   \   00000036   0xD005             BEQ.N    ??_HOOKFUNC_Resizeable_3
+   \   00000038   0xE00C             B.N      ??_HOOKFUNC_Resizeable_1
+    500            case WM_TOUCH:
+    501              return _OnTouch(hWin, pMsg);
+   \                     ??_HOOKFUNC_Resizeable_2: (+1)
+   \   0000003A   0x4621             MOV      R1,R4
+   \   0000003C   0x4628             MOV      R0,R5
+   \   0000003E   0xE8BD 0x4034      POP      {R2,R4,R5,LR}
+   \   00000042   0x....             B.N      _OnTouch
+    502          #if (GUI_SUPPORT_MOUSE & GUI_SUPPORT_CURSOR)
+    503            case WM_MOUSEOVER:
+    504              return _OnMouseOver(hWin, pMsg);
+    505          #endif
+    506            case WM_CAPTURE_RELEASED:
+    507            #if GUI_SUPPORT_CURSOR
+    508              _SetResizeCursor(0);
+   \                     ??_HOOKFUNC_Resizeable_3: (+1)
+   \   00000044   0x2000             MOVS     R0,#+0
+   \   00000046   0x.... 0x....      BL       _SetResizeCursor
+    509            #endif
+    510              _CaptureFlags = 0;
+   \   0000004A   0x2000             MOVS     R0,#+0
+   \   0000004C   0x....             LDR.N    R1,??DataTable19_1
+   \   0000004E   0x6088             STR      R0,[R1, #+8]
+    511              return 1;
+   \   00000050   0x2001             MOVS     R0,#+1
+   \   00000052   0xBD32             POP      {R1,R4,R5,PC}
+    512            }
+    513            return 0;
+   \                     ??_HOOKFUNC_Resizeable_1: (+1)
+   \   00000054   0x2000             MOVS     R0,#+0
+   \   00000056   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    514          }
+    515          
+    516          /*********************************************************************
+    517          *
+    518          *        Public code
+    519          *
+    520          **********************************************************************
+    521          */
+    522          /*********************************************************************
+    523          *
+    524          *       FRAMEWIN_SetResizeable
+    525          */
+
+   \                                 In section .text, align 2, keep-with-next
+    526          void FRAMEWIN_SetResizeable(FRAMEWIN_Handle hObj, int State) {
+   \                     FRAMEWIN_SetResizeable: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    527            if (hObj) {
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xD011             BEQ.N    ??FRAMEWIN_SetResizeable_0
+    528              FRAMEWIN_Obj* pObj;
+    529              WM_LOCK();
+    530              pObj = FRAMEWIN_H2P(hObj);
+   \   00000008   0x.... 0x....      BL       GUI_ALLOC_h2p
+    531              if (pObj) {
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD00D             BEQ.N    ??FRAMEWIN_SetResizeable_0
+    532                if (State) {
+   \   00000010   0x....             LDR.N    R1,??DataTable19_2
+   \   00000012   0x2C00             CMP      R4,#+0
+   \   00000014   0xD005             BEQ.N    ??FRAMEWIN_SetResizeable_1
+    533                  GUI_HOOK_Add(&pObj->pFirstHook, &_HOOK_Resizeable, &_HOOKFUNC_Resizeable);
+   \   00000016   0x....             LDR.N    R2,??DataTable19_3
+   \   00000018   0x3064             ADDS     R0,R0,#+100
+   \   0000001A   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001E   0x.... 0x....      B.W      GUI_HOOK_Add
+    534                } else {
+    535                  GUI_HOOK_Remove(&pObj->pFirstHook, &_HOOK_Resizeable);
+   \                     ??FRAMEWIN_SetResizeable_1: (+1)
+   \   00000022   0x3064             ADDS     R0,R0,#+100
+   \   00000024   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000028   0x.... 0x....      B.W      GUI_HOOK_Remove
+    536                }
+    537              }
+    538              WM_UNLOCK();
+    539            }
+    540          }
+   \                     ??FRAMEWIN_SetResizeable_0: (+1)
+   \   0000002C   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19:
+   \   00000000   0x........         DC32     _pOldCursor
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_1:
+   \   00000000   0x........         DC32     _CaptureX
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_2:
+   \   00000000   0x........         DC32     _HOOK_Resizeable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_3:
+   \   00000000   0x........         DC32     _HOOKFUNC_Resizeable
+    541          
+    542          #else
+    543            void FRAMEWIN_SetResizeable_c(void) {} /* avoid empty object files */
+    544          #endif /* GUI_WINSUPPORT */
+    545          
+    546          /*************************** End of file ****************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   FRAMEWIN_SetResizeable
+         8   -> GUI_ALLOC_h2p
+         0   -> GUI_HOOK_Add
+         0   -> GUI_HOOK_Remove
+      40   _ChangeWindowPosSize
+        40   -> WM_GetClientRectEx
+        40   -> WM_MoveWindow
+        40   -> WM_ResizeWindow
+       0   _CheckBorderX
+       0   _CheckBorderY
+      32   _CheckReactBorder
+        32   -> WM_GetClientRectEx
+        32   -> _CheckBorderX
+        32   -> _CheckBorderY
+      16   _HOOKFUNC_Resizeable
+        16   -> FRAMEWIN_IsMaximized
+        16   -> FRAMEWIN_IsMinimized
+        16   -> WM_HasCaptured
+         0   -> _OnTouch
+        16   -> _SetResizeCursor
+      24   _OnTouch
+        24   -> WM_BringToTop
+        24   -> WM_HasCaptured
+        24   -> WM_ReleaseCapture
+        24   -> WM_SetFocus
+        24   -> _ChangeWindowPosSize
+        24   -> _CheckReactBorder
+        24   -> _SetCapture
+      16   _SetCapture
+        16   -> WM_HasCaptured
+        16   -> WM_SetCapture
+        16   -> _SetResizeCursor
+       8   _SetResizeCursor
+         8   -> GUI_CURSOR_Select
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+      46  FRAMEWIN_SetResizeable
+      12  _CaptureX
+          _CaptureY
+          _CaptureFlags
+     174  _ChangeWindowPosSize
+      22  _CheckBorderX
+      22  _CheckBorderY
+     100  _CheckReactBorder
+      12  _ColorsCursor
+      88  _HOOKFUNC_Resizeable
+       8  _HOOK_Resizeable
+     136  _OnTouch
+      12  _PalCursor
+      12  _ResizeCursorDD
+      12  _ResizeCursorDU
+      12  _ResizeCursorH
+      12  _ResizeCursorV
+      64  _SetCapture
+      92  _SetResizeCursor
+      88  _acResizeCursorDD
+      88  _acResizeCursorDU
+      88  _acResizeCursorH
+      88  _acResizeCursorV
+      20  _bmResizeCursorDD
+      20  _bmResizeCursorDU
+      20  _bmResizeCursorH
+      20  _bmResizeCursorV
+       4  _pOldCursor
+
+ 
+  24 bytes in section .bss
+ 456 bytes in section .rodata
+ 808 bytes in section .text
+ 
+ 808 bytes of CODE  memory
+ 456 bytes of CONST memory
+  24 bytes of DATA  memory
+
+Errors: none
+Warnings: none

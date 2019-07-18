@@ -1,0 +1,3581 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        16/Jul/2019  17:00:56
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp -D
+#        USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Ucgui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --eec++ -I "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\wifi_upload.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\wifi_upload.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp
+      1          #include "stdint.h"
+      2          #include "stddef.h"
+      3          //#include "stm32f40x_gpio.h"
+      4          #include "stm32f4xx_gpio.h"
+
+  #define IS_GPIO_MODE(MODE) (((MODE) == GPIO_Mode_IN)  || ((MODE) == GPIO_Mode_OUT) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_gpio.h",76  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_MODE" (declared at line
+          284 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_gpio.h")
+
+  #define IS_GPIO_SPEED(SPEED) (((SPEED) == GPIO_Low_Speed) || ((SPEED) == GPIO_Medium_Speed) || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_gpio.h",107  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_SPEED" (declared at line
+          296 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_gpio.h")
+
+  #define IS_GPIO_PIN(PIN) ((((PIN) & (uint16_t)0x00) == 0x00) && ((PIN) != (uint16_t)0x00))
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_gpio.h",182  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_PIN" (declared at line
+          283 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_gpio.h")
+
+  #define IS_GPIO_AF(AF)   (((AF) == GPIO_AF_RTC_50Hz)  || ((AF) == GPIO_AF_TIM14)     || \
+          ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\libstmf4\include\stm32f4xx_gpio.h",371  Warning[Pe047]: 
+          incompatible redefinition of macro "IS_GPIO_AF" (declared at line
+          1262 of
+          "E:\DLP_Proj\DLP_source\branches\DLP_opensource\Drivers\STM32F4xx_HAL
+          _Driver\Inc\stm32f4xx_hal_gpio_ex.h")
+      5          #include "stm32f4xx_usart.h"
+      6          
+      7          //#include "SZ_STM32F107VC_LIB.h"
+      8          #include "ff.h"
+      9          #include "wifi_module.h"
+     10          #include "wifi_upload.h"
+     11          
+     12          
+     13          extern SZ_USART_FIFO  WifiRxFifo;
+     14          
+     15          extern int readUsartFifo(SZ_USART_FIFO *fifo, int8_t *buf, int32_t len);
+     16          extern int writeUsartFifo(SZ_USART_FIFO * fifo, int8_t * buf, int32_t len);
+     17          extern void esp_port_begin(uint8_t interrupt);
+     18          extern int usartFifoAvailable(SZ_USART_FIFO *fifo);
+     19          extern void wifi_delay(int n);
+     20          
+     21          #define ARRAY_SIZE(a) sizeof(a) / sizeof((a)[0])
+     22          
+     23          //typedef signed char bool;
+     24          
+     25          
+     26          // ESP8266 command codes
+     27          const uint8_t ESP_FLASH_BEGIN = 0x02;
+     28          const uint8_t ESP_FLASH_DATA = 0x03;
+     29          const uint8_t ESP_FLASH_END = 0x04;
+     30          const uint8_t ESP_MEM_BEGIN = 0x05;
+     31          const uint8_t ESP_MEM_END = 0x06;
+     32          const uint8_t ESP_MEM_DATA = 0x07;
+     33          const uint8_t ESP_SYNC = 0x08;
+     34          const uint8_t ESP_WRITE_REG = 0x09;
+     35          const uint8_t ESP_READ_REG = 0x0a;
+     36          
+     37          // MAC address storage locations
+     38          const uint32_t ESP_OTP_MAC0 = 0x3ff00050;
+     39          const uint32_t ESP_OTP_MAC1 = 0x3ff00054;
+     40          const uint32_t ESP_OTP_MAC2	= 0x3ff00058;
+     41          const uint32_t ESP_OTP_MAC3 = 0x3ff0005c;
+     42          
+     43          const size_t EspFlashBlockSize = 0x0400;			// 1K byte blocks
+     44          
+     45          const uint8_t ESP_IMAGE_MAGIC = 0xe9;
+     46          const uint8_t ESP_CHECKSUM_MAGIC = 0xef;
+     47          
+     48          const uint32_t ESP_ERASE_CHIP_ADDR = 0x40004984;	// &SPIEraseChip
+     49          const uint32_t ESP_SEND_PACKET_ADDR = 0x40003c80;	// &send_packet
+     50          const uint32_t ESP_SPI_READ_ADDR = 0x40004b1c;		// &SPIRead
+     51          const uint32_t ESP_UNKNOWN_ADDR = 0x40001121;		// not used
+     52          const uint32_t ESP_USER_DATA_RAM_ADDR = 0x3ffe8000;	// &user data ram
+     53          const uint32_t ESP_IRAM_ADDR = 0x40100000;			// instruction RAM
+     54          const uint32_t ESP_FLASH_ADDR = 0x40200000;			// address of start of Flash
+     55          //const uint32_t ESP_FLASH_READ_STUB_BEGIN = IRAM_ADDR + 0x18;
+     56          
+
+   \                                 In section .bss, align 4
+     57          UPLOAD_STRUCT esp_upload;
+   \                     esp_upload:
+   \   00000000                      DS8 596
+     58          
+     59          static const unsigned int retriesPerReset = 3;
+     60          static const uint32_t connectAttemptInterval = 50;
+     61          static const unsigned int percentToReportIncrement = 5;	// how often we report % complete
+     62          static const uint32_t defaultTimeout = 500;	
+     63          static const uint32_t eraseTimeout = 15000;	
+     64          static const uint32_t blockWriteTimeout = 200;
+     65          static const uint32_t blockWriteInterval = 15;			// 15ms is long enough, 10ms is mostly too short
+     66          
+     67          // Messages corresponding to result codes, should make sense when followed by " error"
+
+   \                                 In section .data, align 4
+     68          const char *resultMessages[] =
+   \                     resultMessages:
+   \   00000000   0x........         DC32 `?<Constant "no">`, `?<Constant "timeout">`
+   \              0x........   
+   \   00000008   0x........         DC32 `?<Constant "comm write">`, `?<Constant "connect">`
+   \              0x........   
+   \   00000010   0x........         DC32 `?<Constant "bad reply">`, `?<Constant "file read">`
+   \              0x........   
+   \   00000018   0x........         DC32 `?<Constant "empty file">`, `?<Constant "response header">`
+   \              0x........   
+   \   00000020   0x........         DC32 `?<Constant "slip frame">`, `?<Constant "slip state">`
+   \              0x........   
+   \   00000028   0x........         DC32 `?<Constant "slip data">`
+     69          {
+     70          	"no",
+     71          	"timeout",
+     72          	"comm write",
+     73          	"connect",
+     74          	"bad reply",
+     75          	"file read",
+     76          	"empty file",
+     77          	"response header",
+     78          	"slip frame",
+     79          	"slip state",
+     80          	"slip data"
+     81          };
+     82          
+     83          // A note on baud rates.
+     84          // The ESP8266 supports 921600, 460800, 230400, 115200, 74880 and some lower baud rates.
+     85          // 921600b is not reliable because even though it sometimes succeeds in connecting, we get a bad response during uploading after a few blocks.
+     86          // Probably our UART ISR cannot receive bytes fast enough, perhaps because of the latency of the system tick ISR.
+     87          // 460800b doesn't always manage to connect, but if it does then uploading appears to be reliable.
+     88          // 230400b always manages to connect.
+     89          static const uint32_t uploadBaudRates[] = { 460800, 230400, 115200, 74880 };
+     90          
+     91          
+     92          
+
+   \                                 In section .text, align 2, keep-with-next
+     93          signed char IsReady()
+     94          {
+     95          	return esp_upload.state == upload_idle;
+   \                     _Z7IsReadyv: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable23
+   \   00000004   0xF990 0x1234      LDRSB    R1,[R0, #+564]
+   \   00000008   0x1E48             SUBS     R0,R1,#+1
+   \   0000000A   0x4180             SBCS     R0,R0,R0
+   \   0000000C   0x0FC0             LSRS     R0,R0,#+31
+   \   0000000E   0xB240             SXTB     R0,R0
+   \   00000010   0x4770             BX       LR               ;; return
+     96          }
+     97          
+     98          
+     99          
+    100          
+    101          
+
+   \                                 In section .text, align 2, keep-with-next
+    102          void uploadPort_write(const uint8_t *buf, size_t len)
+    103          {
+   \                     _Z16uploadPort_writePKhj: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    104          	int i;
+    105          	
+    106          	for(i = 0; i < len; i++)
+   \   00000006   0x2600             MOVS     R6,#+0
+   \   00000008   0xE00C             B.N      ??uploadPort_write_0
+    107          	{
+    108          		while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);/*??????*/
+   \                     ??uploadPort_write_1: (+1)
+   \   0000000A   0x.... 0x....      LDR.W    R7,??DataTable23_1  ;; 0x40011000
+   \   0000000E   0x2140             MOVS     R1,#+64
+   \   00000010   0x4638             MOV      R0,R7
+   \   00000012   0x.... 0x....      BL       USART_GetFlagStatus
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD0F7             BEQ.N    ??uploadPort_write_1
+    109          		
+    110          			USART_SendData(USART1, *(buf + i)); 
+   \   0000001A   0x5D31             LDRB     R1,[R6, R4]
+   \   0000001C   0x4638             MOV      R0,R7
+   \   0000001E   0x.... 0x....      BL       USART_SendData
+    111          	}
+   \   00000022   0x1C76             ADDS     R6,R6,#+1
+   \                     ??uploadPort_write_0: (+1)
+   \   00000024   0x42AE             CMP      R6,R5
+   \   00000026   0xD3F0             BCC.N    ??uploadPort_write_1
+    112          }
+   \   00000028   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    113          
+
+   \                                 In section .text, align 2, keep-with-next
+    114          char uploadPort_read()
+    115          {
+   \                     _Z15uploadPort_readv: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    116          	uint8_t retChar;
+    117          	if(readUsartFifo(&WifiRxFifo, (int8_t *)&retChar, 1) == 1)
+   \   00000002   0x2201             MOVS     R2,#+1
+   \   00000004   0xA900             ADD      R1,SP,#+0
+   \   00000006   0x.... 0x....      LDR.W    R0,??DataTable23_2
+   \   0000000A   0x.... 0x....      BL       _Z13readUsartFifoP13SZ_USART_FIFOPai
+   \   0000000E   0x2801             CMP      R0,#+1
+   \   00000010   0xD102             BNE.N    ??uploadPort_read_0
+    118          		return retChar;
+   \   00000012   0xF99D 0x0000      LDRSB    R0,[SP, #+0]
+   \   00000016   0xBD02             POP      {R1,PC}
+    119          	else
+    120          		return 0;
+   \                     ??uploadPort_read_0: (+1)
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0xBD02             POP      {R1,PC}          ;; return
+    121          	 
+    122          }
+    123          
+
+   \                                 In section .text, align 2, keep-with-next
+    124          int uploadPort_available()
+    125          {
+    126          	return usartFifoAvailable(&WifiRxFifo);
+   \                     _Z20uploadPort_availablev: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable23_2
+   \   00000004   0x.... 0x....      B.W      _Z18usartFifoAvailableP13SZ_USART_FIFO
+    127          }
+    128          
+    129          
+
+   \                                 In section .text, align 2, keep-with-next
+    130          void uploadPort_begin()
+    131          {
+    132          	esp_port_begin(1);
+   \                     _Z16uploadPort_beginv: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0x.... 0x....      B.W      _Z14esp_port_beginh
+    133          }
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void uploadPort_close()
+    136          {
+    137          
+    138          	//WIFI_COM.end();
+    139          	//WIFI_COM.begin(115200, true);
+    140          	
+    141          	esp_port_begin(0);
+   \                     _Z16uploadPort_closev: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x.... 0x....      B.W      _Z14esp_port_beginh
+    142          
+    143          }
+    144          
+    145          
+
+   \                                 In section .text, align 2, keep-with-next
+    146          void flushInput()
+    147          {
+   \                     _Z10flushInputv: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+   \   00000002   0xE001             B.N      ??flushInput_0
+    148          	while (uploadPort_available() != 0)
+    149          	{
+    150          		(void)uploadPort_read();
+   \                     ??flushInput_1: (+1)
+   \   00000004   0x.... 0x....      BL       _Z15uploadPort_readv
+    151          		//IWDG_ReloadCounter();    
+    152          	}
+   \                     ??flushInput_0: (+1)
+   \   00000008   0x.... 0x....      BL       _Z20uploadPort_availablev
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD1F9             BNE.N    ??flushInput_1
+    153          }
+   \   00000010   0xBD01             POP      {R0,PC}          ;; return
+    154          
+    155          // Extract 1-4 bytes of a value in little-endian order from a buffer beginning at a specified offset
+
+   \                                 In section .text, align 2, keep-with-next
+    156          uint32_t getData(unsigned byteCnt, const uint8_t *buf, int ofst)
+    157          {
+   \                     _Z7getDatajPKhi: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+    158          	uint32_t val = 0;
+   \   00000002   0x2300             MOVS     R3,#+0
+    159          
+    160          	if (buf && byteCnt)
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD00C             BEQ.N    ??getData_0
+   \   00000008   0x2800             CMP      R0,#+0
+   \   0000000A   0xD00A             BEQ.N    ??getData_0
+    161          	{
+    162          		unsigned int shiftCnt = 0;
+   \   0000000C   0x461C             MOV      R4,R3
+    163          		if (byteCnt > 4)
+   \   0000000E   0x2805             CMP      R0,#+5
+   \   00000010   0xD300             BCC.N    ??getData_1
+    164          			byteCnt = 4;
+   \   00000012   0x2004             MOVS     R0,#+4
+    165          		do
+    166          		{
+    167          			val |= (uint32_t)buf[ofst++] << shiftCnt;
+   \                     ??getData_1: (+1)
+   \   00000014   0x5C55             LDRB     R5,[R2, R1]
+   \   00000016   0x40A5             LSLS     R5,R5,R4
+   \   00000018   0x432B             ORRS     R3,R5,R3
+   \   0000001A   0x1C52             ADDS     R2,R2,#+1
+    168          			shiftCnt += 8;
+   \   0000001C   0x3408             ADDS     R4,R4,#+8
+    169          		} while (--byteCnt);
+   \   0000001E   0x1E40             SUBS     R0,R0,#+1
+   \   00000020   0xD1F8             BNE.N    ??getData_1
+    170          	}
+    171          	return(val);
+   \                     ??getData_0: (+1)
+   \   00000022   0x4618             MOV      R0,R3
+   \   00000024   0xBC30             POP      {R4,R5}
+   \   00000026   0x4770             BX       LR               ;; return
+    172          }
+    173          
+    174          // Put 1-4 bytes of a value in little-endian order into a buffer beginning at a specified offset.
+
+   \                                 In section .text, align 2, keep-with-next
+    175          void putData(uint32_t val, unsigned byteCnt, uint8_t *buf, int ofst)
+    176          {
+    177          	if (buf && byteCnt)
+   \                     _Z7putDatajjPhi: (+1)
+   \   00000000   0x2A00             CMP      R2,#+0
+   \   00000002   0xD009             BEQ.N    ??putData_0
+   \   00000004   0x2900             CMP      R1,#+0
+   \   00000006   0xD007             BEQ.N    ??putData_0
+    178          	{
+    179          		if (byteCnt > 4)
+   \   00000008   0x2905             CMP      R1,#+5
+   \   0000000A   0xD300             BCC.N    ??putData_1
+    180          		{
+    181          			byteCnt = 4;
+   \   0000000C   0x2104             MOVS     R1,#+4
+    182          		}
+    183          		do
+    184          		{
+    185          			buf[ofst++] = (uint8_t)(val & 0xff);
+   \                     ??putData_1: (+1)
+   \   0000000E   0x5498             STRB     R0,[R3, R2]
+   \   00000010   0x1C5B             ADDS     R3,R3,#+1
+    186          			val >>= 8;
+   \   00000012   0x0A00             LSRS     R0,R0,#+8
+    187          		} while (--byteCnt);
+   \   00000014   0x1E49             SUBS     R1,R1,#+1
+   \   00000016   0xD1FA             BNE.N    ??putData_1
+    188          	}
+    189          }
+   \                     ??putData_0: (+1)
+   \   00000018   0x4770             BX       LR               ;; return
+    190          
+    191          // Read a byte optionally performing SLIP decoding.  The return values are:
+    192          //
+    193          //	2 - an escaped byte was read successfully
+    194          //	1 - a non-escaped byte was read successfully
+    195          //	0 - no data was available
+    196          //   -1 - the value 0xc0 was encountered (shouldn't happen)
+    197          //   -2 - a SLIP escape byte was found but the following byte wasn't available
+    198          //   -3 - a SLIP escape byte was followed by an invalid byte
+
+   \                                 In section .text, align 2, keep-with-next
+    199          int ReadByte(uint8_t *data, signed char slipDecode)
+    200          {
+   \                     _Z8ReadBytePha: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+    201          	if (uploadPort_available() == 0)
+   \   00000006   0x.... 0x....      BL       _Z20uploadPort_availablev
+   \   0000000A   0x2800             CMP      R0,#+0
+   \   0000000C   0xD101             BNE.N    ??ReadByte_0
+    202          	{
+    203          		return(0);
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0xBD32             POP      {R1,R4,R5,PC}
+    204          	}
+    205          	
+    206          	// at least one byte is available
+    207          	*data = uploadPort_read();
+   \                     ??ReadByte_0: (+1)
+   \   00000012   0x.... 0x....      BL       _Z15uploadPort_readv
+   \   00000016   0x7020             STRB     R0,[R4, #+0]
+    208          	if (!slipDecode)
+   \   00000018   0x2D00             CMP      R5,#+0
+   \   0000001A   0xD007             BEQ.N    ??ReadByte_1
+    209          	{
+    210          		return(1);
+    211          	}
+    212          
+    213          	if (*data == 0xc0)
+   \   0000001C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000001E   0x28C0             CMP      R0,#+192
+   \   00000020   0xD102             BNE.N    ??ReadByte_2
+    214          	{
+    215          		// this shouldn't happen
+    216          		return(-1);
+   \   00000022   0xF04F 0x30FF      MOV      R0,#-1
+   \   00000026   0xBD32             POP      {R1,R4,R5,PC}
+    217          	}
+    218          
+    219          	// if not the SLIP escape, we're done
+    220          	if (*data != 0xdb)
+   \                     ??ReadByte_2: (+1)
+   \   00000028   0x28DB             CMP      R0,#+219
+   \   0000002A   0xD001             BEQ.N    ??ReadByte_3
+    221          	{
+    222          		return(1);
+   \                     ??ReadByte_1: (+1)
+   \   0000002C   0x2001             MOVS     R0,#+1
+   \   0000002E   0xBD32             POP      {R1,R4,R5,PC}
+    223          	}
+    224          
+    225          	// SLIP escape, check availability of subsequent byte
+    226          	if (uploadPort_available() == 0)
+   \                     ??ReadByte_3: (+1)
+   \   00000030   0x.... 0x....      BL       _Z20uploadPort_availablev
+   \   00000034   0x2800             CMP      R0,#+0
+   \   00000036   0xD102             BNE.N    ??ReadByte_4
+    227          	{
+    228          		return(-2);
+   \   00000038   0xF06F 0x0001      MVN      R0,#+1
+   \   0000003C   0xBD32             POP      {R1,R4,R5,PC}
+    229          	}
+    230          	
+    231          	// process the escaped byte
+    232          	*data = uploadPort_read();
+   \                     ??ReadByte_4: (+1)
+   \   0000003E   0x.... 0x....      BL       _Z15uploadPort_readv
+   \   00000042   0x7020             STRB     R0,[R4, #+0]
+    233          	if (*data == 0xdc)
+   \   00000044   0x7820             LDRB     R0,[R4, #+0]
+   \   00000046   0x28DC             CMP      R0,#+220
+   \   00000048   0xD103             BNE.N    ??ReadByte_5
+    234          	{
+    235          		*data = 0xc0;
+   \   0000004A   0x20C0             MOVS     R0,#+192
+   \   0000004C   0x7020             STRB     R0,[R4, #+0]
+    236          		return(2);
+   \   0000004E   0x2002             MOVS     R0,#+2
+   \   00000050   0xBD32             POP      {R1,R4,R5,PC}
+    237          	}
+    238          
+    239          	if (*data == 0xdd)
+   \                     ??ReadByte_5: (+1)
+   \   00000052   0x28DD             CMP      R0,#+221
+   \   00000054   0xD103             BNE.N    ??ReadByte_6
+    240          	{
+    241          		*data = 0xdb;
+   \   00000056   0x20DB             MOVS     R0,#+219
+   \   00000058   0x7020             STRB     R0,[R4, #+0]
+    242          		return(2);
+   \   0000005A   0x2002             MOVS     R0,#+2
+   \   0000005C   0xBD32             POP      {R1,R4,R5,PC}
+    243          	}
+    244          	// invalid
+    245          	return(-3);
+   \                     ??ReadByte_6: (+1)
+   \   0000005E   0xF06F 0x0002      MVN      R0,#+2
+   \   00000062   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    246          }
+    247          // When we write a sync packet, there must be no gaps between most of the characters.
+    248          // So use this function, which does a block write to the UART buffer in the latest CoreNG.
+
+   \                                 In section .text, align 2, keep-with-next
+    249          void _writePacketRaw(const uint8_t *buf, size_t len)
+    250          {
+    251          	uploadPort_write(buf, len);
+   \                     _Z15_writePacketRawPKhj: (+1)
+   \   00000000   0x....             B.N      _Z16uploadPort_writePKhj
+    252          }
+    253          
+    254          // Write a byte to the serial port optionally SLIP encoding. Return the number of bytes actually written.
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void WriteByteRaw(uint8_t b)
+    256          {
+   \                     _Z12WriteByteRawh: (+1)
+   \   00000000   0xB501             PUSH     {R0,LR}
+    257          	uploadPort_write((const uint8_t *)&b, 1);
+   \   00000002   0x2101             MOVS     R1,#+1
+   \   00000004   0xA800             ADD      R0,SP,#+0
+   \   00000006   0x.... 0x....      BL       _Z16uploadPort_writePKhj
+    258          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+    259          
+    260          // Write a byte to the serial port optionally SLIP encoding. Return the number of bytes actually written.
+
+   \                                 In section .text, align 2, keep-with-next
+    261          void WriteByteSlip(uint8_t b)
+    262          {
+   \                     _Z13WriteByteSliph: (+1)
+   \   00000000   0xB501             PUSH     {R0,LR}
+    263          	if (b == 0xC0)
+   \   00000002   0x28C0             CMP      R0,#+192
+   \   00000004   0xD106             BNE.N    ??WriteByteSlip_0
+    264          	{
+    265          		WriteByteRaw(0xDB);
+   \   00000006   0x20DB             MOVS     R0,#+219
+   \   00000008   0x.... 0x....      BL       _Z12WriteByteRawh
+    266          		WriteByteRaw(0xDC);
+   \   0000000C   0x20DC             MOVS     R0,#+220
+   \   0000000E   0x.... 0x....      BL       _Z12WriteByteRawh
+   \   00000012   0xBD01             POP      {R0,PC}
+    267          	}
+    268          	else if (b == 0xDB)
+   \                     ??WriteByteSlip_0: (+1)
+   \   00000014   0x28DB             CMP      R0,#+219
+   \   00000016   0xD106             BNE.N    ??WriteByteSlip_1
+    269          	{
+    270          		WriteByteRaw(0xDB);
+   \   00000018   0x20DB             MOVS     R0,#+219
+   \   0000001A   0x.... 0x....      BL       _Z12WriteByteRawh
+    271          		WriteByteRaw(0xDD);
+   \   0000001E   0x20DD             MOVS     R0,#+221
+   \   00000020   0x.... 0x....      BL       _Z12WriteByteRawh
+   \   00000024   0xBD01             POP      {R0,PC}
+    272          	}
+    273          	else
+    274          	{
+    275          		uploadPort_write((const uint8_t *)&b, 1);
+   \                     ??WriteByteSlip_1: (+1)
+   \   00000026   0x2101             MOVS     R1,#+1
+   \   00000028   0xA800             ADD      R0,SP,#+0
+   \   0000002A   0x.... 0x....      BL       _Z16uploadPort_writePKhj
+    276          	}
+    277          }
+   \   0000002E   0xBD01             POP      {R0,PC}          ;; return
+    278          
+    279          // Wait for a data packet to be returned.  If the body of the packet is
+    280          // non-zero length, return an allocated buffer indirectly containing the
+    281          // data and return the data length. Note that if the pointer for returning
+    282          // the data buffer is NULL, the response is expected to be two bytes of zero.
+    283          //
+    284          // If an error occurs, return a negative value.  Otherwise, return the number
+    285          // of bytes in the response (or zero if the response was not the standard "two bytes of zero").
+
+   \                                 In section .text, align 2, keep-with-next
+    286          EspUploadResult readPacket(uint8_t op, uint32_t *valp, size_t *bodyLen, uint32_t msTimeout)
+    287          {
+   \                     _Z10readPackethPjS_j: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0xB084             SUB      SP,SP,#+16
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x460D             MOV      R5,R1
+   \   0000000A   0x4616             MOV      R6,R2
+    288          	typedef enum 
+    289          	{
+    290          		begin = 0,
+    291          		header,
+    292          		body,
+    293          		end,
+    294          		done
+    295          	} PacketState;
+    296          
+    297          	uint8_t resp, opRet;
+    298          
+    299          	const size_t headerLength = 8;
+    300          
+    301          	uint32_t startTime = getWifiTick();
+   \   0000000C   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000010   0x9003             STR      R0,[SP, #+12]
+    302          	uint8_t hdr[headerLength];
+    303          	uint16_t hdrIdx = 0;
+   \   00000012   0x2700             MOVS     R7,#+0
+    304          	
+    305          	uint16_t bodyIdx = 0;
+   \   00000014   0x46B8             MOV      R8,R7
+    306          	uint8_t respBuf[2];
+                 	        ^
+Warning[Pe550]: variable "respBuf" was set but never used
+
+  const uint8_t ESP_MEM_BEGIN = 0x05;
+                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",30  Warning[Pe177]: 
+          variable "ESP_MEM_BEGIN" was declared but never referenced
+
+  const uint8_t ESP_MEM_END = 0x06;
+                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",31  Warning[Pe177]: 
+          variable "ESP_MEM_END" was declared but never referenced
+
+  const uint8_t ESP_MEM_DATA = 0x07;
+                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",32  Warning[Pe177]: 
+          variable "ESP_MEM_DATA" was declared but never referenced
+
+  const uint8_t ESP_WRITE_REG = 0x09;
+                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",34  Warning[Pe177]: 
+          variable "ESP_WRITE_REG" was declared but never referenced
+
+  const uint8_t ESP_READ_REG = 0x0a;
+                ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",35  Warning[Pe177]: 
+          variable "ESP_READ_REG" was declared but never referenced
+
+  const uint32_t ESP_OTP_MAC0 = 0x3ff00050;
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",38  Warning[Pe177]: 
+          variable "ESP_OTP_MAC0" was declared but never referenced
+
+  const uint32_t ESP_OTP_MAC1 = 0x3ff00054;
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",39  Warning[Pe177]: 
+          variable "ESP_OTP_MAC1" was declared but never referenced
+
+  const uint32_t ESP_OTP_MAC2	= 0x3ff00058;
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",40  Warning[Pe177]: 
+          variable "ESP_OTP_MAC2" was declared but never referenced
+
+  const uint32_t ESP_OTP_MAC3 = 0x3ff0005c;
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",41  Warning[Pe177]: 
+          variable "ESP_OTP_MAC3" was declared but never referenced
+
+  const uint32_t ESP_ERASE_CHIP_ADDR = 0x40004984;	// &SPIEraseChip
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",48  Warning[Pe177]: 
+          variable "ESP_ERASE_CHIP_ADDR" was declared but never referenced
+
+  const uint32_t ESP_SEND_PACKET_ADDR = 0x40003c80;	// &send_packet
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",49  Warning[Pe177]: 
+          variable "ESP_SEND_PACKET_ADDR" was declared but never referenced
+
+  const uint32_t ESP_SPI_READ_ADDR = 0x40004b1c;		// &SPIRead
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",50  Warning[Pe177]: 
+          variable "ESP_SPI_READ_ADDR" was declared but never referenced
+
+  const uint32_t ESP_UNKNOWN_ADDR = 0x40001121;		// not used
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",51  Warning[Pe177]: 
+          variable "ESP_UNKNOWN_ADDR" was declared but never referenced
+
+  const uint32_t ESP_USER_DATA_RAM_ADDR = 0x3ffe8000;	// &user data ram
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",52  Warning[Pe177]: 
+          variable "ESP_USER_DATA_RAM_ADDR" was declared but never referenced
+
+  const uint32_t ESP_IRAM_ADDR = 0x40100000;			// instruction RAM
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",53  Warning[Pe177]: 
+          variable "ESP_IRAM_ADDR" was declared but never referenced
+
+  const uint32_t ESP_FLASH_ADDR = 0x40200000;			// address of start of Flash
+                 ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",54  Warning[Pe177]: 
+          variable "ESP_FLASH_ADDR" was declared but never referenced
+
+  static const uint32_t uploadBaudRates[] = { 460800, 230400, 115200, 74880 };
+                        ^
+"E:\DLP_Proj\DLP_source\branches\DLP_opensource\Src\wifi_upload.cpp",89  Warning[Pe177]: 
+          variable "uploadBaudRates" was declared but never referenced
+    307          
+    308          	// wait for the response
+    309          	uint16_t needBytes = 1;
+   \   00000016   0xF04F 0x0901      MOV      R9,#+1
+    310          
+    311          	PacketState state = begin;
+   \   0000001A   0x46BA             MOV      R10,R7
+    312          
+    313          	*bodyLen = 0;
+   \   0000001C   0x4638             MOV      R0,R7
+   \   0000001E   0x6030             STR      R0,[R6, #+0]
+   \   00000020   0xE00B             B.N      ??readPacket_0
+    314          	
+    315          	
+    316          	while (state != done)
+    317          	{
+    318          		uint8_t c;
+    319          		EspUploadResult stat;
+    320          		
+    321          		//IWDG_ReloadCounter();    
+    322          
+    323          		if (getWifiTickDiff(startTime, getWifiTick()) > msTimeout)
+    324          		{
+    325          			return(timeout);
+    326          		}
+    327          
+    328          		if (uploadPort_available() < needBytes)
+    329          		{
+    330          			// insufficient data available
+    331          			// preferably, return to Spin() here
+    332          			continue;
+    333          		}
+    334          
+    335          		// sufficient bytes have been received for the current state, process them
+    336          		switch(state)
+    337          		{
+    338          		case begin:	// expecting frame start
+    339          			c = uploadPort_read();
+   \                     ??readPacket_1: (+1)
+   \   00000022   0x.... 0x....      BL       _Z15uploadPort_readv
+   \   00000026   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    340          			if (c != (uint8_t)0xc0)
+   \   0000002A   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   0000002E   0x28C0             CMP      R0,#+192
+   \   00000030   0xD103             BNE.N    ??readPacket_0
+    341          			{
+    342          				break;
+    343          			}
+    344          			state = header;
+   \   00000032   0xF04F 0x0A01      MOV      R10,#+1
+    345          			needBytes = 2;
+   \   00000036   0xF04F 0x0902      MOV      R9,#+2
+    346          			
+    347          			break;
+   \                     ??readPacket_0: (+1)
+   \   0000003A   0x46D3             MOV      R11,R10
+   \   0000003C   0xF1BB 0x0F04      CMP      R11,#+4
+   \   00000040   0xD063             BEQ.N    ??readPacket_2
+   \   00000042   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000046   0x4601             MOV      R1,R0
+   \   00000048   0x9803             LDR      R0,[SP, #+12]
+   \   0000004A   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   0000004E   0x9904             LDR      R1,[SP, #+16]
+   \   00000050   0x4281             CMP      R1,R0
+   \   00000052   0xD201             BCS.N    ??readPacket_3
+   \   00000054   0x2001             MOVS     R0,#+1
+   \   00000056   0xE06C             B.N      ??readPacket_4
+   \                     ??readPacket_3: (+1)
+   \   00000058   0x.... 0x....      BL       _Z20uploadPort_availablev
+   \   0000005C   0x4548             CMP      R0,R9
+   \   0000005E   0xDBEC             BLT.N    ??readPacket_0
+   \   00000060   0xF1BA 0x0F00      CMP      R10,#+0
+   \   00000064   0xD0DD             BEQ.N    ??readPacket_1
+   \   00000066   0xF1BA 0x0F02      CMP      R10,#+2
+   \   0000006A   0xD010             BEQ.N    ??readPacket_5
+   \   0000006C   0xD30F             BCC.N    ??readPacket_5
+   \   0000006E   0xF1BA 0x0F03      CMP      R10,#+3
+   \   00000072   0xD148             BNE.N    ??readPacket_6
+    348          		case end:		// expecting frame end
+    349          			c = uploadPort_read();
+   \   00000074   0x.... 0x....      BL       _Z15uploadPort_readv
+   \   00000078   0xF88D 0x0000      STRB     R0,[SP, #+0]
+    350          			if (c != (uint8_t)0xc0)
+   \   0000007C   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   00000080   0x28C0             CMP      R0,#+192
+   \   00000082   0xD001             BEQ.N    ??readPacket_7
+    351          			{
+    352          				return slipFrame;
+   \   00000084   0x2007             MOVS     R0,#+7
+   \   00000086   0xE054             B.N      ??readPacket_4
+    353          			}
+    354          			state = done;
+   \                     ??readPacket_7: (+1)
+   \   00000088   0xF04F 0x0A04      MOV      R10,#+4
+    355          			
+    356          			break;
+   \   0000008C   0xE7D5             B.N      ??readPacket_0
+    357          
+    358          		case header:	// reading an 8-byte header
+    359          		case body:		// reading the response body
+    360          			{
+    361          				int rslt;
+    362          				// retrieve a byte with SLIP decoding
+    363          				rslt = ReadByte(&c, 1);
+   \                     ??readPacket_5: (+1)
+   \   0000008E   0x2101             MOVS     R1,#+1
+   \   00000090   0xA800             ADD      R0,SP,#+0
+   \   00000092   0x.... 0x....      BL       _Z8ReadBytePha
+    364          				if (rslt != 1 && rslt != 2)
+   \   00000096   0x2801             CMP      R0,#+1
+   \   00000098   0xD00A             BEQ.N    ??readPacket_8
+   \   0000009A   0x2802             CMP      R0,#+2
+   \   0000009C   0xD008             BEQ.N    ??readPacket_8
+    365          				{
+    366          					// some error occurred
+    367          					stat = (rslt == 0 || rslt == -2) ? slipData : slipFrame;
+   \   0000009E   0x2800             CMP      R0,#+0
+   \   000000A0   0xD002             BEQ.N    ??readPacket_9
+   \   000000A2   0xF110 0x0F02      CMN      R0,#+2
+   \   000000A6   0xD101             BNE.N    ??readPacket_10
+   \                     ??readPacket_9: (+1)
+   \   000000A8   0x2009             MOVS     R0,#+9
+   \   000000AA   0xE042             B.N      ??readPacket_4
+   \                     ??readPacket_10: (+1)
+   \   000000AC   0x2007             MOVS     R0,#+7
+    368          					return stat;
+   \   000000AE   0xE040             B.N      ??readPacket_4
+    369          				}
+    370          				else if (state == header)
+   \                     ??readPacket_8: (+1)
+   \   000000B0   0xF1BB 0x0F01      CMP      R11,#+1
+   \   000000B4   0xD11B             BNE.N    ??readPacket_11
+    371          				{
+    372          					//store the header byte
+    373          					hdr[hdrIdx++] = c;
+   \   000000B6   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   000000BA   0xA901             ADD      R1,SP,#+4
+   \   000000BC   0x5478             STRB     R0,[R7, R1]
+   \   000000BE   0x1C7F             ADDS     R7,R7,#+1
+    374          					if (hdrIdx >= headerLength)
+   \   000000C0   0xB2BF             UXTH     R7,R7
+   \   000000C2   0x2F08             CMP      R7,#+8
+   \   000000C4   0xD3B9             BCC.N    ??readPacket_0
+    375          					{
+    376          						// get the body length, prepare a buffer for it
+    377          						*bodyLen = (uint16_t)getData(2, hdr, 2);
+   \   000000C6   0x2202             MOVS     R2,#+2
+   \   000000C8   0x4610             MOV      R0,R2
+   \   000000CA   0x.... 0x....      BL       _Z7getDatajPKhi
+   \   000000CE   0xB280             UXTH     R0,R0
+   \   000000D0   0x6030             STR      R0,[R6, #+0]
+    378          
+    379          						// extract the value, if requested
+    380          						if (valp != 0)
+   \   000000D2   0x2D00             CMP      R5,#+0
+   \   000000D4   0xD005             BEQ.N    ??readPacket_12
+    381          						{
+    382          							*valp = getData(4, hdr, 4);
+   \   000000D6   0x2204             MOVS     R2,#+4
+   \   000000D8   0xA901             ADD      R1,SP,#+4
+   \   000000DA   0x4610             MOV      R0,R2
+   \   000000DC   0x.... 0x....      BL       _Z7getDatajPKhi
+   \   000000E0   0x6028             STR      R0,[R5, #+0]
+    383          						}
+    384          
+    385          						if (*bodyLen != 0)
+   \                     ??readPacket_12: (+1)
+   \   000000E2   0x6830             LDR      R0,[R6, #+0]
+   \   000000E4   0x2800             CMP      R0,#+0
+   \   000000E6   0xD009             BEQ.N    ??readPacket_13
+    386          						{
+    387          							state = body;
+   \   000000E8   0xF04F 0x0A02      MOV      R10,#+2
+   \   000000EC   0xE7A5             B.N      ??readPacket_0
+    388          						}
+    389          						else
+    390          						{
+    391          							needBytes = 1;
+    392          							state = end;
+    393          						}
+    394          					}
+    395          				}
+    396          				else
+    397          				{
+    398          					// Store the response body byte, check for completion
+    399          					if (bodyIdx < ARRAY_SIZE(respBuf))
+    400          					{
+    401          						respBuf[bodyIdx] = c;
+    402          					}
+    403          					++bodyIdx;
+   \                     ??readPacket_11: (+1)
+   \   000000EE   0xF108 0x0801      ADD      R8,R8,#+1
+   \   000000F2   0xFA1F 0xF888      UXTH     R8,R8
+    404          					if (bodyIdx >= *bodyLen)
+   \   000000F6   0x6830             LDR      R0,[R6, #+0]
+   \   000000F8   0x4580             CMP      R8,R0
+   \   000000FA   0xD39E             BCC.N    ??readPacket_0
+    405          					{
+    406          						needBytes = 1;
+   \                     ??readPacket_13: (+1)
+   \   000000FC   0xF04F 0x0901      MOV      R9,#+1
+    407          						state = end;
+   \   00000100   0xF04F 0x0A03      MOV      R10,#+3
+   \   00000104   0xE799             B.N      ??readPacket_0
+    408          					}
+    409          				}
+    410          			}
+    411          			break;
+    412          
+    413          		default:		// this shouldn't happen
+    414          			return slipState;
+   \                     ??readPacket_6: (+1)
+   \   00000106   0x2008             MOVS     R0,#+8
+   \   00000108   0xE013             B.N      ??readPacket_4
+    415          		}
+    416          	}
+    417          
+    418          	// Extract elements from the header
+    419          	resp = (uint8_t)getData(1, hdr, 0);
+   \                     ??readPacket_2: (+1)
+   \   0000010A   0x2200             MOVS     R2,#+0
+   \   0000010C   0xA901             ADD      R1,SP,#+4
+   \   0000010E   0x2001             MOVS     R0,#+1
+   \   00000110   0x.... 0x....      BL       _Z7getDatajPKhi
+   \   00000114   0x4605             MOV      R5,R0
+    420          	opRet = (uint8_t)getData(1, hdr, 1);
+   \   00000116   0x2201             MOVS     R2,#+1
+   \   00000118   0xA901             ADD      R1,SP,#+4
+   \   0000011A   0x4610             MOV      R0,R2
+   \   0000011C   0x.... 0x....      BL       _Z7getDatajPKhi
+    421          	// Sync packets often provoke a response with a zero opcode instead of ESP_SYNC
+    422          	if (resp != 0x01 || opRet != op)
+   \   00000120   0xB2ED             UXTB     R5,R5
+   \   00000122   0x2D01             CMP      R5,#+1
+   \   00000124   0xD102             BNE.N    ??readPacket_14
+   \   00000126   0xB2C0             UXTB     R0,R0
+   \   00000128   0x42A0             CMP      R0,R4
+   \   0000012A   0xD001             BEQ.N    ??readPacket_15
+    423          	{
+    424          //debug//printf("resp %02x %02x\n", resp, opRet);
+    425          		return respHeader;
+   \                     ??readPacket_14: (+1)
+   \   0000012C   0x2006             MOVS     R0,#+6
+   \   0000012E   0xE000             B.N      ??readPacket_4
+    426          	}
+    427          
+    428          	return success;
+   \                     ??readPacket_15: (+1)
+   \   00000130   0x2000             MOVS     R0,#+0
+   \                     ??readPacket_4: (+1)
+   \   00000132   0xB005             ADD      SP,SP,#+20
+   \   00000134   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    429          }
+    430          
+    431          // Send a block of data performing SLIP encoding of the content.
+
+   \                                 In section .text, align 2, keep-with-next
+    432          void _writePacket(const uint8_t *data, size_t len)
+    433          {
+   \                     _Z12_writePacketPKhj: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xF5AD 0x6D00      SUB      SP,SP,#+2048
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x460D             MOV      R5,R1
+    434          	unsigned char outBuf[2048] = {0};
+   \   0000000A   0xA800             ADD      R0,SP,#+0
+   \   0000000C   0xF44F 0x6100      MOV      R1,#+2048
+   \   00000010   0x.... 0x....      BL       __aeabi_memclr4
+    435          	unsigned int outIndex = 0;
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0xA800             ADD      R0,SP,#+0
+   \   00000018   0x2D00             CMP      R5,#+0
+   \   0000001A   0xE003             B.N      ??_writePacket_0
+    436          #if 0
+    437          	while (len != 0)
+    438          	{
+    439          		WriteByteSlip(*data++);
+    440          		--len;
+    441          	}
+    442          #endif
+    443          	while (len != 0)
+    444          	{
+    445          		if (*data == 0xC0)
+    446          		{
+    447          			outBuf[outIndex++] = 0xDB;
+    448          			outBuf[outIndex++] = 0xDC;
+    449          		}
+    450          		else if (*data == 0xDB)
+    451          		{
+    452          			outBuf[outIndex++] = 0xDB;
+    453          			outBuf[outIndex++] = 0xDD;
+    454          		}
+    455          		else
+    456          		{
+    457          			outBuf[outIndex++] = *data;
+   \                     ??_writePacket_1: (+1)
+   \   0000001C   0x540A             STRB     R2,[R1, R0]
+   \   0000001E   0x4619             MOV      R1,R3
+    458          			
+    459          		}
+    460          		data++;
+   \                     ??_writePacket_2: (+1)
+   \   00000020   0x1C64             ADDS     R4,R4,#+1
+    461          		--len;
+   \   00000022   0x1E6D             SUBS     R5,R5,#+1
+   \                     ??_writePacket_0: (+1)
+   \   00000024   0xD012             BEQ.N    ??_writePacket_3
+   \   00000026   0x7822             LDRB     R2,[R4, #+0]
+   \   00000028   0x4616             MOV      R6,R2
+   \   0000002A   0x1C4B             ADDS     R3,R1,#+1
+   \   0000002C   0x2EC0             CMP      R6,#+192
+   \   0000002E   0xD105             BNE.N    ??_writePacket_4
+   \   00000030   0x22DB             MOVS     R2,#+219
+   \   00000032   0x540A             STRB     R2,[R1, R0]
+   \   00000034   0x21DC             MOVS     R1,#+220
+   \   00000036   0x5419             STRB     R1,[R3, R0]
+   \   00000038   0x1C59             ADDS     R1,R3,#+1
+   \   0000003A   0xE7F1             B.N      ??_writePacket_2
+   \                     ??_writePacket_4: (+1)
+   \   0000003C   0x2EDB             CMP      R6,#+219
+   \   0000003E   0xD1ED             BNE.N    ??_writePacket_1
+   \   00000040   0x22DB             MOVS     R2,#+219
+   \   00000042   0x540A             STRB     R2,[R1, R0]
+   \   00000044   0x21DD             MOVS     R1,#+221
+   \   00000046   0x5419             STRB     R1,[R3, R0]
+   \   00000048   0x1C59             ADDS     R1,R3,#+1
+   \   0000004A   0xE7E9             B.N      ??_writePacket_2
+    462          	}
+    463          	uploadPort_write((const uint8_t *)outBuf, outIndex);
+   \                     ??_writePacket_3: (+1)
+   \   0000004C   0x.... 0x....      BL       _Z16uploadPort_writePKhj
+    464          }
+   \   00000050   0xF50D 0x6D00      ADD      SP,SP,#+2048
+   \   00000054   0xBD70             POP      {R4-R6,PC}       ;; return
+    465          
+    466          // Send a packet to the serial port while performing SLIP framing. The packet data comprises a header and an optional data block.
+    467          // A SLIP packet begins and ends with 0xc0.  The data encapsulated has the bytes
+    468          // 0xc0 and 0xdb replaced by the two-byte sequences {0xdb, 0xdc} and {0xdb, 0xdd} respectively.
+    469          
+
+   \                                 In section .text, align 2, keep-with-next
+    470          void writePacket(const uint8_t *hdr, size_t hdrLen, const uint8_t *data, size_t dataLen)
+    471          {
+   \                     _Z11writePacketPKhjS0_j: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+   \   00000008   0x461F             MOV      R7,R3
+    472          
+    473          	WriteByteRaw(0xc0);				// send the packet start character
+   \   0000000A   0x20C0             MOVS     R0,#+192
+   \   0000000C   0x.... 0x....      BL       _Z12WriteByteRawh
+    474          	_writePacket(hdr, hdrLen);		// send the header
+   \   00000010   0x4629             MOV      R1,R5
+   \   00000012   0x4620             MOV      R0,R4
+   \   00000014   0x.... 0x....      BL       _Z12_writePacketPKhj
+    475          	_writePacket(data, dataLen);		// send the data block
+   \   00000018   0x4639             MOV      R1,R7
+   \   0000001A   0x4630             MOV      R0,R6
+   \   0000001C   0x.... 0x....      BL       _Z12_writePacketPKhj
+    476          	WriteByteRaw(0xc0);				// send the packet end character
+   \   00000020   0x20C0             MOVS     R0,#+192
+   \   00000022   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \   00000026   0x....             B.N      _Z12WriteByteRawh
+    477          }
+    478          
+    479          // Send a packet to the serial port while performing SLIP framing. The packet data comprises a header and an optional data block.
+    480          // This is like writePacket except that it does a fast block write for both the header and the main data with no SLIP encoding. Used to send sync commands.
+
+   \                                 In section .text, align 2, keep-with-next
+    481          void writePacketRaw(const uint8_t *hdr, size_t hdrLen, const uint8_t *data, size_t dataLen)
+    482          {
+   \                     _Z14writePacketRawPKhjS0_j: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0x4616             MOV      R6,R2
+   \   00000008   0x461F             MOV      R7,R3
+    483          	WriteByteRaw(0xc0);				// send the packet start character
+   \   0000000A   0x20C0             MOVS     R0,#+192
+   \   0000000C   0x.... 0x....      BL       _Z12WriteByteRawh
+    484          	_writePacketRaw(hdr, hdrLen);	// send the header
+   \   00000010   0x4629             MOV      R1,R5
+   \   00000012   0x4620             MOV      R0,R4
+   \   00000014   0x.... 0x....      BL       _Z15_writePacketRawPKhj
+    485          	_writePacketRaw(data, dataLen);	// send the data block in raw mode
+   \   00000018   0x4639             MOV      R1,R7
+   \   0000001A   0x4630             MOV      R0,R6
+   \   0000001C   0x.... 0x....      BL       _Z15_writePacketRawPKhj
+    486          	WriteByteRaw(0xc0);				// send the packet end character
+   \   00000020   0x20C0             MOVS     R0,#+192
+   \   00000022   0xE8BD 0x40F2      POP      {R1,R4-R7,LR}
+   \   00000026   0x....             B.N      _Z12WriteByteRawh
+    487          }
+    488          
+    489          // Send a command to the attached device together with the supplied data, if any.
+    490          // The data is supplied via a list of one or more segments.
+
+   \                                 In section .text, align 2, keep-with-next
+    491          void sendCommand(uint8_t op, uint32_t checkVal, const uint8_t *data, size_t dataLen)
+    492          {
+   \                     _Z11sendCommandhjPKhj: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0x4616             MOV      R6,R2
+   \   0000000A   0x461F             MOV      R7,R3
+    493          	// populate the header
+    494          	uint8_t hdr[8];
+    495          	putData(0, 1, hdr, 0);
+   \   0000000C   0x2300             MOVS     R3,#+0
+   \   0000000E   0xAA00             ADD      R2,SP,#+0
+   \   00000010   0x2101             MOVS     R1,#+1
+   \   00000012   0x4618             MOV      R0,R3
+   \   00000014   0x.... 0x....      BL       _Z7putDatajjPhi
+    496          	putData(op, 1, hdr, 1);
+   \   00000018   0x2301             MOVS     R3,#+1
+   \   0000001A   0xAA00             ADD      R2,SP,#+0
+   \   0000001C   0x4619             MOV      R1,R3
+   \   0000001E   0x4620             MOV      R0,R4
+   \   00000020   0x.... 0x....      BL       _Z7putDatajjPhi
+    497          	putData(dataLen, 2, hdr, 2);
+   \   00000024   0x2302             MOVS     R3,#+2
+   \   00000026   0xAA00             ADD      R2,SP,#+0
+   \   00000028   0x4619             MOV      R1,R3
+   \   0000002A   0x4638             MOV      R0,R7
+   \   0000002C   0x.... 0x....      BL       _Z7putDatajjPhi
+    498          	putData(checkVal, 4, hdr, 4);
+   \   00000030   0x2304             MOVS     R3,#+4
+   \   00000032   0xAA00             ADD      R2,SP,#+0
+   \   00000034   0x4619             MOV      R1,R3
+   \   00000036   0x4628             MOV      R0,R5
+   \   00000038   0x.... 0x....      BL       _Z7putDatajjPhi
+    499          
+    500          	// send the packet
+    501          	//flushInput();
+    502          	if (op == ESP_SYNC)
+   \   0000003C   0x2C08             CMP      R4,#+8
+   \   0000003E   0x463B             MOV      R3,R7
+   \   00000040   0x4632             MOV      R2,R6
+   \   00000042   0xD104             BNE.N    ??sendCommand_0
+    503          	{
+    504          		writePacketRaw(hdr, sizeof(hdr), data, dataLen);
+   \   00000044   0x2108             MOVS     R1,#+8
+   \   00000046   0xA800             ADD      R0,SP,#+0
+   \   00000048   0x.... 0x....      BL       _Z14writePacketRawPKhjS0_j
+   \   0000004C   0xBDF7             POP      {R0-R2,R4-R7,PC}
+    505          	}
+    506          	else
+    507          	{
+    508          		writePacket(hdr, sizeof(hdr), data, dataLen);
+   \                     ??sendCommand_0: (+1)
+   \   0000004E   0x2108             MOVS     R1,#+8
+   \   00000050   0xA800             ADD      R0,SP,#+0
+   \   00000052   0x.... 0x....      BL       _Z11writePacketPKhjS0_j
+    509          	}
+    510          }
+   \   00000056   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    511          
+    512          // Send a command to the attached device together with the supplied data, if any, and get the response
+
+   \                                 In section .text, align 2, keep-with-next
+    513          EspUploadResult doCommand(uint8_t op, const uint8_t *data, size_t dataLen, uint32_t checkVal, uint32_t *valp, uint32_t msTimeout)
+    514          {
+   \                     _Z9doCommandhPKhjjPjj: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x4618             MOV      R0,R3
+    515          	size_t bodyLen;
+    516          	EspUploadResult stat;
+    517          	
+    518          	sendCommand(op, checkVal, data, dataLen);
+   \   00000008   0x4613             MOV      R3,R2
+   \   0000000A   0x460A             MOV      R2,R1
+   \   0000000C   0x4601             MOV      R1,R0
+   \   0000000E   0x4620             MOV      R0,R4
+   \   00000010   0x.... 0x....      BL       _Z11sendCommandhjPKhj
+    519          	
+    520          	stat = readPacket(op, valp, &bodyLen, msTimeout);
+   \   00000014   0x9B05             LDR      R3,[SP, #+20]
+   \   00000016   0xAA00             ADD      R2,SP,#+0
+   \   00000018   0x9904             LDR      R1,[SP, #+16]
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0x.... 0x....      BL       _Z10readPackethPjS_j
+    521          	if (stat == success && bodyLen != 2)
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD103             BNE.N    ??doCommand_0
+   \   00000024   0x9900             LDR      R1,[SP, #+0]
+   \   00000026   0x2902             CMP      R1,#+2
+   \   00000028   0xD000             BEQ.N    ??doCommand_0
+    522          	{
+    523          		stat = badReply;
+   \   0000002A   0x2003             MOVS     R0,#+3
+    524          	}
+    525          
+    526          	return stat;
+   \                     ??doCommand_0: (+1)
+   \   0000002C   0xBD16             POP      {R1,R2,R4,PC}    ;; return
+    527          }
+    528          
+    529          // Send a synchronising packet to the serial port in an attempt to induce
+    530          // the ESP8266 to auto-baud lock on the baud rate.
+
+   \                                 In section .text, align 2, keep-with-next
+    531          EspUploadResult Sync(uint16_t timeout)
+    532          {
+   \                     _Z4Synct: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB08C             SUB      SP,SP,#+48
+   \   00000004   0x4604             MOV      R4,R0
+    533          	uint8_t buf[36];
+    534          	EspUploadResult stat;
+    535          	int i ;
+    536          
+    537          	// compose the data for the sync attempt
+    538          	memset(buf, 0x55, sizeof(buf));
+   \   00000006   0x2224             MOVS     R2,#+36
+   \   00000008   0x2155             MOVS     R1,#+85
+   \   0000000A   0xA802             ADD      R0,SP,#+8
+   \   0000000C   0x.... 0x....      BL       memset
+    539          	buf[0] = 0x07;
+   \   00000010   0x2007             MOVS     R0,#+7
+   \   00000012   0xF88D 0x0008      STRB     R0,[SP, #+8]
+    540          	buf[1] = 0x07;
+   \   00000016   0xA802             ADD      R0,SP,#+8
+   \   00000018   0x2107             MOVS     R1,#+7
+   \   0000001A   0x7041             STRB     R1,[R0, #+1]
+    541          	buf[2] = 0x12;
+   \   0000001C   0x2112             MOVS     R1,#+18
+   \   0000001E   0x7081             STRB     R1,[R0, #+2]
+    542          	buf[3] = 0x20;
+   \   00000020   0x2020             MOVS     R0,#+32
+   \   00000022   0xF88D 0x000B      STRB     R0,[SP, #+11]
+    543          
+    544          	stat = doCommand(ESP_SYNC, buf, sizeof(buf), 0, 0, timeout);
+   \   00000026   0x9401             STR      R4,[SP, #+4]
+   \   00000028   0x2000             MOVS     R0,#+0
+   \   0000002A   0x9000             STR      R0,[SP, #+0]
+   \   0000002C   0x4603             MOV      R3,R0
+   \   0000002E   0x2224             MOVS     R2,#+36
+   \   00000030   0xA902             ADD      R1,SP,#+8
+   \   00000032   0x2008             MOVS     R0,#+8
+   \   00000034   0x.... 0x....      BL       _Z9doCommandhPKhjjPjj
+   \   00000038   0x4605             MOV      R5,R0
+    545          
+    546          	// If we got a response other than sync, discard it and wait for a sync response. This happens at higher baud rates.
+    547          	for (i = 0; i < 10 && stat == respHeader; ++i)
+   \   0000003A   0x2600             MOVS     R6,#+0
+   \   0000003C   0xE007             B.N      ??Sync_0
+    548          	{
+    549          		size_t bodyLen;
+    550          		stat = readPacket(ESP_SYNC, 0, &bodyLen, timeout);
+   \                     ??Sync_1: (+1)
+   \   0000003E   0x4623             MOV      R3,R4
+   \   00000040   0xAA00             ADD      R2,SP,#+0
+   \   00000042   0x2100             MOVS     R1,#+0
+   \   00000044   0x2008             MOVS     R0,#+8
+   \   00000046   0x.... 0x....      BL       _Z10readPackethPjS_j
+   \   0000004A   0x4605             MOV      R5,R0
+    551          	}
+   \   0000004C   0x1C76             ADDS     R6,R6,#+1
+   \                     ??Sync_0: (+1)
+   \   0000004E   0x2E0A             CMP      R6,#+10
+   \   00000050   0xDA01             BGE.N    ??Sync_2
+   \   00000052   0x2D06             CMP      R5,#+6
+   \   00000054   0xD0F3             BEQ.N    ??Sync_1
+    552          
+    553          	if (stat == success)
+   \                     ??Sync_2: (+1)
+   \   00000056   0x2D00             CMP      R5,#+0
+   \   00000058   0xD10B             BNE.N    ??Sync_3
+    554          	{
+    555          		// Read and discard additional replies
+    556          		for (;;)
+    557          		{
+    558          			size_t bodyLen;
+    559          			EspUploadResult rc = readPacket(ESP_SYNC, 0, &bodyLen, defaultTimeout);
+    560          			if (rc != success || bodyLen != 2)
+   \                     ??Sync_4: (+1)
+   \   0000005A   0xF44F 0x73FA      MOV      R3,#+500
+   \   0000005E   0xAA00             ADD      R2,SP,#+0
+   \   00000060   0x2100             MOVS     R1,#+0
+   \   00000062   0x2008             MOVS     R0,#+8
+   \   00000064   0x.... 0x....      BL       _Z10readPackethPjS_j
+   \   00000068   0x2800             CMP      R0,#+0
+   \   0000006A   0xD102             BNE.N    ??Sync_3
+   \   0000006C   0x9800             LDR      R0,[SP, #+0]
+   \   0000006E   0x2802             CMP      R0,#+2
+   \   00000070   0xD0F3             BEQ.N    ??Sync_4
+    561          			{
+    562          				break;
+    563          			}
+    564          		}
+    565          	}
+    566          //DEBUG
+    567          //	else debug//printf("stat=%d\n", (int)stat);
+    568          	return stat;
+   \                     ??Sync_3: (+1)
+   \   00000072   0x4628             MOV      R0,R5
+   \   00000074   0xB00C             ADD      SP,SP,#+48
+   \   00000076   0xBD70             POP      {R4-R6,PC}       ;; return
+    569          }
+    570          
+    571          // Send a command to the device to begin the Flash process.
+
+   \                                 In section .text, align 2, keep-with-next
+    572          EspUploadResult flashBegin(uint32_t addr, uint32_t size)
+    573          {
+   \                     _Z10flashBeginjj: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB087             SUB      SP,SP,#+28
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+    574          	// determine the number of blocks represented by the size
+    575          	uint32_t blkCnt;
+    576          	uint8_t buf[16];
+    577          	uint32_t timeout; 
+    578          		
+    579          	blkCnt = (size + EspFlashBlockSize - 1) / EspFlashBlockSize;
+    580          
+    581          	// ensure that the address is on a block boundary
+    582          	addr &= ~(EspFlashBlockSize - 1);
+    583          
+    584          	// begin the Flash process
+    585          
+    586          	putData(size, 4, buf, 0);
+   \   00000008   0x2300             MOVS     R3,#+0
+   \   0000000A   0xAA02             ADD      R2,SP,#+8
+   \   0000000C   0x2104             MOVS     R1,#+4
+   \   0000000E   0x4628             MOV      R0,R5
+   \   00000010   0x.... 0x....      BL       _Z7putDatajjPhi
+    587          	putData(blkCnt, 4, buf, 4);
+   \   00000014   0x2304             MOVS     R3,#+4
+   \   00000016   0xAA02             ADD      R2,SP,#+8
+   \   00000018   0x4619             MOV      R1,R3
+   \   0000001A   0xF205 0x30FF      ADDW     R0,R5,#+1023
+   \   0000001E   0x0A80             LSRS     R0,R0,#+10
+   \   00000020   0x.... 0x....      BL       _Z7putDatajjPhi
+    588          	putData(EspFlashBlockSize, 4, buf, 8);
+   \   00000024   0x2308             MOVS     R3,#+8
+   \   00000026   0xAA02             ADD      R2,SP,#+8
+   \   00000028   0x2104             MOVS     R1,#+4
+   \   0000002A   0xF44F 0x6080      MOV      R0,#+1024
+   \   0000002E   0x.... 0x....      BL       _Z7putDatajjPhi
+    589          	putData(addr, 4, buf, 12);
+   \   00000032   0x230C             MOVS     R3,#+12
+   \   00000034   0xAA02             ADD      R2,SP,#+8
+   \   00000036   0x2104             MOVS     R1,#+4
+   \   00000038   0x0AA0             LSRS     R0,R4,#+10
+   \   0000003A   0x0280             LSLS     R0,R0,#+10
+   \   0000003C   0x.... 0x....      BL       _Z7putDatajjPhi
+    590          
+    591          	timeout = (size != 0) ? eraseTimeout : defaultTimeout;
+   \   00000040   0x2D00             CMP      R5,#+0
+   \   00000042   0xD002             BEQ.N    ??flashBegin_0
+   \   00000044   0xF643 0x2098      MOVW     R0,#+15000
+   \   00000048   0xE001             B.N      ??flashBegin_1
+   \                     ??flashBegin_0: (+1)
+   \   0000004A   0xF44F 0x70FA      MOV      R0,#+500
+    592          	return doCommand(ESP_FLASH_BEGIN, buf, sizeof(buf), 0, 0, timeout);
+   \                     ??flashBegin_1: (+1)
+   \   0000004E   0x9001             STR      R0,[SP, #+4]
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x9000             STR      R0,[SP, #+0]
+   \   00000054   0x4603             MOV      R3,R0
+   \   00000056   0x2210             MOVS     R2,#+16
+   \   00000058   0xA902             ADD      R1,SP,#+8
+   \   0000005A   0x2002             MOVS     R0,#+2
+   \   0000005C   0x.... 0x....      BL       _Z9doCommandhPKhjjPjj
+   \   00000060   0xB007             ADD      SP,SP,#+28
+   \   00000062   0xBD30             POP      {R4,R5,PC}       ;; return
+    593          }
+    594          
+    595          // Send a command to the device to terminate the Flash process
+
+   \                                 In section .text, align 2, keep-with-next
+    596          EspUploadResult flashFinish(signed char reboot)
+    597          {
+   \                     _Z11flashFinisha: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB084             SUB      SP,SP,#+16
+    598          	uint8_t buf[4];
+    599          	putData(reboot ? 0 : 1, 4, buf, 0);
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x1E64             SUBS     R4,R4,#+1
+   \   00000008   0x41A4             SBCS     R4,R4,R4
+   \   0000000A   0x0FE4             LSRS     R4,R4,#+31
+   \   0000000C   0x2300             MOVS     R3,#+0
+   \   0000000E   0xAA02             ADD      R2,SP,#+8
+   \   00000010   0x2104             MOVS     R1,#+4
+   \   00000012   0x4620             MOV      R0,R4
+   \   00000014   0x.... 0x....      BL       _Z7putDatajjPhi
+    600          	return doCommand(ESP_FLASH_END, buf, sizeof(buf), 0, 0, defaultTimeout);
+   \   00000018   0xF44F 0x70FA      MOV      R0,#+500
+   \   0000001C   0x9001             STR      R0,[SP, #+4]
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0x9000             STR      R0,[SP, #+0]
+   \   00000022   0x4603             MOV      R3,R0
+   \   00000024   0x2204             MOVS     R2,#+4
+   \   00000026   0xA902             ADD      R1,SP,#+8
+   \   00000028   0x4610             MOV      R0,R2
+   \   0000002A   0x.... 0x....      BL       _Z9doCommandhPKhjjPjj
+   \   0000002E   0xB004             ADD      SP,SP,#+16
+   \   00000030   0xBD10             POP      {R4,PC}          ;; return
+    601          }
+    602          
+    603          // Compute the checksum of a block of data
+
+   \                                 In section .text, align 2, keep-with-next
+    604          uint16_t checksum(const uint8_t *data, uint16_t dataLen, uint16_t cksum)
+    605          {
+    606          	if (data != NULL)
+   \                     _Z8checksumPKhtt: (+1)
+   \   00000000   0x2800             CMP      R0,#+0
+   \   00000002   0xD008             BEQ.N    ??checksum_0
+   \   00000004   0xE002             B.N      ??checksum_1
+    607          	{
+    608          		while (dataLen--)
+    609          		{
+    610          			cksum ^= (uint16_t)*data++;
+   \                     ??checksum_2: (+1)
+   \   00000006   0xF810 0x3B01      LDRB     R3,[R0], #+1
+   \   0000000A   0x405A             EORS     R2,R3,R2
+    611          		}
+   \                     ??checksum_1: (+1)
+   \   0000000C   0x460B             MOV      R3,R1
+   \   0000000E   0x1E59             SUBS     R1,R3,#+1
+   \   00000010   0xB29B             UXTH     R3,R3
+   \   00000012   0x2B00             CMP      R3,#+0
+   \   00000014   0xD1F7             BNE.N    ??checksum_2
+    612          	}
+    613          	return(cksum);
+   \                     ??checksum_0: (+1)
+   \   00000016   0x4610             MOV      R0,R2
+   \   00000018   0xB280             UXTH     R0,R0
+   \   0000001A   0x4770             BX       LR               ;; return
+    614          }
+    615          
+
+   \                                 In section .text, align 2, keep-with-next
+    616          EspUploadResult flashWriteBlock(uint16_t flashParmVal, uint16_t flashParmMask)
+    617          {
+   \                     _Z15flashWriteBlocktt: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0xF5AD 0x6D84      SUB      SP,SP,#+1056
+   \   00000008   0x4605             MOV      R5,R0
+   \   0000000A   0x460E             MOV      R6,R1
+    618          	const uint32_t blkSize = EspFlashBlockSize;
+    619          	int i;
+    620          
+    621          	// Allocate a data buffer for the combined header and block data
+    622          	const uint16_t hdrOfst = 0;
+    623          	const uint16_t dataOfst = 16;
+    624          	const uint16_t blkBufSize = dataOfst + blkSize;
+    625          	uint32_t blkBuf32[blkBufSize/4];
+    626          	uint8_t * const blkBuf = (uint8_t*)(blkBuf32);
+    627          	uint32_t cnt;
+    628          	uint16_t cksum;
+    629          	EspUploadResult stat;
+    630          
+    631          	// Prepare the header for the block
+    632          	putData(blkSize, 4, blkBuf, hdrOfst + 0);
+   \   0000000C   0x2300             MOVS     R3,#+0
+   \   0000000E   0xAA03             ADD      R2,SP,#+12
+   \   00000010   0x2104             MOVS     R1,#+4
+   \   00000012   0xF44F 0x6080      MOV      R0,#+1024
+   \   00000016   0x.... 0x....      BL       _Z7putDatajjPhi
+    633          	putData(esp_upload.uploadBlockNumber, 4, blkBuf, hdrOfst + 4);
+   \   0000001A   0x.... 0x....      LDR.W    R8,??DataTable23
+   \   0000001E   0xF508 0x7702      ADD      R7,R8,#+520
+   \   00000022   0x2304             MOVS     R3,#+4
+   \   00000024   0xAA03             ADD      R2,SP,#+12
+   \   00000026   0x4619             MOV      R1,R3
+   \   00000028   0x6C38             LDR      R0,[R7, #+64]
+   \   0000002A   0x.... 0x....      BL       _Z7putDatajjPhi
+    634          	putData(0, 4, blkBuf, hdrOfst + 8);
+   \   0000002E   0x2308             MOVS     R3,#+8
+   \   00000030   0xAA03             ADD      R2,SP,#+12
+   \   00000032   0x2104             MOVS     R1,#+4
+   \   00000034   0x2000             MOVS     R0,#+0
+   \   00000036   0x.... 0x....      BL       _Z7putDatajjPhi
+    635          	putData(0, 4, blkBuf, hdrOfst + 12);
+   \   0000003A   0x230C             MOVS     R3,#+12
+   \   0000003C   0xAA03             ADD      R2,SP,#+12
+   \   0000003E   0x2104             MOVS     R1,#+4
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x.... 0x....      BL       _Z7putDatajjPhi
+    636          
+    637          	// Get the data for the block
+    638          	f_read(&esp_upload.uploadFile, blkBuf + dataOfst,  blkSize, &cnt );//->Read(reinterpret_cast<char *>(blkBuf + dataOfst), blkSize);
+   \   00000046   0xAB02             ADD      R3,SP,#+8
+   \   00000048   0xF44F 0x6280      MOV      R2,#+1024
+   \   0000004C   0xA907             ADD      R1,SP,#+28
+   \   0000004E   0x4640             MOV      R0,R8
+   \   00000050   0x.... 0x....      BL       f_read
+    639          	if (cnt != blkSize)
+   \   00000054   0x9802             LDR      R0,[SP, #+8]
+   \   00000056   0xF5B0 0x6F80      CMP      R0,#+1024
+   \   0000005A   0xD00D             BEQ.N    ??flashWriteBlock_0
+    640          	{
+    641          		if (f_tell(&esp_upload.uploadFile) == esp_upload.fileSize)
+   \   0000005C   0xF8D8 0x0208      LDR      R0,[R8, #+520]
+   \   00000060   0x6A79             LDR      R1,[R7, #+36]
+   \   00000062   0x4288             CMP      R0,R1
+   \   00000064   0xD12B             BNE.N    ??flashWriteBlock_1
+    642          		{
+    643          			// partial last block, fill the remainder
+    644          			memset(blkBuf + dataOfst + cnt, 0xff, blkSize - cnt);
+   \   00000066   0x9802             LDR      R0,[SP, #+8]
+   \   00000068   0xF5C0 0x6280      RSB      R2,R0,#+1024
+   \   0000006C   0x21FF             MOVS     R1,#+255
+   \   0000006E   0xAB03             ADD      R3,SP,#+12
+   \   00000070   0x18C0             ADDS     R0,R0,R3
+   \   00000072   0x3010             ADDS     R0,R0,#+16
+   \   00000074   0x.... 0x....      BL       memset
+    645          		}
+    646          		else
+    647          		{
+    648          			return fileRead;
+    649          		}
+    650          	}
+    651          
+    652          	// Patch the flash parameters into the first block if it is loaded at address 0
+    653          	if (esp_upload.uploadBlockNumber == 0 && esp_upload.uploadAddress == 0 && blkBuf[dataOfst] == ESP_IMAGE_MAGIC && flashParmMask != 0)
+   \                     ??flashWriteBlock_0: (+1)
+   \   00000078   0x6C38             LDR      R0,[R7, #+64]
+   \   0000007A   0x2800             CMP      R0,#+0
+   \   0000007C   0xD116             BNE.N    ??flashWriteBlock_2
+   \   0000007E   0x6AB8             LDR      R0,[R7, #+40]
+   \   00000080   0x2800             CMP      R0,#+0
+   \   00000082   0xD113             BNE.N    ??flashWriteBlock_2
+   \   00000084   0xF89D 0x001C      LDRB     R0,[SP, #+28]
+   \   00000088   0x28E9             CMP      R0,#+233
+   \   0000008A   0xD10F             BNE.N    ??flashWriteBlock_2
+   \   0000008C   0x2E00             CMP      R6,#+0
+   \   0000008E   0xD00D             BEQ.N    ??flashWriteBlock_2
+    654          	{
+    655          		// update the Flash parameters
+    656          		uint32_t flashParm = getData(2, blkBuf + dataOfst + 2, 0) & ~(uint32_t)flashParmMask;
+   \   00000090   0x2200             MOVS     R2,#+0
+   \   00000092   0xF10D 0x011E      ADD      R1,SP,#+30
+   \   00000096   0x2002             MOVS     R0,#+2
+   \   00000098   0x.... 0x....      BL       _Z7getDatajPKhi
+   \   0000009C   0x43B0             BICS     R0,R0,R6
+    657          		putData(flashParm | flashParmVal, 2, blkBuf + dataOfst + 2, 0);
+   \   0000009E   0x2300             MOVS     R3,#+0
+   \   000000A0   0xF10D 0x021E      ADD      R2,SP,#+30
+   \   000000A4   0x2102             MOVS     R1,#+2
+   \   000000A6   0x4328             ORRS     R0,R5,R0
+   \   000000A8   0x.... 0x....      BL       _Z7putDatajjPhi
+    658          	}
+    659          
+    660          	// Calculate the block checksum
+    661          	cksum = checksum(blkBuf + dataOfst, blkSize, ESP_CHECKSUM_MAGIC);
+   \                     ??flashWriteBlock_2: (+1)
+   \   000000AC   0x22EF             MOVS     R2,#+239
+   \   000000AE   0xF44F 0x6180      MOV      R1,#+1024
+   \   000000B2   0xA807             ADD      R0,SP,#+28
+   \   000000B4   0x.... 0x....      BL       _Z8checksumPKhtt
+   \   000000B8   0x4605             MOV      R5,R0
+    662          	
+    663          	for (i = 0; i < 3; i++)
+   \   000000BA   0x2600             MOVS     R6,#+0
+   \   000000BC   0xE002             B.N      ??flashWriteBlock_3
+   \                     ??flashWriteBlock_1: (+1)
+   \   000000BE   0x2004             MOVS     R0,#+4
+   \   000000C0   0xE011             B.N      ??flashWriteBlock_4
+   \                     ??flashWriteBlock_5: (+1)
+   \   000000C2   0x1C76             ADDS     R6,R6,#+1
+   \                     ??flashWriteBlock_3: (+1)
+   \   000000C4   0x2E03             CMP      R6,#+3
+   \   000000C6   0xDA0C             BGE.N    ??flashWriteBlock_6
+    664          	{
+    665          		if ((stat = doCommand(ESP_FLASH_DATA, blkBuf, blkBufSize, cksum, 0, blockWriteTimeout)) == success)
+   \   000000C8   0x20C8             MOVS     R0,#+200
+   \   000000CA   0x9001             STR      R0,[SP, #+4]
+   \   000000CC   0x2000             MOVS     R0,#+0
+   \   000000CE   0x9000             STR      R0,[SP, #+0]
+   \   000000D0   0x462B             MOV      R3,R5
+   \   000000D2   0xF44F 0x6282      MOV      R2,#+1040
+   \   000000D6   0xA903             ADD      R1,SP,#+12
+   \   000000D8   0x2003             MOVS     R0,#+3
+   \   000000DA   0x.... 0x....      BL       _Z9doCommandhPKhjjPjj
+   \   000000DE   0x0004             MOVS     R4,R0
+   \   000000E0   0xD1EF             BNE.N    ??flashWriteBlock_5
+    666          		{
+    667          			break;
+    668          		}
+    669          	}
+    670          
+    671          	//printf("Upload %d\%\n", ftell(&esp_upload.uploadFile) * 100 / esp_upload.fileSize);
+    672          
+    673          	return stat;
+   \                     ??flashWriteBlock_6: (+1)
+   \   000000E2   0x4620             MOV      R0,R4
+   \   000000E4   0xB240             SXTB     R0,R0
+   \                     ??flashWriteBlock_4: (+1)
+   \   000000E6   0xF50D 0x6D84      ADD      SP,SP,#+1056
+   \   000000EA   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    674          }
+    675          
+
+   \                                 In section .text, align 2, keep-with-next
+    676          void upload_spin()
+    677          {
+   \                     _Z11upload_spinv: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    678          	switch (esp_upload.state)
+   \   00000002   0x....             LDR.N    R5,??DataTable23
+   \   00000004   0xF505 0x740B      ADD      R4,R5,#+556
+   \   00000008   0xF994 0x0008      LDRSB    R0,[R4, #+8]
+   \   0000000C   0x2801             CMP      R0,#+1
+   \   0000000E   0xD009             BEQ.N    ??upload_spin_0
+   \   00000010   0xF0C0 0x80B2      BCC.W    ??upload_spin_1
+   \   00000014   0x2803             CMP      R0,#+3
+   \   00000016   0xD04A             BEQ.N    ??upload_spin_2
+   \   00000018   0xD31C             BCC.N    ??upload_spin_3
+   \   0000001A   0x2805             CMP      R0,#+5
+   \   0000001C   0xF000 0x80A7      BEQ.W    ??upload_spin_4
+   \   00000020   0xD376             BCC.N    ??upload_spin_5
+   \   00000022   0xBD70             POP      {R4-R6,PC}
+    679          	{
+    680          	case resetting:
+    681          #if 1
+    682          		if (esp_upload.connectAttemptNumber == 9)
+   \                     ??upload_spin_0: (+1)
+   \   00000024   0x6920             LDR      R0,[R4, #+16]
+   \   00000026   0x2809             CMP      R0,#+9
+   \   00000028   0xD105             BNE.N    ??upload_spin_6
+    683          		{
+    684          			// Time to give up
+    685          			//Network::ResetWiFi();
+    686          			esp_upload.uploadResult = connected;
+   \   0000002A   0x2002             MOVS     R0,#+2
+   \   0000002C   0xF885 0x0250      STRB     R0,[R5, #+592]
+    687          			esp_upload.state = done;
+   \   00000030   0x2005             MOVS     R0,#+5
+   \   00000032   0x7220             STRB     R0,[R4, #+8]
+   \   00000034   0xBD70             POP      {R4-R6,PC}
+    688          		}
+    689          		else
+    690          		{
+    691          			
+    692          			// Reset the serial port at the new baud rate. Also reset the ESP8266.
+    693          		//	const uint32_t baud = uploadBaudRates[esp_upload.connectAttemptNumber/esp_upload.retriesPerBaudRate];
+    694          			if (esp_upload.connectAttemptNumber % esp_upload.retriesPerBaudRate == 0)
+    695          			{
+    696          			}
+    697          		//	uploadPort.begin(baud);//串口初始化
+    698          		//	uploadPort_close();
+    699          
+    700          						
+    701          			uploadPort_begin();
+   \                     ??upload_spin_6: (+1)
+   \   00000036   0x.... 0x....      BL       _Z16uploadPort_beginv
+    702          
+    703          			wifi_delay(2000);
+   \   0000003A   0xF44F 0x60FA      MOV      R0,#+2000
+   \   0000003E   0x.... 0x....      BL       _Z10wifi_delayi
+    704          
+    705          			flushInput();
+   \   00000042   0x.... 0x....      BL       _Z10flushInputv
+    706          		
+    707          			esp_upload.lastAttemptTime = esp_upload.lastResetTime = getWifiTick();
+   \   00000046   0x.... 0x....      BL       _Z11getWifiTickv
+   \   0000004A   0x61A0             STR      R0,[R4, #+24]
+   \   0000004C   0x6160             STR      R0,[R4, #+20]
+    708          			esp_upload.state = connecting;
+   \   0000004E   0x2002             MOVS     R0,#+2
+   \   00000050   0x7220             STRB     R0,[R4, #+8]
+   \   00000052   0xBD70             POP      {R4-R6,PC}
+    709          		}
+    710          #endif
+    711          		break;
+    712          
+    713          	case connecting:
+    714          		if ((getWifiTickDiff(esp_upload.lastAttemptTime, getWifiTick()) >= connectAttemptInterval) && (getWifiTickDiff(esp_upload.lastResetTime, getWifiTick()) >= 500))
+   \                     ??upload_spin_3: (+1)
+   \   00000054   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000058   0x4601             MOV      R1,R0
+   \   0000005A   0x6960             LDR      R0,[R4, #+20]
+   \   0000005C   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   00000060   0x2832             CMP      R0,#+50
+   \   00000062   0xF0C0 0x8089      BCC.W    ??upload_spin_1
+   \   00000066   0x.... 0x....      BL       _Z11getWifiTickv
+   \   0000006A   0x4601             MOV      R1,R0
+   \   0000006C   0x69A0             LDR      R0,[R4, #+24]
+   \   0000006E   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   00000072   0xF5B0 0x7FFA      CMP      R0,#+500
+   \   00000076   0xF0C0 0x807F      BCC.W    ??upload_spin_1
+    715          		{
+    716          			// Attempt to establish a connection to the ESP8266.
+    717          			EspUploadResult res = Sync(5000);
+   \   0000007A   0xF241 0x3088      MOVW     R0,#+5000
+   \   0000007E   0x.... 0x....      BL       _Z4Synct
+   \   00000082   0x4605             MOV      R5,R0
+    718          			esp_upload.lastAttemptTime = getWifiTick();
+   \   00000084   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000088   0x6160             STR      R0,[R4, #+20]
+    719          			if (res == success)
+   \   0000008A   0x2D00             CMP      R5,#+0
+   \   0000008C   0xD102             BNE.N    ??upload_spin_7
+    720          			{
+    721          				// Successful connection
+    722          //				//MessageF(" success on attempt %d\n", (connectAttemptNumber % retriesPerBaudRate) + 1);
+    723          				//printf("connect success\n");
+    724          				esp_upload.state = erasing;
+   \   0000008E   0x2003             MOVS     R0,#+3
+   \   00000090   0x7220             STRB     R0,[R4, #+8]
+   \   00000092   0xBD70             POP      {R4-R6,PC}
+    725          			}
+    726          			else
+    727          			{
+    728          				// This attempt failed
+    729          				esp_upload.connectAttemptNumber++;
+   \                     ??upload_spin_7: (+1)
+   \   00000094   0x6920             LDR      R0,[R4, #+16]
+   \   00000096   0x1C40             ADDS     R0,R0,#+1
+   \   00000098   0x6120             STR      R0,[R4, #+16]
+    730          				if (esp_upload.connectAttemptNumber % retriesPerReset == 0)
+   \   0000009A   0x2103             MOVS     R1,#+3
+   \   0000009C   0xFBB0 0xF1F1      UDIV     R1,R0,R1
+   \   000000A0   0xEB01 0x0141      ADD      R1,R1,R1, LSL #+1
+   \   000000A4   0x1A40             SUBS     R0,R0,R1
+   \   000000A6   0xD167             BNE.N    ??upload_spin_1
+    731          				{
+    732          					esp_upload.state = resetting;		// try a reset and a lower baud rate
+   \   000000A8   0x2001             MOVS     R0,#+1
+   \   000000AA   0x7220             STRB     R0,[R4, #+8]
+   \   000000AC   0xBD70             POP      {R4-R6,PC}
+    733          				}
+    734          			}
+    735          		}
+    736          		break;
+    737          
+    738          	case erasing:
+    739          		if (getWifiTickDiff(esp_upload.lastAttemptTime, getWifiTick()) >= blockWriteInterval)
+   \                     ??upload_spin_2: (+1)
+   \   000000AE   0x.... 0x....      BL       _Z11getWifiTickv
+   \   000000B2   0x4601             MOV      R1,R0
+   \   000000B4   0x6960             LDR      R0,[R4, #+20]
+   \   000000B6   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   000000BA   0x280F             CMP      R0,#+15
+   \   000000BC   0xD35C             BCC.N    ??upload_spin_1
+    740          		{
+    741          			uint32_t eraseSize;
+    742          			const uint32_t sectorsPerBlock = 16;
+    743          			const uint32_t sectorSize = 4096;
+    744          			const uint32_t numSectors = (esp_upload.fileSize + sectorSize - 1)/sectorSize;
+   \   000000BE   0xF8D5 0x022C      LDR      R0,[R5, #+556]
+   \   000000C2   0xF600 0x70FF      ADDW     R0,R0,#+4095
+   \   000000C6   0x0B01             LSRS     R1,R0,#+12
+    745          			const uint32_t startSector = esp_upload.uploadAddress/sectorSize;
+    746          			uint32_t headSectors = sectorsPerBlock - (startSector % sectorsPerBlock);
+   \   000000C8   0x6860             LDR      R0,[R4, #+4]
+   \   000000CA   0xF3C0 0x3203      UBFX     R2,R0,#+12,#+4
+   \   000000CE   0xF1C2 0x0210      RSB      R2,R2,#+16
+    747          
+    748          			if (numSectors < headSectors)
+   \   000000D2   0x4291             CMP      R1,R2
+   \   000000D4   0xD800             BHI.N    ??upload_spin_8
+   \   000000D6   0x460A             MOV      R2,R1
+    749          			{
+    750          				headSectors = numSectors;
+    751          			}
+    752          	        	eraseSize = (numSectors < 2 * headSectors)
+    753              									? (numSectors + 1) / 2 * sectorSize
+    754              									: (numSectors - headSectors) * sectorSize;
+   \                     ??upload_spin_8: (+1)
+   \   000000D8   0xEBB1 0x0F42      CMP      R1,R2, LSL #+1
+   \   000000DC   0xD203             BCS.N    ??upload_spin_9
+   \   000000DE   0x1C49             ADDS     R1,R1,#+1
+   \   000000E0   0x0849             LSRS     R1,R1,#+1
+   \   000000E2   0x0309             LSLS     R1,R1,#+12
+   \   000000E4   0xE001             B.N      ??upload_spin_10
+   \                     ??upload_spin_9: (+1)
+   \   000000E6   0x1A89             SUBS     R1,R1,R2
+   \   000000E8   0x0309             LSLS     R1,R1,#+12
+    755          
+    756          			//MessageF("Erasing %u bytes...\n", fileSize);
+    757          			esp_upload.uploadResult = flashBegin(esp_upload.uploadAddress, eraseSize);
+   \                     ??upload_spin_10: (+1)
+   \   000000EA   0x.... 0x....      BL       _Z10flashBeginjj
+   \   000000EE   0xF885 0x0250      STRB     R0,[R5, #+592]
+    758          			if (esp_upload.uploadResult == success)
+   \   000000F2   0x2800             CMP      R0,#+0
+   \   000000F4   0xD109             BNE.N    ??upload_spin_11
+    759          			{
+    760          				//MessageF("Uploading file...\n");
+    761          				esp_upload.uploadBlockNumber = 0;
+   \   000000F6   0x2000             MOVS     R0,#+0
+   \   000000F8   0x61E0             STR      R0,[R4, #+28]
+    762          				esp_upload.uploadNextPercentToReport = percentToReportIncrement;
+   \   000000FA   0x2005             MOVS     R0,#+5
+   \   000000FC   0x6220             STR      R0,[R4, #+32]
+    763          				esp_upload.lastAttemptTime = getWifiTick();
+   \   000000FE   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000102   0x6160             STR      R0,[R4, #+20]
+    764          				esp_upload.state = uploading;
+   \   00000104   0x2004             MOVS     R0,#+4
+   \   00000106   0x7220             STRB     R0,[R4, #+8]
+   \   00000108   0xBD70             POP      {R4-R6,PC}
+    765          			}
+    766          			else
+    767          			{
+    768          				//MessageF("Erase failed\n");
+    769          				esp_upload.state = done;
+   \                     ??upload_spin_11: (+1)
+   \   0000010A   0x2005             MOVS     R0,#+5
+   \   0000010C   0x7220             STRB     R0,[R4, #+8]
+   \   0000010E   0xBD70             POP      {R4-R6,PC}
+    770          			}
+    771          		}
+    772          		break;
+    773          
+    774          	case uploading:
+    775          		// The ESP needs several milliseconds to recover from one packet before it will accept another
+    776          		if (getWifiTickDiff(esp_upload.lastAttemptTime, getWifiTick()) >= 15)
+   \                     ??upload_spin_5: (+1)
+   \   00000110   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000114   0x4601             MOV      R1,R0
+   \   00000116   0x6960             LDR      R0,[R4, #+20]
+   \   00000118   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   0000011C   0x280F             CMP      R0,#+15
+   \   0000011E   0xD32B             BCC.N    ??upload_spin_1
+    777          		{
+    778          			unsigned int percentComplete;
+    779          			const uint32_t blkCnt = (esp_upload.fileSize + EspFlashBlockSize - 1) / EspFlashBlockSize;
+   \   00000120   0xF8D5 0x022C      LDR      R0,[R5, #+556]
+   \   00000124   0xF200 0x30FF      ADDW     R0,R0,#+1023
+   \   00000128   0x0A86             LSRS     R6,R0,#+10
+    780          			if (esp_upload.uploadBlockNumber < blkCnt)
+   \   0000012A   0x69E0             LDR      R0,[R4, #+28]
+   \   0000012C   0x42B0             CMP      R0,R6
+   \   0000012E   0xD21B             BCS.N    ??upload_spin_12
+    781          			{
+    782          				esp_upload.uploadResult = flashWriteBlock(0, 0);
+   \   00000130   0x2100             MOVS     R1,#+0
+   \   00000132   0x4608             MOV      R0,R1
+   \   00000134   0x.... 0x....      BL       _Z15flashWriteBlocktt
+   \   00000138   0xF885 0x0250      STRB     R0,[R5, #+592]
+    783          				esp_upload.lastAttemptTime = getWifiTick();
+   \   0000013C   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000140   0x6160             STR      R0,[R4, #+20]
+    784          				if (esp_upload.uploadResult != success)
+   \   00000142   0xF995 0x0250      LDRSB    R0,[R5, #+592]
+   \   00000146   0x2800             CMP      R0,#+0
+   \   00000148   0xD001             BEQ.N    ??upload_spin_13
+    785          				{
+    786          					//MessageF("Flash block upload failed\n");
+    787          					esp_upload.state = done;
+   \   0000014A   0x2005             MOVS     R0,#+5
+   \   0000014C   0x7220             STRB     R0,[R4, #+8]
+    788          				}
+    789          				percentComplete = (100 * esp_upload.uploadBlockNumber)/blkCnt;
+   \                     ??upload_spin_13: (+1)
+   \   0000014E   0x69E0             LDR      R0,[R4, #+28]
+   \   00000150   0x2164             MOVS     R1,#+100
+   \   00000152   0x4341             MULS     R1,R1,R0
+   \   00000154   0xFBB1 0xF1F6      UDIV     R1,R1,R6
+    790          				++esp_upload.uploadBlockNumber;
+   \   00000158   0x1C40             ADDS     R0,R0,#+1
+   \   0000015A   0x61E0             STR      R0,[R4, #+28]
+    791          				if (percentComplete >= esp_upload.uploadNextPercentToReport)
+   \   0000015C   0x6A20             LDR      R0,[R4, #+32]
+   \   0000015E   0x4281             CMP      R1,R0
+   \   00000160   0xD30A             BCC.N    ??upload_spin_1
+    792          				{
+    793          					//MessageF("%u%% complete\n", percentComplete);
+    794          					esp_upload.uploadNextPercentToReport += percentToReportIncrement;
+   \   00000162   0x1D40             ADDS     R0,R0,#+5
+   \   00000164   0x6220             STR      R0,[R4, #+32]
+   \   00000166   0xBD70             POP      {R4-R6,PC}
+    795          				}
+    796          			}
+    797          			else
+    798          			{
+    799          				esp_upload.state = done;
+   \                     ??upload_spin_12: (+1)
+   \   00000168   0x2005             MOVS     R0,#+5
+   \   0000016A   0x7220             STRB     R0,[R4, #+8]
+   \   0000016C   0xBD70             POP      {R4-R6,PC}
+    800          			}
+    801          		}
+    802          		break;
+    803          
+    804          	case done:
+    805          		f_close(&esp_upload.uploadFile);
+   \                     ??upload_spin_4: (+1)
+   \   0000016E   0x4628             MOV      R0,R5
+   \   00000170   0x.... 0x....      BL       f_close
+    806          		//uploadPort.end();				//重新配置串口	// disable the port, it has a high interrupt priority
+    807          		//uploadPort_close();
+    808          
+    809          		//WIFI_COM.begin(115200, true);
+    810          		//wifi_init(); //恢复正常WIFI设置
+    811          		
+    812          		if (esp_upload.uploadResult == success)
+    813          		{
+    814          			//printf("upload successfully\n");
+    815          		}
+    816          		else
+    817          		{
+    818          			//printf("upload failed\n");
+    819          		}
+    820          		esp_upload.state = upload_idle;//idle;
+   \   00000174   0x2000             MOVS     R0,#+0
+   \   00000176   0x7220             STRB     R0,[R4, #+8]
+    821          		break;
+    822          
+    823          	default:
+    824          		break;
+    825          	}
+    826          }
+   \                     ??upload_spin_1: (+1)
+   \   00000178   0xBD70             POP      {R4-R6,PC}       ;; return
+    827          
+    828          // Try to upload the given file at the given address
+
+   \                                 In section .text, align 2, keep-with-next
+    829          void SendUpdateFile(const char *file, uint32_t address)
+    830          {
+   \                     _Z14SendUpdateFilePKcj: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    831          	FRESULT res = f_open(&esp_upload.uploadFile, file,  FA_OPEN_EXISTING | FA_READ);
+    832          
+    833          	if(res !=  FR_OK) 
+   \   00000004   0x....             LDR.N    R5,??DataTable23
+   \   00000006   0x2201             MOVS     R2,#+1
+   \   00000008   0x4601             MOV      R1,R0
+   \   0000000A   0x4628             MOV      R0,R5
+   \   0000000C   0x.... 0x....      BL       f_open
+   \   00000010   0x2800             CMP      R0,#+0
+   \   00000012   0xD116             BNE.N    ??SendUpdateFile_0
+    834          		return;
+    835          
+    836          	
+    837             	esp_upload.fileSize = f_size(&esp_upload.uploadFile);
+   \   00000014   0xF8D5 0x020C      LDR      R0,[R5, #+524]
+   \   00000018   0xF505 0x7603      ADD      R6,R5,#+524
+   \   0000001C   0x6230             STR      R0,[R6, #+32]
+    838          	if (esp_upload.fileSize == 0)
+   \   0000001E   0x2800             CMP      R0,#+0
+   \   00000020   0xD104             BNE.N    ??SendUpdateFile_1
+    839          	{
+    840          		f_close(&esp_upload.uploadFile);
+   \   00000022   0x4628             MOV      R0,R5
+   \   00000024   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   00000028   0x.... 0x....      B.W      f_close
+    841          		return;
+    842          	}
+    843          	f_lseek(&esp_upload.uploadFile, 0);
+   \                     ??SendUpdateFile_1: (+1)
+   \   0000002C   0x2100             MOVS     R1,#+0
+   \   0000002E   0x4628             MOV      R0,R5
+   \   00000030   0x.... 0x....      BL       f_lseek
+    844          	
+    845          	esp_upload.uploadAddress = address;
+   \   00000034   0x6274             STR      R4,[R6, #+36]
+    846          	esp_upload.connectAttemptNumber = 0;
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0xF8C5 0x023C      STR      R0,[R5, #+572]
+    847          	esp_upload.state = resetting;
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0xF885 0x0234      STRB     R0,[R5, #+564]
+    848          }
+   \                     ??SendUpdateFile_0: (+1)
+   \   00000042   0xBD70             POP      {R4-R6,PC}       ;; return
+    849          
+    850          static const uint32_t FirmwareAddress = 0x00000000; //固件
+    851          static const uint32_t WebFilesAddress = 0x00100000; //文件系统
+    852          
+    853          
+
+   \                                 In section .text, align 2, keep-with-next
+    854          void ResetWiFiForUpload(int begin_or_end)
+    855          {
+   \                     _Z18ResetWiFiForUploadi: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB085             SUB      SP,SP,#+20
+   \   00000004   0x4604             MOV      R4,R0
+    856          	uint32_t start, now;
+    857          		
+    858          	GPIO_InitTypeDef GPIO_InitStructure;
+    859          
+    860          	GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   00000006   0x2002             MOVS     R0,#+2
+   \   00000008   0x9003             STR      R0,[SP, #+12]
+    861          	GPIO_InitStructure.Pin = GPIO_Pin_6;//PC7先作为输入，升级时候作为输出
+   \   0000000A   0x2040             MOVS     R0,#+64
+   \   0000000C   0x9000             STR      R0,[SP, #+0]
+    862          	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP; 
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x9001             STR      R0,[SP, #+4]
+    863          	HAL_GPIO_Init(GPIOC, &GPIO_InitStructure);
+   \   00000012   0x....             LDR.N    R7,??DataTable23_3  ;; 0x40020800
+   \   00000014   0xA900             ADD      R1,SP,#+0
+   \   00000016   0x4638             MOV      R0,R7
+   \   00000018   0x.... 0x....      BL       HAL_GPIO_Init
+    864          
+    865          	start = getWifiTick();
+   \   0000001C   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000020   0x4605             MOV      R5,R0
+    866          	now = start;
+   \   00000022   0x462E             MOV      R6,R5
+    867          	
+    868          	
+    869          	if(begin_or_end == 0)
+   \   00000024   0x2C00             CMP      R4,#+0
+   \   00000026   0xD105             BNE.N    ??ResetWiFiForUpload_0
+    870          	{
+    871          		HAL_GPIO_WritePin(GPIOC,GPIO_Pin_6,GPIO_PIN_RESET); //update mode
+   \   00000028   0x2200             MOVS     R2,#+0
+   \   0000002A   0x2140             MOVS     R1,#+64
+   \   0000002C   0x4638             MOV      R0,R7
+   \   0000002E   0x.... 0x....      BL       HAL_GPIO_WritePin
+   \   00000032   0xE00E             B.N      ??ResetWiFiForUpload_1
+    872          	}
+    873          	else
+    874          	{
+    875          		HAL_GPIO_WritePin(GPIOC,GPIO_Pin_6,GPIO_PIN_SET); //boot mode	
+   \                     ??ResetWiFiForUpload_0: (+1)
+   \   00000034   0x2201             MOVS     R2,#+1
+   \   00000036   0x2140             MOVS     R1,#+64
+   \   00000038   0x4638             MOV      R0,R7
+   \   0000003A   0x.... 0x....      BL       HAL_GPIO_WritePin
+    876          		GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+   \   0000003E   0x2002             MOVS     R0,#+2
+   \   00000040   0x9003             STR      R0,[SP, #+12]
+    877          		GPIO_InitStructure.Pin = GPIO_Pin_6;//PF2先作为输入，升级时候作为输出
+   \   00000042   0x2040             MOVS     R0,#+64
+   \   00000044   0x9000             STR      R0,[SP, #+0]
+    878          		GPIO_InitStructure.Mode = GPIO_MODE_INPUT;  
+   \   00000046   0x2000             MOVS     R0,#+0
+   \   00000048   0x9001             STR      R0,[SP, #+4]
+    879          		HAL_GPIO_Init(GPIOC, &GPIO_InitStructure);
+   \   0000004A   0xA900             ADD      R1,SP,#+0
+   \   0000004C   0x4638             MOV      R0,R7
+   \   0000004E   0x.... 0x....      BL       HAL_GPIO_Init
+    880          	}
+    881              WIFI_RESET();
+   \                     ??ResetWiFiForUpload_1: (+1)
+   \   00000052   0x....             LDR.N    R4,??DataTable23_4  ;; 0x40021800
+   \   00000054   0x2200             MOVS     R2,#+0
+   \   00000056   0x2102             MOVS     R1,#+2
+   \   00000058   0x4620             MOV      R0,R4
+   \   0000005A   0x.... 0x....      BL       HAL_GPIO_WritePin
+   \   0000005E   0xE002             B.N      ??ResetWiFiForUpload_2
+    882          	while(getWifiTickDiff(start, now) < 500)
+    883          	{
+    884          		now = getWifiTick();
+   \                     ??ResetWiFiForUpload_3: (+1)
+   \   00000060   0x.... 0x....      BL       _Z11getWifiTickv
+   \   00000064   0x4606             MOV      R6,R0
+    885          	} 		
+   \                     ??ResetWiFiForUpload_2: (+1)
+   \   00000066   0x4631             MOV      R1,R6
+   \   00000068   0x4628             MOV      R0,R5
+   \   0000006A   0x.... 0x....      BL       _Z15getWifiTickDiffii
+   \   0000006E   0xF5B0 0x7FFA      CMP      R0,#+500
+   \   00000072   0xD3F5             BCC.N    ??ResetWiFiForUpload_3
+    886              WIFI_SET();
+   \   00000074   0x2201             MOVS     R2,#+1
+   \   00000076   0x2102             MOVS     R1,#+2
+   \   00000078   0x4620             MOV      R0,R4
+   \   0000007A   0x.... 0x....      BL       HAL_GPIO_WritePin
+    887          	
+    888          }
+   \   0000007E   0xB005             ADD      SP,SP,#+20
+   \   00000080   0xBDF0             POP      {R4-R7,PC}       ;; return
+    889          
+    890          
+    891          	
+    892          
+
+   \                                 In section .text, align 2, keep-with-next
+    893          int32_t wifi_upload(int type)
+    894          {
+   \                     wifi_upload: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    895          	esp_upload.retriesPerBaudRate = 9; //9种波特率
+   \   00000004   0x....             LDR.N    R5,??DataTable23
+   \   00000006   0xF505 0x760D      ADD      R6,R5,#+564
+   \   0000000A   0x2009             MOVS     R0,#+9
+   \   0000000C   0x6070             STR      R0,[R6, #+4]
+    896          
+    897          	ResetWiFiForUpload(0); //控制esp管脚信号，使其进入升级模式
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x.... 0x....      BL       _Z18ResetWiFiForUploadi
+    898          	
+    899          	if(type == 0) // wifi firmware
+   \   00000014   0x2C00             CMP      R4,#+0
+   \   00000016   0xD105             BNE.N    ??wifi_upload_0
+    900          	{
+    901          		SendUpdateFile(ESP_FIRMWARE_FILE, FirmwareAddress);
+   \   00000018   0x2100             MOVS     R1,#+0
+   \   0000001A   0x.... 0x....      ADR.W    R0,`?<Constant "1:/MksWifi.bin">`
+   \   0000001E   0x.... 0x....      BL       _Z14SendUpdateFilePKcj
+   \   00000022   0xE015             B.N      ??wifi_upload_1
+    902          	}
+    903          	else if(type == 1) 
+   \                     ??wifi_upload_0: (+1)
+   \   00000024   0x2C01             CMP      R4,#+1
+   \   00000026   0xD105             BNE.N    ??wifi_upload_2
+    904          	{
+    905          		SendUpdateFile(ESP_WEB_FIRMWARE_FILE, FirmwareAddress);
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x.... 0x....      ADR.W    R0,`?<Constant "1:/MksWifi_Web.bin">`
+   \   0000002E   0x.... 0x....      BL       _Z14SendUpdateFilePKcj
+   \   00000032   0xE00D             B.N      ??wifi_upload_1
+    906          	}
+    907          	else if(type == 2) 
+   \                     ??wifi_upload_2: (+1)
+   \   00000034   0x2C02             CMP      R4,#+2
+   \   00000036   0xD106             BNE.N    ??wifi_upload_3
+    908          	{
+    909          		SendUpdateFile(ESP_WEB_FILE, WebFilesAddress);
+   \   00000038   0xF44F 0x1180      MOV      R1,#+1048576
+   \   0000003C   0x.... 0x....      ADR.W    R0,`?<Constant "1:/MksWifi_WebView.bin">`
+   \   00000040   0x.... 0x....      BL       _Z14SendUpdateFilePKcj
+   \   00000044   0xE004             B.N      ??wifi_upload_1
+    910          	}
+    911          	else
+    912          		return -1;
+   \                     ??wifi_upload_3: (+1)
+   \   00000046   0xF04F 0x30FF      MOV      R0,#-1
+   \   0000004A   0xBD70             POP      {R4-R6,PC}
+    913          
+    914          	
+    915          	while(esp_upload.state != upload_idle)
+    916          	{
+    917          
+    918          		upload_spin();
+   \                     ??wifi_upload_4: (+1)
+   \   0000004C   0x.... 0x....      BL       _Z11upload_spinv
+    919          		//IWDG_ReloadCounter();    
+    920          	}
+   \                     ??wifi_upload_1: (+1)
+   \   00000050   0xF995 0x0234      LDRSB    R0,[R5, #+564]
+   \   00000054   0x2800             CMP      R0,#+0
+   \   00000056   0xD1F9             BNE.N    ??wifi_upload_4
+    921          	
+    922          	ResetWiFiForUpload(1);
+   \   00000058   0x2001             MOVS     R0,#+1
+   \   0000005A   0x.... 0x....      BL       _Z18ResetWiFiForUploadi
+    923          	
+    924          	if(esp_upload.uploadResult == success)
+   \   0000005E   0xF996 0x001C      LDRSB    R0,[R6, #+28]
+   \   00000062   0x2800             CMP      R0,#+0
+   \   00000064   0xD101             BNE.N    ??wifi_upload_5
+    925          		return 0;
+   \   00000066   0x2000             MOVS     R0,#+0
+   \   00000068   0xBD70             POP      {R4-R6,PC}
+    926          	else
+    927          		return -1;
+   \                     ??wifi_upload_5: (+1)
+   \   0000006A   0xF04F 0x30FF      MOV      R0,#-1
+   \   0000006E   0xBD70             POP      {R4-R6,PC}       ;; return
+    928          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23:
+   \   00000000   0x........         DC32     esp_upload
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23_1:
+   \   00000000   0x40011000         DC32     0x40011000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23_2:
+   \   00000000   0x........         DC32     WifiRxFifo
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23_3:
+   \   00000000   0x40020800         DC32     0x40020800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable23_4:
+   \   00000000   0x40021800         DC32     0x40021800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "1:/MksWifi.bin">`:
+   \   00000000   0x31 0x3A          DC8 "1:/MksWifi.bin"
+   \              0x2F 0x4D    
+   \              0x6B 0x73    
+   \              0x57 0x69    
+   \              0x66 0x69    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   0000000F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "1:/MksWifi_Web.bin">`:
+   \   00000000   0x31 0x3A          DC8 "1:/MksWifi_Web.bin"
+   \              0x2F 0x4D    
+   \              0x6B 0x73    
+   \              0x57 0x69    
+   \              0x66 0x69    
+   \              0x5F 0x57    
+   \              0x65 0x62    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000013   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "1:/MksWifi_WebView.bin">`:
+   \   00000000   0x31 0x3A          DC8 "1:/MksWifi_WebView.bin"
+   \              0x2F 0x4D    
+   \              0x6B 0x73    
+   \              0x57 0x69    
+   \              0x66 0x69    
+   \              0x5F 0x57    
+   \              0x65 0x62    
+   \              0x56 0x69    
+   \              0x65 0x77    
+   \              0x2E 0x62    
+   \              0x69 0x6E    
+   \              0x00         
+   \   00000017   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "no">`:
+   \   00000000   0x6E 0x6F          DC8 "no"
+   \              0x00         
+   \   00000003   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "timeout">`:
+   \   00000000   0x74 0x69          DC8 "timeout"
+   \              0x6D 0x65    
+   \              0x6F 0x75    
+   \              0x74 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "comm write">`:
+   \   00000000   0x63 0x6F          DC8 "comm write"
+   \              0x6D 0x6D    
+   \              0x20 0x77    
+   \              0x72 0x69    
+   \              0x74 0x65    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "connect">`:
+   \   00000000   0x63 0x6F          DC8 "connect"
+   \              0x6E 0x6E    
+   \              0x65 0x63    
+   \              0x74 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "bad reply">`:
+   \   00000000   0x62 0x61          DC8 "bad reply"
+   \              0x64 0x20    
+   \              0x72 0x65    
+   \              0x70 0x6C    
+   \              0x79 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "file read">`:
+   \   00000000   0x66 0x69          DC8 "file read"
+   \              0x6C 0x65    
+   \              0x20 0x72    
+   \              0x65 0x61    
+   \              0x64 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "empty file">`:
+   \   00000000   0x65 0x6D          DC8 "empty file"
+   \              0x70 0x74    
+   \              0x79 0x20    
+   \              0x66 0x69    
+   \              0x6C 0x65    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "response header">`:
+   \   00000000   0x72 0x65          DC8 "response header"
+   \              0x73 0x70    
+   \              0x6F 0x6E    
+   \              0x73 0x65    
+   \              0x20 0x68    
+   \              0x65 0x61    
+   \              0x64 0x65    
+   \              0x72 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "slip frame">`:
+   \   00000000   0x73 0x6C          DC8 "slip frame"
+   \              0x69 0x70    
+   \              0x20 0x66    
+   \              0x72 0x61    
+   \              0x6D 0x65    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "slip state">`:
+   \   00000000   0x73 0x6C          DC8 "slip state"
+   \              0x69 0x70    
+   \              0x20 0x73    
+   \              0x74 0x61    
+   \              0x74 0x65    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "slip data">`:
+   \   00000000   0x73 0x6C          DC8 "slip data"
+   \              0x69 0x70    
+   \              0x20 0x64    
+   \              0x61 0x74    
+   \              0x61 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant {(unsigned char)'\\000'}>`:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+   \   00000011   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000021   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000031   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000041   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000051   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000061   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000071   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000081   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000091   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000101   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000111   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000121   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000131   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000141   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000151   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000161   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000171   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000181   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000191   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000201   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000211   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000221   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000231   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000241   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000251   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000261   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000271   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000281   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000291   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000002F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000301   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000311   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000321   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000331   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000341   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000351   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000361   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000371   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000381   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000391   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000003F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000401   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000411   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000421   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000431   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000441   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000451   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000461   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000471   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000481   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000491   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000501   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000511   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000521   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000531   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000541   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000551   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000561   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000571   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000581   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000591   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000005F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000601   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000611   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000621   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000631   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000641   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000651   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000661   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000671   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000681   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000691   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000006F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000701   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000711   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000721   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000731   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000741   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000751   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000761   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000771   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000781   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000791   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007A1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007B1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007C1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007D1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007E1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000007F1   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00         
+    929          
+    930          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   IsReady()
+      16   ReadByte(uint8_t *, signed char)
+        16   -> uploadPort_available()
+        16   -> uploadPort_read()
+      40   ResetWiFiForUpload(int)
+        40   -> HAL_GPIO_Init
+        40   -> HAL_GPIO_WritePin
+        40   -> getWifiTick()
+        40   -> getWifiTickDiff(int32_t, int32_t)
+      16   SendUpdateFile(char const *, uint32_t)
+         0   -> f_close
+        16   -> f_lseek
+        16   -> f_open
+      64   Sync(uint16_t)
+        64   -> doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+        64   -> memset
+        64   -> readPacket(uint8_t, uint32_t *, size_t *, uint32_t)
+       8   WriteByteRaw(uint8_t)
+         8   -> uploadPort_write(uint8_t const *, size_t)
+       8   WriteByteSlip(uint8_t)
+         8   -> WriteByteRaw(uint8_t)
+         8   -> uploadPort_write(uint8_t const *, size_t)
+    2064   _writePacket(uint8_t const *, size_t)
+      2064   -> __aeabi_memclr4
+      2064   -> uploadPort_write(uint8_t const *, size_t)
+       0   _writePacketRaw(uint8_t const *, size_t)
+         0   -> uploadPort_write(uint8_t const *, size_t)
+       0   checksum(uint8_t const *, uint16_t, uint16_t)
+      16   doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+        16   -> readPacket(uint8_t, uint32_t *, size_t *, uint32_t)
+        16   -> sendCommand(uint8_t, uint32_t, uint8_t const *, size_t)
+      40   flashBegin(uint32_t, uint32_t)
+        40   -> doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+        40   -> putData(uint32_t, unsigned int, uint8_t *, int)
+      24   flashFinish(signed char)
+        24   -> doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+        24   -> putData(uint32_t, unsigned int, uint8_t *, int)
+    1080   flashWriteBlock(uint16_t, uint16_t)
+      1080   -> checksum(uint8_t const *, uint16_t, uint16_t)
+      1080   -> doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+      1080   -> f_read
+      1080   -> getData(unsigned int, uint8_t const *, int)
+      1080   -> memset
+      1080   -> putData(uint32_t, unsigned int, uint8_t *, int)
+       8   flushInput()
+         8   -> uploadPort_available()
+         8   -> uploadPort_read()
+       8   getData(unsigned int, uint8_t const *, int)
+       0   putData(uint32_t, unsigned int, uint8_t *, int)
+      56   readPacket(uint8_t, uint32_t *, size_t *, uint32_t)
+        56   -> ReadByte(uint8_t *, signed char)
+        56   -> getData(unsigned int, uint8_t const *, int)
+        56   -> getWifiTick()
+        56   -> getWifiTickDiff(int32_t, int32_t)
+        56   -> uploadPort_available()
+        56   -> uploadPort_read()
+      32   sendCommand(uint8_t, uint32_t, uint8_t const *, size_t)
+        32   -> putData(uint32_t, unsigned int, uint8_t *, int)
+        32   -> writePacket(uint8_t const *, size_t, uint8_t const *, size_t)
+        32   -> writePacketRaw(uint8_t const *, size_t, uint8_t const *, size_t)
+       0   uploadPort_available()
+         0   -> usartFifoAvailable(SZ_USART_FIFO *)
+       0   uploadPort_begin()
+         0   -> esp_port_begin(uint8_t)
+       0   uploadPort_close()
+         0   -> esp_port_begin(uint8_t)
+       8   uploadPort_read()
+         8   -> readUsartFifo(SZ_USART_FIFO *, int8_t *, int32_t)
+      24   uploadPort_write(uint8_t const *, size_t)
+        24   -> USART_GetFlagStatus
+        24   -> USART_SendData
+      16   upload_spin()
+        16   -> Sync(uint16_t)
+        16   -> f_close
+        16   -> flashBegin(uint32_t, uint32_t)
+        16   -> flashWriteBlock(uint16_t, uint16_t)
+        16   -> flushInput()
+        16   -> getWifiTick()
+        16   -> getWifiTickDiff(int32_t, int32_t)
+        16   -> uploadPort_begin()
+        16   -> wifi_delay(int)
+      16   wifi_upload
+        16   -> ResetWiFiForUpload(int)
+        16   -> SendUpdateFile(char const *, uint32_t)
+        16   -> upload_spin()
+      24   writePacket(uint8_t const *, size_t, uint8_t const *, size_t)
+         0   -> WriteByteRaw(uint8_t)
+        24   -> WriteByteRaw(uint8_t)
+        24   -> _writePacket(uint8_t const *, size_t)
+      24   writePacketRaw(uint8_t const *, size_t, uint8_t const *, size_t)
+         0   -> WriteByteRaw(uint8_t)
+        24   -> WriteByteRaw(uint8_t)
+        24   -> _writePacketRaw(uint8_t const *, size_t)
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      16  ?<Constant "1:/MksWifi.bin">
+      20  ?<Constant "1:/MksWifi_Web.bin">
+      24  ?<Constant "1:/MksWifi_WebView.bin">
+      12  ?<Constant "bad reply">
+      12  ?<Constant "comm write">
+       8  ?<Constant "connect">
+      12  ?<Constant "empty file">
+      12  ?<Constant "file read">
+       4  ?<Constant "no">
+      16  ?<Constant "response header">
+      12  ?<Constant "slip data">
+      12  ?<Constant "slip frame">
+      12  ?<Constant "slip state">
+       8  ?<Constant "timeout">
+    2048  ?<Constant {(unsigned char)'\000'}>
+       4  ??DataTable23
+       4  ??DataTable23_1
+       4  ??DataTable23_2
+       4  ??DataTable23_3
+       4  ??DataTable23_4
+      18  IsReady()
+     100  ReadByte(uint8_t *, signed char)
+     130  ResetWiFiForUpload(int)
+      68  SendUpdateFile(char const *, uint32_t)
+     120  Sync(uint16_t)
+      12  WriteByteRaw(uint8_t)
+      48  WriteByteSlip(uint8_t)
+      86  _writePacket(uint8_t const *, size_t)
+       2  _writePacketRaw(uint8_t const *, size_t)
+      28  checksum(uint8_t const *, uint16_t, uint16_t)
+      46  doCommand(uint8_t, uint8_t const *, size_t, uint32_t, uint32_t *, uint32_t)
+     596  esp_upload
+     100  flashBegin(uint32_t, uint32_t)
+      50  flashFinish(signed char)
+     238  flashWriteBlock(uint16_t, uint16_t)
+      18  flushInput()
+      40  getData(unsigned int, uint8_t const *, int)
+      26  putData(uint32_t, unsigned int, uint8_t *, int)
+     312  readPacket(uint8_t, uint32_t *, size_t *, uint32_t)
+      44  resultMessages
+      88  sendCommand(uint8_t, uint32_t, uint8_t const *, size_t)
+       8  uploadPort_available()
+       6  uploadPort_begin()
+       6  uploadPort_close()
+      28  uploadPort_read()
+      42  uploadPort_write(uint8_t const *, size_t)
+     378  upload_spin()
+     112  wifi_upload
+      40  writePacket(uint8_t const *, size_t, uint8_t const *, size_t)
+      40  writePacketRaw(uint8_t const *, size_t, uint8_t const *, size_t)
+
+ 
+   596 bytes in section .bss
+    44 bytes in section .data
+ 2 168 bytes in section .rodata
+ 2 270 bytes in section .text
+ 
+ 2 270 bytes of CODE  memory
+ 2 168 bytes of CONST memory
+   640 bytes of DATA  memory
+
+Errors: none
+Warnings: 22

@@ -1,0 +1,325 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:57:57
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_ButtonClose.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_ButtonClose.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\FRAMEWIN_ButtonClose.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\FRAMEWIN_ButtonClose.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\Widget\FRAMEWIN_ButtonClose.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : FRAMEWIN_ButtonClose.c
+     16          Purpose     : 
+     17          ---------------------------END-OF-HEADER------------------------------
+     18          */
+     19          
+     20          
+     21          #include <stdlib.h>
+     22          #include <string.h>
+     23          #include "GUI_Protected.h"
+     24          #include "FRAMEWIN_Private.h"
+     25          #include "BUTTON.h"
+     26          
+     27          #if GUI_WINSUPPORT
+     28          
+     29          /*********************************************************************
+     30          *
+     31          *        Static code
+     32          *
+     33          **********************************************************************
+     34          */
+     35          /*********************************************************************
+     36          *
+     37          *       Callback
+     38          *
+     39          * This is the overwritten callback routine for the button.
+     40          * The primary reason for overwriting it is that we define the default
+     41          * action of the Framewindow here.
+     42          * It works as follows:
+     43          * - User clicks and releases the button
+     44          *   -> BUTTON sends WM_NOTIFY_PARENT to FRAMEWIN
+     45          *     -> FRAMEWIN either a) reacts or b)sends WM_NOTIFY_PARENT_REFLECTION back
+     46          *       In case of a) This module reacts !
+     47          */
+
+   \                                 In section .text, align 2, keep-with-next
+     48          static void _cbClose(WM_MESSAGE* pMsg) {
+     49            if (pMsg->MsgId == WM_NOTIFY_PARENT_REFLECTION) {
+   \                     _cbClose: (+1)
+   \   00000000   0x6801             LDR      R1,[R0, #+0]
+   \   00000002   0x2927             CMP      R1,#+39
+   \   00000004   0xD103             BNE.N    ??_cbClose_0
+     50              WM_DeleteWindow(pMsg->hWinSrc);
+   \   00000006   0xF9B0 0x0006      LDRSH    R0,[R0, #+6]
+   \   0000000A   0x.... 0x....      B.W      WM_DeleteWindow
+     51              return;                                       /* We are done ! */
+     52            }
+     53            BUTTON_Callback(pMsg);
+   \                     ??_cbClose_0: (+1)
+   \   0000000E   0x.... 0x....      B.W      BUTTON_Callback
+     54          }
+     55          
+     56          /*********************************************************************
+     57          *
+     58          *       _Draw
+     59          */
+
+   \                                 In section .text, align 2, keep-with-next
+     60          static void _Draw(void) {
+   \                     _Draw: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+     61            GUI_RECT r;
+     62            int i, Size;
+     63            WM_GetInsideRect(&r);
+   \   00000004   0xA800             ADD      R0,SP,#+0
+   \   00000006   0x.... 0x....      BL       WM_GetInsideRect
+     64            WM_ADDORG(r.x0, r.y0);
+   \   0000000A   0x....             LDR.N    R0,??DataTable1
+   \   0000000C   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \   00000010   0x6C02             LDR      R2,[R0, #+64]
+   \   00000012   0x1851             ADDS     R1,R2,R1
+   \   00000014   0xF8AD 0x1000      STRH     R1,[SP, #+0]
+   \   00000018   0xF8BD 0x1002      LDRH     R1,[SP, #+2]
+   \   0000001C   0x6C42             LDR      R2,[R0, #+68]
+   \   0000001E   0x1851             ADDS     R1,R2,R1
+   \   00000020   0xF8AD 0x1002      STRH     R1,[SP, #+2]
+     65            WM_ADDORG(r.x1, r.y1);
+   \   00000024   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \   00000028   0x6C02             LDR      R2,[R0, #+64]
+   \   0000002A   0x1851             ADDS     R1,R2,R1
+   \   0000002C   0xF8AD 0x1004      STRH     R1,[SP, #+4]
+   \   00000030   0xF8BD 0x2006      LDRH     R2,[SP, #+6]
+   \   00000034   0x6C40             LDR      R0,[R0, #+68]
+   \   00000036   0x1880             ADDS     R0,R0,R2
+   \   00000038   0xF8AD 0x0006      STRH     R0,[SP, #+6]
+     66            Size = r.x1 - r.x0 - 2;
+   \   0000003C   0xB209             SXTH     R1,R1
+   \   0000003E   0xF9BD 0x0000      LDRSH    R0,[SP, #+0]
+   \   00000042   0x1A08             SUBS     R0,R1,R0
+   \   00000044   0x1E84             SUBS     R4,R0,#+2
+     67            WM_ITERATE_START(&r); {
+   \   00000046   0xA800             ADD      R0,SP,#+0
+   \   00000048   0x.... 0x....      BL       WM__InitIVRSearch
+   \   0000004C   0x2800             CMP      R0,#+0
+   \   0000004E   0xD01D             BEQ.N    ??_Draw_0
+     68              for (i = 2; i < Size; i++) {
+   \                     ??_Draw_1: (+1)
+   \   00000050   0x2502             MOVS     R5,#+2
+   \   00000052   0xE015             B.N      ??_Draw_2
+     69                LCD_DrawHLine(r.x0 + i,     r.y0 + i, r.x0 + i + 1);
+   \                     ??_Draw_3: (+1)
+   \   00000054   0xF9BD 0x0000      LDRSH    R0,[SP, #+0]
+   \   00000058   0xFA05 0xF080      SXTAH    R0,R5,R0
+   \   0000005C   0x1C42             ADDS     R2,R0,#+1
+   \   0000005E   0xF9BD 0x1002      LDRSH    R1,[SP, #+2]
+   \   00000062   0xFA05 0xF181      SXTAH    R1,R5,R1
+   \   00000066   0x.... 0x....      BL       LCD_DrawHLine
+     70                LCD_DrawHLine(r.x1 - i - 1, r.y0 + i, r.x1 - i);
+   \   0000006A   0xF9BD 0x0004      LDRSH    R0,[SP, #+4]
+   \   0000006E   0x1B42             SUBS     R2,R0,R5
+   \   00000070   0xF9BD 0x0002      LDRSH    R0,[SP, #+2]
+   \   00000074   0xFA05 0xF180      SXTAH    R1,R5,R0
+   \   00000078   0x1E50             SUBS     R0,R2,#+1
+   \   0000007A   0x.... 0x....      BL       LCD_DrawHLine
+     71              }
+   \   0000007E   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??_Draw_2: (+1)
+   \   00000080   0x42A5             CMP      R5,R4
+   \   00000082   0xDBE7             BLT.N    ??_Draw_3
+     72            } WM_ITERATE_END();
+   \   00000084   0x.... 0x....      BL       WM__GetNextIVR
+   \   00000088   0x2800             CMP      R0,#+0
+   \   0000008A   0xD1E1             BNE.N    ??_Draw_1
+     73          }
+   \                     ??_Draw_0: (+1)
+   \   0000008C   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+     74          
+     75          
+     76          /*********************************************************************
+     77          *
+     78          *        Exported routines
+     79          *
+     80          **********************************************************************
+     81          */
+     82          /*********************************************************************
+     83          *
+     84          *       FRAMEWIN_AddCloseButton
+     85          */
+
+   \                                 In section .text, align 2, keep-with-next
+     86          WM_HWIN FRAMEWIN_AddCloseButton(FRAMEWIN_Handle hObj, int Flags, int Off) {
+   \                     FRAMEWIN_AddCloseButton: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     87            WM_HWIN hButton;
+     88            hButton = FRAMEWIN_AddButton(hObj, Flags, Off, GUI_ID_CLOSE);
+   \   00000002   0x2305             MOVS     R3,#+5
+   \   00000004   0x.... 0x....      BL       FRAMEWIN_AddButton
+   \   00000008   0x4604             MOV      R4,R0
+     89            BUTTON_SetSelfDraw(hButton, 0, &_Draw);
+   \   0000000A   0x....             LDR.N    R2,??DataTable1_1
+   \   0000000C   0x2100             MOVS     R1,#+0
+   \   0000000E   0x.... 0x....      BL       BUTTON_SetSelfDraw
+     90            WM_SetCallback(hButton, _cbClose);
+   \   00000012   0x....             LDR.N    R1,??DataTable1_2
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0x.... 0x....      BL       WM_SetCallback
+     91            return hButton;
+   \   0000001A   0x4620             MOV      R0,R4
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+     92          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     GUI_Context
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     _Draw
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x........         DC32     _cbClose
+     93          
+     94          #else
+     95            void FRAMEWIN_ButtonClose_c(void) {} /* avoid empty object files */
+     96          #endif /* GUI_WINSUPPORT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   FRAMEWIN_AddCloseButton
+         8   -> BUTTON_SetSelfDraw
+         8   -> FRAMEWIN_AddButton
+         8   -> WM_SetCallback
+      24   _Draw
+        24   -> LCD_DrawHLine
+        24   -> WM_GetInsideRect
+        24   -> WM__GetNextIVR
+        24   -> WM__InitIVRSearch
+       0   _cbClose
+         0   -> BUTTON_Callback
+         0   -> WM_DeleteWindow
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      30  FRAMEWIN_AddCloseButton
+     142  _Draw
+      18  _cbClose
+
+ 
+ 202 bytes in section .text
+ 
+ 202 bytes of CODE memory
+
+Errors: none
+Warnings: none

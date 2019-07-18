@@ -1,0 +1,716 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.10.1.6676/W32 for ARM        18/Jul/2019  10:19:55
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_ColorBar.c
+#    Command line =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_ColorBar.c
+#        -D USE_HAL_DRIVER -D STM32F407xx -D STM32F40_41xxx -D USE_HAL_LIB -D
+#        MKS_DLP_BOARD -D TFT35 -lC
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\ -lA
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\
+#        --diag_suppress Pa050 -o
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\
+#        --no_unroll --no_inline --no_tbaa --no_scheduling --debug
+#        --endian=little --cpu=Cortex-M4F -e --char_is_signed --fpu=VFPv4_sp
+#        --dlib_config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.0\arm\INC\c\DLib_Config_Full.h" -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Inc\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Src\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src/drivers\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Core/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/FatFs/src\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/Third_Party/Marlin\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/CMSIS/Include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/variant\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/at24cxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/w25qxx\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/ssd2828\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/BSP/Components/lcd\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Drivers/libstmf4/include\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/arduino/stm32/cores/arduino\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertColor\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/ConvertMono\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Core\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Font\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/AntiAlias\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/GUIDemo\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/LCDDriver\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MemDev\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/MultiLayer\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/Widget\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI/WM\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/GUI_X\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../Middlewares/gui/Config\
+#        -I E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui\ -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/Multi_language\
+#        -I
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM/../User/ui/QRENCODE\
+#        -Om --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0\arm\CMSIS\Include\"
+#    List file    =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/List\GUIDEMO_ColorBar.lst
+#    Object file  =  
+#        E:\DLP_Proj\DLP_source\branches\DLP_opensource\EWARM\mksDLP/Obj\GUIDEMO_ColorBar.o
+#
+###############################################################################
+
+E:\DLP_Proj\DLP_source\branches\DLP_opensource\Middlewares\gui\GUI\GUIDemo\GUIDEMO_ColorBar.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                                uC/GUI
+      4          *                        Universal graphic software for embedded applications
+      5          *
+      6          *                       (c) Copyright 2002, Micrium Inc., Weston, FL
+      7          *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
+      8          *
+      9          *              µC/GUI is protected by international copyright laws. Knowledge of the
+     10          *              source code may not be used to write a similar product. This file may
+     11          *              only be used in accordance with a license and should not be redistributed
+     12          *              in any way. We appreciate your understanding and fairness.
+     13          *
+     14          ----------------------------------------------------------------------
+     15          File        : GUIDEMO_ShowColorBar.c
+     16          Purpose     : Draws color bars
+     17          ----------------------------------------------------------------------
+     18          */
+     19          
+     20          #include "LCD.h"		           /* interface definitions */
+     21          #include "LCD_ConfDefaults.h"  /* valid LCD configuration */
+     22          #include "GUI.h"
+     23          #include "GUIDEMO.h"
+     24          
+     25          /*********************************************************************
+     26          *
+     27          *       GUIDEMO_ShowColorBar
+     28          *
+     29          **********************************************************************
+     30          */
+     31          
+     32          #if LCD_BITSPERPIXEL > 2
+     33          
+
+   \                                 In section .text, align 2, keep-with-next
+     34          void GUIDEMO_ShowColorBar(void) {
+   \                     GUIDEMO_ShowColorBar: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+     35            int nBars = 13;
+     36            int NumColors = LCD_GetDevCap(LCD_DEVCAP_NUMCOLORS);
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x.... 0x....      BL       LCD_GetDevCap
+   \   0000000A   0x4605             MOV      R5,R0
+     37            int XSize = LCD_XSIZE;
+     38            int i, yStep, y0, x0;
+     39            #if GUIDEMO_LARGE
+     40              y0 = 70;
+     41              x0 = 60;
+     42              GUIDEMO_ShowIntro("Color bar",
+     43                                "emWin features "
+     44                                "\nan integrated color"
+     45                                "\nmanagement"
+     46                                "\nwill always find the best available color"
+     47                                "\nfor any logical color");
+   \   0000000C   0x.... 0x....      ADR.W    R1,`?<Constant "emWin features \\nan in...">`
+   \   00000010   0x.... 0x....      ADR.W    R0,`?<Constant "Color bar">`
+   \   00000014   0x.... 0x....      BL       GUIDEMO_ShowIntro
+     48            #else
+     49              #if !(GUIDEMO_TINY)
+     50                y0 = 55;
+     51                x0 = 55;
+     52                GUIDEMO_ShowIntro("Color bar",
+     53                                  "emWin features "
+     54                                  "\nan integrated color"
+     55                                  "\nmanagement will always"
+     56                                  "\nfind the best available"
+     57                                  "\ncolor for any logical color");
+     58              #else
+     59                y0 = 16;
+     60                x0 = 40;
+     61                GUIDEMO_ShowIntro("Color bar",
+     62                                  "emWin features "
+     63                                  "\nan integrated color"
+     64                                  "\nmanagement");
+     65              #endif
+     66            #endif
+     67          	XSize -= x0;
+     68            #if (LCD_YSIZE < 320)
+     69              yStep = (LCD_YSIZE - y0) / nBars;
+     70            #else
+     71              yStep = (LCD_YSIZE - y0 - 60) / nBars;
+     72            #endif
+     73            GUI_SetColor(GUI_WHITE);
+   \   00000018   0xF06F 0x447F      MVN      R4,#-16777216
+   \   0000001C   0x4620             MOV      R0,R4
+   \   0000001E   0x.... 0x....      BL       GUI_SetColor
+     74            GUI_SetBkColor(GUI_BLACK); 
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x.... 0x....      BL       GUI_SetBkColor
+     75            GUI_Clear();
+   \   00000028   0x.... 0x....      BL       GUI_Clear
+     76          	GUI_SetFont(&GUI_Font8x16);
+   \   0000002C   0x....             LDR.N    R0,??DataTable16_3
+   \   0000002E   0x.... 0x....      BL       GUI_SetFont
+     77          	GUI_DispString("Color bars\n");
+   \   00000032   0x.... 0x....      ADR.W    R0,`?<Constant "Color bars\\n">`
+   \   00000036   0x.... 0x....      BL       GUI_DispString
+     78            #if !(GUIDEMO_TINY)
+     79              GUI_SetFont(&GUI_Font8_ASCII);
+   \   0000003A   0x....             LDR.N    R0,??DataTable16_4
+   \   0000003C   0x.... 0x....      BL       GUI_SetFont
+     80              #ifdef LCD_CONTROLLER
+     81                GUI_DispString("\nLCD_CONTROLLER: ");
+   \   00000040   0x.... 0x....      ADR.W    R0,`?<Constant "\\nLCD_CONTROLLER: ">`
+   \   00000044   0x.... 0x....      BL       GUI_DispString
+     82                GUI_DispDecMin(LCD_CONTROLLER);
+   \   00000048   0xF04F 0x30FF      MOV      R0,#-1
+   \   0000004C   0x.... 0x....      BL       GUI_DispDecMin
+     83                GUI_DispString("\n");
+   \   00000050   0x....             ADR.N    R0,??DataTable16  ;; "\n"
+   \   00000052   0x.... 0x....      BL       GUI_DispString
+     84              #endif
+     85              GUI_DispDecMin(LCD_BITSPERPIXEL);
+   \   00000056   0x2010             MOVS     R0,#+16
+   \   00000058   0x.... 0x....      BL       GUI_DispDecMin
+     86              GUI_DispString(" bpp");
+   \   0000005C   0x.... 0x....      ADR.W    R0,`?<Constant " bpp">`
+   \   00000060   0x.... 0x....      BL       GUI_DispString
+     87              #ifdef LCD_BUSWIDTH
+     88                GUI_DispString(", ");
+     89                GUI_DispDecMin(LCD_BUSWIDTH);
+     90                GUI_DispString(" bit bus");
+     91              #endif
+     92              GUI_DispString(", ");
+   \   00000064   0x....             ADR.N    R0,??DataTable16_1  ;; 0x2C, 0x20, 0x00, 0x00
+   \   00000066   0x.... 0x....      BL       GUI_DispString
+     93              GUI_DispDecMin(NumColors);
+   \   0000006A   0x4628             MOV      R0,R5
+   \   0000006C   0x.... 0x....      BL       GUI_DispDecMin
+     94              GUI_DispString(" colors\n");
+   \   00000070   0x.... 0x....      ADR.W    R0,`?<Constant " colors\\n">`
+   \   00000074   0x.... 0x....      BL       GUI_DispString
+     95              #if (LCD_FIXEDPALETTE) 
+     96                GUI_DispString("Fixed palette: ");
+   \   00000078   0x.... 0x....      ADR.W    R0,`?<Constant "Fixed palette: ">`
+   \   0000007C   0x.... 0x....      BL       GUI_DispString
+     97                GUI_DispDecMin(LCD_FIXEDPALETTE);
+   \   00000080   0xF240 0x2035      MOVW     R0,#+565
+   \   00000084   0x.... 0x....      BL       GUI_DispDecMin
+     98              #else
+     99                GUI_DispString("(Custom)");
+    100              #endif
+    101            #endif
+    102            #if !GUIDEMO_LARGE
+    103              #if (LCD_YSIZE < 100)
+    104                GUI_SetFont(&GUI_Font4x6);
+    105              #elif (LCD_YSIZE < 160)
+    106                GUI_SetFont(&GUI_Font6x8);
+    107              #else
+    108                GUI_SetFont(&GUI_Font8x8);
+    109              #endif
+    110            #else
+    111              GUI_SetFont(&GUI_Font8x8);
+   \   00000088   0x....             LDR.N    R0,??DataTable16_5
+   \   0000008A   0x.... 0x....      BL       GUI_SetFont
+    112            #endif
+    113            GUI_SetColor(GUI_WHITE);
+   \   0000008E   0x4620             MOV      R0,R4
+   \   00000090   0x.... 0x....      BL       GUI_SetColor
+    114            GUI_DispStringAt("Red",     0, y0 +      yStep);
+   \   00000094   0x2254             MOVS     R2,#+84
+   \   00000096   0x2100             MOVS     R1,#+0
+   \   00000098   0x....             ADR.N    R0,??DataTable16_2  ;; "Red"
+   \   0000009A   0x.... 0x....      BL       GUI_DispStringAt
+    115            GUI_DispStringAt("Green",   0, y0 + 3  * yStep);
+   \   0000009E   0x2270             MOVS     R2,#+112
+   \   000000A0   0x2100             MOVS     R1,#+0
+   \   000000A2   0x.... 0x....      ADR.W    R0,`?<Constant "Green">`
+   \   000000A6   0x.... 0x....      BL       GUI_DispStringAt
+    116            GUI_DispStringAt("Blue",    0, y0 + 5  * yStep);
+   \   000000AA   0x228C             MOVS     R2,#+140
+   \   000000AC   0x2100             MOVS     R1,#+0
+   \   000000AE   0x.... 0x....      ADR.W    R0,`?<Constant "Blue">`
+   \   000000B2   0x.... 0x....      BL       GUI_DispStringAt
+    117            GUI_DispStringAt("Grey",    0, y0 + 6  * yStep);
+   \   000000B6   0x229A             MOVS     R2,#+154
+   \   000000B8   0x2100             MOVS     R1,#+0
+   \   000000BA   0x.... 0x....      ADR.W    R0,`?<Constant "Grey">`
+   \   000000BE   0x.... 0x....      BL       GUI_DispStringAt
+    118            GUI_DispStringAt("Yellow",  0, y0 + 8  * yStep);
+   \   000000C2   0x22B6             MOVS     R2,#+182
+   \   000000C4   0x2100             MOVS     R1,#+0
+   \   000000C6   0x.... 0x....      ADR.W    R0,`?<Constant "Yellow">`
+   \   000000CA   0x.... 0x....      BL       GUI_DispStringAt
+    119            GUI_DispStringAt("Cyan",    0, y0 + 10 * yStep);
+   \   000000CE   0x22D2             MOVS     R2,#+210
+   \   000000D0   0x2100             MOVS     R1,#+0
+   \   000000D2   0x.... 0x....      ADR.W    R0,`?<Constant "Cyan">`
+   \   000000D6   0x.... 0x....      BL       GUI_DispStringAt
+    120            GUI_DispStringAt("Magenta", 0, y0 + 12 * yStep);
+   \   000000DA   0x22EE             MOVS     R2,#+238
+   \   000000DC   0x2100             MOVS     R1,#+0
+   \   000000DE   0x.... 0x....      ADR.W    R0,`?<Constant "Magenta">`
+   \   000000E2   0x.... 0x....      BL       GUI_DispStringAt
+    121            for (i = 0; (i < XSize) && !GUIDEMO_CheckCancel(); i++) {
+   \   000000E6   0x2500             MOVS     R5,#+0
+   \   000000E8   0xE083             B.N      ??GUIDEMO_ShowColorBar_0
+    122              U16 cs = (255 * (U32)i) / XSize;
+   \                     ??GUIDEMO_ShowColorBar_1: (+1)
+   \   000000EA   0xEBC5 0x2005      RSB      R0,R5,R5, LSL #+8
+   \   000000EE   0xF44F 0x71D2      MOV      R1,#+420
+   \   000000F2   0xFBB0 0xF6F1      UDIV     R6,R0,R1
+   \   000000F6   0xB2B6             UXTH     R6,R6
+    123              U16 x = x0 + i;;
+   \   000000F8   0xF105 0x073C      ADD      R7,R5,#+60
+   \   000000FC   0xB2BF             UXTH     R7,R7
+    124          /* Red */
+    125              GUI_SetColor(cs);
+   \   000000FE   0x4630             MOV      R0,R6
+   \   00000100   0x.... 0x....      BL       GUI_SetColor
+    126              GUI_DrawVLine(x, y0, y0 + yStep - 1);
+   \   00000104   0x2253             MOVS     R2,#+83
+   \   00000106   0x2146             MOVS     R1,#+70
+   \   00000108   0x4638             MOV      R0,R7
+   \   0000010A   0x.... 0x....      BL       GUI_DrawVLine
+    127              GUI_SetColor(0x0000ff + (255 - cs) * 0x10100L);
+   \   0000010E   0x....             LDR.N    R0,??DataTable16_6  ;; 0xfffeff00
+   \   00000110   0xFB00 0x4006      MLA      R0,R0,R6,R4
+   \   00000114   0x.... 0x....      BL       GUI_SetColor
+    128              GUI_DrawVLine(x, y0 + yStep, y0 + 2 * yStep - 1);
+   \   00000118   0x2261             MOVS     R2,#+97
+   \   0000011A   0x2154             MOVS     R1,#+84
+   \   0000011C   0x4638             MOV      R0,R7
+   \   0000011E   0x.... 0x....      BL       GUI_DrawVLine
+    129          /* Green */
+    130              GUI_SetColor(cs<<8);
+   \   00000122   0x0230             LSLS     R0,R6,#+8
+   \   00000124   0x.... 0x....      BL       GUI_SetColor
+    131              GUI_DrawVLine(x, y0 + 2 * yStep, y0 + 3 * yStep - 1);
+   \   00000128   0x226F             MOVS     R2,#+111
+   \   0000012A   0x2162             MOVS     R1,#+98
+   \   0000012C   0x4638             MOV      R0,R7
+   \   0000012E   0x.... 0x....      BL       GUI_DrawVLine
+    132              GUI_SetColor(0x00ff00 + (255 - cs) * 0x10001L);
+   \   00000132   0xF46F 0x3080      MVN      R0,#+65536
+   \   00000136   0xFB00 0x4006      MLA      R0,R0,R6,R4
+   \   0000013A   0x.... 0x....      BL       GUI_SetColor
+    133              GUI_DrawVLine(x, y0 + 3 * yStep, y0 + 4 * yStep - 1);
+   \   0000013E   0x227D             MOVS     R2,#+125
+   \   00000140   0x2170             MOVS     R1,#+112
+   \   00000142   0x4638             MOV      R0,R7
+   \   00000144   0x.... 0x....      BL       GUI_DrawVLine
+    134          /* Blue */
+    135              GUI_SetColor(cs * 0x10000L);
+   \   00000148   0x0430             LSLS     R0,R6,#+16
+   \   0000014A   0x.... 0x....      BL       GUI_SetColor
+    136              GUI_DrawVLine(x, y0 + 4 * yStep, y0 + 5 * yStep - 1);
+   \   0000014E   0x228B             MOVS     R2,#+139
+   \   00000150   0x217E             MOVS     R1,#+126
+   \   00000152   0x4638             MOV      R0,R7
+   \   00000154   0x.... 0x....      BL       GUI_DrawVLine
+    137              GUI_SetColor(0xff0000 + (255 - cs) * 0x00101L);
+   \   00000158   0xF46F 0x7080      MVN      R0,#+256
+   \   0000015C   0xFB00 0x4006      MLA      R0,R0,R6,R4
+   \   00000160   0x.... 0x....      BL       GUI_SetColor
+    138              GUI_DrawVLine(x, y0 + 5 * yStep, y0 + 6 * yStep - 1);
+   \   00000164   0x2299             MOVS     R2,#+153
+   \   00000166   0x218C             MOVS     R1,#+140
+   \   00000168   0x4638             MOV      R0,R7
+   \   0000016A   0x.... 0x....      BL       GUI_DrawVLine
+    139          /* Gray */
+    140              GUI_SetColor(cs * 0x10101L);
+   \   0000016E   0x....             LDR.N    R0,??DataTable16_7  ;; 0x10101
+   \   00000170   0x4370             MULS     R0,R0,R6
+   \   00000172   0x.... 0x....      BL       GUI_SetColor
+    141              GUI_DrawVLine(x, y0 + 6 * yStep, y0 + 7 * yStep - 1);
+   \   00000176   0x22A7             MOVS     R2,#+167
+   \   00000178   0x219A             MOVS     R1,#+154
+   \   0000017A   0x4638             MOV      R0,R7
+   \   0000017C   0x.... 0x....      BL       GUI_DrawVLine
+    142          /* Yellow */
+    143              GUI_SetColor(cs * 0x00101L);
+   \   00000180   0xEB06 0x2006      ADD      R0,R6,R6, LSL #+8
+   \   00000184   0x.... 0x....      BL       GUI_SetColor
+    144              GUI_DrawVLine(x, y0 + 7 * yStep, y0 + 8 * yStep - 1);
+   \   00000188   0x22B5             MOVS     R2,#+181
+   \   0000018A   0x21A8             MOVS     R1,#+168
+   \   0000018C   0x4638             MOV      R0,R7
+   \   0000018E   0x.... 0x....      BL       GUI_DrawVLine
+    145              GUI_SetColor(0x00ffff + (255 - cs) * 0x10000L);
+   \   00000192   0xF1C6 0x0800      RSB      R8,R6,#+0
+   \   00000196   0xEB04 0x4008      ADD      R0,R4,R8, LSL #+16
+   \   0000019A   0x.... 0x....      BL       GUI_SetColor
+    146              GUI_DrawVLine(x, y0 + 8 * yStep, y0 + 9 * yStep - 1);
+   \   0000019E   0x22C3             MOVS     R2,#+195
+   \   000001A0   0x21B6             MOVS     R1,#+182
+   \   000001A2   0x4638             MOV      R0,R7
+   \   000001A4   0x.... 0x....      BL       GUI_DrawVLine
+    147          /* Cyan */
+    148              GUI_SetColor(cs * 0x10100L);
+   \   000001A8   0xEB06 0x2006      ADD      R0,R6,R6, LSL #+8
+   \   000001AC   0x0200             LSLS     R0,R0,#+8
+   \   000001AE   0x.... 0x....      BL       GUI_SetColor
+    149              GUI_DrawVLine(x, y0 + 9 * yStep, y0 + 10 * yStep - 1);
+   \   000001B2   0x22D1             MOVS     R2,#+209
+   \   000001B4   0x21C4             MOVS     R1,#+196
+   \   000001B6   0x4638             MOV      R0,R7
+   \   000001B8   0x.... 0x....      BL       GUI_DrawVLine
+    150              GUI_SetColor(0xffff00 + (255 - cs) * 0x00001L);
+   \   000001BC   0x1BA0             SUBS     R0,R4,R6
+   \   000001BE   0x.... 0x....      BL       GUI_SetColor
+    151              GUI_DrawVLine(x, y0 + 10 * yStep, y0 + 11 * yStep - 1);
+   \   000001C2   0x22DF             MOVS     R2,#+223
+   \   000001C4   0x21D2             MOVS     R1,#+210
+   \   000001C6   0x4638             MOV      R0,R7
+   \   000001C8   0x.... 0x....      BL       GUI_DrawVLine
+    152          /* Magenta */
+    153              GUI_SetColor(cs * 0x10001L);
+   \   000001CC   0xEB06 0x4006      ADD      R0,R6,R6, LSL #+16
+   \   000001D0   0x.... 0x....      BL       GUI_SetColor
+    154              GUI_DrawVLine(x, y0 + 11 * yStep, y0 + 12 * yStep - 1);
+   \   000001D4   0x22ED             MOVS     R2,#+237
+   \   000001D6   0x21E0             MOVS     R1,#+224
+   \   000001D8   0x4638             MOV      R0,R7
+   \   000001DA   0x.... 0x....      BL       GUI_DrawVLine
+    155              GUI_SetColor(0xff00ff + (255 - cs) * 0x00100L);
+   \   000001DE   0xEB04 0x2008      ADD      R0,R4,R8, LSL #+8
+   \   000001E2   0x.... 0x....      BL       GUI_SetColor
+    156              GUI_DrawVLine(x, y0 + 12 * yStep, y0 + 13 * yStep - 1);
+   \   000001E6   0x22FB             MOVS     R2,#+251
+   \   000001E8   0x21EE             MOVS     R1,#+238
+   \   000001EA   0x4638             MOV      R0,R7
+   \   000001EC   0x.... 0x....      BL       GUI_DrawVLine
+    157            }
+   \   000001F0   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??GUIDEMO_ShowColorBar_0: (+1)
+   \   000001F2   0xF5B5 0x7FD2      CMP      R5,#+420
+   \   000001F6   0xDA04             BGE.N    ??GUIDEMO_ShowColorBar_2
+   \   000001F8   0x.... 0x....      BL       GUIDEMO_CheckCancel
+   \   000001FC   0x2800             CMP      R0,#+0
+   \   000001FE   0xF43F 0xAF74      BEQ.W    ??GUIDEMO_ShowColorBar_1
+    158            GUIDEMO_Wait();
+   \                     ??GUIDEMO_ShowColorBar_2: (+1)
+   \   00000202   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   00000206   0x.... 0x....      B.W      GUIDEMO_Wait
+    159          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \   00000000   0x0A 0x00          DC8      "\n",0x0,0x0
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \   00000000   0x2C 0x20          DC8      0x2C, 0x20, 0x00, 0x00
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \   00000000   0x52 0x65          DC8      "Red"
+   \              0x64 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_3:
+   \   00000000   0x........         DC32     GUI_Font8x16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_4:
+   \   00000000   0x........         DC32     GUI_Font8_ASCII
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_5:
+   \   00000000   0x........         DC32     GUI_Font8x8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_6:
+   \   00000000   0xFFFEFF00         DC32     0xfffeff00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_7:
+   \   00000000   0x00010101         DC32     0x10101
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Color bar">`:
+   \   00000000   0x43 0x6F          DC8 "Color bar"
+   \              0x6C 0x6F    
+   \              0x72 0x20    
+   \              0x62 0x61    
+   \              0x72 0x00    
+   \   0000000A   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 2, keep-with-next
+   \                     `?<Constant "\\n">`:
+   \   00000000   0x0A 0x00          DC8 "\012"
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant ", ">`:
+   \   00000000   0x2C 0x20          DC8 ", "
+   \              0x00         
+   \   00000003   0x00               DC8 0
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     `?<Constant "Red">`:
+   \   00000000   0x52 0x65          DC8 "Red"
+   \              0x64 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "emWin features \\nan in...">`:
+   \   00000000   0x65 0x6D          DC8 65H, 6DH, 57H, 69H, 6EH, 20H, 66H, 65H
+   \              0x57 0x69    
+   \              0x6E 0x20    
+   \              0x66 0x65    
+   \   00000008   0x61 0x74          DC8 61H, 74H, 75H, 72H, 65H, 73H, 20H, 0AH
+   \              0x75 0x72    
+   \              0x65 0x73    
+   \              0x20 0x0A    
+   \   00000010   0x61 0x6E          DC8 61H, 6EH, 20H, 69H, 6EH, 74H, 65H, 67H
+   \              0x20 0x69    
+   \              0x6E 0x74    
+   \              0x65 0x67    
+   \   00000018   0x72 0x61          DC8 72H, 61H, 74H, 65H, 64H, 20H, 63H, 6FH
+   \              0x74 0x65    
+   \              0x64 0x20    
+   \              0x63 0x6F    
+   \   00000020   0x6C 0x6F          DC8 6CH, 6FH, 72H, 0AH, 6DH, 61H, 6EH, 61H
+   \              0x72 0x0A    
+   \              0x6D 0x61    
+   \              0x6E 0x61    
+   \   00000028   0x67 0x65          DC8 67H, 65H, 6DH, 65H, 6EH, 74H, 0AH, 77H
+   \              0x6D 0x65    
+   \              0x6E 0x74    
+   \              0x0A 0x77    
+   \   00000030   0x69 0x6C          DC8 69H, 6CH, 6CH, 20H, 61H, 6CH, 77H, 61H
+   \              0x6C 0x20    
+   \              0x61 0x6C    
+   \              0x77 0x61    
+   \   00000038   0x79 0x73          DC8 79H, 73H, 20H, 66H, 69H, 6EH, 64H, 20H
+   \              0x20 0x66    
+   \              0x69 0x6E    
+   \              0x64 0x20    
+   \   00000040   0x74 0x68          DC8 74H, 68H, 65H, 20H, 62H, 65H, 73H, 74H
+   \              0x65 0x20    
+   \              0x62 0x65    
+   \              0x73 0x74    
+   \   00000048   0x20 0x61          DC8 20H, 61H, 76H, 61H, 69H, 6CH, 61H, 62H
+   \              0x76 0x61    
+   \              0x69 0x6C    
+   \              0x61 0x62    
+   \   00000050   0x6C 0x65          DC8 6CH, 65H, 20H, 63H, 6FH, 6CH, 6FH, 72H
+   \              0x20 0x63    
+   \              0x6F 0x6C    
+   \              0x6F 0x72    
+   \   00000058   0x0A 0x66          DC8 0AH, 66H, 6FH, 72H, 20H, 61H, 6EH, 79H
+   \              0x6F 0x72    
+   \              0x20 0x61    
+   \              0x6E 0x79    
+   \   00000060   0x20 0x6C          DC8 20H, 6CH, 6FH, 67H, 69H, 63H, 61H, 6CH
+   \              0x6F 0x67    
+   \              0x69 0x63    
+   \              0x61 0x6C    
+   \   00000068   0x20 0x63          DC8 20H, 63H, 6FH, 6CH, 6FH, 72H, 0
+   \              0x6F 0x6C    
+   \              0x6F 0x72    
+   \              0x00         
+   \   0000006F   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Color bars\\n">`:
+   \   00000000   0x43 0x6F          DC8 "Color bars\012"
+   \              0x6C 0x6F    
+   \              0x72 0x20    
+   \              0x62 0x61    
+   \              0x72 0x73    
+   \              0x0A 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "\\nLCD_CONTROLLER: ">`:
+   \   00000000   0x0A 0x4C          DC8 "\012LCD_CONTROLLER: "
+   \              0x43 0x44    
+   \              0x5F 0x43    
+   \              0x4F 0x4E    
+   \              0x54 0x52    
+   \              0x4F 0x4C    
+   \              0x4C 0x45    
+   \              0x52 0x3A    
+   \              0x20 0x00    
+   \   00000012   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant " bpp">`:
+   \   00000000   0x20 0x62          DC8 " bpp"
+   \              0x70 0x70    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant " colors\\n">`:
+   \   00000000   0x20 0x63          DC8 " colors\012"
+   \              0x6F 0x6C    
+   \              0x6F 0x72    
+   \              0x73 0x0A    
+   \              0x00         
+   \   00000009   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Fixed palette: ">`:
+   \   00000000   0x46 0x69          DC8 "Fixed palette: "
+   \              0x78 0x65    
+   \              0x64 0x20    
+   \              0x70 0x61    
+   \              0x6C 0x65    
+   \              0x74 0x74    
+   \              0x65 0x3A    
+   \              0x20 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Green">`:
+   \   00000000   0x47 0x72          DC8 "Green"
+   \              0x65 0x65    
+   \              0x6E 0x00    
+   \   00000006   0x00 0x00          DC8 0, 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Blue">`:
+   \   00000000   0x42 0x6C          DC8 "Blue"
+   \              0x75 0x65    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Grey">`:
+   \   00000000   0x47 0x72          DC8 "Grey"
+   \              0x65 0x79    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Yellow">`:
+   \   00000000   0x59 0x65          DC8 "Yellow"
+   \              0x6C 0x6C    
+   \              0x6F 0x77    
+   \              0x00         
+   \   00000007   0x00               DC8 0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Cyan">`:
+   \   00000000   0x43 0x79          DC8 "Cyan"
+   \              0x61 0x6E    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `?<Constant "Magenta">`:
+   \   00000000   0x4D 0x61          DC8 "Magenta"
+   \              0x67 0x65    
+   \              0x6E 0x74    
+   \              0x61 0x00    
+    160          
+    161          #else
+    162          
+    163          void GUIDEMO_ShowColorBar(void) {}
+    164          
+    165          #endif
+    166          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   GUIDEMO_ShowColorBar
+        24   -> GUIDEMO_CheckCancel
+        24   -> GUIDEMO_ShowIntro
+         0   -> GUIDEMO_Wait
+        24   -> GUI_Clear
+        24   -> GUI_DispDecMin
+        24   -> GUI_DispString
+        24   -> GUI_DispStringAt
+        24   -> GUI_DrawVLine
+        24   -> GUI_SetBkColor
+        24   -> GUI_SetColor
+        24   -> GUI_SetFont
+        24   -> LCD_GetDevCap
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?<Constant " bpp">
+      12  ?<Constant " colors\n">
+       4  ?<Constant ", ">
+       8  ?<Constant "Blue">
+      12  ?<Constant "Color bar">
+      12  ?<Constant "Color bars\n">
+       8  ?<Constant "Cyan">
+      16  ?<Constant "Fixed palette: ">
+       8  ?<Constant "Green">
+       8  ?<Constant "Grey">
+       8  ?<Constant "Magenta">
+       4  ?<Constant "Red">
+       8  ?<Constant "Yellow">
+       2  ?<Constant "\n">
+      20  ?<Constant "\nLCD_CONTROLLER: ">
+     112  ?<Constant "emWin features \nan in...">
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+     522  GUIDEMO_ShowColorBar
+
+ 
+  10 bytes in section .rodata
+ 794 bytes in section .text
+ 
+ 794 bytes of CODE  memory
+  10 bytes of CONST memory
+
+Errors: none
+Warnings: none
