@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>icon/drop_down.png</file>
+        <file>icon/Expand.png</file>
+        <file>icon/hide.png</file>
+        <file>icon/Separation_line_1.png</file>
+        <file>icon/folder.png</file>
+        <file>icon/Save-as.png</file>
+        <file>icon/Separation_line_2.png</file>
+        <file>icon/Language.png</file>
+        <file>icon/direction.png</file>
+        <file>icon/Knife.png</file>
+        <file>icon/magnifier.png</file>
+        <file>icon/Rotate.png</file>
+        <file>icon/view.png</file>
+        <file>icon/Bottom_view.png</file>
+        <file>icon/Front_view.png</file>
+        <file>icon/Top_view.png</file>
+        <file>icon/down.png</file>
+        <file>icon/up.png</file>
+        <file>icon/close.png</file>
+        <file>icon/minimize.png</file>
+        <file>icon/Drag_and_drop.png</file>
+        <file>language/cn.qm</file>
+        <file>language/en.qm</file>
+        <file>icon/copy.png</file>
+        <file>icon/copy_press.png</file>
+        <file>icon/del.png</file>
+        <file>icon/del_press.png</file>
+    </qresource>
+</RCC>
