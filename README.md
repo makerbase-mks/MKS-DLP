@@ -5,9 +5,11 @@ Most traditional LCD light curing solutions use "Raspberry PI + HDMI to MIPI dri
 In order to facilitate the user to modify the functions, MKS has open sourced the motherboard schematic diagram, firmware and slicing software MKS DHOST.  
 
 # Source code of mainboard firmware #
+
 Firmware source code has been moved to:
 [https://github.com/makerbase-mks/MKS-DLP-FIRMWARE](https://github.com/makerbase-mks/MKS-DLP-FIRMWARE "MKS DLP FIRMWARE")
 
-#Source code of Slicer——MKS DHost
+# Source code of Slicer——MKS DHost #
+
 Slicer source code has been moved to:
 [https://github.com/makerbase-mks/MKS-DHost](https://github.com/makerbase-mks/MKS-DHost "MKS DHost")
