@@ -3,6 +3,19 @@
 - The versions V1.1.x, used on the hardware of V1.1 board;
 - The number behind "F" means the version of FPGA.
 
+## NEWS ##
+### V1.0.3/V1.1.3 ###
+
+
+1. Add the function to clear the trough, which always be used before a new print.
+2. Add the configuration of custom information on the lcd —— "INFO" and "SERVICE".
+
+### V1.0.0 ###
+
+
+1. The based version, which runs on the MKS DLP V1.0 board.
+2. Realize the basic operation of light curing printing.
+
 # How to update #
 Extract the relative package according to your mainboard, then copy all the files and directories to the usb, insert to the mainboard and reboot.The updating will begin automatically.
 
