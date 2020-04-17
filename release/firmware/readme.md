@@ -4,6 +4,10 @@
 - The number behind "F" means the version of FPGA.
 
 ## NEWS ##
+### V1.0.4/V1.1.4 ###
+
+1. Added the ability to print .photon and .cbddlp format files
+
 ### V1.0.3/V1.1.3 ###
 
 
