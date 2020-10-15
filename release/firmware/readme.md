@@ -4,6 +4,11 @@
 - The number behind "F" means the version of FPGA.
 
 ## NEWS ##
+### V1.1.5 ###
+
+The version V1.1.5 firmware can be used for hardware V1.1 and V2.0. 
+The function is the same as V1.1.4, but it is compatible with hardware V2.0.
+
 ### V1.0.4/V1.1.4 ###
 
 1. Added the ability to print .photon and .cbddlp format files
